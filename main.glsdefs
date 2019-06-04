@@ -1,0 +1,90 @@
+\ifglsentryexists{os}{}%
+{%
+\gls@defglossaryentry{os}%
+{%
+name={OS},%
+sort={OS},%
+type={main},%
+first={Operating System\glsspace (OS)},%
+firstplural={Operating Systems\glsspace (OSs)},%
+text={OS},%
+plural={OSs},%
+description={Operating System},%
+descriptionplural={Operating System\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Operating System},%
+longplural={Operating Systems},%
+short={OS},%
+shortplural={OSs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{nyi}{}%
+{%
+\gls@defglossaryentry{nyi}%
+{%
+name={NYI},%
+sort={NYI},%
+type={main},%
+first={Not Yet Implemented\glsspace (NYI)},%
+firstplural={Not Yet Implementeds\glsspace (NYIs)},%
+text={NYI},%
+plural={NYIs},%
+description={Not Yet Implemented},%
+descriptionplural={Not Yet Implemented\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Not Yet Implemented},%
+longplural={Not Yet Implementeds},%
+short={NYI},%
+shortplural={NYIs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{dei}{}%
+{%
+\gls@defglossaryentry{dei}%
+{%
+name={DEI},%
+sort={DEI},%
+type={main},%
+first={Department of Informatics Engineering\glsspace (DEI)},%
+firstplural={Department of Informatics Engineerings\glsspace (DEIs)},%
+text={DEI},%
+plural={DEIs},%
+description={Department of Informatics Engineering},%
+descriptionplural={Department of Informatics Engineering\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Department of Informatics Engineering},%
+longplural={Department of Informatics Engineerings},%
+short={DEI},%
+shortplural={DEIs},%
+counter={page},%
+parent={},%
+%
+}%
+}%

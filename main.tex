@@ -1,0 +1,268 @@
+\documentclass[twoside, 11pt]{report}
+
+\usepackage[table,xcdraw]{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{vhistory}
+\usepackage[hidelinks,bookmarks=true]{hyperref}
+\usepackage{graphicx}
+\graphicspath{{images/}}
+\usepackage{glossaries}
+\usepackage{float}
+\usepackage{pgfplotstable}
+\usepackage{tabularx}
+\usepackage{flafter}
+% For labeling references
+\usepackage{nameref}
+\usepackage{pdflscape}
+% For even/odd pages
+\usepackage{ifthen, changepage}
+% PDF metadata
+\usepackage{hyperref}
+\hypersetup{
+    pdftitle={Observing and Controlling Performance in Microservices},
+    pdfsubject={Master Thesis Report},
+    pdfauthor={andrepbento}
+}
+%%%
+
+% Algorithm
+\usepackage[ruled,vlined,linesnumbered,noresetcount]{algorithm2e}
+\usepackage{enumitem}
+
+% Colors
+%\usepackage[disable]{todonotes}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\definecolor{gray}{rgb}{0.7,0.7,0.7}
+\definecolor{lightgray}{rgb}{0.95,0.95,0.95}
+\definecolor{lightcyan}{rgb}{0.6784,0.8741,0.902}
+
+
+% Table definitions
+\usepackage{longtable}
+\usepackage[table]{xcolor}
+\usepackage{array, booktabs, caption}
+\usepackage{cellspace}
+\usepackage{makecell}
+%\rowcolors{1}{white}{lightgray}
+%\renewcommand\theadfont{\bfseries}
+
+
+\newcolumntype{s}{>{\hsize=.25\hsize}X}
+
+%Don't show appendices
+%\usepackage[]{appendix} 
+%Don't show appendices on ToC
+\usepackage[page]{appendix} 
+%Show appendices on both text and ToC
+%\usepackage[toc,page]{appendix} 
+
+\usepackage{subcaption}
+%margins
+\usepackage[a4paper,top=2.5cm,bottom=2.5cm,left=3.5cm,right=2.5cm,headsep=12pt]{geometry}
+
+%Indent first paragraph
+%\usepackage{indentfirst}
+\usepackage{indentfirst}
+%Remove all paragraph indentation
+%\setlength\parindent{0pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{csquotes}
+\usepackage[citestyle=ieee, bibstyle=ieee, block=none, indexing=false, citereset=none, isbn=true, url=true, doi=true, natbib=true, sorting=none]{biblatex}
+\addbibresource{references.bib}
+%\usepackage[square,sort,comma,numbers]{natbib}
+% BIBLIOGRAPHY STYLE (Choose below)
+%\bibliographystyle{abbrvnat}
+%\bibliographystyle{ksfh_nat}
+%\bibliographystyle{ieeetr}
+%\bibliographystyle{apalike}
+%
+% Plain style:
+% [1] D. Adams.The Hitchhiker's Guide to the Galaxy. San Val, 1995. 1
+%
+% Apalike style:
+% Adams, D. (1995).The Hitchhiker's Guide to the Galaxy. San Val. 1
+%
+% Comment to insert title: 
+%\renewcommand{\bibsection}{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%------------------------------------------------------------------------------------
+%used for cover page
+\usepackage{color}
+\definecolor{blueFCTUC}{RGB}{0, 150, 215}
+
+%------------------------------------------------------------------------------------
+
+%Right align section titles and add a dot to the section number
+%\usepackage{sectsty}
+%\sectionfont{\raggedright}
+%\usepackage{titlesec}
+%\titlelabel{\thetitle.\quad}
+%\titlespacing\section{0pt}{0.5cm}{1.5cm}
+
+
+%------------------------------------------------------------------------------------
+% Useful commands
+% ToDo configuration
+\newcommand\todo[1]{\textcolor{red}{#1}}
+
+% \HRule creates an horizontal line with <linewidth> length and 0.2mm thickness, that receives an optional parameter specifying the line's distance from the text
+\newcommand{\HRule}[1][\medskipamount]{\par
+  \vspace*{\dimexpr-\parskip-\baselineskip+#1}
+  \noindent\rule{\linewidth}{0.2mm}\par
+  \vspace*{\dimexpr-\parskip-.5\baselineskip+#1+5pt}}
+%%%
+
+
+%\setitemize command will set the spacing between items in itemizes to the given parameter.  
+%\let\OLDitemize\itemize
+%\newcommand{\setitemize}[1]{
+%\renewcommand\itemize{\OLDitemize\setlength{\itemsep}{#1}}
+%}
+%%%
+
+% Adds a blank page – used to guarantee that chapter always start at an even page.
+\newcommand*{\blankpage}{%
+\newpage
+\thispagestyle{empty}
+\vspace*{\fill}
+\begin{center} This page is intentionally left blank.
+\end{center}
+\vspace{\fill}
+\newpage}
+%%%
+% Blank page
+\newcommand*{\emptypage}{%
+\newpage
+\thispagestyle{empty}
+\vspace*{\fill}
+\vspace{\fill}
+\newpage}
+%%%
+
+
+
+% --------------- headers and footers control ----------------------
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{#1}}{}}
+ 
+\fancyhead[LE]{\sl{\nouppercase{\chaptername~\thechapter}}}
+\fancyhead[RE]{}
+\fancyhead[LO]{}
+\fancyhead[RO]{\sl{\nouppercase{\leftmark}}}
+
+%\fancyhead[RE,LO]{\rightmark}
+\renewcommand{\headrulewidth}{0.4pt}
+
+
+
+
+%---------------------------------------------------------------------
+
+\makeglossaries
+
+
+
+
+% Document begin
+\begin{document}
+
+\pagenumbering{gobble}
+
+\input{chapters/0-cover.tex}
+\blankpage
+
+%Gobble Cover, TOC and acknowledgement section pages
+\pagenumbering{gobble}
+
+\input{chapters/0-acronyms}
+
+
+%\blankpage
+
+\pagenumbering{roman}
+
+%Set paragraph spacing
+\setlength{\parskip}{0.7em}
+
+%------------------------------------------------------------------------------------------------------
+
+%Abstract
+\input{chapters/0-abstract-EN.tex}
+\blankpage
+\input{chapters/0-abstract-PT.tex}
+\blankpage
+
+%------------------------------------------------------------------------------------------------------
+
+%------------------------------------------------------------------------------------------------------
+
+%Acknowledgements
+\input{chapters/0-acknowledgments.tex}
+\blankpage
+
+%------------------------------------------------------------------------------------------------------
+
+% Set paragraph spacing to use in ToC and other lists
+\setlength{\parskip}{0em}
+
+% Make sure acronym don't appear in the ToC
+\glsunsetall
+\tableofcontents
+\glsresetall
+
+\newpage
+
+\blankpage
+
+
+% List of acronyms
+\glsnogroupskiptrue
+\printglossary[type=\acronymtype,style=list,title={Acronyms}]
+\newpage
+
+\blankpage
+
+\listoffigures
+
+\blankpage
+\listoftables
+
+\blankpage
+
+%Begin page numbering
+\pagenumbering{arabic}
+
+% Set paragraph spacing
+\setlength{\parskip}{0.7em}
+
+
+%------------------------------
+\input{chapters/1-introduction}
+\input{chapters/2-methodology.tex}
+\input{chapters/3-state-of-the-art.tex}
+\input{chapters/4-research-objectives-and-approach.tex}
+\input{chapters/5-possible-solution.tex}
+\input{chapters/6-implementation_process.tex}
+\input{chapters/7-conclusions.tex}
+
+
+%\renewcommand{\bibname}{References}
+%\bibliography{references}
+\printbibliography[title={References}]
+\newpage
+% TODO: Uncomment the following for the final report delivery
+%\begin{appendices}
+%\input{chapters/9-appendices}
+%\end{appendices}
+%------------------------------
+
+
+\end{document}
+%Document end

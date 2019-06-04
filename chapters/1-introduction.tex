@@ -1,0 +1,76 @@
+\glsresetall
+\chapter{Introduction}
+\label{chap:introduction}
+
+This document presents the \textit{Master Thesis} in \textit{Informatics Engineering} of the student \textit{André Pascoal Bento} during the school year of 2018/2019, taking place in the \textit{\gls{dei}} of the \textit{University of Coimbra}.
+
+\section{Context}
+\label{sec:context}
+
+In today's world, the digital systems tend to become more distributed as time move on, resulting in new approaches that lead to new solutions and new patterns of developing software. One way to solve this is to develop systems that have their internal components decoupled, creating software with lots of ``tiny pieces'' connected to each other, encapsulating a certain specific function in a larger service. This way of developing software is called Microservices and have become the mainstream in the enterprise software development industry~\cite{microservices_growth}. However, with this kind of approach, the systems complexity is increased as a whole because with more ``tiny pieces'', more connections are needed and with this more problems related to latency and requests tend to appear.
+
+To keep a history of the work performed by this kind of systems, multiple techniques like monitoring~\cite{monitoring}, logging~\cite{logging} and tracing~\cite{distributed_tracing} are adopted. In this context and briefly explained, monitoring consists on measuring some aspects, e.g., \gls{cpu} usage, hard drive usage and network latency of the entire system or of some specific node in a distributed system environment. Logging provides an overview to a discrete, event-triggered log. Finally, tracing is much similar to logging, however the focus is to register the flow of the execution of the program. This is better explained in Subsection~\ref{subsec:distributed_tracing} - \nameref{subsec:distributed_tracing}. There are multiple approaches to gather information of this kind of systems, each with its benefits and disadvantages.
+
+The main problem with this nowadays is that there are not many ways of performing the analysis of this type of data. For monitoring it tend to be easier, because data is represented in charts, however for logging and tracing it gets harder to analyse the data due to multiple factors like its complexity and quantity. There are some visualisation tools for the \gls{devops} to use, like the ones presented in Subsection~\ref{subsec:distributed_tracing_tools}, however none of them gets to the point of performing the analysis of the system using tracing, has they tend to be developed only for visualisation and display of tracing data in a more human readable way. Nevertheless, this is critical information about the system behaviour, and it must exist some way to perform tracing analysis.
+
+\section{Motivation}
+\label{sec:motivation}
+
+The motivation behind this whole work resides in exploring and develop new ways to perform tracing analysis in microservice based systems. The analysis of this kind of systems tend to be very complex and hard to perform due to their properties and characteristics of the system itself, as it is explained in Subsection~\ref{subsec:microservices} - \nameref{subsec:microservices}, and the type of data to be analysed, presented in Subsections~\ref{subsec:distributed_tracing} - \nameref{subsec:distributed_tracing} and~\ref{subsec:traces_and_spans} - \nameref{subsec:traces_and_spans}.
+
+\gls{devops} teams have lots of problems when is needed to identify and understand the problems with this systems. They usually detect the problems when the client complains about the quality of service, and after that the \gls{devops} dive in distributed tracing data visualisations, logs and monitoring to try to find some explanation to the problem. This involves a very hard and tedious work of look-up through lots of data that represents the work of the system and, in the most cases, it reveals like a big ``find a needle in the haystack'' problem, where in the end, it tends to have a solution like rebooting the services that are presenting problems to the overall system.
+
+Problems regarding the system operation are more common in systems like this and their identified must be simplified. This need of simplification comes from the exponential increase in the amount of data needed to retain information and the increasing difficulty in manually managing distributed infrastructures. The work presented in this thesis, aims to perform an investigation around this kind of needs and focus on presenting some new solutions and methods to perform tracing analysis.
+
+\section{Goals}
+\label{sec:goals}
+
+The main goals for this thesis consists on the three main points exposed bellow:
+
+\todo{CONTINUE FROM HERE!!!}
+
+\begin{enumerate}
+    \item Perform a research about the main needs of the DevOps teams, to better understand what are their biggest concerns when they perform the analysis of microservices based systems. From this we expected to have a compilation of questions, presented in sub-section~\ref{subsec:research_questions}, to be evaluated and possibly answered by the produced solution.
+    \item Second is to research for related work in the area, to see what other companies have done and are currently doing in the field of tracing analysis. From this we hope to understand how they tackle this kind of data, what were their main difficulties and conclusions to provide a better insight about this problem.
+    \item Third is to search for existing technology and methodologies used to help \gls{devops} teams in their current daily work, with the objective of understanding what are the best practices when handling this kind of data, how these systems are used, and what are their advantages and disadvantages to better know how we can improve what they do and develop new methods for tracing analysis.
+    \item Finally, is to reason about all the gathered information, design and produce a possible solution that aims to provide a different approach to perform tracing analysis, with the objective of ease the difficult process that is to analyse tracing data nowadays. From this we expect to provide a reflection about the possible answers to the defined questions.
+\end{enumerate}
+
+So the main focus of the work presented in this thesis is to produce a research about what we can do with tracing data to detect issues in the system as a whole.
+
+\section{Research Contributions}
+\label{sec:research_contributions}
+
+From the work presented on this thesis, the following research contributions were made:
+
+\begin{itemize}
+    \item \todo{André Pascoal Bento, Filipe João Boavida Mendonça Machado Araújo, Jorge Cardoso and Jaime Correia. OpenTracing data analysis. International Symposium on Network Computing and Applications (IEEE NCA 2019) (The paper is waiting review).}
+\end{itemize}
+
+\section{Document Structure}
+\label{sec:document_structure}
+
+This section presents the document structure in this report, with a brief explanation of the contents in every section. The current document contains a total of five chapter, including this one, \ref{chap:introduction} - \nameref{chap:introduction}. The remaining four of them, are exposed bellow.
+
+In chapter \ref{chap:methodology} - \nameref{chap:methodology} are presented the elements involved in this work, with their contributions, has well as the work plan, with ``foreseen'' and ``real'' work plans comparison and analysis.
+
+In chapter \ref{chap:state_of_the_art} - \nameref{chap:state_of_the_art} the current state of the art for this kind of problem is presented. This chapter is divided in two sections. The first one, \ref{sec:concepts} - \nameref{sec:concepts} introduces the reader to the core concepts to know as a requirement for a full understanding of the topics discussed in this thesis. The second one, \ref{sec:technologies} - \nameref{sec:technologies} presents the result of a research for current technologies, that may be able to help solving this kind of problem.
+
+In chapter \ref{chap:research_objectives_and_approach} - \nameref{chap:research_objectives_and_approach} presents how we faced the problem, and what were the main difficulties that we found when handling this kind of problem, as well as the objectives involved to solve the issues that are presented.
+
+In chapter \ref{chap:possible_solution} - \nameref{chap:possible_solution} a possible solution for the problem is presented. This chapter is divided in four sections. The first one, \ref{sec:functional_requirements} - \nameref{sec:functional_requirements}, expose the functional requirements with their corresponding priority levels and a brief explanation to every single one of them. The second one, \ref{sec:quality_attributes} - \nameref{sec:quality_attributes}, contains the gathered non-functional requirements that were used to build the solution architecture. The third one, \ref{sec:technical_restrictions} - \nameref{sec:technical_restrictions}, presents the gathered technical restrictions for this project. The last one, \ref{sec:architecture} - \nameref{sec:architecture}, presents the solution architecture using some representational diagrams, and ends with an analysis and checkup to see if the presented architecture meets up the restrictions involved in the architectural drivers.
+
+In chapter \ref{chap:implementation_process} the implementation process of the possible solution is presented with detail. This chapter is divided in three main sections. First, \ref{sec:data_set} - \nameref{sec:data_set}, the data set of tracing provided by Huawei to be used as the core data for this research is exposed and evaluated. Second, \ref{sec:metrics_gathering} - \nameref{sec:metrics_gathering}, the possible solution for the extraction of metrics from the data set, with the relationship between the questions to be answered and all the decisions that were taken are presented. The third one and last, \ref{sec:observations_analysis} - \nameref{sec:observations_analysis}, the analysis of the observations gathered in the metrics, the algorithms used to perform this kind of analysis and the results obtained are properly presented and discussed.
+
+In the last chapter, \ref{chap:conclusions} - \nameref{chap:conclusions}, the main conclusions for this whole work are presented. The chapter is divided in three main sections. First, \ref{sec:brief_reflection} - \nameref{sec:brief_reflection}, a reflection about the tools and methods produced and the open paths from this whole research are exposed. Also a reflection of the main difficulties felted with this research are presented. Second, \ref{sec:future_work} - \nameref{sec:future_work}, the future work that can be addressed considering this work is properly explained taking into consideration what is said in the previous section. Finally, \ref{sec:concluding_research_questions} - \nameref{sec:concluding_research_questions}, the state of answers for the selected questions of this research are discussed.
+
+With all this, the introduction is presented, and we follow the document to the next chapter \ref{chap:methodology} - \nameref{chap:methodology} where, has said before, the elements involved in this work, their contributions and the work plans for this whole research project are presented.
+
+
+\checkoddpage
+\ifthenelse{\boolean{oddpage}}
+{ % Odd page
+\newpage
+\blankpage}
+{ % Even page
+}
