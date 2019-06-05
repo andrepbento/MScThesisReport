@@ -1,0 +1,1834 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.0 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{Dragoni2017}{incollection}{}
+      \name{author}{7}{}{%
+        {{hash=05023247140dc3d76c65df203f9a1ca5}{%
+           family={Dragoni},
+           familyi={D\bibinitperiod},
+           given={Nicola},
+           giveni={N\bibinitperiod}}}%
+        {{hash=59ec2277e593c4bc2ec6a6f2db160556}{%
+           family={Giallorenzo},
+           familyi={G\bibinitperiod},
+           given={Saverio},
+           giveni={S\bibinitperiod}}}%
+        {{hash=6da55768265515548c9c9d2fdd5842b3}{%
+           family={Lafuente},
+           familyi={L\bibinitperiod},
+           given={Alberto\bibnamedelima Lluch},
+           giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=147f187ab39b8aa10377370e35dd100c}{%
+           family={Mazzara},
+           familyi={M\bibinitperiod},
+           given={Manuel},
+           giveni={M\bibinitperiod}}}%
+        {{hash=94aec34b0ab3aab8d0b52c5b042d902c}{%
+           family={Montesi},
+           familyi={M\bibinitperiod},
+           given={Fabrizio},
+           giveni={F\bibinitperiod}}}%
+        {{hash=1c3eb491b55e0758a57b92268522b54a}{%
+           family={Mustafin},
+           familyi={M\bibinitperiod},
+           given={Ruslan},
+           giveni={R\bibinitperiod}}}%
+        {{hash=4fce574c6bb2206fb51f0feeab19c762}{%
+           family={Safina},
+           familyi={S\bibinitperiod},
+           given={Larisa},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{d22976dc7f5a066ee9d60ef48681c23d}
+      \strng{fullhash}{240b78060dd3082662022fa0fc04988e}
+      \strng{bibnamehash}{240b78060dd3082662022fa0fc04988e}
+      \strng{authorbibnamehash}{240b78060dd3082662022fa0fc04988e}
+      \strng{authornamehash}{d22976dc7f5a066ee9d60ef48681c23d}
+      \strng{authorfullhash}{240b78060dd3082662022fa0fc04988e}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Microservices is an architectural style inspired by service-oriented computing that has recently started gaining popularity. Before presenting the current state-of-the-art in the field, this chapter reviews the history of software architecture, the reasons that led to the diffusion of objects and services first, and microservices later. Finally, open problems and future challenges are introduced. This survey primarily addresses newcomers to the discipline, while offering an academic viewpoint on the topic. In addition, we investigate some practical issues and point out some potential solutions.}
+      \field{booktitle}{Present and Ulterior Software Engineering}
+      \field{isbn}{9783319674254}
+      \field{title}{{Microservices: Yesterday, today, and tomorrow}}
+      \field{year}{2017}
+      \field{pages}{195\bibrangedash 216}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1007/978-3-319-67425-4_12
+      \endverb
+      \verb{file}
+      \verb :home/andrepbento/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Dragoni et al. - Unknown - Microservices yesterday, today, and tomorrow(2).pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://hal.inria.fr/hal-01631455
+      \endverb
+      \verb{url}
+      \verb https://hal.inria.fr/hal-01631455
+      \endverb
+    \endentry
+    \entry{DiFrancesco2017}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=7a19d99b31f8e0480bc08850ea535e72}{%
+           family={{Di Francesco}},
+           familyi={D\bibinitperiod},
+           given={Paolo},
+           giveni={P\bibinitperiod}}}%
+        {{hash=3ff6e286502b85077eabb7e86849d893}{%
+           family={Malavolta},
+           familyi={M\bibinitperiod},
+           given={Ivano},
+           giveni={I\bibinitperiod}}}%
+        {{hash=b7e3fc29bccdf8a7639daddb302e1545}{%
+           family={Lago},
+           familyi={L\bibinitperiod},
+           given={Patricia},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{c8d97be6e0b2483e0be3e8855b17fdc5}
+      \strng{fullhash}{c8d97be6e0b2483e0be3e8855b17fdc5}
+      \strng{bibnamehash}{c8d97be6e0b2483e0be3e8855b17fdc5}
+      \strng{authorbibnamehash}{c8d97be6e0b2483e0be3e8855b17fdc5}
+      \strng{authornamehash}{c8d97be6e0b2483e0be3e8855b17fdc5}
+      \strng{authorfullhash}{c8d97be6e0b2483e0be3e8855b17fdc5}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{{©} 2017 IEEE. Microservices are a new trend rising fast from the enterprise world. Even though the design principles around microservices have been identified, it is difficult to have a clear view of existing research solutions for architecting microservices. In this paper we apply the systematic mapping study methodology to identify, classify, and evaluate the current state of the art on architecting microservices from the following three perspectives: publication trends, focus of research, and potential for industrial adoption. More specifically, we systematically define a classification framework for categorizing the research on architecting microservices and we rigorously apply it to the 71 selected studies. We synthesize the obtained data and produce a clear overview of the state of the art. This gives a solid basis to plan for future research and applications of architecting microservices.}
+      \field{booktitle}{Proceedings - 2017 IEEE International Conference on Software Architecture, ICSA 2017}
+      \field{isbn}{9781509057290}
+      \field{title}{{Research on Architecting Microservices: Trends, Focus, and Potential for Industrial Adoption}}
+      \field{year}{2017}
+      \field{pages}{21\bibrangedash 30}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/ICSA.2017.24
+      \endverb
+      \verb{file}
+      \verb ::
+      \endverb
+      \verb{urlraw}
+      \verb http://cs.gssi.infn.it/ICSA2017ReplicationPackage
+      \endverb
+      \verb{url}
+      \verb http://cs.gssi.infn.it/ICSA2017ReplicationPackage
+      \endverb
+      \keyw{Microservices,Software Architecture,Systematic Mapping Study}
+    \endentry
+    \entry{Joyce1987}{article}{}
+      \name{author}{4}{}{%
+        {{hash=1ed09ee37bc3a20c6259ad1eae069b0a}{%
+           family={Joyce},
+           familyi={J\bibinitperiod},
+           given={Jeffrey},
+           giveni={J\bibinitperiod}}}%
+        {{hash=437e126c040efa42806260f37c6d237f}{%
+           family={Lomow},
+           familyi={L\bibinitperiod},
+           given={Greg},
+           giveni={G\bibinitperiod}}}%
+        {{hash=0f16fc669f7910448dc7ca7163cef6ca}{%
+           family={Slind},
+           familyi={S\bibinitperiod},
+           given={Konrad},
+           giveni={K\bibinitperiod}}}%
+        {{hash=fb2986efab9316f760fd34f29b9a32fa}{%
+           family={Unger},
+           familyi={U\bibinitperiod},
+           given={Brian},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{d3921baf9ccc2ce76c222e05b31092d5}
+      \strng{fullhash}{1d86ac9638e4061e76e8ade9949666d4}
+      \strng{bibnamehash}{1d86ac9638e4061e76e8ade9949666d4}
+      \strng{authorbibnamehash}{1d86ac9638e4061e76e8ade9949666d4}
+      \strng{authornamehash}{d3921baf9ccc2ce76c222e05b31092d5}
+      \strng{authorfullhash}{1d86ac9638e4061e76e8ade9949666d4}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The monitoring of distributed systems involves the collection, interpretation, and display of information concerning the interactions among concurrently executing processes. This information and its display can support the debugging, testing, performance evaluation, and dynamic documentation of distributed systems. General problems associated with monitoring are outlined in this paper, and the architecture of a general purpose, extensible, distributed monitoring system is presented. Three approaches to the display of process interactions are described: textual traces, animated graphical traces, and a combination of aspects of the textual and graphical approaches. The roles that each of these approaches fulfill in monitoring and debugging distributed systems are identified and compared. Monitoring tools for collecting communication statistics, detecting deadlock, controlling the non-deterministic execution of distributed systems, and for using protocol specifications in monitoring are also described.$\backslash$nOur discussion is based on experience in the development and use of a monitoring system within a distributed programming environment called Jade. Jade was developed within the Computer Science Department of the University of Calgary and is now being used to support teaching and research at a number of university and research organizations.}
+      \field{issn}{07342071}
+      \field{journaltitle}{ACM Transactions on Computer Systems}
+      \field{month}{3}
+      \field{number}{2}
+      \field{title}{{Monitoring distributed systems}}
+      \field{volume}{5}
+      \field{year}{1987}
+      \field{pages}{121\bibrangedash 150}
+      \range{pages}{30}
+      \verb{doi}
+      \verb 10.1145/13677.22723
+      \endverb
+      \verb{urlraw}
+      \verb http://portal.acm.org/citation.cfm?doid=13677.22723
+      \endverb
+      \verb{url}
+      \verb http://portal.acm.org/citation.cfm?doid=13677.22723
+      \endverb
+    \endentry
+    \entry{logging}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=1633e2e74016dcc2cb78cbe305d55664}{%
+           family={Janapati},
+           familyi={J\bibinitperiod},
+           given={Siva\bibnamedelimb Prasad\bibnamedelima Rao},
+           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{1633e2e74016dcc2cb78cbe305d55664}
+      \strng{fullhash}{1633e2e74016dcc2cb78cbe305d55664}
+      \strng{bibnamehash}{1633e2e74016dcc2cb78cbe305d55664}
+      \strng{authorbibnamehash}{1633e2e74016dcc2cb78cbe305d55664}
+      \strng{authornamehash}{1633e2e74016dcc2cb78cbe305d55664}
+      \strng{authorfullhash}{1633e2e74016dcc2cb78cbe305d55664}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Distributed Logging Architecture for Microservices}}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://dzone.com/articles/distributed-logging-architecture-for-microservices
+      \endverb
+      \verb{url}
+      \verb https://dzone.com/articles/distributed-logging-architecture-for-microservices
+      \endverb
+    \endentry
+    \entry{distributed_tracing}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=b9bdf471d6d9e329763891076f924b69}{%
+           family={OpenTracing.io},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{b9bdf471d6d9e329763891076f924b69}
+      \strng{fullhash}{b9bdf471d6d9e329763891076f924b69}
+      \strng{bibnamehash}{b9bdf471d6d9e329763891076f924b69}
+      \strng{authorbibnamehash}{b9bdf471d6d9e329763891076f924b69}
+      \strng{authornamehash}{b9bdf471d6d9e329763891076f924b69}
+      \strng{authorfullhash}{b9bdf471d6d9e329763891076f924b69}
+      \field{extraname}{1}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{What is Distributed Tracing?}}
+      \verb{urlraw}
+      \verb https://opentracing.io/docs/overview/what-is-tracing/
+      \endverb
+      \verb{url}
+      \verb https://opentracing.io/docs/overview/what-is-tracing/
+      \endverb
+    \endentry
+    \entry{huawei_cloud_platform}{misc}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labeltitlesource}{title}
+      \field{title}{{Huawei Cloud Platform}}
+      \verb{urlraw}
+      \verb https://www.huaweicloud.com/
+      \endverb
+      \verb{url}
+      \verb https://www.huaweicloud.com/
+      \endverb
+    \endentry
+    \entry{project_estimation_times}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=1f1c03fce6695ed57a8651dc8604e1d4}{%
+           family={Osetskyi},
+           familyi={O\bibinitperiod},
+           given={Victor},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{1f1c03fce6695ed57a8651dc8604e1d4}
+      \strng{fullhash}{1f1c03fce6695ed57a8651dc8604e1d4}
+      \strng{bibnamehash}{1f1c03fce6695ed57a8651dc8604e1d4}
+      \strng{authorbibnamehash}{1f1c03fce6695ed57a8651dc8604e1d4}
+      \strng{authornamehash}{1f1c03fce6695ed57a8651dc8604e1d4}
+      \strng{authorfullhash}{1f1c03fce6695ed57a8651dc8604e1d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{How to Calculate Man-Hours for The Software Project: Explanation with an Example}}
+      \field{urlday}{3}
+      \field{urlmonth}{1}
+      \field{urlyear}{2019}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://medium.com/existek/how-to-calculate-man-hours-for-the-software-project-explanation-with-an-example-50f2fbe111d2
+      \endverb
+      \verb{url}
+      \verb https://medium.com/existek/how-to-calculate-man-hours-for-the-software-project-explanation-with-an-example-50f2fbe111d2
+      \endverb
+    \endentry
+    \entry{gantt_project_tool}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=5950b32b0ddbbf0a581fd6c3249d4257}{%
+           family={{The GanttProject Team}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{5950b32b0ddbbf0a581fd6c3249d4257}
+      \strng{fullhash}{5950b32b0ddbbf0a581fd6c3249d4257}
+      \strng{bibnamehash}{5950b32b0ddbbf0a581fd6c3249d4257}
+      \strng{authorbibnamehash}{5950b32b0ddbbf0a581fd6c3249d4257}
+      \strng{authornamehash}{5950b32b0ddbbf0a581fd6c3249d4257}
+      \strng{authorfullhash}{5950b32b0ddbbf0a581fd6c3249d4257}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{GanttProject}}
+      \field{urlday}{29}
+      \field{urlmonth}{11}
+      \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.ganttproject.biz/
+      \endverb
+      \verb{url}
+      \verb https://www.ganttproject.biz/
+      \endverb
+    \endentry
+    \entry{microservices_definition}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=d0740bcf48754b8fa2cd3549a1d73461}{%
+           family={Richardson},
+           familyi={R\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{d0740bcf48754b8fa2cd3549a1d73461}
+      \strng{fullhash}{d0740bcf48754b8fa2cd3549a1d73461}
+      \strng{bibnamehash}{d0740bcf48754b8fa2cd3549a1d73461}
+      \strng{authorbibnamehash}{d0740bcf48754b8fa2cd3549a1d73461}
+      \strng{authornamehash}{d0740bcf48754b8fa2cd3549a1d73461}
+      \strng{authorfullhash}{d0740bcf48754b8fa2cd3549a1d73461}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Microservices Definition}}
+      \field{urlday}{17}
+      \field{urlmonth}{10}
+      \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://microservices.io/
+      \endverb
+      \verb{url}
+      \verb https://microservices.io/
+      \endverb
+    \endentry
+    \entry{docker}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=4bd3b392874c74fba4ed57a24eae0ac1}{%
+           family={{Docker Inc.}},
+           familyi={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{4bd3b392874c74fba4ed57a24eae0ac1}
+      \strng{fullhash}{4bd3b392874c74fba4ed57a24eae0ac1}
+      \strng{bibnamehash}{4bd3b392874c74fba4ed57a24eae0ac1}
+      \strng{authorbibnamehash}{4bd3b392874c74fba4ed57a24eae0ac1}
+      \strng{authornamehash}{4bd3b392874c74fba4ed57a24eae0ac1}
+      \strng{authorfullhash}{4bd3b392874c74fba4ed57a24eae0ac1}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Why Docker?}}
+      \field{urlday}{24}
+      \field{urlmonth}{12}
+      \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.docker.com/why-docker
+      \endverb
+      \verb{url}
+      \verb https://www.docker.com/why-docker
+      \endverb
+    \endentry
+    \entry{what_is_containers}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=4bd3b392874c74fba4ed57a24eae0ac1}{%
+           family={{Docker Inc.}},
+           familyi={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{4bd3b392874c74fba4ed57a24eae0ac1}
+      \strng{fullhash}{4bd3b392874c74fba4ed57a24eae0ac1}
+      \strng{bibnamehash}{4bd3b392874c74fba4ed57a24eae0ac1}
+      \strng{authorbibnamehash}{4bd3b392874c74fba4ed57a24eae0ac1}
+      \strng{authornamehash}{4bd3b392874c74fba4ed57a24eae0ac1}
+      \strng{authorfullhash}{4bd3b392874c74fba4ed57a24eae0ac1}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{What is a Container}}
+      \field{urlday}{23}
+      \field{urlmonth}{12}
+      \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.docker.com/resources/what-container
+      \endverb
+      \verb{url}
+      \verb https://www.docker.com/resources/what-container
+      \endverb
+    \endentry
+    \entry{microservices}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=312ac886938a9b2be4f8eb607567fe4c}{%
+           family={Fowler},
+           familyi={F\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=bc0d2dbdc2f0a7a80ec11019d6142dbb}{%
+           family={Lewis},
+           familyi={L\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{416876065d6eb7d05b219dfec144635d}
+      \strng{fullhash}{416876065d6eb7d05b219dfec144635d}
+      \strng{bibnamehash}{416876065d6eb7d05b219dfec144635d}
+      \strng{authorbibnamehash}{416876065d6eb7d05b219dfec144635d}
+      \strng{authornamehash}{416876065d6eb7d05b219dfec144635d}
+      \strng{authorfullhash}{416876065d6eb7d05b219dfec144635d}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Microservices, a definition of this architectural term}}
+      \field{urlday}{7}
+      \field{urlmonth}{1}
+      \field{urlyear}{2018}
+      \field{year}{2014}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://martinfowler.com/articles/microservices.html
+      \endverb
+      \verb{url}
+      \verb https://martinfowler.com/articles/microservices.html
+      \endverb
+    \endentry
+    \entry{simon_brown_microservices}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=0653a11aad687a389587e0000e0f4a13}{%
+           family={Brown},
+           familyi={B\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{0653a11aad687a389587e0000e0f4a13}
+      \strng{fullhash}{0653a11aad687a389587e0000e0f4a13}
+      \strng{bibnamehash}{0653a11aad687a389587e0000e0f4a13}
+      \strng{authorbibnamehash}{0653a11aad687a389587e0000e0f4a13}
+      \strng{authornamehash}{0653a11aad687a389587e0000e0f4a13}
+      \strng{authorfullhash}{0653a11aad687a389587e0000e0f4a13}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Distributed big balls of mud}}
+      \field{urlday}{23}
+      \field{urlmonth}{12}
+      \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://www.codingthearchitecture.com/2014/07/06/distributed{\_}big{\_}balls{\_}of{\_}mud.html
+      \endverb
+      \verb{url}
+      \verb http://www.codingthearchitecture.com/2014/07/06/distributed%7B%5C_%7Dbig%7B%5C_%7Dballs%7B%5C_%7Dof%7B%5C_%7Dmud.html
+      \endverb
+    \endentry
+    \entry{observing_definition}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=3d02fa78e7d8c12facb6712c7ad3a1e7}{%
+           family={Thefreedictionary.com},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{3d02fa78e7d8c12facb6712c7ad3a1e7}
+      \strng{fullhash}{3d02fa78e7d8c12facb6712c7ad3a1e7}
+      \strng{bibnamehash}{3d02fa78e7d8c12facb6712c7ad3a1e7}
+      \strng{authorbibnamehash}{3d02fa78e7d8c12facb6712c7ad3a1e7}
+      \strng{authornamehash}{3d02fa78e7d8c12facb6712c7ad3a1e7}
+      \strng{authorfullhash}{3d02fa78e7d8c12facb6712c7ad3a1e7}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Observing definition}}
+      \field{urlday}{13}
+      \field{urlmonth}{10}
+      \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.thefreedictionary.com/observing
+      \endverb
+      \verb{url}
+      \verb https://www.thefreedictionary.com/observing
+      \endverb
+    \endentry
+    \entry{observability}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{%
+           family={Wikipedia},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
+      \strng{bibnamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authorbibnamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authornamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authorfullhash}{9c677286866aad38f8e9b660f5411814}
+      \field{extraname}{1}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Observability}}
+      \field{urlday}{2}
+      \field{urlmonth}{1}
+      \field{urlyear}{2019}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/wiki/Observability
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/Observability
+      \endverb
+    \endentry
+    \entry{control_systems}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{%
+           family={Wikipedia},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
+      \strng{bibnamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authorbibnamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authornamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authorfullhash}{9c677286866aad38f8e9b660f5411814}
+      \field{extraname}{2}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Control system}}
+      \field{urlday}{2}
+      \field{urlmonth}{1}
+      \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/wiki/Control{\_}system
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/Control%7B%5C_%7Dsystem
+      \endverb
+    \endentry
+    \entry{Sigelman2010}{report}{}
+      \name{author}{8}{}{%
+        {{hash=eab9780c74232781131c3216d3938840}{%
+           family={Sigelman},
+           familyi={S\bibinitperiod},
+           given={Benjamin\bibnamedelima H},
+           giveni={B\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=3f015daf7c80b8ac9f0f018bcd26c978}{%
+           family={Andr},
+           familyi={A\bibinitperiod},
+           given={Luiz},
+           giveni={L\bibinitperiod}}}%
+        {{hash=52bd219ee38c5f14ff2c280e7e4216d1}{%
+           family={Burrows},
+           familyi={B\bibinitperiod},
+           given={Mike},
+           giveni={M\bibinitperiod}}}%
+        {{hash=55ea53762f4b3b84627371e84b2503b5}{%
+           family={Stephenson},
+           familyi={S\bibinitperiod},
+           given={Pat},
+           giveni={P\bibinitperiod}}}%
+        {{hash=fc103b936ff1d8fa40cfdc0b5ee79f52}{%
+           family={Plakal},
+           familyi={P\bibinitperiod},
+           given={Manoj},
+           giveni={M\bibinitperiod}}}%
+        {{hash=8293acfe90aa8eaf9b54bb2d780b215f}{%
+           family={Beaver},
+           familyi={B\bibinitperiod},
+           given={Donald},
+           giveni={D\bibinitperiod}}}%
+        {{hash=8769aaaafced9152f74d947681e81b2b}{%
+           family={Jaspan},
+           familyi={J\bibinitperiod},
+           given={Saul},
+           giveni={S\bibinitperiod}}}%
+        {{hash=fac2ed311ee97c6a34c4ffeafe5b28dd}{%
+           family={Shanbhag},
+           familyi={S\bibinitperiod},
+           given={Chandan},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{218dd48957cba91b0f35919afb619b5b}
+      \strng{fullhash}{b820c9065dad62014e153ded743778c9}
+      \strng{bibnamehash}{b820c9065dad62014e153ded743778c9}
+      \strng{authorbibnamehash}{b820c9065dad62014e153ded743778c9}
+      \strng{authornamehash}{218dd48957cba91b0f35919afb619b5b}
+      \strng{authorfullhash}{b820c9065dad62014e153ded743778c9}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Modern Internet services are often implemented as complex, large-scale distributed systems. These applications are constructed from collections of software modules that may be developed by different teams, perhaps in different programming languages, and could span many thousands of machines across multiple physical facilities. Tools that aid in understanding system behavior and reasoning about performance issues are invaluable in such an environment. Here we introduce the design of Dapper, Googles production distributed systems tracing infrastructure, and describe how our design goals of low overhead, application-level transparency, and ubiquitous deployment on a very large scale system were met. Dapper shares conceptual similarities with other tracing systems, particularly Magpie 3 and X-Trace 12, but certain design choices were made that have been key to its success in our environment, such as the use of sampling and restricting the instrumentation to a rather small number of common libraries. The main goal of this paper is to report on our experience building, deploying and using the system for over two years, since Dappers foremost measure of success has been its usefulness to developer and operations teams. Dapper began as a self-contained tracing tool but evolved into a monitoring platform which has enabled the creation of many different tools, some of which were not anticipated by its designers. We describe a few of the analysis tools that have been built using Dapper, share statistics about its usage within Google, present some example use cases, and discuss lessons learned so far.}
+      \field{booktitle}{Google Technical Report dapper-2010-1}
+      \field{number}{April}
+      \field{title}{{Dapper, a Large-Scale Distributed Systems Tracing Infrastructure}}
+      \field{type}{techreport}
+      \field{year}{2010}
+      \field{pages}{14}
+      \range{pages}{1}
+      \verb{file}
+      \verb ::
+      \endverb
+      \verb{urlraw}
+      \verb https://static.googleusercontent.com/media/research.google.com/pt-PT//archive/papers/dapper-2010-1.pdf https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/36356.pdf
+      \endverb
+      \verb{url}
+      \verb https://static.googleusercontent.com/media/research.google.com/pt-PT//archive/papers/dapper-2010-1.pdf%20https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/36356.pdf
+      \endverb
+    \endentry
+    \entry{open_tracing_data_model_specification}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=685386d2a990254ce0b6e8b676a1a06a}{%
+           family={OpenTracing},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{685386d2a990254ce0b6e8b676a1a06a}
+      \strng{fullhash}{685386d2a990254ce0b6e8b676a1a06a}
+      \strng{bibnamehash}{685386d2a990254ce0b6e8b676a1a06a}
+      \strng{authorbibnamehash}{685386d2a990254ce0b6e8b676a1a06a}
+      \strng{authornamehash}{685386d2a990254ce0b6e8b676a1a06a}
+      \strng{authorfullhash}{685386d2a990254ce0b6e8b676a1a06a}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{OpenTracing Data Model Specification}}
+      \field{urlday}{10}
+      \field{urlmonth}{12}
+      \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/opentracing/specification/blob/master/specification.md
+      \endverb
+      \verb{url}
+      \verb https://github.com/opentracing/specification/blob/master/specification.md
+      \endverb
+    \endentry
+    \entry{what_is_kubernetes}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=0cb2a59444ef04aeca44654441071c35}{%
+           family={{Cloud Native Computing Foundation}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{0cb2a59444ef04aeca44654441071c35}
+      \strng{fullhash}{0cb2a59444ef04aeca44654441071c35}
+      \strng{bibnamehash}{0cb2a59444ef04aeca44654441071c35}
+      \strng{authorbibnamehash}{0cb2a59444ef04aeca44654441071c35}
+      \strng{authornamehash}{0cb2a59444ef04aeca44654441071c35}
+      \strng{authorfullhash}{0cb2a59444ef04aeca44654441071c35}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{What is Kubernetes?}}
+      \field{urlday}{29}
+      \field{urlmonth}{11}
+      \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/
+      \endverb
+      \verb{url}
+      \verb https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/
+      \endverb
+    \endentry
+    \entry{what_is_opensatck}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=7ff6cc997b141399bcdf2c338fb4031c}{%
+           family={OpenStack},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{7ff6cc997b141399bcdf2c338fb4031c}
+      \strng{fullhash}{7ff6cc997b141399bcdf2c338fb4031c}
+      \strng{bibnamehash}{7ff6cc997b141399bcdf2c338fb4031c}
+      \strng{authorbibnamehash}{7ff6cc997b141399bcdf2c338fb4031c}
+      \strng{authornamehash}{7ff6cc997b141399bcdf2c338fb4031c}
+      \strng{authorfullhash}{7ff6cc997b141399bcdf2c338fb4031c}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{What is OpenStack?}}
+      \field{urlday}{29}
+      \field{urlmonth}{11}
+      \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.openstack.org/software/
+      \endverb
+      \verb{url}
+      \verb https://www.openstack.org/software/
+      \endverb
+    \endentry
+    \entry{what_is_opentracing}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=b9bdf471d6d9e329763891076f924b69}{%
+           family={OpenTracing.io},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{b9bdf471d6d9e329763891076f924b69}
+      \strng{fullhash}{b9bdf471d6d9e329763891076f924b69}
+      \strng{bibnamehash}{b9bdf471d6d9e329763891076f924b69}
+      \strng{authorbibnamehash}{b9bdf471d6d9e329763891076f924b69}
+      \strng{authornamehash}{b9bdf471d6d9e329763891076f924b69}
+      \strng{authorfullhash}{b9bdf471d6d9e329763891076f924b69}
+      \field{extraname}{2}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{What is OpenTracing?}}
+      \field{urlday}{29}
+      \field{urlmonth}{11}
+      \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://opentracing.io/docs/overview/what-is-tracing/
+      \endverb
+      \verb{url}
+      \verb https://opentracing.io/docs/overview/what-is-tracing/
+      \endverb
+    \endentry
+    \entry{what_is_opencensus}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=7b568e72d25af32b0cec03e49cbf3f70}{%
+           family={{Google LLC}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{7b568e72d25af32b0cec03e49cbf3f70}
+      \strng{fullhash}{7b568e72d25af32b0cec03e49cbf3f70}
+      \strng{bibnamehash}{7b568e72d25af32b0cec03e49cbf3f70}
+      \strng{authorbibnamehash}{7b568e72d25af32b0cec03e49cbf3f70}
+      \strng{authornamehash}{7b568e72d25af32b0cec03e49cbf3f70}
+      \strng{authorfullhash}{7b568e72d25af32b0cec03e49cbf3f70}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{What is OpenCensus?}}
+      \field{urlday}{29}
+      \field{urlmonth}{11}
+      \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://opencensus.io/
+      \endverb
+      \verb{url}
+      \verb https://opencensus.io/
+      \endverb
+    \endentry
+    \entry{graph_standard_definition}{book}{}
+      \name{author}{2}{}{%
+        {{hash=6a9c16ef79ae932cd7e8bc985da5a937}{%
+           family={Sedgewick},
+           familyi={S\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+        {{hash=e1a92f1c9f96cee95b961648633c39f3}{%
+           family={Wayne},
+           familyi={W\bibinitperiod},
+           given={Kevin},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{edfb19f5da0b049e901748a2f782f877}
+      \strng{fullhash}{edfb19f5da0b049e901748a2f782f877}
+      \strng{bibnamehash}{edfb19f5da0b049e901748a2f782f877}
+      \strng{authorbibnamehash}{edfb19f5da0b049e901748a2f782f877}
+      \strng{authornamehash}{edfb19f5da0b049e901748a2f782f877}
+      \strng{authorfullhash}{edfb19f5da0b049e901748a2f782f877}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Algorithms, 4th Edition - Graphs}}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://algs4.cs.princeton.edu/42digraph/
+      \endverb
+      \verb{url}
+      \verb https://algs4.cs.princeton.edu/42digraph/
+      \endverb
+    \endentry
+    \entry{graph_database_definition}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{%
+           family={Wikipedia},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
+      \strng{bibnamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authorbibnamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authornamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authorfullhash}{9c677286866aad38f8e9b660f5411814}
+      \field{extraname}{3}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Graph database}}
+      \field{urlday}{15}
+      \field{urlmonth}{10}
+      \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/wiki/Graph{\_}database
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/Graph%7B%5C_%7Ddatabase
+      \endverb
+    \endentry
+    \entry{time_series_database_definition}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{%
+           family={Wikipedia},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
+      \strng{bibnamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authorbibnamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authornamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authorfullhash}{9c677286866aad38f8e9b660f5411814}
+      \field{extraname}{4}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Time series database}}
+      \field{urlday}{11}
+      \field{urlmonth}{12}
+      \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/wiki/Time{\_}series{\_}database
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/Time%7B%5C_%7Dseries%7B%5C_%7Ddatabase
+      \endverb
+    \endentry
+    \entry{time_series_databases_explained}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=aeaf5074e9f38f1268187fc89e1e8d54}{%
+           family={InfluxData},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{aeaf5074e9f38f1268187fc89e1e8d54}
+      \strng{fullhash}{aeaf5074e9f38f1268187fc89e1e8d54}
+      \strng{bibnamehash}{aeaf5074e9f38f1268187fc89e1e8d54}
+      \strng{authorbibnamehash}{aeaf5074e9f38f1268187fc89e1e8d54}
+      \strng{authornamehash}{aeaf5074e9f38f1268187fc89e1e8d54}
+      \strng{authorfullhash}{aeaf5074e9f38f1268187fc89e1e8d54}
+      \field{extraname}{1}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Time Series Database (TSDB) Explained}}
+      \field{urlday}{11}
+      \field{urlmonth}{12}
+      \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.influxdata.com/time-series-database/
+      \endverb
+      \verb{url}
+      \verb https://www.influxdata.com/time-series-database/
+      \endverb
+    \endentry
+    \entry{mastering_aiops}{unpublished}{}
+      \name{author}{3}{}{%
+        {{hash=9b0e02ca1b9793e1c1e11f1a85d4d177}{%
+           family={Nedelkoski},
+           familyi={N\bibinitperiod},
+           given={Sahso},
+           giveni={S\bibinitperiod}}}%
+        {{hash=79cb56728143ec2d4b06b789b3d7e3ab}{%
+           family={Cardoso},
+           familyi={C\bibinitperiod},
+           given={Jorge},
+           giveni={J\bibinitperiod}}}%
+        {{hash=8ef7694bfbbf1ae7761bd3c14390818c}{%
+           family={Kao},
+           familyi={K\bibinitperiod},
+           given={Odej},
+           giveni={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{543b9b015ac8599983ed70336aef0950}
+      \strng{fullhash}{543b9b015ac8599983ed70336aef0950}
+      \strng{bibnamehash}{543b9b015ac8599983ed70336aef0950}
+      \strng{authorbibnamehash}{543b9b015ac8599983ed70336aef0950}
+      \strng{authornamehash}{543b9b015ac8599983ed70336aef0950}
+      \strng{authorfullhash}{543b9b015ac8599983ed70336aef0950}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Anomaly Detection and Classification using Distributed Tracing and Deep Learning}}
+      \field{year}{2018}
+      \field{pages}{10}
+      \range{pages}{1}
+      \verb{file}
+      \verb :home/andrepbento/Downloads/PID5812437.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://pt.slideshare.net/JorgeCardoso4/mastering-aiops-with-deep-learning
+      \endverb
+      \verb{url}
+      \verb https://pt.slideshare.net/JorgeCardoso4/mastering-aiops-with-deep-learning
+      \endverb
+    \endentry
+    \entry{anomaly_detection_zipkin_tracing_data}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=be6f1b6df7f1ddfafad18806238fa391}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{be6f1b6df7f1ddfafad18806238fa391}
+      \strng{fullhash}{be6f1b6df7f1ddfafad18806238fa391}
+      \strng{bibnamehash}{be6f1b6df7f1ddfafad18806238fa391}
+      \strng{authorbibnamehash}{be6f1b6df7f1ddfafad18806238fa391}
+      \strng{authornamehash}{be6f1b6df7f1ddfafad18806238fa391}
+      \strng{authorfullhash}{be6f1b6df7f1ddfafad18806238fa391}
+      \field{extraname}{1}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{At Salesforce, we use Zipkin to perform distributed tracing for microservices. The Zipkin tracing data (called span) can provide performance insights in both production monitoring and pre-production testing. However, the current Zipkin open source instrumentation and UI offers only primitive data tracing functionality and does not have in-depth performance analysis of the span data. The purpose of this project is to use machine learning approach for deep analysis of span data. The data we use in this study is functional and performance tests in pre-production staging environment. Several potential network bottlenecks, microservices performance issues were identified in our studies. Additionally, we also inspected the current coverage of our Zipkin instrumentation.}
+      \field{title}{{Anomaly Detection in Zipkin Trace Data}}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://engineering.salesforce.com/anomaly-detection-in-zipkin-trace-data-87c8a2ded8a1
+      \endverb
+      \verb{url}
+      \verb https://engineering.salesforce.com/anomaly-detection-in-zipkin-trace-data-87c8a2ded8a1
+      \endverb
+    \endentry
+    \entry{analysisng_distributed_trace_data}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=199a59af50161791e6e1cd73ae03aa72}{%
+           family={Herr},
+           familyi={H\bibinitperiod},
+           given={Brittany},
+           giveni={B\bibinitperiod}}}%
+        {{hash=4145b7ab904e3376275483636d1d5618}{%
+           family={Abbas},
+           familyi={A\bibinitperiod},
+           given={Naoman},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{ff495a4a78769a59b597657de0e1b014}
+      \strng{fullhash}{ff495a4a78769a59b597657de0e1b014}
+      \strng{bibnamehash}{ff495a4a78769a59b597657de0e1b014}
+      \strng{authorbibnamehash}{ff495a4a78769a59b597657de0e1b014}
+      \strng{authornamehash}{ff495a4a78769a59b597657de0e1b014}
+      \strng{authorfullhash}{ff495a4a78769a59b597657de0e1b014}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Analyzing distributed trace data}}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://medium.com/@Pinterest{\_}Engineering/analyzing-distributed-trace-data-6aae58919949
+      \endverb
+      \verb{url}
+      \verb https://medium.com/@Pinterest%7B%5C_%7DEngineering/analyzing-distributed-trace-data-6aae58919949
+      \endverb
+    \endentry
+    \entry{jaeger_github}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=a454b8337e8fbaf1af96526cb15fa339}{%
+           family={JaegerTracing},
+           familyi={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{a454b8337e8fbaf1af96526cb15fa339}
+      \strng{fullhash}{a454b8337e8fbaf1af96526cb15fa339}
+      \strng{bibnamehash}{a454b8337e8fbaf1af96526cb15fa339}
+      \strng{authorbibnamehash}{a454b8337e8fbaf1af96526cb15fa339}
+      \strng{authornamehash}{a454b8337e8fbaf1af96526cb15fa339}
+      \strng{authorfullhash}{a454b8337e8fbaf1af96526cb15fa339}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Jaeger GitHub}}
+      \field{urlday}{10}
+      \field{urlmonth}{12}
+      \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/jaegertracing/jaeger
+      \endverb
+      \verb{url}
+      \verb https://github.com/jaegertracing/jaeger
+      \endverb
+    \endentry
+    \entry{zipkin_github}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=69a893615341d38eb0ff82a3d3547a87}{%
+           family={OpenZipkin},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{69a893615341d38eb0ff82a3d3547a87}
+      \strng{fullhash}{69a893615341d38eb0ff82a3d3547a87}
+      \strng{bibnamehash}{69a893615341d38eb0ff82a3d3547a87}
+      \strng{authorbibnamehash}{69a893615341d38eb0ff82a3d3547a87}
+      \strng{authornamehash}{69a893615341d38eb0ff82a3d3547a87}
+      \strng{authorfullhash}{69a893615341d38eb0ff82a3d3547a87}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Zipkin Repository}}
+      \field{urlday}{10}
+      \field{urlmonth}{12}
+      \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/openzipkin/zipkin
+      \endverb
+      \verb{url}
+      \verb https://github.com/openzipkin/zipkin
+      \endverb
+    \endentry
+    \entry{apache_giraph}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=8b499b5be8914246b406785e1327dbb3}{%
+           family={{Apache Software Foundation}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{8b499b5be8914246b406785e1327dbb3}
+      \strng{fullhash}{8b499b5be8914246b406785e1327dbb3}
+      \strng{bibnamehash}{8b499b5be8914246b406785e1327dbb3}
+      \strng{authorbibnamehash}{8b499b5be8914246b406785e1327dbb3}
+      \strng{authornamehash}{8b499b5be8914246b406785e1327dbb3}
+      \strng{authorfullhash}{8b499b5be8914246b406785e1327dbb3}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Apache Giraph}}
+      \field{urlday}{3}
+      \field{urlmonth}{12}
+      \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://giraph.apache.org/
+      \endverb
+      \verb{url}
+      \verb http://giraph.apache.org/
+      \endverb
+    \endentry
+    \entry{ligra_graph_processing_framework}{unpublished}{}
+      \name{author}{2}{}{%
+        {{hash=c8ace46c74c6e208ab806cbfab00ecad}{%
+           family={Shun},
+           familyi={S\bibinitperiod},
+           given={Julian},
+           giveni={J\bibinitperiod}}}%
+        {{hash=14a27cb3652854f74c4942f51299d35e}{%
+           family={Blelloch},
+           familyi={B\bibinitperiod},
+           given={Guy\bibnamedelima E.},
+           giveni={G\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Carnegie Mellon University}%
+      }
+      \list{location}{1}{%
+        {Pittsburgh}%
+      }
+      \strng{namehash}{82841d742ff19c107634449017b2f7d1}
+      \strng{fullhash}{82841d742ff19c107634449017b2f7d1}
+      \strng{bibnamehash}{82841d742ff19c107634449017b2f7d1}
+      \strng{authorbibnamehash}{82841d742ff19c107634449017b2f7d1}
+      \strng{authornamehash}{82841d742ff19c107634449017b2f7d1}
+      \strng{authorfullhash}{82841d742ff19c107634449017b2f7d1}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{There has been significant recent interest in parallel frameworks for processing graphs due to their applicability in studying social networks, the Web graph, networks in biology, and unstructured meshes in scientific simulation. Due to the desire to process large graphs, these systems have emphasized the ability to run on distributed memory machines. Today, however, a single multicore server can support more than a terabyte of memory, which can fit graphs with tens or even hundreds of billions of edges. Furthermore, for graph algorithms, shared-memory multicores are generally significantly more efficient on a per core, per dollar, and per joule basis than distributed memory systems, and shared-memory algorithms tend to be simpler than their distributed counterparts. In this paper, we present a lightweight graph processing framework that is specific for shared-memory parallel/multicore machines, which makes graph traversal algorithms easy to write. The framework has two very simple routines, one for mapping over edges and one for mapping over vertices. Our routines can be applied to any subset of the vertices, which makes the framework useful for many graph traversal algorithms that operate on subsets of the vertices. Based on recent ideas used in a very fast algorithm for breadth-first search (BFS), our routines automatically adapt to the density of vertex sets. We implement several algorithms in this framework, including BFS, graph radii estimation, graph connectivity, betweenness centrality, PageRank and single-source shortest paths. Our algorithms expressed using this framework are very simple and concise, and perform almost as well as highly optimized code. Furthermore, they get good speedups on a 40-core machine and are significantly more efficient than previously reported results using graph frameworks on machines with many more cores.}
+      \field{title}{{Ligra: A Lightweight Graph Processing Framework for Shared Memory}}
+      \verb{urlraw}
+      \verb https://www.cs.cmu.edu/{~}jshun/ligra.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.cs.cmu.edu/%7B~%7Djshun/ligra.pdf
+      \endverb
+      \keyw{Graph Algorithms,Parallel Programming,Shared Memory}
+    \endentry
+    \entry{networkx}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=460a12083578164303a067f143b44ffc}{%
+           family={developers},
+           familyi={d\bibinitperiod},
+           given={NetworkX},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{460a12083578164303a067f143b44ffc}
+      \strng{fullhash}{460a12083578164303a067f143b44ffc}
+      \strng{bibnamehash}{460a12083578164303a067f143b44ffc}
+      \strng{authorbibnamehash}{460a12083578164303a067f143b44ffc}
+      \strng{authornamehash}{460a12083578164303a067f143b44ffc}
+      \strng{authorfullhash}{460a12083578164303a067f143b44ffc}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{NetworkX}}
+      \field{urlday}{3}
+      \field{urlmonth}{12}
+      \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://networkx.github.io/
+      \endverb
+      \verb{url}
+      \verb https://networkx.github.io/
+      \endverb
+    \endentry
+    \entry{software_license}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{%
+           family={Wikipedia},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
+      \strng{bibnamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authorbibnamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authornamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authorfullhash}{9c677286866aad38f8e9b660f5411814}
+      \field{extraname}{5}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Software License}}
+      \field{urlday}{16}
+      \field{urlmonth}{10}
+      \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/wiki/Software{\_}license
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/Software%7B%5C_%7Dlicense
+      \endverb
+    \endentry
+    \entry{graph_data_management_systems}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=eb03784b6804005bd3f2a7e0aa45b70a}{%
+           family={Deshpande},
+           familyi={D\bibinitperiod},
+           given={Amol},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{eb03784b6804005bd3f2a7e0aa45b70a}
+      \strng{fullhash}{eb03784b6804005bd3f2a7e0aa45b70a}
+      \strng{bibnamehash}{eb03784b6804005bd3f2a7e0aa45b70a}
+      \strng{authorbibnamehash}{eb03784b6804005bd3f2a7e0aa45b70a}
+      \strng{authornamehash}{eb03784b6804005bd3f2a7e0aa45b70a}
+      \strng{authorfullhash}{eb03784b6804005bd3f2a7e0aa45b70a}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Surveying the Landscape of Graph Data Management Systems}}
+      \field{urlday}{24}
+      \field{urlmonth}{11}
+      \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://medium.com/@amolumd/graph-data-management-systems-f679b60dd9e0
+      \endverb
+      \verb{url}
+      \verb https://medium.com/@amolumd/graph-data-management-systems-f679b60dd9e0
+      \endverb
+    \endentry
+    \entry{arangodb_documentation}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=055896cf3c1b837e4771f49aa2660e17}{%
+           family={{ArangoDB Inc.}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{055896cf3c1b837e4771f49aa2660e17}
+      \strng{fullhash}{055896cf3c1b837e4771f49aa2660e17}
+      \strng{bibnamehash}{055896cf3c1b837e4771f49aa2660e17}
+      \strng{authorbibnamehash}{055896cf3c1b837e4771f49aa2660e17}
+      \strng{authornamehash}{055896cf3c1b837e4771f49aa2660e17}
+      \strng{authorfullhash}{055896cf3c1b837e4771f49aa2660e17}
+      \field{extraname}{1}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{ArangoDB Documentation}}
+      \field{urlday}{16}
+      \field{urlmonth}{10}
+      \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.arangodb.com/documentation/
+      \endverb
+      \verb{url}
+      \verb https://www.arangodb.com/documentation/
+      \endverb
+    \endentry
+    \entry{facebook_tao_article}{unpublished}{}
+      \name{author}{15}{}{%
+        {{hash=3e63cc3e4fe6a98bb7f3ac113a7320d4}{%
+           family={Bronson},
+           familyi={B\bibinitperiod},
+           given={Nathan},
+           giveni={N\bibinitperiod}}}%
+        {{hash=60812832b3e1bc862afeaebde75b8bce}{%
+           family={Amsden},
+           familyi={A\bibinitperiod},
+           given={Zach},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=84281e77d384faacef6abde22bac119a}{%
+           family={Cabrera},
+           familyi={C\bibinitperiod},
+           given={George},
+           giveni={G\bibinitperiod}}}%
+        {{hash=782056105be2179cdb6bfc94333821c5}{%
+           family={Chakka},
+           familyi={C\bibinitperiod},
+           given={Prasad},
+           giveni={P\bibinitperiod}}}%
+        {{hash=0acd2cb6a3900e1febc46998281651c3}{%
+           family={Dimov},
+           familyi={D\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=493e9733876fdcf2d4b51aa68a41f8c3}{%
+           family={Ding},
+           familyi={D\bibinitperiod},
+           given={Hui},
+           giveni={H\bibinitperiod}}}%
+        {{hash=cf7895c6feb7d902069f1e519ef96139}{%
+           family={Ferris},
+           familyi={F\bibinitperiod},
+           given={Jack},
+           giveni={J\bibinitperiod}}}%
+        {{hash=43e9b05e39a90ff32a2c36ccf25b2441}{%
+           family={Giardullo},
+           familyi={G\bibinitperiod},
+           given={Anthony},
+           giveni={A\bibinitperiod}}}%
+        {{hash=f3bba05d35106eac896d92d6fbbe2997}{%
+           family={Kulkarni},
+           familyi={K\bibinitperiod},
+           given={Sachin},
+           giveni={S\bibinitperiod}}}%
+        {{hash=e2f7b8306fe9f0a70a0ca8f97e705982}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Harry},
+           giveni={H\bibinitperiod}}}%
+        {{hash=180476d8a45f96c920adda001bb4fdf9}{%
+           family={Marchukov},
+           familyi={M\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+        {{hash=45586258f94e15ceb7e6abce66980805}{%
+           family={Petrov},
+           familyi={P\bibinitperiod},
+           given={Dmitri},
+           giveni={D\bibinitperiod}}}%
+        {{hash=9c3f60d77d2f245cc2522ccb7b666a0c}{%
+           family={Puzar},
+           familyi={P\bibinitperiod},
+           given={Lovro},
+           giveni={L\bibinitperiod}}}%
+        {{hash=0b0b507e6e4b3350d8de60f59b6c36e4}{%
+           family={Song},
+           familyi={S\bibinitperiod},
+           given={Yee\bibnamedelima Jiun},
+           giveni={Y\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=298d3ae82f8387009f7cd24871eed0f3}{%
+           family={Venkataramani},
+           familyi={V\bibinitperiod},
+           given={Venkat},
+           giveni={V\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Facebook, Inc.}%
+      }
+      \strng{namehash}{00b8dc441c3e2225e9b8d886a7b72006}
+      \strng{fullhash}{0835a78526bf4af53aac9913f79de334}
+      \strng{bibnamehash}{0835a78526bf4af53aac9913f79de334}
+      \strng{authorbibnamehash}{0835a78526bf4af53aac9913f79de334}
+      \strng{authornamehash}{00b8dc441c3e2225e9b8d886a7b72006}
+      \strng{authorfullhash}{0835a78526bf4af53aac9913f79de334}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We introduce a simple data model and API tailored for serving the social graph, and TAO, an implementation of this model. TAO is a geographically distributed data store that provides efficient and timely access to the social graph for Facebook's demanding workload using a fixed set of queries. It is deployed at Facebook, replacing memcache for many data types that fit its model. The system runs on thousands of machines, is widely distributed, and provides access to many petabytes of data. TAO can process a billion reads and millions of writes each second.}
+      \field{title}{{TAO: Facebook's Distributed Data Store for the Social Graph}}
+      \field{pages}{12}
+      \range{pages}{1}
+      \verb{urlraw}
+      \verb https://cs.uwaterloo.ca/{~}brecht/courses/854-Emerging-2014/readings/data-store/tao-facebook-distributed-datastore-atc-2013.pdf
+      \endverb
+      \verb{url}
+      \verb https://cs.uwaterloo.ca/%7B~%7Dbrecht/courses/854-Emerging-2014/readings/data-store/tao-facebook-distributed-datastore-atc-2013.pdf
+      \endverb
+    \endentry
+    \entry{neo4j_documentation}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=9025132451e32fdc1886e48c5e18dd2b}{%
+           family={{Neo4J Inc.}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{9025132451e32fdc1886e48c5e18dd2b}
+      \strng{fullhash}{9025132451e32fdc1886e48c5e18dd2b}
+      \strng{bibnamehash}{9025132451e32fdc1886e48c5e18dd2b}
+      \strng{authorbibnamehash}{9025132451e32fdc1886e48c5e18dd2b}
+      \strng{authornamehash}{9025132451e32fdc1886e48c5e18dd2b}
+      \strng{authorfullhash}{9025132451e32fdc1886e48c5e18dd2b}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{No Title}}
+      \field{urlday}{16}
+      \field{urlmonth}{10}
+      \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://neo4j.com/docs/
+      \endverb
+      \verb{url}
+      \verb https://neo4j.com/docs/
+      \endverb
+    \endentry
+    \entry{acid_definition}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{%
+           family={Wikipedia},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
+      \strng{bibnamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authorbibnamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authornamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authorfullhash}{9c677286866aad38f8e9b660f5411814}
+      \field{extraname}{6}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{ACID(Computer Science)}}
+      \field{urlday}{16}
+      \field{urlmonth}{10}
+      \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/wiki/ACID{\_}(computer{\_}science)
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/ACID%7B%5C_%7D(computer%7B%5C_%7Dscience)
+      \endverb
+    \endentry
+    \entry{neo4j_scalable}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=e152b4a3a78aa8f4f99e7db7ade1b221}{%
+           family={Gundy},
+           familyi={G\bibinitperiod},
+           given={Kevin\bibnamedelima Van},
+           giveni={K\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \strng{namehash}{e152b4a3a78aa8f4f99e7db7ade1b221}
+      \strng{fullhash}{e152b4a3a78aa8f4f99e7db7ade1b221}
+      \strng{bibnamehash}{e152b4a3a78aa8f4f99e7db7ade1b221}
+      \strng{authorbibnamehash}{e152b4a3a78aa8f4f99e7db7ade1b221}
+      \strng{authornamehash}{e152b4a3a78aa8f4f99e7db7ade1b221}
+      \strng{authorfullhash}{e152b4a3a78aa8f4f99e7db7ade1b221}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Infographic: Understanding Scalability with Neo4j}}
+      \field{urlday}{15}
+      \field{urlmonth}{12}
+      \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://neo4j.com/blog/neo4j-scalability-infographic/
+      \endverb
+      \verb{url}
+      \verb https://neo4j.com/blog/neo4j-scalability-infographic/
+      \endverb
+    \endentry
+    \entry{arangodb_vs_ne4j}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=055896cf3c1b837e4771f49aa2660e17}{%
+           family={{ArangoDB Inc.}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{055896cf3c1b837e4771f49aa2660e17}
+      \strng{fullhash}{055896cf3c1b837e4771f49aa2660e17}
+      \strng{bibnamehash}{055896cf3c1b837e4771f49aa2660e17}
+      \strng{authorbibnamehash}{055896cf3c1b837e4771f49aa2660e17}
+      \strng{authornamehash}{055896cf3c1b837e4771f49aa2660e17}
+      \strng{authorfullhash}{055896cf3c1b837e4771f49aa2660e17}
+      \field{extraname}{2}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{What you can't do with Neo4j}}
+      \field{urlday}{15}
+      \field{urlmonth}{12}
+      \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.arangodb.com/why-arangodb/arangodb-vs-neo4j/
+      \endverb
+      \verb{url}
+      \verb https://www.arangodb.com/why-arangodb/arangodb-vs-neo4j/
+      \endverb
+    \endentry
+    \entry{arangodb_smart_graphs}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=055896cf3c1b837e4771f49aa2660e17}{%
+           family={{ArangoDB Inc.}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{055896cf3c1b837e4771f49aa2660e17}
+      \strng{fullhash}{055896cf3c1b837e4771f49aa2660e17}
+      \strng{bibnamehash}{055896cf3c1b837e4771f49aa2660e17}
+      \strng{authorbibnamehash}{055896cf3c1b837e4771f49aa2660e17}
+      \strng{authornamehash}{055896cf3c1b837e4771f49aa2660e17}
+      \strng{authorfullhash}{055896cf3c1b837e4771f49aa2660e17}
+      \field{extraname}{3}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{ArangoDB Enterprise: SmartGraphs}}
+      \field{urlday}{15}
+      \field{urlmonth}{12}
+      \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.arangodb.com/why-arangodb/arangodb-enterprise/arangodb-enterprise-smart-graphs/
+      \endverb
+      \verb{url}
+      \verb https://www.arangodb.com/why-arangodb/arangodb-enterprise/arangodb-enterprise-smart-graphs/
+      \endverb
+    \endentry
+    \entry{tsdb_ranking}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=6f6eec66712995f95510d292166d6a26}{%
+           family={DB-Engines.com},
+           familyi={D\bibinithyphendelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{6f6eec66712995f95510d292166d6a26}
+      \strng{fullhash}{6f6eec66712995f95510d292166d6a26}
+      \strng{bibnamehash}{6f6eec66712995f95510d292166d6a26}
+      \strng{authorbibnamehash}{6f6eec66712995f95510d292166d6a26}
+      \strng{authornamehash}{6f6eec66712995f95510d292166d6a26}
+      \strng{authorfullhash}{6f6eec66712995f95510d292166d6a26}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Time-Series DBMS Ranking}}
+      \field{urlday}{9}
+      \field{urlmonth}{1}
+      \field{urlyear}{2019}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://db-engines.com/en/ranking{\_}trend/time+series+dbms
+      \endverb
+      \verb{url}
+      \verb https://db-engines.com/en/ranking%7B%5C_%7Dtrend/time+series+dbms
+      \endverb
+    \endentry
+    \entry{influxdb}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=aeaf5074e9f38f1268187fc89e1e8d54}{%
+           family={InfluxData},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{aeaf5074e9f38f1268187fc89e1e8d54}
+      \strng{fullhash}{aeaf5074e9f38f1268187fc89e1e8d54}
+      \strng{bibnamehash}{aeaf5074e9f38f1268187fc89e1e8d54}
+      \strng{authorbibnamehash}{aeaf5074e9f38f1268187fc89e1e8d54}
+      \strng{authornamehash}{aeaf5074e9f38f1268187fc89e1e8d54}
+      \strng{authorfullhash}{aeaf5074e9f38f1268187fc89e1e8d54}
+      \field{extraname}{2}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{InfluxDB GitHub}}
+      \field{urlday}{12}
+      \field{urlmonth}{12}
+      \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/influxdata/influxdb
+      \endverb
+      \verb{url}
+      \verb https://github.com/influxdata/influxdb
+      \endverb
+    \endentry
+    \entry{opentsdb}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=41afc14f55b4b8c6a7dc7fb9652f0c5f}{%
+           family={OpenTSDB},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{41afc14f55b4b8c6a7dc7fb9652f0c5f}
+      \strng{fullhash}{41afc14f55b4b8c6a7dc7fb9652f0c5f}
+      \strng{bibnamehash}{41afc14f55b4b8c6a7dc7fb9652f0c5f}
+      \strng{authorbibnamehash}{41afc14f55b4b8c6a7dc7fb9652f0c5f}
+      \strng{authornamehash}{41afc14f55b4b8c6a7dc7fb9652f0c5f}
+      \strng{authorfullhash}{41afc14f55b4b8c6a7dc7fb9652f0c5f}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{OpenTSDB}}
+      \field{urlday}{12}
+      \field{urlmonth}{12}
+      \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/OpenTSDB/opentsdb
+      \endverb
+      \verb{url}
+      \verb https://github.com/OpenTSDB/opentsdb
+      \endverb
+    \endentry
+    \entry{influxdb_vs_opentsdb}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=a262f6098cf41d7b77f531d7819a7246}{%
+           family={Churilo},
+           familyi={C\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{a262f6098cf41d7b77f531d7819a7246}
+      \strng{fullhash}{a262f6098cf41d7b77f531d7819a7246}
+      \strng{bibnamehash}{a262f6098cf41d7b77f531d7819a7246}
+      \strng{authorbibnamehash}{a262f6098cf41d7b77f531d7819a7246}
+      \strng{authornamehash}{a262f6098cf41d7b77f531d7819a7246}
+      \strng{authorfullhash}{a262f6098cf41d7b77f531d7819a7246}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{InfluxDB Markedly Outperforms OpenTSDB in Time Series Data {\&} Metrics Benchmark}}
+      \field{urlday}{12}
+      \field{urlmonth}{12}
+      \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.influxdata.com/blog/influxdb-markedly-outperforms-opentsdb-in-time-series-data-metrics-benchmark/
+      \endverb
+      \verb{url}
+      \verb https://www.influxdata.com/blog/influxdb-markedly-outperforms-opentsdb-in-time-series-data-metrics-benchmark/
+      \endverb
+    \endentry
+    \entry{kanban_board}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{%
+           family={Wikipedia},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
+      \strng{bibnamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authorbibnamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authornamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authorfullhash}{9c677286866aad38f8e9b660f5411814}
+      \field{extraname}{7}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Kanban Board}}
+      \field{urlday}{9}
+      \field{urlmonth}{12}
+      \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/wiki/Kanban{\_}board
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/Kanban%7B%5C_%7Dboard
+      \endverb
+    \endentry
+    \entry{spans_analysis}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=be6f1b6df7f1ddfafad18806238fa391}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{be6f1b6df7f1ddfafad18806238fa391}
+      \strng{fullhash}{be6f1b6df7f1ddfafad18806238fa391}
+      \strng{bibnamehash}{be6f1b6df7f1ddfafad18806238fa391}
+      \strng{authorbibnamehash}{be6f1b6df7f1ddfafad18806238fa391}
+      \strng{authornamehash}{be6f1b6df7f1ddfafad18806238fa391}
+      \strng{authorfullhash}{be6f1b6df7f1ddfafad18806238fa391}
+      \field{extraname}{2}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{At Salesforce, we use Zipkin to perform distributed tracing for microservices. The Zipkin tracing data (called span) can provide performance insights in both production monitoring and pre-production testing. However, the current Zipkin open source instrumentation and UI offers only primitive data tracing functionality and does not have in-depth performance analysis of the span data. The purpose of this project is to use machine learning approach for deep analysis of span data. The data we use in this study is functional and performance tests in pre-production staging environment. Several potential network bottlenecks, microservices performance issues were identified in our studies. Additionally, we also inspected the current coverage of our Zipkin instrumentation.}
+      \field{title}{{Anomaly Detection in Zipkin Trace Data}}
+      \field{urlday}{11}
+      \field{urlmonth}{12}
+      \field{urlyear}{2018}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://engineering.salesforce.com/anomaly-detection-in-zipkin-trace-data-87c8a2ded8a1
+      \endverb
+      \verb{url}
+      \verb https://engineering.salesforce.com/anomaly-detection-in-zipkin-trace-data-87c8a2ded8a1
+      \endverb
+    \endentry
+    \entry{simon_browns_c4_model}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=0653a11aad687a389587e0000e0f4a13}{%
+           family={Brown},
+           familyi={B\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{0653a11aad687a389587e0000e0f4a13}
+      \strng{fullhash}{0653a11aad687a389587e0000e0f4a13}
+      \strng{bibnamehash}{0653a11aad687a389587e0000e0f4a13}
+      \strng{authorbibnamehash}{0653a11aad687a389587e0000e0f4a13}
+      \strng{authornamehash}{0653a11aad687a389587e0000e0f4a13}
+      \strng{authorfullhash}{0653a11aad687a389587e0000e0f4a13}
+      \field{extraname}{2}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{The C4 model for software architecture}}
+      \field{urlday}{12}
+      \field{urlmonth}{12}
+      \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://c4model.com/
+      \endverb
+      \verb{url}
+      \verb https://c4model.com/
+      \endverb
+    \endentry
+    \entry{networkx_speed}{unpublished}{}
+      \name{author}{5}{}{%
+        {{hash=2652f875cecda57ef117ecc2ca8b7258}{%
+           family={Hladish},
+           familyi={H\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=f1695814a696dcadd20d83b20cd6b3da}{%
+           family={Melamud},
+           familyi={M\bibinitperiod},
+           given={Eugene},
+           giveni={E\bibinitperiod}}}%
+        {{hash=397379a2447483ea5ca95f10e5668331}{%
+           family={Barrera},
+           familyi={B\bibinitperiod},
+           given={Luis\bibnamedelima Alberto},
+           giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=dde1999aef9d1a421d96d1193e64cf92}{%
+           family={Galvani},
+           familyi={G\bibinitperiod},
+           given={Alison},
+           giveni={A\bibinitperiod}}}%
+        {{hash=fb0bcbb603755ecd60e1006fdf9be845}{%
+           family={Meyers},
+           familyi={M\bibinitperiod},
+           given={Lauren\bibnamedelima Ancel},
+           giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {BMC Bioinformatics}%
+      }
+      \strng{namehash}{07c9a1f15094f0f46686aa1443b34cfb}
+      \strng{fullhash}{1e7fc60241969414343c6a09190dfe59}
+      \strng{bibnamehash}{1e7fc60241969414343c6a09190dfe59}
+      \strng{authorbibnamehash}{1e7fc60241969414343c6a09190dfe59}
+      \strng{authornamehash}{07c9a1f15094f0f46686aa1443b34cfb}
+      \strng{authorfullhash}{1e7fc60241969414343c6a09190dfe59}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Background: Contact network models have become increasingly common in epidemiology, but we lack a flexible programming framework for the generation and analysis of epidemiological contact networks and for the simulation of disease transmission through such networks. Results: Here we present EpiFire, an applications programming interface and graphical user interface implemented in C++, which includes a fast and efficient library for generating, analyzing and manipulating networks. Networkbased percolation and chain-binomial simulations of susceptible-infected-recovered disease transmission, as well as traditional non-network mass-action simulations, can be performed using EpiFire. Conclusions: EpiFire provides an open-source programming interface for the rapid development of network models with a focus in contact network epidemiology. EpiFire also provides a point-and-click interface for generating networks, conducting epidemic simulations, and creating figures. This interface is particularly useful as a pedagogical tool.}
+      \field{title}{{EpiFire: An open source C++ library and application for contact network epidemiology}}
+      \verb{file}
+      \verb :home/andrepbento/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Hladish et al. - Unknown - EpiFire An open source C library and application for contact network epidemiology.pdf:pdf
+      \endverb
+    \endentry
+    \entry{click_log_doc}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=e23448795db7eb424a91f3be1baf8443}{%
+           family={Unterwaditzer},
+           familyi={U\bibinitperiod},
+           given={Markus},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{e23448795db7eb424a91f3be1baf8443}
+      \strng{fullhash}{e23448795db7eb424a91f3be1baf8443}
+      \strng{bibnamehash}{e23448795db7eb424a91f3be1baf8443}
+      \strng{authorbibnamehash}{e23448795db7eb424a91f3be1baf8443}
+      \strng{authornamehash}{e23448795db7eb424a91f3be1baf8443}
+      \strng{authorfullhash}{e23448795db7eb424a91f3be1baf8443}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Click-log: Simple and beautiful logging}}
+      \field{urlday}{22}
+      \field{urlmonth}{12}
+      \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://click-log.readthedocs.io/en/stable/
+      \endverb
+      \verb{url}
+      \verb https://click-log.readthedocs.io/en/stable/
+      \endverb
+    \endentry
+    \entry{jsonl}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=00cc1bd44f53d80af471c2a95c0f8bcd}{%
+           family={Ward},
+           familyi={W\bibinitperiod},
+           given={Ian},
+           giveni={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{00cc1bd44f53d80af471c2a95c0f8bcd}
+      \strng{fullhash}{00cc1bd44f53d80af471c2a95c0f8bcd}
+      \strng{bibnamehash}{00cc1bd44f53d80af471c2a95c0f8bcd}
+      \strng{authorbibnamehash}{00cc1bd44f53d80af471c2a95c0f8bcd}
+      \strng{authornamehash}{00cc1bd44f53d80af471c2a95c0f8bcd}
+      \strng{authorfullhash}{00cc1bd44f53d80af471c2a95c0f8bcd}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{JSON Lines}}
+      \field{urlday}{18}
+      \field{urlmonth}{4}
+      \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://jsonlines.org/
+      \endverb
+      \verb{url}
+      \verb http://jsonlines.org/
+      \endverb
+    \endentry
+    \entry{arango_issues}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=ea29066cc800097ade981494fd5a4ef1}{%
+           family={Bento},
+           familyi={B\bibinitperiod},
+           given={Andr{é};},
+           giveni={A\bibinitperiod}}}%
+        {{hash=ea901c73c6b714a985c2f9386e54ba14}{%
+           family={Daouda},
+           familyi={D\bibinitperiod},
+           given={Tariq;},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{1338f22e7aa77c2cae045dd49530d749}
+      \strng{fullhash}{1338f22e7aa77c2cae045dd49530d749}
+      \strng{bibnamehash}{1338f22e7aa77c2cae045dd49530d749}
+      \strng{authorbibnamehash}{1338f22e7aa77c2cae045dd49530d749}
+      \strng{authornamehash}{1338f22e7aa77c2cae045dd49530d749}
+      \strng{authorfullhash}{1338f22e7aa77c2cae045dd49530d749}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{pyArango Issues}}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://github.com/ArangoDB-Community/pyArango/issues/137
+      \endverb
+      \verb{url}
+      \verb https://github.com/ArangoDB-Community/pyArango/issues/137
+      \endverb
+    \endentry
+  \enddatalist
+  \missing{graph_frameworks_performance_evaluation}
+\endrefsection
+\endinput
+

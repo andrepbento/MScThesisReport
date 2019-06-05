@@ -5,10 +5,8 @@
 
 This chapter presents the implementation process of the proposed solution explained in the previous chapter. Every step is explained taking into consideration the most important points to implement the methods. This chapter covers three main sections: First, \ref{sec:data_set} - \nameref{sec:data_set}, the data provided to perform this research is briefly exposed and analysed. Second, \ref{sec:metrics_gathering} - \nameref{sec:metrics_gathering}, the implementation of Graphy (\gls{otp}), our proposed solution to collect metrics from tracing data presented in the chapter \ref{chap:possible_solution}, is explained in detail. Finally, \ref{sec:observations_analysis} - \nameref{sec:observations_analysis}, the methods for analysis of the stored observations are presented with the respective results and answers to the research questions.
 
-
-% Data Set --------------------------------------------------------------------------------------
-\section{Data Set}
-\label{sec:data_set}
+\section{Huawei Tracing Data Set}
+\label{sec:huawei_tracing_data_set}
 
 Nothing comes from nothing, and in this project the starting point for every method developed was a data set provided by Huawei, represented by professor Jorge Cardoso. To be able to get access to this information, a NDA: Non-disclosure agreement were signed by both parts. This data set contains the results of tracing data gathered from an experimental cluster used by the company for testing purposes. In terms of time this data is a representation of two days of the systems workload, therefore two files were provided, one for each day. These files were generated in 2018-07-10 and for protection, some fields of the data set were obfuscated during the generation process.
 
@@ -99,10 +97,8 @@ To give a brief notion of how the traces and spans are spread throughout time, w
 // Maybe include here the Quality of tracing analysis and possibilities in their own analysis.
 
 
-
-% Metrics Gathering ------------------------------------------------------------------------------
-\section{Metrics Gathering}
-\label{sec:metrics_gathering}
+\section{Open Tracing Processor Component}
+\label{sec:open_tracing_processor_component}
 
 // TODO: Start by explaining how the metrics relate with the questions, and what metrics we decided to extract and were, how do we put it there.
 
@@ -134,8 +130,8 @@ to process the information presented in the data set and store it for our own an
 // Finally present the display of information in the Grafana with some prints. Refer that the lack of data in day 28. And do some observations. 
 
 % Observations Analysis --------------------------------------------------------------------------
-\section{Observations Analysis}
-\label{sec:observations_analysis}
+\section{Data Analysis Component}
+\label{sec:data_analysis_component}
 
 // TODO: Talk about Unlabeled data, the best algorithms to handle this kind of situation and how we did it.
 

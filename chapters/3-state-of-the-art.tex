@@ -33,9 +33,9 @@ Every style presented has its owns pros and throwbacks and its usages benefit fr
 
 Microservices are simple enough to understand, but very hard to master in practice. Some people tend to think that microservices architecture reduce the complexity of the overall system over the monolithic architecture, however this isn't always like this. Communication is a big challenge in the realm of microservices and with a solution that integrates lots of interactions and connections throughout the whole system, the complexity starts to rise. Adding more microservices implies adding more complexity to the solution, and we have to be sure that new microservices can scale together with our existing ones.
 
-``If you can’t manage building a monolith inside a single process, what makes you think putting network in the middle is going to help?'', Simon Brown\cite{simon_brown_microservices}.
+``If you can not manage building a monolith inside a single process, what makes you think putting network in the middle is going to help?'', Simon Brown\cite{simon_brown_microservices}.
 
-Has been said before, the implementation of a microservices architecture raises the complexity of the solution, and we need to be aware of that when we design and implement a solution based on this architectural stile. On the other side, after having the system running up, the debbug process is a lot more complex too because, instead of having a single unit to analyze, we may have hundreds or even thousands of ``micro-units'' to trace and analyze. This kind of problem takes us to an important topic, the observation and control of the system performance, taking into consideration that this system is a microservice based system.
+Has been said before, the implementation of a microservices architecture raises the complexity of the solution, and we need to be aware of that when we design and implement a solution based on this architectural stile. On the other side, after having the system running up, the debbug process is a lot more complex too because, instead of having a single unit to analyse, we may have hundreds or even thousands of ``micro-units'' to trace and analyse. This kind of problem takes us to an important topic, the observation and control of the system performance, taking into consideration that this system is a microservice based system.
 
 \subsection{Observability and Controlling Performance}
 \label{subsec:observability_and_controlling_performance}
@@ -53,7 +53,13 @@ When we want to understand the working and behaviour of a system, we need to wat
 \subsection{Distributed Tracing}
 \label{subsec:distributed_tracing}
 
-\mytodos{// TODO: Write about Distributed Tracing: - Origin; - OpenTracing; - Specification; - Why; - How}
+
+
+Google Dapper~\cite{Sigelman2010} 
+
+OpenTracing~
+
+\todo{// TODO: Write about Distributed Tracing: - Origin; - OpenTracing; - Specification; - Why; - How}
 
 \subsection{Traces and Spans}
 \label{subsec:traces_and_spans}
@@ -106,9 +112,6 @@ There are multiple types of graphs. In this term they can be undirected, where t
 
 Graphs can have many use cases, has they can model the representation of a lot of real life practical problems in the fields like physics, biology, social and information systems and for the purpose of this thesis, they are considered first class citizens.
 
-\subsection{Graph Database}
-\label{subsec:graph_database}
-
 A \gls{gdb} is ``a database that uses graph structures for semantic queries with nodes, edges and properties to represent and store data''\cite{graph_database_definition}.
 
 The composition of a \gls{gdb} is based on the mathematics graph theory, and therefore this databases uses three main components called nodes, edges, and properties. This main components are defined and explained in the following list:
@@ -119,8 +122,10 @@ The composition of a \gls{gdb} is based on the mathematics graph theory, and the
     \item Property: can be any kind of metadata attached to a certain Node or a certain Edge.
 \end{itemize}
 
-\subsection{Time Series Database}
-\label{subsec:time_series_database}
+\subsection{Time Series}
+\label{subsec:time_series}
+
+\todo{Introduce Time-Series data}
 
 A \gls{tsdb} is ``is a database optimised for time-stamped or time series data like arrays of numbers indexed by time (a date time or a date time range)''\cite{time_series_database_definition}.
 
@@ -145,14 +150,14 @@ In this section are presented three section of the existing related work for tra
 \subsection{Mastering AIOps}
 \label{subsec:mastering_aiops}
 
-\mytodos{// TODO: Explain what is done and how is done.}
+\todo{// TODO: Explain what is done and how is done.}
 
 \cite{mastering_aiops}
 
 \subsection{Anomaly Detection using Zipkin Tracing Data}
 \label{subsec:anomaly_detection_using_zipkin_tracing_data}
 
-\mytodos{// TODO: Explain what is done and how is done.}
+\todo{// TODO: Explain what is done and how is done.}
 
 \cite{anomaly_detection_zipkin_tracing_data}
 
@@ -161,14 +166,14 @@ Wei Lee was contacted by email to understand better their research focus, howeve
 \subsection{Analyzing distributed trace data}
 \label{subsec:analyzing_distributed_trace_data}
 
-\mytodos{// TODO: Explain what is done and how is done.}
+\todo{// TODO: Explain what is done and how is done.}
 
 \cite{analysisng_distributed_trace_data}
 
 \subsection{Research possible directions}
 \label{subsec:research_possible_directions}
 
-\mytodos{// TODO: Make a brief reflection about the related work.}
+\todo{// TODO: Make a brief reflection about the related work.}
 
 \section{Technologies}
 \label{sec:technologies}
@@ -218,7 +223,7 @@ This sub-section presents what are the most used and known distributed tracing t
 \end{tabularx}
 \end{table}
 
-As we can see, this kind of tools are very similar and very good for monitoring and tracing a system as they provide a bunch of pros like being opensource, dockerized, support for some well known technologies for span transport and aggregate the spans in a good representational browser user-interface. However they are always focused on span and trace lookup and presentation, and do not provide a more interesting analysis of the system, for example to determine if there is any problem related to some microservice presented in the system. This kind of work falls into the user (\gls{devops}) and he needs to perform the investigation and analyse the traces and spans with the objective of find anything wrong with them.
+As we can see, this kind of tools are very similar and very good for monitoring and tracing a system as they provide a bunch of pros like being open source, containerized, support for some well known technologies for span transport and aggregate the spans in a good representational browser user-interface. However they are always focused on span and trace lookup and presentation, and do not provide a more interesting analysis of the system, for example to determine if there is any problem related to some microservice presented in the system. This kind of work falls into the user (\gls{devops}) and he needs to perform the investigation and analyse the traces and spans with the objective of find anything wrong with them.
 
 This kind of tools can be a good starting point for the problem that we face, because they already do some work for us like grouping the data generated by the system and provide some way to visualize it. 
 
@@ -226,7 +231,6 @@ This kind of tools can be a good starting point for the problem that we face, be
 \label{subsec:graph_manipulation_and_processing_tools}
 
 Considering that we have data to be processed and manipulated, we have to be sure that we can handle it for analysis. For this purpose, and knowing that the data is a representation and an abstraction of a graph, we needed to study the frameworks available this task. The table \ref{table:graph_manipulation_and_processing_tools_comparison} presents the main technologies available at the time for graph manipulation and processing.
-
 
 \begin{table}[H]
 \caption{Graph manipulation and processing tools comparison.}

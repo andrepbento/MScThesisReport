@@ -1,3 +1,3 @@
 # Thesis Report
 
-This folder contains the [thesis report document](MScThesisReport.zip) made using `LaTeX`.
+This repository contains the report project made using `LaTeX`.

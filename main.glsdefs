@@ -1,16 +1,16 @@
-\ifglsentryexists{os}{}%
+\ifglsentryexists{api}{}%
 {%
-\gls@defglossaryentry{os}%
+\gls@defglossaryentry{api}%
 {%
-name={OS},%
-sort={OS},%
+name={API},%
+sort={API},%
 type={main},%
-first={Operating System\glsspace (OS)},%
-firstplural={Operating Systems\glsspace (OSs)},%
-text={OS},%
-plural={OSs},%
-description={Operating System},%
-descriptionplural={Operating System\acrpluralsuffix },%
+first={Application Programming Interface\glsspace (API)},%
+firstplural={Application Programming Interfaces\glsspace (APIs)},%
+text={API},%
+plural={APIs},%
+description={Application Programming Interface},%
+descriptionplural={Application Programming Interface\acrpluralsuffix },%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -19,28 +19,28 @@ user3={},%
 user4={},%
 user5={},%
 user6={},%
-long={Operating System},%
-longplural={Operating Systems},%
-short={OS},%
-shortplural={OSs},%
+long={Application Programming Interface},%
+longplural={Application Programming Interfaces},%
+short={API},%
+shortplural={APIs},%
 counter={page},%
 parent={},%
 %
 }%
 }%
-\ifglsentryexists{nyi}{}%
+\ifglsentryexists{cpu}{}%
 {%
-\gls@defglossaryentry{nyi}%
+\gls@defglossaryentry{cpu}%
 {%
-name={NYI},%
-sort={NYI},%
+name={CPU},%
+sort={CPU},%
 type={main},%
-first={Not Yet Implemented\glsspace (NYI)},%
-firstplural={Not Yet Implementeds\glsspace (NYIs)},%
-text={NYI},%
-plural={NYIs},%
-description={Not Yet Implemented},%
-descriptionplural={Not Yet Implemented\acrpluralsuffix },%
+first={Central Processing Unit\glsspace (CPU)},%
+firstplural={Central Processing Units\glsspace (CPUs)},%
+text={CPU},%
+plural={CPUs},%
+description={Central Processing Unit},%
+descriptionplural={Central Processing Unit\acrpluralsuffix },%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -49,10 +49,10 @@ user3={},%
 user4={},%
 user5={},%
 user6={},%
-long={Not Yet Implemented},%
-longplural={Not Yet Implementeds},%
-short={NYI},%
-shortplural={NYIs},%
+long={Central Processing Unit},%
+longplural={Central Processing Units},%
+short={CPU},%
+shortplural={CPUs},%
 counter={page},%
 parent={},%
 %
@@ -83,6 +83,216 @@ long={Department of Informatics Engineering},%
 longplural={Department of Informatics Engineerings},%
 short={DEI},%
 shortplural={DEIs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{devops}{}%
+{%
+\gls@defglossaryentry{devops}%
+{%
+name={DevOps},%
+sort={DevOps},%
+type={main},%
+first={Development and Operations\glsspace (DevOps)},%
+firstplural={Development and Operationss\glsspace (DevOpss)},%
+text={DevOps},%
+plural={DevOpss},%
+description={Development and Operations},%
+descriptionplural={Development and Operations\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Development and Operations},%
+longplural={Development and Operationss},%
+short={DevOps},%
+shortplural={DevOpss},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{gdb}{}%
+{%
+\gls@defglossaryentry{gdb}%
+{%
+name={GDB},%
+sort={GDB},%
+type={main},%
+first={Graph Database\glsspace (GDB)},%
+firstplural={Graph Databases\glsspace (GDBs)},%
+text={GDB},%
+plural={GDBs},%
+description={Graph Database},%
+descriptionplural={Graph Database\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Graph Database},%
+longplural={Graph Databases},%
+short={GDB},%
+shortplural={GDBs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{http}{}%
+{%
+\gls@defglossaryentry{http}%
+{%
+name={HTTP},%
+sort={HTTP},%
+type={main},%
+first={Hypertext Transfer Protocol\glsspace (HTTP)},%
+firstplural={Hypertext Transfer Protocols\glsspace (HTTPs)},%
+text={HTTP},%
+plural={HTTPs},%
+description={Hypertext Transfer Protocol},%
+descriptionplural={Hypertext Transfer Protocol\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Hypertext Transfer Protocol},%
+longplural={Hypertext Transfer Protocols},%
+short={HTTP},%
+shortplural={HTTPs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{otp}{}%
+{%
+\gls@defglossaryentry{otp}%
+{%
+name={OTP},%
+sort={OTP},%
+type={main},%
+first={OpenTracing processor\glsspace (OTP)},%
+firstplural={OpenTracing processors\glsspace (OTPs)},%
+text={OTP},%
+plural={OTPs},%
+description={OpenTracing processor},%
+descriptionplural={OpenTracing processor\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={OpenTracing processor},%
+longplural={OpenTracing processors},%
+short={OTP},%
+shortplural={OTPs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{qa}{}%
+{%
+\gls@defglossaryentry{qa}%
+{%
+name={QA},%
+sort={QA},%
+type={main},%
+first={Quality Attribute\glsspace (QA)},%
+firstplural={Quality Attributes\glsspace (QAs)},%
+text={QA},%
+plural={QAs},%
+description={Quality Attribute},%
+descriptionplural={Quality Attribute\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Quality Attribute},%
+longplural={Quality Attributes},%
+short={QA},%
+shortplural={QAs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{rpc}{}%
+{%
+\gls@defglossaryentry{rpc}%
+{%
+name={RPC},%
+sort={RPC},%
+type={main},%
+first={Remote Procedure Call\glsspace (RPC)},%
+firstplural={Remote Procedure Calls\glsspace (RPCs)},%
+text={RPC},%
+plural={RPCs},%
+description={Remote Procedure Call},%
+descriptionplural={Remote Procedure Call\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Remote Procedure Call},%
+longplural={Remote Procedure Calls},%
+short={RPC},%
+shortplural={RPCs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{tsdb}{}%
+{%
+\gls@defglossaryentry{tsdb}%
+{%
+name={TSDB},%
+sort={TSDB},%
+type={main},%
+first={Time Series Database\glsspace (TSDB)},%
+firstplural={Time Series Databases\glsspace (TSDBs)},%
+text={TSDB},%
+plural={TSDBs},%
+description={Time Series Database},%
+descriptionplural={Time Series Database\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Time Series Database},%
+longplural={Time Series Databases},%
+short={TSDB},%
+shortplural={TSDBs},%
 counter={page},%
 parent={},%
 %
