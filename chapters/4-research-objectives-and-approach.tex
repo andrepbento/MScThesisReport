@@ -1,5 +1,4 @@
 \glsresetall
-% Research Objectives and Approach ---------------------------------------------------------------
 \chapter{Research Objectives and Approach}
 \label{chap:research_objectives_and_approach}
 
@@ -9,15 +8,15 @@ The debugging process in distributed systems and microservice based systems is n
 
 To do this and narrow the problem we were facing, we decided to talk with some \gls{devops} personal and expose them the situation, with the objective to gather their main needs and ideas in mind, we putted ourselves in their perspective when talking to them to try and find what are the main difficulties when they perform their search for issues in the system in a \textit{``As a \gls{devops} i want to...''} situation. The kind of questions that were placed were like: \textit{``What are the most common issues?''}, \textit{``What are the variables involved in this kind of issues?''} and \textit{``What are the correlations between this variables and the most common issues?''}. From this discussions and conversations emerged the following eight core questions:
 
-\begin{itemize}
-    \item[\textbf{1.}] What is the neighbourhood of one service?
-    \item[\textbf{2.}] Is there any problem (Which are the associated heuristics)?
-    \item[\textbf{3.}] Is there any faults related to the system design/architecture?
-    \item[\textbf{4.}] What is the root problem, when A, B, C services are slow?
-    \item[\textbf{5.}] How are the requests coming from the client?
-    \item[\textbf{6.}] How endpoints orders distributions are done?
-    \item[\textbf{7.}] What is the behaviour of the instances?
-    \item[\textbf{8.}] What is the length of each queue in a service?
+\begin{enumerate}
+    \item What is the neighbourhood of one service?
+    \item Is there any problem (Which are the associated heuristics)?
+    \item Is there any faults related to the system design/architecture?
+    \item What is the root problem, when A, B, C services are slow?
+    \item How are the requests coming from the client?
+    \item How endpoints orders distributions are done?
+    \item What is the behaviour of the instances?
+    \item What is the length of each queue in a service?
 \end{itemize}
 
 The next step was to work on the questions presented above. We decided to split them in more concise questions, refine and filter the most relevant to define our objective, and after that, check with someone involved in the \gls{devops} field if the final questions represent some of their needs. First, to handle the information presented in this eight initial questions, we decided to create what we called a ``Project Questions Board''. This board consists on a Kanban \cite{kanban_board} style board present in the project git repository, were everyone involved in the project could access and modify it. The board was defined with four lanes: ``To refine'', ``Interesting'', ``Refined'' and ``Final Questions'', and the process were to cycle the questions through every lane, generating new ones and filtering others. After this, and to check if the final questions were really some that represented the needs of a \gls{devops}, some colleagues that work directly in the field were contacted and the questions were exposed to them. In the end, the ten questions that were produced in the final lane represented right what are some of their needs. The final questions, their corresponding description\textbf{(D)} and explanation of the expected work\textbf{(W)} that must be performed to each one are exposed bellow:

@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="proposed_work_plan_semester_1" company="" webLink="http://" view-date="2018-09-01" view-index="0" gantt-divider-location="1100" resource-divider-location="300" version="2.8.9" locale="en_GB">
+<?xml version="1.0" encoding="UTF-8"?><project name="proposed_work_plan_semester_1" company="" webLink="http://" view-date="2018-09-01" view-index="0" gantt-divider-location="553" resource-divider-location="300" version="2.8.9" locale="en_US">
     <description/>
     <view zooming-state="default:8" id="gantt-chart">
-        <field id="tpd3" name="Name" width="523" order="0"/>
-        <field id="tpd4" name="Begin date" width="251" order="1"/>
-        <field id="tpd5" name="End date" width="322" order="2"/>
+        <field id="tpd3" name="Name" width="341" order="0"/>
+        <field id="tpd4" name="Begin date" width="113" order="1"/>
+        <field id="tpd5" name="End date" width="95" order="2"/>
     </view>
     <view id="resource-table">
         <field id="0" name="Name" width="210" order="0"/>
@@ -33,26 +33,14 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="0" name="1 - Project Contextualization and Background" color="#8cb6ce" meeting="false" start="2018-09-11" duration="10" complete="0" thirdDate="2018-11-29" thirdDate-constraint="0" expand="true">
-            <depend id="26" type="2" difference="0" hardness="Strong"/>
-            <depend id="64" type="2" difference="0" hardness="Strong"/>
-        </task>
+        <task id="0" name="1 - Project Contextualization and Background" color="#8cb6ce" meeting="false" start="2018-09-11" duration="10" complete="0" thirdDate="2018-11-29" thirdDate-constraint="0" expand="true"/>
         <task id="26" name="2 - State of the Art" color="#8cb6ce" meeting="false" start="2018-09-25" duration="40" complete="0" thirdDate="2018-11-29" thirdDate-constraint="0" expand="true">
-            <depend id="2" type="2" difference="0" hardness="Strong"/>
-            <task id="64" name="2.1 - Concepts" color="#8cb6ce" meeting="false" start="2018-09-25" duration="15" complete="0" thirdDate="2018-09-25" thirdDate-constraint="0" expand="true">
-                <depend id="65" type="2" difference="0" hardness="Strong"/>
-            </task>
+            <task id="64" name="2.1 - Concepts" color="#8cb6ce" meeting="false" start="2018-09-25" duration="15" complete="0" thirdDate="2018-09-25" thirdDate-constraint="0" expand="true"/>
             <task id="65" name="2.2 - Technologies" color="#8cb6ce" meeting="false" start="2018-10-16" duration="25" complete="0" thirdDate="2018-09-25" thirdDate-constraint="0" expand="true"/>
         </task>
-        <task id="2" name="3 - Prototyping and Technologies Hands-On" color="#8cb6ce" meeting="false" start="2018-11-20" duration="10" complete="0" thirdDate="2018-11-29" thirdDate-constraint="0" expand="true">
-            <depend id="3" type="2" difference="0" hardness="Strong"/>
-            <depend id="75" type="2" difference="0" hardness="Strong"/>
-        </task>
+        <task id="2" name="3 - Prototyping and Technologies Hands-On" color="#8cb6ce" meeting="false" start="2018-11-20" duration="10" complete="0" thirdDate="2018-11-29" thirdDate-constraint="0" expand="true"/>
         <task id="3" name="4 - Solution Specification" color="#8cb6ce" meeting="false" start="2018-12-04" duration="15" complete="0" thirdDate="2018-11-29" thirdDate-constraint="0" expand="true">
-            <depend id="34" type="2" difference="0" hardness="Strong"/>
-            <task id="75" name="4.1 - Gathering Requirements" color="#8cb6ce" meeting="false" start="2018-12-04" duration="10" complete="0" thirdDate="2018-08-27" thirdDate-constraint="0" expand="true">
-                <depend id="76" type="2" difference="0" hardness="Strong"/>
-            </task>
+            <task id="75" name="4.1 - Gathering Requirements" color="#8cb6ce" meeting="false" start="2018-12-04" duration="10" complete="0" thirdDate="2018-08-27" thirdDate-constraint="0" expand="true"/>
             <task id="76" name="4.2 - Building Architecture" color="#8cb6ce" meeting="false" start="2018-12-18" duration="5" complete="0" thirdDate="2018-08-27" thirdDate-constraint="0" expand="true"/>
         </task>
         <task id="34" name="5 - Writing of Intermediary Report" color="#8cb6ce" meeting="false" start="2018-12-25" duration="20" complete="0" thirdDate="2018-09-10" thirdDate-constraint="0" expand="true"/>

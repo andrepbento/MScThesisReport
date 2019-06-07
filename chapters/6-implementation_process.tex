@@ -100,14 +100,14 @@ To give a brief notion of how the traces and spans are spread throughout time, w
 \section{Open Tracing Processor Component}
 \label{sec:open_tracing_processor_component}
 
-// TODO: Start by explaining how the metrics relate with the questions, and what metrics we decided to extract and were, how do we put it there.
+\todo{Start by explaining how the metrics relate with the questions, and what metrics we decided to extract and were, how do we put it there.
 
 Explain how to map spans into span trees.
 to process the information presented in the data set and store it for our own analysis purposes
 
 ... as explained in \ref{subsec:traces_and_spans}, each spans relates with another, in this case, by a field called parent id. After mapping the spans into trees, we end up with a list of tress, each for a specific trace, and we just have to count them. To map the spans into trees, we index it by the 
 
-// TODO: Regarding database setup and implementations, the choices were to use OpenTSDB as a Time-Series database and ArangoDB as a graph database. However, the second choice wasn't the better one, due to some lack of support and terrible \gls{api} documentation. Some issues were opened in the GitHub client \gls{api} for the programming language Python, but the answer was always that it have the expected behaviour \cite{arango_issues}. This have lead to some difficulties when implementing the component Graphs Repository, presented in Graphy API. Some difficulties were felted when trying to store graphs with custom names and setting up different type values to some data structures presented in the pyArango client API. The solution was to fetch all the API, perform some changes and use our custom pyArango client. This changes were committed for review to the original project stored on GitHub. Mitigating this kind of problems was something that was impossible to predict when choosing the Graph storing technology.
+// TODO: Regarding database setup and implementations, the choices were to use OpenTSDB as a Time-Series database and ArangoDB as a graph database. However, the second choice wasn't the better one, due to some lack of support and terrible \gls{api} documentation. Some issues were opened in the GitHub client \gls{api} for the programming language Python, but the answer was always that it have the expected behaviour \cite{arango_issues}. This have lead to some difficulties when implementing the component Graphs Repository, presented in Graphy API. Some difficulties were felted when trying to store graphs with custom names and setting up different type values to some data structures presented in the pyArango client API. The solution was to fetch all the API, perform some changes and use our custom pyArango client. This changes were committed for review to the original project stored on GitHub. Mitigating this kind of problems was something that was impossible to predict when choosing the Graph storing technology.}
 
 \begin{algorithm}[H]
 \SetAlgoLined

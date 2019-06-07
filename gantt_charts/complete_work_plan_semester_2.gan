@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="proposed_work_plan_semester_2" company="" webLink="http://" view-date="2019-01-01" view-index="0" gantt-divider-location="682" resource-divider-location="300" version="2.8.9" locale="en_US">
+    <description/>
+    <view zooming-state="default:8" id="gantt-chart">
+        <field id="tpd3" name="Name" width="447" order="0"/>
+        <field id="tpd4" name="Begin date" width="120" order="1"/>
+        <field id="tpd5" name="End date" width="96" order="2"/>
+        <option id="color.recent">
+            <![CDATA[#999999 #000000]]>
+        </option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Name" width="210" order="0"/>
+        <field id="1" name="Default role" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="238" name="1.a - Metrics collector tool (Expected)" meeting="false" start="2019-02-04" duration="65" complete="0" expand="true">
+            <task id="209" name="1.1 - Setup project (Expected)" color="#999999" meeting="false" start="2019-02-04" duration="3" complete="0" thirdDate="2018-12-03" thirdDate-constraint="0" expand="true"/>
+            <task id="210" name="1.2 - Implement Controller (Expected)" color="#999999" meeting="false" start="2019-02-07" duration="8" complete="0" thirdDate="2018-11-01" thirdDate-constraint="0" expand="true"/>
+            <task id="211" name="1.3 - Implement Comunication (Expected)" color="#999999" meeting="false" start="2019-02-19" duration="4" complete="0" thirdDate="2018-11-01" thirdDate-constraint="0" expand="true"/>
+            <task id="212" name="1.4 - Implement File IO (Expected)" color="#999999" meeting="false" start="2019-02-25" duration="3" complete="0" thirdDate="2018-10-01" thirdDate-constraint="0" expand="true"/>
+            <task id="213" name="1.5 - Setup databases (Expected)" color="#999999" meeting="false" start="2019-02-28" duration="3" complete="0" thirdDate="2019-02-01" thirdDate-constraint="0" expand="true"/>
+            <task id="214" name="1.6 - Implement database repositories (Expected)" color="#999999" meeting="false" start="2019-03-05" duration="5" complete="0" thirdDate="2019-02-01" thirdDate-constraint="0" expand="true"/>
+            <task id="215" name="1.7 - Implement Graph Processor (Expected)" color="#999999" meeting="false" start="2019-03-12" duration="8" complete="0" thirdDate="2018-12-03" thirdDate-constraint="0" expand="true"/>
+            <task id="216" name="1.8 - Implement Logging Component (Expected)" color="#999999" meeting="false" start="2019-03-22" duration="3" complete="0" thirdDate="2018-11-01" thirdDate-constraint="0" expand="true"/>
+            <task id="217" name="1.9 - Research apropriate analysis algorithms (Expected)" color="#999999" meeting="false" start="2019-03-27" duration="12" complete="0" thirdDate="2019-01-01" thirdDate-constraint="0" expand="true"/>
+            <task id="218" name="1.10 - Implement Data Analyser (Expected)" color="#999999" meeting="false" start="2019-04-12" duration="8" complete="0" thirdDate="2018-10-01" thirdDate-constraint="0" expand="true"/>
+            <task id="219" name="1.11 - Define tests to be performed (Expected)" color="#999999" meeting="false" start="2019-04-24" duration="3" complete="0" thirdDate="2019-01-01" thirdDate-constraint="0" expand="true"/>
+            <task id="220" name="1.12 - Implement Testing Component (Expected)" color="#999999" meeting="false" start="2019-04-29" duration="5" complete="0" thirdDate="2019-02-01" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="0" name="1.b - Metrics collector tool" color="#8cb6ce" meeting="false" start="2019-02-04" duration="30" complete="0" thirdDate="2018-11-29" thirdDate-constraint="0" expand="true">
+            <task id="27" name="1.1 - Setup project (Real)" color="#8cb6ce" meeting="false" start="2019-02-04" duration="3" complete="0" thirdDate="2018-12-03" thirdDate-constraint="0" expand="true"/>
+            <task id="33" name="1.2 - Implement Logging Component (Real)" color="#8cb6ce" meeting="false" start="2019-02-07" duration="1" complete="0" thirdDate="2018-11-01" thirdDate-constraint="0" expand="true"/>
+            <task id="94" name="1.3 - Setup Docker Containers (Real)" color="#8cb6ce" meeting="false" start="2019-02-08" duration="1" complete="0" thirdDate="2019-01-01" thirdDate-constraint="0" expand="true"/>
+            <task id="35" name="1.4 - Implement Controller (Real)" color="#8cb6ce" meeting="false" start="2019-02-11" duration="8" complete="0" thirdDate="2018-11-01" thirdDate-constraint="0" expand="true"/>
+            <task id="44" name="1.5 - Implement File IO (Real)" color="#8cb6ce" meeting="false" start="2019-02-21" duration="3" complete="0" thirdDate="2018-10-01" thirdDate-constraint="0" expand="true"/>
+            <task id="26" name="1.6 - Implement Processors (Real)" color="#8cb6ce" meeting="false" start="2019-02-26" duration="5" complete="0" thirdDate="2018-12-03" thirdDate-constraint="0" expand="true"/>
+            <task id="14" name="1.7 - Setup databases (Real)" color="#8cb6ce" meeting="false" start="2019-03-05" duration="3" complete="0" thirdDate="2019-02-01" thirdDate-constraint="0" expand="true"/>
+            <task id="16" name="1.8 - Implement database repositories (Real)" color="#8cb6ce" meeting="false" start="2019-03-08" duration="3" complete="0" thirdDate="2019-02-01" thirdDate-constraint="0" expand="true"/>
+            <task id="194" name="1.9 - Implement metrics storage (Real)" color="#8cb6ce" meeting="false" start="2019-03-13" duration="3" complete="0" thirdDate="2019-01-01" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="205" name="2.a - Test and evaluate results (Expected)" color="#000000" meeting="false" start="2019-05-06" duration="16" complete="0" thirdDate="2018-11-29" thirdDate-constraint="0" expand="true">
+            <task id="206" name="2.1 - Run tests (Expected)" color="#999999" meeting="false" start="2019-05-06" duration="8" complete="0" thirdDate="2019-04-29" thirdDate-constraint="0" expand="true"/>
+            <task id="207" name="2.2 - Write analysis results (Expected)" color="#999999" meeting="false" start="2019-05-16" duration="8" complete="0" thirdDate="2019-04-29" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="61" name="2.b - Restructure research questions (Real)" color="#8cb6ce" meeting="false" start="2019-03-18" duration="8" complete="0" thirdDate="2019-01-01" thirdDate-constraint="0" expand="true">
+            <task id="65" name="2.1 - Write question analysis report (Real)" color="#8cb6ce" meeting="false" start="2019-03-18" duration="5" complete="0" thirdDate="2019-03-19" thirdDate-constraint="0" expand="true"/>
+            <task id="69" name="2.2 - Report review (Real)" color="#8cb6ce" meeting="false" start="2019-03-25" duration="3" complete="0" thirdDate="2019-03-19" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="208" name="3.a - Write final report (Expected)" color="#999999" meeting="false" start="2019-05-28" duration="24" complete="0" thirdDate="2018-11-29" thirdDate-constraint="0" expand="true"/>
+        <task id="2" name="3.b - Data analysis tool (Real)" color="#8cb6ce" meeting="false" start="2019-03-28" duration="37" complete="0" thirdDate="2018-11-29" thirdDate-constraint="0" expand="true">
+            <task id="152" name="3.1 - Quality of tracing analysis (Real)" color="#8cb6ce" meeting="false" start="2019-03-28" duration="5" complete="0" thirdDate="2019-03-26" thirdDate-constraint="0" expand="true">
+                <task id="159" name="3.1.1 - Time coverability testing (Real)" color="#8cb6ce" meeting="false" start="2019-03-28" duration="3" complete="0" thirdDate="2019-03-26" thirdDate-constraint="0" expand="true"/>
+                <task id="164" name="3.1.2 - Structure testing (Real)" color="#8cb6ce" meeting="false" start="2019-04-02" duration="2" complete="0" thirdDate="2019-03-26" thirdDate-constraint="0" expand="true"/>
+            </task>
+            <task id="10" name="3.2 - Research apropriate analysis algorithms (Real)" color="#8cb6ce" meeting="false" start="2019-04-04" duration="12" complete="0" thirdDate="2019-04-29" thirdDate-constraint="0" expand="true"/>
+            <task id="17" name="3.3 - Setup Jupyter notebooks (Real)" color="#8cb6ce" meeting="false" start="2019-04-22" duration="3" complete="0" thirdDate="2019-04-29" thirdDate-constraint="0" expand="true"/>
+            <task id="84" name="3.4 - Implement proposed solution and gather results (Real)" color="#8cb6ce" meeting="false" start="2019-04-25" duration="17" complete="0" thirdDate="2019-03-25" thirdDate-constraint="0" expand="true">
+                <task id="57" name="3.4.1 - Is there any anomalous service? (Real)" color="#8cb6ce" meeting="false" start="2019-04-25" duration="12" complete="0" thirdDate="2019-03-21" thirdDate-constraint="0" expand="true"/>
+                <task id="72" name="3.4.2 - Results gathering (Real)" color="#8cb6ce" meeting="false" start="2019-05-13" duration="5" complete="0" thirdDate="2019-03-22" thirdDate-constraint="0" expand="true"/>
+            </task>
+        </task>
+        <task id="196" name="4 - Write paper for NCA 2019 (Real)" color="#8cb6ce" meeting="false" start="2019-05-20" duration="8" complete="0" thirdDate="2019-02-01" thirdDate-constraint="0" expand="true"/>
+        <task id="3" name="5 - Write final report (Real)" color="#8cb6ce" meeting="false" start="2019-05-30" duration="22" complete="0" thirdDate="2018-11-29" thirdDate-constraint="0" expand="true"/>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>

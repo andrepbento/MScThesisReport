@@ -1,0 +1,39 @@
+Refer what type of graph is a Dependency Graph. 
+
+\begin{table*}
+    \caption{Tracing tools comparison.}
+    \label{table:tracing_tools}
+    \centering
+    \large
+    \begin{tabularx}{\linewidth} {
+            >{\hsize=0.70\hsize}X|
+            >{\hsize=1.15\hsize}X|
+            >{\hsize=1.15\hsize}X|}
+        \cline{2-3}
+
+         & Jaeger
+         & Zipkin                                                                                                                                                                                                                                                             \\ \hline \hline
+        \textbf{Repository}
+         & Jaeger GitHub \cite{jaeger_github}
+         & Zipkin GitHub \cite{zipkin_github}                                                                                                                                                                                                                                 \\ \hline
+        \textbf{Brief description}
+         & It is a distributed tracing and monitoring system released as open source by Uber Technologies, that is used for monitoring and troubleshooting microservices-based distributed systems.
+         & It is a distributed tracing and monitoring system. It helps gather timing data needed to troubleshoot latency problems in microservice architectures. It manages both the collection and lookup of this data. Zipkin’s design is based on the Google Dapper paper. \\ \hline
+        \textbf{Pros}
+         & OpenSource. \newline
+        Docker-ready. \newline
+        Can be used with some Zipkin functionalities, as it has a collector dedicated to it. \newline
+        Dynamic sampling rate. \newline
+        Browser UI.
+         & OpenSource. \newline
+        Docker-ready. \newline
+        Allows lots of span transport ways (HTTP, Kafka, Scribe, AMQP). \newline
+        Browser UI.                                                                                                                                                                                                                                                           \\ \hline
+        \textbf{Cons}
+         & Only supports two span transport ways (UDP and HTTP).
+         & Fixed sampling rate.                                                                                                                                                                                                                                               \\ \hline
+        \textbf{Used mainly by}
+         & Uber
+         & Lightstep                                                                                                                                                                                                                                                          \\ \hline
+    \end{tabularx}
+\end{table*}
