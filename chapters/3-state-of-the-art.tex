@@ -199,11 +199,11 @@ This Subsection presents the most used and known distributed tracing tools. Thes
         \cline{2-3}
 
          & Jaeger~\cite{jaeger_github}
-         & Zipkin~\cite{zipkin_github} \\ \hline \hline
-         \multicolumn{1}{|l|}{\textbf{Brief description}}
+         & Zipkin~\cite{zipkin_github}                                                                                                                                                                                  \\ \hline \hline
+        \multicolumn{1}{|l|}{\textbf{Brief description}}
          & Released as open source by Uber Technologies and is used for monitoring and troubleshooting microservices-based distributed systems. Was inspired by Zipkin.
          & Helps gather timing data needed to troubleshoot latency problems in microservice architectures and manages both the collection and lookup of this data. Zipkin's design is based on the Google Dapper paper. \\ \hline
-         \multicolumn{1}{|l|}{\textbf{Pros}}
+        \multicolumn{1}{|l|}{\textbf{Pros}}
          & OpenSource; \newline
         Docker-ready; \newline
         Collector interface is compatible with Zipkin protocol; \newline
@@ -212,21 +212,21 @@ This Subsection presents the most used and known distributed tracing tools. Thes
          & OpenSource; \newline
         Docker-ready; \newline
         Allows lots of span transport ways (HTTP, Kafka, Scribe, AMQP); \newline
-        Browser UI. \\ \hline
+        Browser UI.                                                                                                                                                                                                     \\ \hline
         \multicolumn{1}{|l|}{\textbf{Cons}}
          & Only supports two span transport ways (Thrift and HTTP).
-         & Fixed sampling rate. \\ \hline
-         \multicolumn{1}{|l|}{\textbf{Analysis}}
+         & Fixed sampling rate.                                                                                                                                                                                         \\ \hline
+        \multicolumn{1}{|l|}{\textbf{Analysis}}
          & Dependency graph view; \newline
-         Trace comparison (End 2018).
-         & Dependency graph view. \\ \hline
+        Trace comparison (End 2018).
+         & Dependency graph view.                                                                                                                                                                                       \\ \hline
         \multicolumn{1}{|l|}{\textbf{Used by}}
          & Red Hat; \newline
-         Symantec; \newline
-         Uber. \newline
+        Symantec; \newline
+        Uber. \newline
          & AirBnb; \newline
-         IBM; \newline
-         Lightstep. \\ \hline
+        IBM; \newline
+        Lightstep.                                                                                                                                                                                                      \\ \hline
     \end{tabularx}
 \end{table}
 
@@ -243,260 +243,271 @@ In next Subsection~\ref{subsec:graph_manipulation_and_processing_tools}, graph m
 
 Distributed tracing is a type of data produced by Microservice based architectures. This type of data is composed by traces and spans. With a set of related spans, a service dependency graph can be produced. This dependency graph is a Multi-Directed-Graph, as presented in Subsection~\ref{subsec:graphs}. Therefore, with this data at our disposal, there is the need of a graph manipulation and processing tool.
 
-In this Subsection, graph manipulation
+In this Subsection, the state of the art about graph manipulation and processing tools is presented. Graphs are non-linear data structure representations consisting of nodes and edges. Nodes are sometimes also referred to as vertices and edges are lines or arcs that connect any pair of nodes in the graph. This data structure takes some particular approaches when handling their contents, because there are some special attributes related. For example, perform the calculation of the degree of some node -- degree of a node is the number of edges that connect to the node itself; Calculate how many nodes entered and exited the graph by comparing it to another one; Know the difference in edges between two distinct graphs~\cite{Trudeau1993}.
 
-
-\todo{CONTINUE FROM HERE!!!}
-
-Considering that we have data to be processed and manipulated, we have to be sure that we can handle it for analysis. For this purpose, and knowing that the data is a representation and an abstraction of a graph, we needed to study the frameworks available this task. Table~\ref{table:graph_manipulation_and_processing_tools_comparison} presents the main technologies available at the time for graph manipulation and processing.
+Taking into consideration this data structure, the particularities involved and the need to use graphs to manipulate service dependencies, frameworks with features capable of handling and retrieving graphs are a need. Therefore, Table~\ref{table:graph_manipulation_and_processing_tools_comparison} presents a comparison of the main tools available at the time for graph manipulation and processing.
 
 \begin{table}[H]
     \caption{Graph manipulation and processing tools comparison.}
     \label{table:graph_manipulation_and_processing_tools_comparison}
     \centering
     \begin{tabularx}{\linewidth} {
-            >{\hsize=0.1\hsize}X|
+            >{\hsize=0.3\hsize}X|
             >{\hsize=1.0\hsize}X|
             >{\hsize=1.0\hsize}X|
             >{\hsize=1.0\hsize}X|}
         \cline{2-4}
 
-        & Apache Giraph \cite{apache_giraph}
-        & Ligra \cite{ligra_graph_processing_framework}
-        & NetworkX \cite{networkx} \\ \hline \hline
-         \multicolumn{1}{|l|}{\textbf{Description}}
+         & Apache Giraph \cite{apache_giraph}
+         & Ligra \cite{ligra_graph_processing_framework}
+         & NetworkX \cite{networkx}                                                                                                                                                       \\ \hline \hline
+        \multicolumn{1}{|l|}{\textbf{Description}}
          & An iterative graph processing system built for high scalability. Currently used at Facebook to analyse the social graph formed by users and their relationships.
          & A library collection for graph creation, analysis and manipulation of networks.
-         & A Python package for the creation, manipulation, and study of structure, dynamics, and functions of complex networks. \\ \hline
-         \multicolumn{1}{|l|}{\textbf{Licence}~\cite{Morin2012}}
+         & A Python package for the creation, manipulation, and study of structure, dynamics, and functions of complex networks.                                                          \\ \hline
+        \multicolumn{1}{|l|}{\textbf{Licence}~\cite{Morin2012}}
          & Free Apache 2.
          & MIT.
-         & BSD - New License. \\ \hline
-        \multicolumn{1}{|l|}{\textbf{Supported languages}}
+         & BSD - New License.                                                                                                                                                             \\ \hline
+        \multicolumn{1}{|p{2cm}|}{\textbf{Supported languages}}
          & Java and Scala.
          & C and C++.
-         & Python. \\ \hline
-         \multicolumn{1}{|l|}{\textbf{Pros}}
+         & Python.                                                                                                                                                                        \\ \hline
+        \multicolumn{1}{|l|}{\textbf{Pros}}
          & Distributed and very scalable; \newline
         Excellent performance -- Process one trillion edges using 200 modest machines in 4 minutes.
          & Handles very large graphs; \newline
         Exploit large memory and multi-core \gls{cpu} -- Vertically scalable.
          & Good support and very easy to install with Python; \newline
-        Lots of graph algorithms already implemented and tested. \newline \\ \hline
+        Lots of graph algorithms already implemented and tested. \newline                                                                                                                 \\ \hline
         \multicolumn{1}{|l|}{\textbf{Cons}}
-        & Uses ``Think-Like-a-Vertex'' programming model that often forces into using sub-optimal algorithms, thus is quite limited and sacrifices performance for scaling out; \newline
+         & Uses ``Think-Like-a-Vertex'' programming model that often forces into using sub-optimal algorithms, thus is quite limited and sacrifices performance for scaling out; \newline
         Unable to perform many complex graph analysis tasks because it primarily supports Bulk synchronous parallel.
          & Lack of documentation and therefore, very hard to use; \newline
         Does not have many usage in the community.
          & Not scalable (single-machine); \newline
         High learning curve due to the maturity of the project; \newline
-        Begins to slow down when processing high amount of data -- 400.000+ nodes. \\ \hline
+        Begins to slow down when processing high amount of data -- 400.000+ nodes.                                                                                                        \\ \hline
     \end{tabularx}
 \end{table}
 
-With the information presented in the previous table, we can have a notion that this three frameworks don't work and perform in the same level in many ways.
+Table~\ref{table:graph_manipulation_and_processing_tools_comparison} presents some key points to consider when choosing a graph manipulation and processing tool.
 
-One thing to consider when comparing them is the scalability and performance that each can provide, for instance, in this component the first one, Apache Giraph is the winner since it is implemented with the distributed systems paradigm in mind and can scale to multiple-machines to get the job done in no time, considering high amounts of data. In other way, we have the third framework, called NetworkX, that is different from the previous as it works in a single-machine and doesn't have the ability to scale to multiple-machines. This can be a very problematic feature if we are dealing with very high amounts of data and we have to process it in short amounts of time. The last framework, called Ligra, works in a single-machine environment like the previous one, but it can scale vertically as it has the benefit of use and exploit multi-core \gls{cpu}'s.
+First, one aspect to be considered when comparing them is the scalability and performance that each provide. Apache Giraph is the best tool in this field, since it is implemented with distributed and parallel computation, which allows it to scale to multiple-machines, sharing the load between them, and processing data large quantities of data in less time than the remaining presented tools. On the opposite side, NetworkX, only works in a single-machine environment which does not allow it scale to multiple-machines. Ligra, like the previous tool, works in a single-machine environment, however it benefits from vertical scale on a single-machine, which allows to exploit multi-core \gls{cpu} and large memory. NetworkX and Ligra are tools that can present a bottleneck in a system where the main focus is to handle large amounts of data in short times.
 
-The second, and also most important thing to consider, is the support and quantity of implemented graph algorithms in the framework, and in this field the tables turned, and the NetworkX has a lot of advantage as it have lots of implemented graph algorithms defined and studied in graph and networking theory. The remaining frameworks don't have very support either because they don't have it documented or because the implementation and architecture that where considered don't allow to implement it.
+\,
 
-For a more clear insight of the position of the presented technologies in the previous table, we have the figure \ref{fig:graph_manipulation_and_performance_tools_diagram_comparison}.
+Secondly, another aspect to be considered is the support and quantity of implemented graph algorithms available on the frameworks. NetworkX have advantages in this aspect, because it contains implementation of the majority graph algorithms defined and studied in graph and networking theory. Also, due to project maturity, it has a good documentation support from the community who keeps all the information updated. Ligra framework has lack of documentation, which causes tremendous difficulty for developers to use and know what are the implemented features. Apache Giraph, does not support a large set of graph processing algorithms due to implementation constraints.
 
-\begin{figure}
+Figure~\ref{fig:graph_tools_comparison} gives a clear insight when comparing these tools from two features -- scalability / performance against implementation of graph algorithms.
+
+\begin{figure}[H]
     \centering
     \includegraphics[width=1.0\linewidth]{images/graph_manipulation_tools_diagram_comparison.pdf}
-    \caption{Graph manipulation tools comparison, regarding scalability and graph algorithms~\cite{graph_data_management_systems}.}
-    \label{fig:graph_manipulation_and_performance_tools_diagram_comparison}
+    \caption{Graph tools: Scalability vs. Algorithm implementation~\cite{graph_data_management_systems}.}
+    \label{fig:graph_tools_comparison}
 \end{figure}
 
-With the presented figure, our perception of what we might choose when considering this tools is more clear, but we have always some trade offs we cannot avoid. The best approach, and if it's possible, is to consider the usage of an hybrid environment where Giraph and NetworkX coexist one with another, as one fills the gaps of the other, but always taking into consideration that a bottleneck will occur between them \cite{graph_frameworks_performance_evaluation} and that there are almost none implementation where they coexist \cite{graph_frameworks_performance_evaluation} because of their disparity.
+In Figure~\ref{fig:graph_tools_comparison} we can observe tools disposition regarding the two aspect key points explained before. This figure contains all tools presented over two featured axis: one for scalability and the other for implementation of graph algorithms. Tools placement in this chart proves and reinforces the comparison presented before. Apache Giraph and NetworkX are placed in the edges of these features, which means that Apache Giraph can be found in the upper left region of the chart -- highly distributed but minimally in graph algorithms implementation --, and NetworkX is in the lower right region -- minimally distributed but highly in graph algorithms implementation.
+
+After discussing tools capable of manipulate and process graphs, their storage is a need for later usage. \gls{gdb} storage technologies are presented in next Subsection~\ref{subsec:graph_database_tools}~-~\nameref{subsec:graph_database_tools}.
 
 \subsection{Graph Database Tools}
 \label{subsec:graph_database_tools}
 
-\todo{This data can be modelled as information. After having a Graph instantiated we may be able to store it. For this type of information, there are specific ways of storing it. For example, we can store graphs in a \gls{gdb}. A \gls{gdb} is ``a database that uses graph structures for semantic queries with nodes, edges and properties to represent and store data''\cite{graph_database_definition}.}
+Graph databases represent a way of persisting graph information. After having instantiated a Graph, processed it in volatile memory, they can be stored in persistent memory for later use. To do this one can use a \gls{gdb}. A \gls{gdb} is ``a database that allows graph data storing and uses graph structures for semantic queries with nodes, edges and properties to represent them''~\cite{Celko2013}.
 
-Manipulating and process graph data is not enough, we need to store this data somewhere, and to do this we need a \gls{gdb}. The results of the research for the best graph databases tools available are presented in the table \ref{table:graph_databases_comparison}.
+\,
 
-\begin{table}[!b]
+Based upon the concept of a mathematical graph, a graph database contains a collection of nodes and edges. A node represents an object, and an edge represents the connection or relationship between two objects. Each node in a graph database is identified by a unique identifier that expresses key value pairs. Additionally, each edge is defined by a unique identifier that details a starting or ending node, along with a set of properties. Graph databases are becoming popular due to Machine Learning and Artificial Intelligence grows, since a number of Machine Learning algorithms are inherently graph algorithms~\cite{FavioVazquez2019}.
+
+Furthermore, in this research service dependency graphs are highly used, thus the need to use a \gls{gdb}. Table~\ref{table:graph_databases_comparison} contains the most well-known \gls{gdb}.
+
+\begin{table}[H]
     \caption{Graph databases comparison.}
     \label{table:graph_databases_comparison}
     \centering
-    \large
     \begin{tabularx}{\linewidth} {
-        |>{\hsize=0.7\hsize}X|
-        >{\hsize=1.1\hsize}X|
-        >{\hsize=1.1\hsize}X|
-        >{\hsize=1.1\hsize}X| }
-        \hline
-        \textbf{Name}
+            >{\hsize=0.3\hsize}X|
+            >{\hsize=1.0\hsize}X|
+            >{\hsize=1.0\hsize}X|
+            >{\hsize=1.0\hsize}X|}
+        \cline{2-4}
+
          & ArangoDB \cite{arangodb_documentation}
          & Facebook TAO \cite{facebook_tao_article}
-         & Neo4J \cite{neo4j_documentation}                                                                                                                                                                                 \\ \hline
-        \textbf{Description}
-         & It's a NoSQL database developed by ArangoDB Inc. that uses a proper query language to access the database.
-         & TAO, “The Associations and Objects”, is a proprietary database, developed by Facebook, that stores all the data related to the users in the social network.
-         & It's the most popular open source graph database. Has been developed by Neo4J Inc. and is completely open to the community.                                                                                      \\ \hline
-        \textbf{Licence}
-         & Free Apache 2
-         & Proprietary
-         & GPLv3 CE                                                                                                                                                                                                         \\ \hline
-        \textbf{Supported languages}
-         & C++ \newline
-        Go \newline
-        Java \newline
-        JavaScript \newline
-        Python \newline
-        Scala
-         & \centering -----
-         & Java \newline
-        JavaScript \newline
-        Python \newline
-        Scala                                                                                                                                                                                                               \\ \hline
-        \textbf{Pros}
-         & Multi data-type support (key/value, documents, graphs). Allows the combination of different data access patterns in a single query. Supports cluster deployment.
-         & Very fast(~=100ms latency). Accepts millions of calls per second. Distributed.
-         & Supports ACID(Atomicity, Consistency, Isolation, Durability)\cite{acid_definition}. High-availability. Has a visual node-link graph explorer. REST \gls{api} interface. Most popular open source graph database. \\ \hline
-        \textbf{Cons}
-         & Needed to learn a new query language called AQL(Arango Query Language). High learning curve. Has paid version with high price tag.
+         & Neo4J \cite{neo4j_documentation}                                                                                               \\ \hline \hline
+        \multicolumn{1}{|l|}{\textbf{Description}}
+         & A NoSQL database that uses a proper query language to access the database.
+         & TAO, “The Associations and Objects”, is a proprietary graph database, developed by Facebook, used to store the social network.
+         & The most popular open source graph database, completely open to the community.                                                 \\ \hline
+        \multicolumn{1}{|l|}{\textbf{Licence}~\cite{Morin2012}}
+         & Free Apache 2.
+         & Proprietary.
+         & GPLv3 CE.                                                                                                                      \\ \hline
+        \multicolumn{1}{|p{2cm}|}{\textbf{Supported languages}}
+         & C++; Go; Java; JavaScript; Python and Scala.
+         & Go; Java; JavaScript; Python and Scala.
+         & Java; JavaScript; Python and Scala.                                                                                            \\ \hline
+        \multicolumn{1}{|l|}{\textbf{Pros}}
+         & Multi data-type support (key/value, documents and graphs); \newline
+        Allows combination of different data access patterns in a single query; \newline
+        Supports cluster deployment.
+         & Low latency $(~=100ms)$; \newline
+        Accepts millions of calls per second; \newline
+        Distributed database.
+         & Supports ACID(Atomicity, Consistency, Isolation, Durability)~\cite{Sasaki2018}; \newline
+        Most popular open source graph database.                                                                                          \\ \hline
+        \multicolumn{1}{|l|}{\textbf{Cons}}
+         & High learning curve due to AQL (Arango Query Language); \newline
+        Has paid version with high price tag.
          & Not accessible to use.
-         & Can’t be distributed (It needs to be vertically scaled).                                                                                                                                                         \\ \hline
+         & Not able to scale horizontally.                                                                                                \\ \hline
     \end{tabularx}
 \end{table}
 
-As we can notice by the data provided by the presented table, the state of the art about graph databases is not very good. The offers are very limited and all of them lack something when we start to see them in detail. The interest in this databases is increasing as graph technology tend to have many use cases and solve lots of problems nowadays.
+From Table~\ref{table:graph_databases_comparison} we can notice that the state of the art for \gls{gdb} is not very pleasant, because the interest for this type of databases has began in the later years due to artificial intelligence and machine learning trends. Therefore, the offer presented in the field are limited.
 
-Facebook detains the most powerful and robust system for this purpose, but as it is the base of their business because they need to perform large operations in their huge social graph in reduced times, it is a proprietary technology and is only referenced in some articles \cite{facebook_tao_article}.
+Back in time, when social network tendency emerged, the development of this type of databases raised, and the most powerful technologies for graph storage where developed in closed source. One example is Facebook TAO database presented in Table~\ref{table:graph_databases_comparison}, a database developed by the company to support the entire social network, storing users in nodes and their relationships in edges. This database is described by having very low latency, which stands for high response time however, just a few scientific papers were found~\cite{facebook_tao_article,Amenya2018}.
+%very few information regarding this tool can be found -- just some scientific papers
 
-The remaining two tools, are very supported by the community because of their license and demand, however based on the stars and forks of their repositories, Neo4J is more well received by the community and tends to become more popular. It doesn't implement horizontal scalability by design and this can be a risk when using it in systems with scalabilty in mind, but there are some authors that report they were able to perform implementations and surpass the scalability issue, however with many snags\cite{neo4j_scalable}. ArangoDB supports scalability by default as we can see in the figure \ref{fig:arangodb_vs_neo4j_scalability}\cite{arangodb_vs_ne4j}, but it has a very hard query language with a high learning curve inherent to it, and it is payed to use some special features like SmartGraphs storage\cite{arangodb_smart_graphs} that improves the writing of graph in distributed databases.
+The remaining tools presented are available for usage. ArangoDB has multi data-type support, which means that a wider type of data structures are supported for storing in nodes and edges metadata. Also, it supports scalability through cluster deployment, however, this feature is only available in paid versions -- Arango SmartGraphs storage improves the writing of graph in distributed systems environment~\cite{arangodb_smart_graphs}. The biggest disadvantage of this database is the high learning curve associated with the usage of AQL (Arango Query Language), however, this disadvantage can be surpassed by using provided \gls{api} clients with the trade-off of loosing some control.
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.80\textwidth]{images/arangodb_vs_neo4j_scalability.pdf}
-    \caption{ArangoDB vs. Neo4J scalability over complexity.}
-    \label{fig:arangodb_vs_neo4j_scalability}
-\end{figure}
+Neo4J is the most accepted \gls{gdb} by the open source community. This \gls{gdb}
+has increased in popularity in the past years due to simplicity and easy support~\cite{Turu2017}. Trade-offs from this database consists in lack of support for scalability, which means that this database can only run on a single-machine environment, however, there are some users reporting that they were able to perform implementations and surpass the lack of support for horizontal scaling, but this is not tested~\cite{neo4j_scalable}.
+
+Choosing a graph database can be hard because these tools are growing and the tendency for changes in features and tooling support is very high, however,  the decision falls on the question of easy of usage and horizontal scalability. This means that ArangoDB is a database more advised for big projects, where the size of graphs to store may surpass the limit of a single-machine, and Neo4J for simpler projects, where the focus are functionality testing and prototyping, and graph storage represents a side concern.
+
+Next Subsection~\ref{subsec:time_series_database_tools}~-~\nameref{subsec:time_series_database_tools} covers the state of the art for tooling capable of storage values based in time.
 
 \subsection{Time-Series Database Tools}
 \label{subsec:time_series_database_tools}
 
-\todo{CHECK THIS!!!}
+In this Subsection, tools for storing time-indexed series of values are presented. This type of data is a need for this research due to the tight relation between distributed tracing and time, as explained in Subsections~\ref{subsec:distributed_tracing} and~\ref{subsec:time_series}. Also, service dependency graphs, as a representation of the system at a given time, can contain valuable information for monitoring Microservice systems. For this purpose, \gls{tsdb} are databases capable of storing time-series based values.
 
-A \gls{tsdb} is ``is a database optimised for time-stamped or time series data like arrays of numbers indexed by time (a date time or a date time range)''\cite{time_series_database_definition}.
+A \gls{tsdb} is ``A database optimised for time-stamped or time series data like arrays of numbers indexed by time (a date time or a date time range)''~\cite{Dunning2015}. These databases are natively implemented using specialised time-series theory algorithms to enhance their performance and efficiency, due to widely variance of access possible. The way this databases use to work on efficiency is to treat time as a discrete quantity rather than as a continuous mathematical dimension. Usually a \gls{tsdb} allows operations like create, enumerate, update, organise and destroy various time series entries in short access times.
 
-This kind of databases are natively implemented using specialised database algorithms to enhance it's performance and efficiency due to the widely variance of access possible. The way this databases use to work on efficiency is to treat time as a discrete quantity rather than as a continuous mathematical dimension. Usually a \gls{tsdb} allows operations like create, enumerate, update, organise and destroy various time series entries.
+This type of database is growing in usage and popularity because of Internet of Things (IoT) trend. Discussions in this area have increased over the past few years, and is expected that it keeps increasing, due to Ubiquitous Computing -- Raise of omnipresent and universal technologies. At the same time, \gls{tsdb} grows with this IoT tendency, because data mining from sensor spread geographically and sensors gather information through measurements in specific points in time. This information are usually stored in \gls{tsdb}~\cite{TanayPant2019}.
 
-The \gls{tsdb} and the \gls{gdb}, presented in this subsection and in the subsection before respectively, are at the time, the most wanted and fastest growing kind of databases due to their use cases in the trending fields of Cloud and Distributed based Systems and in the \textit{Internet of Things (IoT)}. The figure \ref{fig:fastest_growing_databases} presents the growing of this databases in the last two years. As we can see in the figure presented, the \gls{tsdb} and \gls{gdb} are distancing from the remaining databases in terms of popularity starting from the same spot in December of 2016. The predictions are that this databases will not stop increasing popularity, until this kind of systems described before start losing it too.
-
-\begin{figure}
-    \centering
-    \includegraphics[width=1.0\textwidth]{images/popularity_of_time_series_databases.pdf}
-    \caption{Fastest Growing Databases.\cite{time_series_databases_explained}}
-    \label{fig:fastest_growing_databases}
-\end{figure}
-
-\todo{CHECK THIS!!!}
-
-As we intend to extract useful data from span trees and graphs, we need to store it somewhere. We already know that the spans and trace data are directly related with time based information, explained in the subsection \ref{subsec:traces_and_spans} - \nameref{subsec:traces_and_spans}, so the best way to store the gathered or calculated information from them is in a \gls{tsdb}.
-
-The figure \ref{fig:time_series_databases_ranking} present the ranking of the \gls{tsdb} at the current time\cite{tsdb_ranking}.
-
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=1.00\textwidth]{images/time_series_databases_ranking.pdf}
-    \caption{\gls{tsdb}s ranking from 2013 to 2019.}
-    \label{fig:time_series_databases_ranking}
-\end{figure}
-
-The table \ref{table:time_series_databases_comparison} exposes a comparison between the two top databases presented in the ranking, the \textit{InfluxDb} and \textit{OpenTSDB}, two very well known databases in the world of \gls{tsdb}, in order to understand the advantages and disadvantages of each one.
+Table~\ref{table:time_series_databases_comparison} presents a comparison between two \gls{tsdb}: \textit{InfluxDb} and \textit{OpenTSDB}.
 
 \begin{table}[H]
     \caption{Time-series databases comparison.}
     \label{table:time_series_databases_comparison}
     \centering
-    \large
     \begin{tabularx}{\linewidth} {
-        |>{\hsize=0.50\hsize}X|
-        >{\hsize=1.25\hsize}X|
-        >{\hsize=1.25\hsize}X| }
-        \hline
-        \textbf{Name}
+            >{\hsize=0.70\hsize}X|
+            >{\hsize=1.15\hsize}X|
+            >{\hsize=1.15\hsize}X|}
+        \cline{2-3}
+
          & InfluxDB \cite{influxdb}
-         & OpenTSDB \cite{opentsdb}                                                                                                                                                                                                                                                                                               \\ \hline
-        \textbf{Description}
-         & It is an open-source time series database developed by InfluxData written in Go and optimised for fast, high-availability storage and retrieval of time series data in fields such as operations monitoring, application metrics, Internet of Things sensor data, and real-time analytics.
-         & It is a distributed, scalable Time Series Database (TSDB) written on top of HBase. OpenTSDB was written to address a common need: store, index and serve metrics collected from computer systems (network gear, operating systems, applications) at a large scale, and make this data easily accessible and graphable. \\ \hline
-        \textbf{Licence}
-         & MIT
-         & GPL                                                                                                                                                                                                                                                                                                                    \\ \hline
-        \textbf{Supported languages}
-         & Erlang \newline
-        Go \newline
-        Java \newline
-        JavaScript \newline
-        Lisp \newline
-        Python \newline
-        R \newline
-        Scala
-         & Erlang \newline
-        Go \newline
-        Java \newline
-        Python \newline
-        R \newline
-        Ruby                                                                                                                                                                                                                                                                                                                      \\ \hline
-        \textbf{Pros}
-         & Scalable in the enterprise version. \newline
-        Outstanding high performance. \newline
-        Accepts data via HTTP, TCP, and UDP protocols. \newline
-        SQL like query language. \newline
-        Allows real-time analytics.
-         & It's massively scalable. \newline
-        Great for large amounts of time-based events or logs. \newline
-        Accepst data via HTTP and TCP access protocols. \newline
-        Good platform for future analytical research into particular aggregations on event/log data. \newline
-        Doesn't have paid version.                                                                                                                                                                                                                                                                                                \\ \hline
-        \textbf{Cons}
-         & Enterprise high price tag. \newline
+         & OpenTSDB \cite{opentsdb}                                                                                                                                                                                                                                       \\ \hline \hline
+        \multicolumn{1}{|l|}{\textbf{Description}}
+         & An open-source time series database written in Go and optimised for fast, high-availability storage and retrieval of time series data in fields such as operations monitoring, application metrics, Internet of Things sensor data, and real-time analytics's.
+         & A distributed and scalable \gls{tsdb} written on top of HBase; \newline
+        OpenTSDB was written to address a common need: store, index and serve metrics collected from computer systems (network gear, operating systems and applications) at a large scale, therefore, making this data easily accessible and displayed.                   \\ \hline
+        \multicolumn{1}{|l|}{\textbf{Licence}~\cite{Morin2012}}
+         & MIT.
+         & GPL.                                                                                                                                                                                                                                                           \\ \hline
+        \multicolumn{1}{|p{2cm}|}{\textbf{Supported languages}}
+         & Erlang, Go, Java, JavaScript, Lisp, Python, R and Scala.
+         & Erlang, Go, Java, Python, R and Ruby.                                                                                                                                                                                                                          \\ \hline
+        \multicolumn{1}{|l|}{\textbf{Pros}}
+         & Scalable in the enterprise version; \newline
+        Outstanding high performance; \newline
+        Accepts data from \gls{http}, TCP, and UDP protocols; \newline
+        SQL like query language; \newline
+        Allows real-time analytics's.
+         & Massively scalable; \newline
+        Great for large amounts of time-based events or logs; \newline
+        Accepts data from \gls{http} and TCP protocols; \newline
+        Good platform for future analytical research into particular aggregations on event / log data; \newline
+        Does not have paid version.                                                                                                                                                                                                                                       \\ \hline
+        \multicolumn{1}{|l|}{\textbf{Cons}}
+         & Enterprise high price tag; \newline
         Clustering support only available in the enterprise version.
-         & Expensive to try. \newline
-        Not a good choice for general-purpose application data.                                                                                                                                                                                                                                                                   \\ \hline
+         & Hard to set up; \newline
+        Not a good choice for general-purpose application data.                                                                                                                                                                                                           \\ \hline
     \end{tabularx}
 \end{table}
 
-Based on the information presented in the referenced table, we can notice that this two databases are very similar on what they offer like the access protocols and scalability capabilities. In the point of licence, both are open source, however the first one, InfluxDB, has an enterprise paid version that is not very well exposed in its documentations and much people don't even notice it, contrarily to OpenTSDB which is completely free. The enterprise version of InfluxDB provides clustering support, high availability and scalability\cite{influxdb_vs_opentsdb}, features that OpenTSDB offer for free, however in terms of performance, InfluxDB outperforms OpenTSDB in almost every benchmark by a far distance as we can see in the figures \ref{fig:influxdb_vs_opentsdb_write_throughput} and \ref{fig:influxdb_vs_opentsdb_storage_requirements}.
+From Table~\ref{table:time_series_databases_comparison}, we can notice some similarities between these two \gls{tsdb} databases. Both \gls{tsdb} are capable scalable and accept \gls{http} and TCP transfer protocols for communication. InfluxDB and OpenTSDB are two open source time-series databases, however, the first one, InfluxDB, is not completely free, as it has an enterprise paid version, which is not very visible in the offer. This enterprise version offers, clustering support, high availability and scalability~\cite{influxdb_vs_opentsdb}, features that OpenTSDB offer for free. In terms of performance, InfluxDB surpasses and outperforms OpenTSDB in almost every benchmarks~\cite{Noor2017}. OpenTSDB has the benefits of being completely free and support the most relevant features, however it is very hard to set up and to develop for this database.
+
+In the end, both \gls{tsdb} are bundled with good features, and the decision falls into how much performance is needed when choosing one. If the need is performance and access to the database in short amounts of time, with low latency responses, InfluxDB is the way to go, by other way, if there no restriction about the performance needed to query the database and money is a concern, the choice should be OpenTSDB.
+
+Tooling for this project is presented. We have covered the most used technologies and core concepts in related to the field of tracing Microservices. Next Section~\ref{sec:related_work}~-~\nameref{sec:related_work}, will cover the related work performed in this area. Some ideas, approaches and developed solutions will be discussed.
 
 \section{Related Work}
 \label{sec:related_work}
 
-In this section are presented three section of the existing related work for tracing data analysis. After explaining each one, a brief reflection is made to note some directions of research for this project.
+This section aims to present the related work in the field of distributed tracing data handling and analysis. It is divided in three Subsections: first, \ref{subsec:mastering_aiops}~-~\nameref{subsec:mastering_aiops}, which covers a work carried out by Huawei, that uses machine learning -- deep learning -- methods to analyse data from distributed traces. Secondly, \ref{subsec:anomaly_detection_using_zipkin_tracing_data}~-~\nameref{subsec:anomaly_detection_using_zipkin_tracing_data}, a work of performed by Salesforce with the objective of analyse tracing from a distributed tracing tool. Finally, \ref{subsec:analysing_distributed_trace_data}~-~\nameref{subsec:analysing_distributed_trace_data}, a work by Pinterest, where the objective is to study latency in tracing data.
 
 \subsection{Mastering AIOps}
 \label{subsec:mastering_aiops}
 
-\todo{// TODO: Explain what is done and how is done.}
+Distributed tracing has only started to gain widespread acceptance in the industry recently, as a result of new architectural and software engineering practices, such as cloud-native, fine-grained systems and agile methodologies. Additionally, the increase in complexity resulting from the rise of web-scale distributed applications is a recent phenomenon. As a consequence of its novelty, there has been little research in the field so far.
 
-\cite{mastering_aiops}
+A recent example, AIOps, an application of Artificial Intelligence to operations~\cite{rising_aiops} was introduced in $2016$~\cite{gartner_aiops}. This trend aims to use Artificial Intelligence for IT Operations in order to develop new methods to automate the enhance IT Operations. Driving this ``revolution'' are the following points:
+
+\begin{itemize}
+    \item First there is the additional difficulty of manually managing distributed infrastructures and system state;
+    \item Secondly, the amount of data that has to be retained is increasing, creating a plethora of problems to the operators handling it;
+    \item Third, the infrastructure itself is becoming more distributed across geography and organizations, as evidenced by trends like cloud-first development and fog computing;
+    \item Finally, due to the overwhelming amount of new technologies and frameworks, it is an herculean task for operators to keep in pace with the new trends.
+\end{itemize}
+
+The work performed and presented by Huawei, entitled Mastering AIOps with Deep Learning, Time-Series Analysis and Distributed Tracing~\cite{mastering_aiops}, aims to use distributed tracing data and aforementioned technologies to detect anomalous tracing. The proposed method encodes the traces and trains a deep learning neural network to detect significant differences in tracing. This is a very perceptive approach, taking into account the amounts of data that is needed to analyse, however is limited to classifying a trace as normal or abnormal, losing detail and interpretability i.e., no justification for the classification.
 
 \subsection{Anomaly Detection using Zipkin Tracing Data}
 \label{subsec:anomaly_detection_using_zipkin_tracing_data}
 
-\todo{// TODO: Explain what is done and how is done.}
+Tooling in this field are not taking the expected relevance. Their usage is starting in industry and production environments involving distributed systems, however, the concerns in are not well aligned with the needs of operators, and this leads to increasing effort when monitoring large scale and complex architectures, such as Microservices.
 
-\cite{anomaly_detection_zipkin_tracing_data}
+In a post from Salesforce, a work of research about using tracing data gathered by Zipkin, to detect some anomalies in a Microservice based system~\cite{anomaly_detection_zipkin_tracing_data}. At Salesforce, Zipkin is used to perform distributed tracing for Microservices, collecting traces from their systems and providing performance insights in both production monitoring and pre-production testing. However, the current Zipkin open source instrumentation and UI offers only primitive data tracing functionality and does not have in-depth performance analysis of the span data. The focus on their work was to detect and identify potential network bottlenecks and microservices performance issues.
 
-Wei Lee was contacted by email to understand better their research focus, however without success because no answer was given.
+The approach carried out was to implement scripts using that used Python AI packages, with the objective of extracting values from their network of services, namely service dependency graph, in order to identify high traffic areas in the network. The values that were extracted were the number of connections from each service, which means, the degree of the service at specific times. This allows to notice which services are establishing more connections with other services.
+
+From this approach, it was possible to visualize the high traffic areas within the production network topology. Therefore, they have identified services with the most connections. This finding was an helpful feedback for service networking architects that designed those microservices. Those services, identified with too many connections, may potentially become choking points in the system design. If one of the services fail, a huge impact on a large number of depending services occur. Additionally, there could be also potential performance impacts in the system since a large number of services depending on them. Those are valuable information for system designers and architect to optimize their designs.
+
+The conclusions from Salesforce research identified that, with Zipkin tracing data, it is possible to identify network congestion, bottlenecks, efficiencies and the heat map in the production network. However, this tool does not provide analysis of tracing data at this level. This was the main conclusion and possible working direction from this research: ``features like the ones presented, can be added to Zipkin or other distributed tracing tool product line, including UI and dashboards. Capabilities like daily metrics or correlation between microservices load and latency, able to generate alerts if bottleneck or heat map is identified, should be added''~\cite{anomaly_detection_zipkin_tracing_data}.
 
 \subsection{Analysing distributed trace data}
 \label{subsec:analysing_distributed_trace_data}
 
-\todo{// TODO: Explain what is done and how is done.}
+At Pinterest, the focus were to research for latency problems in their Microservices solution. Pinterest claims to have tens of services and hundreds of network calls per-trace. One big problem identified at start is the huge difficulty of looking to trace data due to overwhelming quantity of information -- ``thousands of traces logged each minute (let alone the millions of requests per minute these traces are sampled from)''.
 
-\cite{analysisng_distributed_trace_data}
+Pinterest felted the problem of monitoring Microservices early due to their service popularity in the past years. With this popularity, systems usage have increased significantly. This lead them to take action and create their closed source distributed tracing analysis tool called ``Pintrace Trace Analyser''~\cite{analysing_distributed_trace_data}.
+
+This tool gathers tracing data from \nameref{subsec:distributed_tracing_tools}, more precisely from Zipkin, and processes a sample of these tracing to detect mainly latency problems in the service dependency network. Looking at stats from thousands of traces over a longer period of time not only weeds out the outliers/buggy traces, but provides a holistic view of performance.
+
+The conclusions from Pinterest, where that there is a great need to develop tooling for distributed tracing analysis, with the main objective of ease the life of operators. The following points were considered:
+
+\begin{enumerate}
+    \item Automatically generate reports so engineers can easily check the status of each deployment;
+    \item Setting up alerts for when latency or number of calls hits a certain threshold.
+\end{enumerate}
 
 \subsection{Research possible directions}
 \label{subsec:research_possible_directions}
 
-\todo{// TODO: Make a brief reflection about the related work.}
+In this Subsection, the related work previously presented will be analysed, and from this, some possible directions of research will be considered. These considerations will be further discussed in Chapter~\ref{chap:research_objectives_and_approach}~-~\nameref{chap:research_objectives_and_approach}.
+
+One thing to notice from the related work presented is that there is few research accomplished in the area and trace tooling development, however, these works are from the past year and the tendency is to increase in the following years. Enlargement and usage of distributed systems are fuel to feed the need of research in this field and develop new methodologies and tools to monitor and control operations.
+
+From the first work presented, \nameref{subsec:mastering_aiops}, some final results and conclusions were provided. They point out that the benefits of this approach were: first, very high accuracy in detection $99,7\%$, and secondly, extremely fast detection in $O(n)$ time. However, some limitations involving requiring very long training times for long traces (with decent machines) were noted. Also, improvements were pointed: truncate traces, to lower the quantity of tracing and therefore, summarizing traces.
+
+The second work presented, \nameref{subsec:anomaly_detection_using_zipkin_tracing_data}, point down the lack of features in the existing tools. These features include automatic anomaly detection using distributed tracing data. The main idea consists in extending functionality presented in this tools, to provide autonomous anomaly detection and alerting based on information presented in tracing from services.
+
+In third work presented, \nameref{subsec:analysing_distributed_trace_data}, crucial points considered were to represent autonomous generation of reports, allowing operators to check the status of deployments, and therefore, providing more control over the system regarding detection of anomalous values in service latency.
+
+Finally, from the multiple related work presented the final assumptions for possible research directions in this field are:
+
+\begin{itemize}
+    \item Focus on the most important traces, reducing the quantity of tracing;
+    \item Develop new methods that leverage features of existing distributed tracing tools;
+    \item Automate the detection of anomalies presented in distributed systems;
+\end{itemize}
 
 After providing the state of the art for this research to the reader, next Chapter~\ref{chap:research_objectives_and_approach}~-~\nameref{chap:research_objectives_and_approach} will cover the objectives of this research, the approach used to tackle the problem and the compiled research questions.
 

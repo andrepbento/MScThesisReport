@@ -27,10 +27,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Anomaly detection in Time Series~\cite {NikolajBomannMertz}.\relax }}{17}{figure.caption.17}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Graph manipulation tools comparison, regarding scalability and graph algorithms~\cite {graph_data_management_systems}.\relax }}{22}{figure.caption.20}% 
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Graph tools: Scalability vs. Algorithm implementation~\cite {graph_data_management_systems}.\relax }}{21}{figure.caption.20}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.9}{\ignorespaces ArangoDB vs. Neo4J scalability over complexity.\relax }}{22}{figure.caption.22}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Fastest Growing Databases.\cite {time_series_databases_explained}\relax }}{25}{figure.caption.23}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.11}{\ignorespaces \gls {tsdb}s ranking from 2013 to 2019.\relax }}{25}{figure.caption.24}% 
+\addvspace {10\p@ }

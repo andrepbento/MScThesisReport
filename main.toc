@@ -37,14 +37,16 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.3}Graph Database Tools}{21}{subsection.3.2.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.4}Time-Series Database Tools}{22}{subsection.3.2.4}% 
+\contentsline {subsection}{\numberline {3.2.4}Time-Series Database Tools}{23}{subsection.3.2.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Related Work}{26}{section.3.3}% 
+\contentsline {section}{\numberline {3.3}Related Work}{25}{section.3.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.1}Mastering AIOps}{26}{subsection.3.3.1}% 
+\contentsline {subsection}{\numberline {3.3.1}Mastering AIOps}{25}{subsection.3.3.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.2}Anomaly Detection using Zipkin Tracing Data}{26}{subsection.3.3.2}% 
+\contentsline {subsection}{\numberline {3.3.2}Anomaly Detection using Zipkin Tracing Data}{25}{subsection.3.3.2}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.3.3}Analysing distributed trace data}{26}{subsection.3.3.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.4}Research possible directions}{26}{subsection.3.3.4}% 
+\contentsline {subsection}{\numberline {3.3.4}Research possible directions}{27}{subsection.3.3.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Research Objectives and Approach}{29}{chapter.4}% 

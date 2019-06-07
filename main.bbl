@@ -69,8 +69,8 @@
       \strng{authorbibnamehash}{240b78060dd3082662022fa0fc04988e}
       \strng{authornamehash}{d22976dc7f5a066ee9d60ef48681c23d}
       \strng{authorfullhash}{240b78060dd3082662022fa0fc04988e}
-      \field{sortinit}{6}
-      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Microservices is an architectural style inspired by service-oriented computing that has recently started gaining popularity. Before presenting the current state-of-the-art in the field, this chapter reviews the history of software architecture, the reasons that led to the diffusion of objects and services first, and microservices later. Finally, open problems and future challenges are introduced. This survey primarily addresses newcomers to the discipline, while offering an academic viewpoint on the topic. In addition, we investigate some practical issues and point out some potential solutions.}
@@ -117,8 +117,8 @@
       \strng{authorbibnamehash}{c8d97be6e0b2483e0be3e8855b17fdc5}
       \strng{authornamehash}{c8d97be6e0b2483e0be3e8855b17fdc5}
       \strng{authorfullhash}{c8d97be6e0b2483e0be3e8855b17fdc5}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{{©} 2017 IEEE. Microservices are a new trend rising fast from the enterprise world. Even though the design principles around microservices have been identified, it is difficult to have a clear view of existing research solutions for architecting microservices. In this paper we apply the systematic mapping study methodology to identify, classify, and evaluate the current state of the art on architecting microservices from the following three perspectives: publication trends, focus of research, and potential for industrial adoption. More specifically, we systematically define a classification framework for categorizing the research on architecting microservices and we rigorously apply it to the 71 selected studies. We synthesize the obtained data and produce a clear overview of the state of the art. This gives a solid basis to plan for future research and applications of architecting microservices.}
@@ -171,8 +171,8 @@
       \strng{authorbibnamehash}{1d86ac9638e4061e76e8ade9949666d4}
       \strng{authornamehash}{d3921baf9ccc2ce76c222e05b31092d5}
       \strng{authorfullhash}{1d86ac9638e4061e76e8ade9949666d4}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The monitoring of distributed systems involves the collection, interpretation, and display of information concerning the interactions among concurrently executing processes. This information and its display can support the debugging, testing, performance evaluation, and dynamic documentation of distributed systems. General problems associated with monitoring are outlined in this paper, and the architecture of a general purpose, extensible, distributed monitoring system is presented. Three approaches to the display of process interactions are described: textual traces, animated graphical traces, and a combination of aspects of the textual and graphical approaches. The roles that each of these approaches fulfill in monitoring and debugging distributed systems are identified and compared. Monitoring tools for collecting communication statistics, detecting deadlock, controlling the non-deterministic execution of distributed systems, and for using protocol specifications in monitoring are also described.$\backslash$nOur discussion is based on experience in the development and use of a monitoring system within a distributed programming environment called Jade. Jade was developed within the Computer Science Department of the University of Calgary and is now being used to support teaching and research at a number of university and research organizations.}
@@ -209,8 +209,8 @@
       \strng{authorbibnamehash}{1633e2e74016dcc2cb78cbe305d55664}
       \strng{authornamehash}{1633e2e74016dcc2cb78cbe305d55664}
       \strng{authorfullhash}{1633e2e74016dcc2cb78cbe305d55664}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{{Distributed Logging Architecture for Microservices}}
@@ -235,8 +235,8 @@
       \strng{authornamehash}{b9bdf471d6d9e329763891076f924b69}
       \strng{authorfullhash}{b9bdf471d6d9e329763891076f924b69}
       \field{extraname}{1}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{{What is Distributed Tracing?}}
@@ -479,8 +479,8 @@
       \strng{authorbibnamehash}{c3418cebea144cb4dae1ca16183e9e36}
       \strng{authornamehash}{c3418cebea144cb4dae1ca16183e9e36}
       \strng{authorfullhash}{c3418cebea144cb4dae1ca16183e9e36}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{{Monitoring and Observability — What's the Difference and Why Does It Matter? - The New Stack}}
@@ -762,8 +762,8 @@
       \strng{authorbibnamehash}{7ff6cc997b141399bcdf2c338fb4031c}
       \strng{authornamehash}{7ff6cc997b141399bcdf2c338fb4031c}
       \strng{authorfullhash}{7ff6cc997b141399bcdf2c338fb4031c}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{{What is OpenStack?}}
@@ -1035,6 +1035,45 @@
       \verb https://github.com/openzipkin/zipkin
       \endverb
     \endentry
+    \entry{Trudeau1993}{book}{}
+      \name{author}{2}{}{%
+        {{hash=cd89154b03a6a5f9e5663ab9d7cb5362}{%
+           family={Trudeau},
+           familyi={T\bibinitperiod},
+           given={Richard\bibnamedelima J.},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=cd89154b03a6a5f9e5663ab9d7cb5362}{%
+           family={Trudeau},
+           familyi={T\bibinitperiod},
+           given={Richard\bibnamedelima J.},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Dover Pub}%
+      }
+      \strng{namehash}{435373d68f6ce43f5fae789406c5e8f0}
+      \strng{fullhash}{435373d68f6ce43f5fae789406c5e8f0}
+      \strng{bibnamehash}{435373d68f6ce43f5fae789406c5e8f0}
+      \strng{authorbibnamehash}{435373d68f6ce43f5fae789406c5e8f0}
+      \strng{authornamehash}{435373d68f6ce43f5fae789406c5e8f0}
+      \strng{authorfullhash}{435373d68f6ce43f5fae789406c5e8f0}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A stimulating excursion into pure mathematics aimed at the mathematically traumatized, but great fun for mathematical hobbyists and serious mathematicians as well. This book leads the reader from simple graphs through planar graphs, Euler's formula, Platonic graphs, coloring, the genus of a graph, Euler walks, Hamilton walks, more. Includes exercises. 1976 edition. Pure mathematics -- Graphs -- Planar graphs -- Euler's formula -- Platonic graphs -- Coloring -- The genius of a graph -- Euler walks and Hamilton walks.}
+      \field{isbn}{0486318664}
+      \field{title}{{Introduction to graph theory}}
+      \field{year}{1993}
+      \field{pages}{209}
+      \range{pages}{1}
+      \verb{urlraw}
+      \verb https://books.google.pt/books/about/Introduction{\_}to{\_}Graph{\_}Theory.html?id=eRLEAgAAQBAJ{\&}redir{\_}esc=y
+      \endverb
+      \verb{url}
+      \verb https://books.google.pt/books/about/Introduction%7B%5C_%7Dto%7B%5C_%7DGraph%7B%5C_%7DTheory.html?id=eRLEAgAAQBAJ%7B%5C&%7Dredir%7B%5C_%7Desc=y
+      \endverb
+    \endentry
     \entry{apache_giraph}{misc}{}
       \name{author}{1}{}{%
         {{hash=8b499b5be8914246b406785e1327dbb3}{%
@@ -1203,33 +1242,62 @@
       \verb https://medium.com/@amolumd/graph-data-management-systems-f679b60dd9e0
       \endverb
     \endentry
-    \entry{graph_database_definition}{misc}{}
+    \entry{Celko2013}{incollection}{}
       \name{author}{1}{}{%
-        {{hash=9c677286866aad38f8e9b660f5411814}{%
-           family={Wikipedia},
-           familyi={W\bibinitperiod}}}%
+        {{hash=9a012e9b1e5c9618d36af4c7c0ce58a8}{%
+           family={Celko},
+           familyi={C\bibinitperiod},
+           given={Joe},
+           giveni={J\bibinitperiod}}}%
       }
-      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
-      \strng{bibnamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authorbibnamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authornamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authorfullhash}{9c677286866aad38f8e9b660f5411814}
-      \field{extraname}{2}
+      \strng{namehash}{9a012e9b1e5c9618d36af4c7c0ce58a8}
+      \strng{fullhash}{9a012e9b1e5c9618d36af4c7c0ce58a8}
+      \strng{bibnamehash}{9a012e9b1e5c9618d36af4c7c0ce58a8}
+      \strng{authorbibnamehash}{9a012e9b1e5c9618d36af4c7c0ce58a8}
+      \strng{authornamehash}{9a012e9b1e5c9618d36af4c7c0ce58a8}
+      \strng{authorfullhash}{9a012e9b1e5c9618d36af4c7c0ce58a8}
       \field{sortinit}{6}
       \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{{Graph database}}
-      \field{urlday}{15}
-      \field{urlmonth}{10}
-      \field{urlyear}{2018}
+      \field{abstract}{Abstract Graph databases model relationships, not data. Just as SQL and RDBMS are based on logic and set theory, graph databases are based on graph theory. The classic example of a popular graph problem is called the “Kevin Bacon problem” in the literature. Given actor Kevin Bacon, a graph database links him to anyone else in the movie industry either by a direct link (had some role in a movie with Kevin Bacon) or by a chain of links (had some role in a movie with someone who had some role in a movie with Kevin Bacon). However, other graph problems look for the shortest paths among a set of paths in a transportation network, the smallest set of nodes that cover a graph, and so forth. There is no ANSI/ISO standard language for graphs, but the most popular ones are Gremlin, Neo4j, and SPARQL. They tend to model their syntax after SQL and/or mathematics.}
+      \field{booktitle}{Joe Celko's Complete Guide to NoSQL}
+      \field{isbn}{1449356265}
+      \field{title}{{Graph Databases}}
+      \field{year}{2013}
+      \field{pages}{27\bibrangedash 46}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1016/b978-0-12-407192-6.00003-0
+      \endverb
+    \endentry
+    \entry{FavioVazquez2019}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=8038a5d4c2870ffc7734ae826e539737}{%
+           family={{Favio V{á}zquez}},
+           familyi={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{8038a5d4c2870ffc7734ae826e539737}
+      \strng{fullhash}{8038a5d4c2870ffc7734ae826e539737}
+      \strng{bibnamehash}{8038a5d4c2870ffc7734ae826e539737}
+      \strng{authorbibnamehash}{8038a5d4c2870ffc7734ae826e539737}
+      \strng{authornamehash}{8038a5d4c2870ffc7734ae826e539737}
+      \strng{authorfullhash}{8038a5d4c2870ffc7734ae826e539737}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Graph Databases. What's the Big Deal? – Towards Data Science}}
+      \field{urlday}{7}
+      \field{urlmonth}{6}
+      \field{urlyear}{2019}
+      \field{year}{2019}
       \field{urldateera}{ce}
       \verb{urlraw}
-      \verb https://en.wikipedia.org/wiki/Graph{\_}database
+      \verb https://towardsdatascience.com/graph-databases-whats-the-big-deal-ec310b1bc0ed
       \endverb
       \verb{url}
-      \verb https://en.wikipedia.org/wiki/Graph%7B%5C_%7Ddatabase
+      \verb https://towardsdatascience.com/graph-databases-whats-the-big-deal-ec310b1bc0ed
       \endverb
     \endentry
     \entry{arangodb_documentation}{misc}{}
@@ -1245,8 +1313,8 @@
       \strng{authornamehash}{055896cf3c1b837e4771f49aa2660e17}
       \strng{authorfullhash}{055896cf3c1b837e4771f49aa2660e17}
       \field{extraname}{1}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{{ArangoDB Documentation}}
@@ -1348,8 +1416,8 @@
       \strng{authorbibnamehash}{0835a78526bf4af53aac9913f79de334}
       \strng{authornamehash}{00b8dc441c3e2225e9b8d886a7b72006}
       \strng{authorfullhash}{0835a78526bf4af53aac9913f79de334}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{We introduce a simple data model and API tailored for serving the social graph, and TAO, an implementation of this model. TAO is a geographically distributed data store that provides efficient and timely access to the social graph for Facebook's demanding workload using a fixed set of queries. It is deployed at Facebook, replacing memcache for many data types that fit its model. The system runs on thousands of machines, is widely distributed, and provides access to many petabytes of data. TAO can process a billion reads and millions of writes each second.}
@@ -1375,8 +1443,8 @@
       \strng{authorbibnamehash}{9025132451e32fdc1886e48c5e18dd2b}
       \strng{authornamehash}{9025132451e32fdc1886e48c5e18dd2b}
       \strng{authorfullhash}{9025132451e32fdc1886e48c5e18dd2b}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{{No Title}}
@@ -1391,92 +1459,74 @@
       \verb https://neo4j.com/docs/
       \endverb
     \endentry
-    \entry{acid_definition}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=9c677286866aad38f8e9b660f5411814}{%
-           family={Wikipedia},
-           familyi={W\bibinitperiod}}}%
+    \entry{Sasaki2018}{book}{}
+      \name{author}{3}{}{%
+        {{hash=98208a503a1a2575ae4a4df7032b6c04}{%
+           family={Sasaki},
+           familyi={S\bibinitperiod},
+           given={Bryce\bibnamedelima Merkl},
+           giveni={B\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=b354c001a79db1a6e74221a8b49373bc}{%
+           family={Chao},
+           familyi={C\bibinitperiod},
+           given={Joy},
+           giveni={J\bibinitperiod}}}%
+        {{hash=f7aedd67e55737923fd76a4f819079f6}{%
+           family={Howard},
+           familyi={H\bibinitperiod},
+           given={Rachel},
+           giveni={R\bibinitperiod}}}%
       }
-      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
-      \strng{bibnamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authorbibnamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authornamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authorfullhash}{9c677286866aad38f8e9b660f5411814}
-      \field{extraname}{3}
+      \strng{namehash}{f23dbe970b59a1370d5c95d0afa210a2}
+      \strng{fullhash}{f23dbe970b59a1370d5c95d0afa210a2}
+      \strng{bibnamehash}{f23dbe970b59a1370d5c95d0afa210a2}
+      \strng{authorbibnamehash}{f23dbe970b59a1370d5c95d0afa210a2}
+      \strng{authornamehash}{f23dbe970b59a1370d5c95d0afa210a2}
+      \strng{authorfullhash}{f23dbe970b59a1370d5c95d0afa210a2}
       \field{sortinit}{8}
       \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{{ACID(Computer Science)}}
-      \field{urlday}{16}
-      \field{urlmonth}{10}
-      \field{urlyear}{2018}
-      \field{urldateera}{ce}
+      \field{abstract}{The {\#}1 Platform for Connected Data}
+      \field{title}{{Graph Databases for Beginners}}
+      \field{year}{2018}
+      \field{pages}{45}
+      \range{pages}{1}
       \verb{urlraw}
-      \verb https://en.wikipedia.org/wiki/ACID{\_}(computer{\_}science)
+      \verb https://neo4j.com/blog/acid-vs-base-consistency-models-explained/ https://go.neo4j.com/rs/710-RRC-335/images/Graph{\_}Databases{\_}for{\_}Beginners.pdf?{\_}ga=2.124112970.1994598198.1521285291-1141717847.1521285291{\&}{\_}gac=1.180373973.1521290471.CjwKCAjw-bLVBRBMEiwAmKSB
       \endverb
       \verb{url}
-      \verb https://en.wikipedia.org/wiki/ACID%7B%5C_%7D(computer%7B%5C_%7Dscience)
+      \verb https://neo4j.com/blog/acid-vs-base-consistency-models-explained/%20https://go.neo4j.com/rs/710-RRC-335/images/Graph%7B%5C_%7DDatabases%7B%5C_%7Dfor%7B%5C_%7DBeginners.pdf?%7B%5C_%7Dga=2.124112970.1994598198.1521285291-1141717847.1521285291%7B%5C&%7D%7B%5C_%7Dgac=1.180373973.1521290471.CjwKCAjw-bLVBRBMEiwAmKSB
       \endverb
+      \keyw{BT-graph databases}
     \endentry
-    \entry{neo4j_scalable}{misc}{}
+    \entry{Amenya2018}{misc}{}
       \name{author}{1}{}{%
-        {{hash=e152b4a3a78aa8f4f99e7db7ade1b221}{%
-           family={Gundy},
-           familyi={G\bibinitperiod},
-           given={Kevin\bibnamedelima Van},
-           giveni={K\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
-      }
-      \strng{namehash}{e152b4a3a78aa8f4f99e7db7ade1b221}
-      \strng{fullhash}{e152b4a3a78aa8f4f99e7db7ade1b221}
-      \strng{bibnamehash}{e152b4a3a78aa8f4f99e7db7ade1b221}
-      \strng{authorbibnamehash}{e152b4a3a78aa8f4f99e7db7ade1b221}
-      \strng{authornamehash}{e152b4a3a78aa8f4f99e7db7ade1b221}
-      \strng{authorfullhash}{e152b4a3a78aa8f4f99e7db7ade1b221}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{{Infographic: Understanding Scalability with Neo4j}}
-      \field{urlday}{15}
-      \field{urlmonth}{12}
-      \field{urlyear}{2018}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://neo4j.com/blog/neo4j-scalability-infographic/
-      \endverb
-      \verb{url}
-      \verb https://neo4j.com/blog/neo4j-scalability-infographic/
-      \endverb
-    \endentry
-    \entry{arangodb_vs_ne4j}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=055896cf3c1b837e4771f49aa2660e17}{%
-           family={{ArangoDB Inc.}},
+        {{hash=8fa14bf6245bc74d53007726089599a9}{%
+           family={Amenya},
            familyi={A\bibinitperiod}}}%
       }
-      \strng{namehash}{055896cf3c1b837e4771f49aa2660e17}
-      \strng{fullhash}{055896cf3c1b837e4771f49aa2660e17}
-      \strng{bibnamehash}{055896cf3c1b837e4771f49aa2660e17}
-      \strng{authorbibnamehash}{055896cf3c1b837e4771f49aa2660e17}
-      \strng{authornamehash}{055896cf3c1b837e4771f49aa2660e17}
-      \strng{authorfullhash}{055896cf3c1b837e4771f49aa2660e17}
-      \field{extraname}{2}
+      \strng{namehash}{8fa14bf6245bc74d53007726089599a9}
+      \strng{fullhash}{8fa14bf6245bc74d53007726089599a9}
+      \strng{bibnamehash}{8fa14bf6245bc74d53007726089599a9}
+      \strng{authorbibnamehash}{8fa14bf6245bc74d53007726089599a9}
+      \strng{authornamehash}{8fa14bf6245bc74d53007726089599a9}
+      \strng{authorfullhash}{8fa14bf6245bc74d53007726089599a9}
       \field{sortinit}{8}
       \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{{What you can't do with Neo4j}}
-      \field{urlday}{15}
-      \field{urlmonth}{12}
-      \field{urlyear}{2018}
+      \field{title}{{TAO — Facebook's Distributed database for Social Graph}}
+      \field{urlday}{7}
+      \field{urlmonth}{6}
+      \field{urlyear}{2019}
+      \field{year}{2018}
       \field{urldateera}{ce}
       \verb{urlraw}
-      \verb https://www.arangodb.com/why-arangodb/arangodb-vs-neo4j/
+      \verb https://medium.com/coinmonks/tao-facebooks-distributed-database-for-social-graph-c2b45f5346ea
       \endverb
       \verb{url}
-      \verb https://www.arangodb.com/why-arangodb/arangodb-vs-neo4j/
+      \verb https://medium.com/coinmonks/tao-facebooks-distributed-database-for-social-graph-c2b45f5346ea
       \endverb
     \endentry
     \entry{arangodb_smart_graphs}{misc}{}
@@ -1491,7 +1541,7 @@
       \strng{authorbibnamehash}{055896cf3c1b837e4771f49aa2660e17}
       \strng{authornamehash}{055896cf3c1b837e4771f49aa2660e17}
       \strng{authorfullhash}{055896cf3c1b837e4771f49aa2660e17}
-      \field{extraname}{3}
+      \field{extraname}{2}
       \field{sortinit}{8}
       \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{labelnamesource}{author}
@@ -1508,90 +1558,147 @@
       \verb https://www.arangodb.com/why-arangodb/arangodb-enterprise/arangodb-enterprise-smart-graphs/
       \endverb
     \endentry
-    \entry{time_series_database_definition}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=9c677286866aad38f8e9b660f5411814}{%
-           family={Wikipedia},
-           familyi={W\bibinitperiod}}}%
+    \entry{Turu2017}{report}{}
+      \name{author}{4}{}{%
+        {{hash=024c87c03d6460099065706e122af6d9}{%
+           family={Turu},
+           familyi={T\bibinitperiod},
+           given={Anna},
+           giveni={A\bibinitperiod}}}%
+        {{hash=41fc9ea2deabcd0ebc72129818fa50ad}{%
+           family={Ozge},
+           familyi={O\bibinitperiod},
+           given={Pi},
+           giveni={P\bibinitperiod}}}%
+        {{hash=fdb52e602c2defa9888576ccb0667d9a}{%
+           family={Supervisor},
+           familyi={S\bibinitperiod},
+           given={Koroglu},
+           giveni={K\bibinitperiod}}}%
+        {{hash=bc2353394836cede28eede7a1fc7b318}{%
+           family={Zim{á}nyi},
+           familyi={Z\bibinitperiod},
+           given={Esteban},
+           giveni={E\bibinitperiod}}}%
       }
-      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
-      \strng{bibnamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authorbibnamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authornamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authorfullhash}{9c677286866aad38f8e9b660f5411814}
-      \field{extraname}{4}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \strng{namehash}{82efc86f86477ead80b1d0f3e1ac5ee0}
+      \strng{fullhash}{fff8cea0c64fe3578eea744c636b6da4}
+      \strng{bibnamehash}{fff8cea0c64fe3578eea744c636b6da4}
+      \strng{authorbibnamehash}{fff8cea0c64fe3578eea744c636b6da4}
+      \strng{authornamehash}{82efc86f86477ead80b1d0f3e1ac5ee0}
+      \strng{authorfullhash}{fff8cea0c64fe3578eea744c636b6da4}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{{Time series database}}
-      \field{urlday}{11}
+      \field{title}{{Universit{é} libre de Bruxelles Graph Databases and Neo4J}}
+      \field{type}{techreport}
+      \field{year}{2017}
+      \verb{file}
+      \verb ::
+      \endverb
+      \verb{urlraw}
+      \verb https://cs.ulb.ac.be/public/{\_}media/teaching/neo4jj{\_}2017.pdf
+      \endverb
+      \verb{url}
+      \verb https://cs.ulb.ac.be/public/%7B%5C_%7Dmedia/teaching/neo4jj%7B%5C_%7D2017.pdf
+      \endverb
+    \endentry
+    \entry{neo4j_scalable}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=e152b4a3a78aa8f4f99e7db7ade1b221}{%
+           family={Gundy},
+           familyi={G\bibinitperiod},
+           given={Kevin\bibnamedelima Van},
+           giveni={K\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \strng{namehash}{e152b4a3a78aa8f4f99e7db7ade1b221}
+      \strng{fullhash}{e152b4a3a78aa8f4f99e7db7ade1b221}
+      \strng{bibnamehash}{e152b4a3a78aa8f4f99e7db7ade1b221}
+      \strng{authorbibnamehash}{e152b4a3a78aa8f4f99e7db7ade1b221}
+      \strng{authornamehash}{e152b4a3a78aa8f4f99e7db7ade1b221}
+      \strng{authorfullhash}{e152b4a3a78aa8f4f99e7db7ade1b221}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Infographic: Understanding Scalability with Neo4j}}
+      \field{urlday}{15}
       \field{urlmonth}{12}
       \field{urlyear}{2018}
       \field{urldateera}{ce}
       \verb{urlraw}
-      \verb https://en.wikipedia.org/wiki/Time{\_}series{\_}database
+      \verb https://neo4j.com/blog/neo4j-scalability-infographic/
       \endverb
       \verb{url}
-      \verb https://en.wikipedia.org/wiki/Time%7B%5C_%7Dseries%7B%5C_%7Ddatabase
+      \verb https://neo4j.com/blog/neo4j-scalability-infographic/
       \endverb
     \endentry
-    \entry{time_series_databases_explained}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=aeaf5074e9f38f1268187fc89e1e8d54}{%
-           family={InfluxData},
-           familyi={I\bibinitperiod}}}%
+    \entry{Dunning2015}{book}{}
+      \name{author}{2}{}{%
+        {{hash=0dfded31855fb5e2a04dce1c64b804e5}{%
+           family={Dunning},
+           familyi={D\bibinitperiod},
+           given={Ted},
+           giveni={T\bibinitperiod}}}%
+        {{hash=c3e3166db0a64640450b8d0cbbdeee30}{%
+           family={Friedman},
+           familyi={F\bibinitperiod},
+           given={Ellen},
+           giveni={E\bibinitperiod}}}%
       }
-      \strng{namehash}{aeaf5074e9f38f1268187fc89e1e8d54}
-      \strng{fullhash}{aeaf5074e9f38f1268187fc89e1e8d54}
-      \strng{bibnamehash}{aeaf5074e9f38f1268187fc89e1e8d54}
-      \strng{authorbibnamehash}{aeaf5074e9f38f1268187fc89e1e8d54}
-      \strng{authornamehash}{aeaf5074e9f38f1268187fc89e1e8d54}
-      \strng{authorfullhash}{aeaf5074e9f38f1268187fc89e1e8d54}
-      \field{extraname}{1}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \strng{namehash}{50dd12281e8492ecfc9c4dc7ce18a956}
+      \strng{fullhash}{50dd12281e8492ecfc9c4dc7ce18a956}
+      \strng{bibnamehash}{50dd12281e8492ecfc9c4dc7ce18a956}
+      \strng{authorbibnamehash}{50dd12281e8492ecfc9c4dc7ce18a956}
+      \strng{authornamehash}{50dd12281e8492ecfc9c4dc7ce18a956}
+      \strng{authorfullhash}{50dd12281e8492ecfc9c4dc7ce18a956}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{{Time Series Database (TSDB) Explained}}
-      \field{urlday}{11}
-      \field{urlmonth}{12}
-      \field{urlyear}{2018}
-      \field{urldateera}{ce}
+      \field{abstract}{Time series data is of growing importance, especially with the rapid expansion of the Internet of Things. This concise guide shows you effective ways to collect, persist, and access large-scale time series data for analysis. You'll explore...}
+      \field{isbn}{9781491917022}
+      \field{issn}{9781491917022}
+      \field{title}{{Time Series Databases New Ways to Store and Access Data}}
+      \field{year}{2015}
+      \field{pages}{71}
+      \range{pages}{1}
       \verb{urlraw}
-      \verb https://www.influxdata.com/time-series-database/
+      \verb http://info.mapr.com/rs/mapr/images/Time{\_}Series{\_}Databases.pdf{\%}0Ahttp://oreilly.com/catalog/errata.csp
       \endverb
       \verb{url}
-      \verb https://www.influxdata.com/time-series-database/
+      \verb http://info.mapr.com/rs/mapr/images/Time%7B%5C_%7DSeries%7B%5C_%7DDatabases.pdf%7B%5C%%7D0Ahttp://oreilly.com/catalog/errata.csp
       \endverb
+      \keyw{Ted Dunning and Ellen Friedman.}
     \endentry
-    \entry{tsdb_ranking}{misc}{}
+    \entry{TanayPant2019}{misc}{}
       \name{author}{1}{}{%
-        {{hash=6f6eec66712995f95510d292166d6a26}{%
-           family={DB-Engines.com},
-           familyi={D\bibinithyphendelim E\bibinitperiod}}}%
+        {{hash=2f97e8c1a74d402d92e3a7cee2113a18}{%
+           family={{Tanay Pant}},
+           familyi={T\bibinitperiod}}}%
       }
-      \strng{namehash}{6f6eec66712995f95510d292166d6a26}
-      \strng{fullhash}{6f6eec66712995f95510d292166d6a26}
-      \strng{bibnamehash}{6f6eec66712995f95510d292166d6a26}
-      \strng{authorbibnamehash}{6f6eec66712995f95510d292166d6a26}
-      \strng{authornamehash}{6f6eec66712995f95510d292166d6a26}
-      \strng{authorfullhash}{6f6eec66712995f95510d292166d6a26}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \strng{namehash}{2f97e8c1a74d402d92e3a7cee2113a18}
+      \strng{fullhash}{2f97e8c1a74d402d92e3a7cee2113a18}
+      \strng{bibnamehash}{2f97e8c1a74d402d92e3a7cee2113a18}
+      \strng{authorbibnamehash}{2f97e8c1a74d402d92e3a7cee2113a18}
+      \strng{authornamehash}{2f97e8c1a74d402d92e3a7cee2113a18}
+      \strng{authorfullhash}{2f97e8c1a74d402d92e3a7cee2113a18}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{{Time-Series DBMS Ranking}}
-      \field{urlday}{9}
-      \field{urlmonth}{1}
+      \field{title}{{Ingesting IoT and Sensor Data at Scale – Hacker Noon}}
+      \field{urlday}{7}
+      \field{urlmonth}{6}
       \field{urlyear}{2019}
+      \field{year}{2019}
       \field{urldateera}{ce}
       \verb{urlraw}
-      \verb https://db-engines.com/en/ranking{\_}trend/time+series+dbms
+      \verb https://hackernoon.com/ingesting-iot-and-sensor-data-at-scale-ee548e0f8b78
       \endverb
       \verb{url}
-      \verb https://db-engines.com/en/ranking%7B%5C_%7Dtrend/time+series+dbms
+      \verb https://hackernoon.com/ingesting-iot-and-sensor-data-at-scale-ee548e0f8b78
       \endverb
     \endentry
     \entry{influxdb}{misc}{}
@@ -1606,9 +1713,8 @@
       \strng{authorbibnamehash}{aeaf5074e9f38f1268187fc89e1e8d54}
       \strng{authornamehash}{aeaf5074e9f38f1268187fc89e1e8d54}
       \strng{authorfullhash}{aeaf5074e9f38f1268187fc89e1e8d54}
-      \field{extraname}{2}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{{InfluxDB GitHub}}
@@ -1635,8 +1741,8 @@
       \strng{authorbibnamehash}{41afc14f55b4b8c6a7dc7fb9652f0c5f}
       \strng{authornamehash}{41afc14f55b4b8c6a7dc7fb9652f0c5f}
       \strng{authorfullhash}{41afc14f55b4b8c6a7dc7fb9652f0c5f}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{$\backslash$url{\{}https://github.com/OpenTSDB/opentsdb{\}}}
@@ -1656,8 +1762,8 @@
       \strng{authorbibnamehash}{a262f6098cf41d7b77f531d7819a7246}
       \strng{authornamehash}{a262f6098cf41d7b77f531d7819a7246}
       \strng{authorfullhash}{a262f6098cf41d7b77f531d7819a7246}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{{InfluxDB Markedly Outperforms OpenTSDB in Time Series Data {\&} Metrics Benchmark}}
@@ -1671,6 +1777,101 @@
       \verb{url}
       \verb https://www.influxdata.com/blog/influxdb-markedly-outperforms-opentsdb-in-time-series-data-metrics-benchmark/
       \endverb
+    \endentry
+    \entry{Noor2017}{report}{}
+      \name{author}{5}{}{%
+        {{hash=a97be7a293af4d6a825121d86a986a78}{%
+           family={Noor},
+           familyi={N\bibinitperiod},
+           given={Syeda},
+           giveni={S\bibinitperiod}}}%
+        {{hash=bc3998d6f8f6817127f6eab2b6d68cf5}{%
+           family={Naqvi},
+           familyi={N\bibinitperiod},
+           given={Zehra},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=40528ca68cbf4dbd202ceaad10e9e5fb}{%
+           family={Yfantidou},
+           familyi={Y\bibinitperiod},
+           given={Sofia},
+           giveni={S\bibinitperiod}}}%
+        {{hash=bc2353394836cede28eede7a1fc7b318}{%
+           family={Zim{á}nyi},
+           familyi={Z\bibinitperiod},
+           given={Esteban},
+           giveni={E\bibinitperiod}}}%
+        {{hash=2760d61ece82238dcddd2835b9ce1784}{%
+           family={Zim{á}nyi},
+           familyi={Z\bibinitperiod},
+           given={Zim´},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \strng{namehash}{7b6308e761a73aabf8bcca7a81faf882}
+      \strng{fullhash}{b982da513f9675cd3a462bd3621e7e73}
+      \strng{bibnamehash}{b982da513f9675cd3a462bd3621e7e73}
+      \strng{authorbibnamehash}{b982da513f9675cd3a462bd3621e7e73}
+      \strng{authornamehash}{7b6308e761a73aabf8bcca7a81faf882}
+      \strng{authorfullhash}{b982da513f9675cd3a462bd3621e7e73}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Time Series Databases and InfluxDB}}
+      \field{type}{techreport}
+      \field{year}{2017}
+      \verb{file}
+      \verb ::
+      \endverb
+      \verb{urlraw}
+      \verb https://cs.ulb.ac.be/public/{\_}media/teaching/influxdb{\_}2017.pdf
+      \endverb
+      \verb{url}
+      \verb https://cs.ulb.ac.be/public/%7B%5C_%7Dmedia/teaching/influxdb%7B%5C_%7D2017.pdf
+      \endverb
+    \endentry
+    \entry{rising_aiops}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=d890d571eb13635394aa8c45530303b5}{%
+           family={Jacob},
+           familyi={J\bibinitperiod},
+           given={Sonja},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{d890d571eb13635394aa8c45530303b5}
+      \strng{fullhash}{d890d571eb13635394aa8c45530303b5}
+      \strng{bibnamehash}{d890d571eb13635394aa8c45530303b5}
+      \strng{authorbibnamehash}{d890d571eb13635394aa8c45530303b5}
+      \strng{authornamehash}{d890d571eb13635394aa8c45530303b5}
+      \strng{authorfullhash}{d890d571eb13635394aa8c45530303b5}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Retrieved Mar, 2019}
+      \field{howpublished}{$\backslash$url{\{}https://www.appdynamics.com/blog/aiops/aiops-platforms-transform-performance-monitoring/{\}}}
+      \field{title}{{The Rise of AIOps: How Data, Machine Learning, and AI Will Transform Performance Monitoring}}
+    \endentry
+    \entry{gartner_aiops}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=097fa1807a4eb7984199f0fe7ccb5b54}{%
+           family={Lerner},
+           familyi={L\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{097fa1807a4eb7984199f0fe7ccb5b54}
+      \strng{fullhash}{097fa1807a4eb7984199f0fe7ccb5b54}
+      \strng{bibnamehash}{097fa1807a4eb7984199f0fe7ccb5b54}
+      \strng{authorbibnamehash}{097fa1807a4eb7984199f0fe7ccb5b54}
+      \strng{authornamehash}{097fa1807a4eb7984199f0fe7ccb5b54}
+      \strng{authorfullhash}{097fa1807a4eb7984199f0fe7ccb5b54}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Retrieved Jun, 2019}
+      \field{howpublished}{$\backslash$url{\{}https://blogs.gartner.com/andrew-lerner/2017/08/09/aiops-platforms/{\}}}
+      \field{title}{{AIOps Platforms}}
     \endentry
     \entry{mastering_aiops}{unpublished}{}
       \name{author}{3}{}{%
@@ -1696,8 +1897,8 @@
       \strng{authorbibnamehash}{543b9b015ac8599983ed70336aef0950}
       \strng{authornamehash}{543b9b015ac8599983ed70336aef0950}
       \strng{authorfullhash}{543b9b015ac8599983ed70336aef0950}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{{Anomaly Detection and Classification using Distributed Tracing and Deep Learning}}
@@ -1728,8 +1929,9 @@
       \strng{authorbibnamehash}{be6f1b6df7f1ddfafad18806238fa391}
       \strng{authornamehash}{be6f1b6df7f1ddfafad18806238fa391}
       \strng{authorfullhash}{be6f1b6df7f1ddfafad18806238fa391}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{At Salesforce, we use Zipkin to perform distributed tracing for microservices. The Zipkin tracing data (called span) can provide performance insights in both production monitoring and pre-production testing. However, the current Zipkin open source instrumentation and UI offers only primitive data tracing functionality and does not have in-depth performance analysis of the span data. The purpose of this project is to use machine learning approach for deep analysis of span data. The data we use in this study is functional and performance tests in pre-production staging environment. Several potential network bottlenecks, microservices performance issues were identified in our studies. Additionally, we also inspected the current coverage of our Zipkin instrumentation.}
@@ -1742,7 +1944,7 @@
       \verb https://engineering.salesforce.com/anomaly-detection-in-zipkin-trace-data-87c8a2ded8a1
       \endverb
     \endentry
-    \entry{analysisng_distributed_trace_data}{misc}{}
+    \entry{analysing_distributed_trace_data}{misc}{}
       \name{author}{2}{}{%
         {{hash=199a59af50161791e6e1cd73ae03aa72}{%
            family={Herr},
@@ -1761,8 +1963,8 @@
       \strng{authorbibnamehash}{ff495a4a78769a59b597657de0e1b014}
       \strng{authornamehash}{ff495a4a78769a59b597657de0e1b014}
       \strng{authorfullhash}{ff495a4a78769a59b597657de0e1b014}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{{Analyzing distributed trace data}}
@@ -1774,8 +1976,69 @@
       \verb https://medium.com/@Pinterest%7B%5C_%7DEngineering/analyzing-distributed-trace-data-6aae58919949
       \endverb
     \endentry
+    \entry{kanban_board}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{%
+           family={Wikipedia},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
+      \strng{bibnamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authorbibnamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authornamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authorfullhash}{9c677286866aad38f8e9b660f5411814}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Kanban Board}}
+      \field{urlday}{9}
+      \field{urlmonth}{12}
+      \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/wiki/Kanban{\_}board
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/Kanban%7B%5C_%7Dboard
+      \endverb
+    \endentry
+    \entry{spans_analysis}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=be6f1b6df7f1ddfafad18806238fa391}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{be6f1b6df7f1ddfafad18806238fa391}
+      \strng{fullhash}{be6f1b6df7f1ddfafad18806238fa391}
+      \strng{bibnamehash}{be6f1b6df7f1ddfafad18806238fa391}
+      \strng{authorbibnamehash}{be6f1b6df7f1ddfafad18806238fa391}
+      \strng{authornamehash}{be6f1b6df7f1ddfafad18806238fa391}
+      \strng{authorfullhash}{be6f1b6df7f1ddfafad18806238fa391}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{At Salesforce, we use Zipkin to perform distributed tracing for microservices. The Zipkin tracing data (called span) can provide performance insights in both production monitoring and pre-production testing. However, the current Zipkin open source instrumentation and UI offers only primitive data tracing functionality and does not have in-depth performance analysis of the span data. The purpose of this project is to use machine learning approach for deep analysis of span data. The data we use in this study is functional and performance tests in pre-production staging environment. Several potential network bottlenecks, microservices performance issues were identified in our studies. Additionally, we also inspected the current coverage of our Zipkin instrumentation.}
+      \field{title}{{Anomaly Detection in Zipkin Trace Data}}
+      \field{urlday}{11}
+      \field{urlmonth}{12}
+      \field{urlyear}{2018}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://engineering.salesforce.com/anomaly-detection-in-zipkin-trace-data-87c8a2ded8a1
+      \endverb
+      \verb{url}
+      \verb https://engineering.salesforce.com/anomaly-detection-in-zipkin-trace-data-87c8a2ded8a1
+      \endverb
+    \endentry
   \enddatalist
-  \missing{graph_frameworks_performance_evaluation}
 \endrefsection
 \endinput
 
