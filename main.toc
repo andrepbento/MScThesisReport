@@ -50,3 +50,39 @@
 \contentsline {subsection}{\numberline {3.3.4}Research possible directions}{27}{subsection.3.3.4}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Research Objectives and Approach}{29}{chapter.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}\leavevmode {\color {red}Problem Definition (--rename?)}}{29}{section.4.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}Research Questions}{30}{section.4.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Possible Solution}{35}{chapter.5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}Functional Requirements}{35}{section.5.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.2}Quality Attributes}{36}{section.5.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.3}Technical Restrictions}{38}{section.5.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.4}Architecture}{39}{section.5.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.4.1}Context Diagram}{39}{subsection.5.4.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.4.2}Container Diagram}{40}{subsection.5.4.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.4.3}Component Diagram}{41}{subsection.5.4.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Implementation Process}{45}{chapter.6}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.1}Huawei Tracing Data Set}{45}{section.6.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.2}Open Tracing Processor Component}{49}{section.6.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.3}Data Analysis Component}{50}{section.6.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}Conclusions}{51}{chapter.7}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.1}Brief Reflections}{51}{section.7.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.2}Future Work}{51}{section.7.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.3}Concluding Research Questions}{51}{section.7.3}% 

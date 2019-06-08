@@ -507,7 +507,6 @@
       \strng{authorbibnamehash}{9c677286866aad38f8e9b660f5411814}
       \strng{authornamehash}{9c677286866aad38f8e9b660f5411814}
       \strng{authorfullhash}{9c677286866aad38f8e9b660f5411814}
-      \field{extraname}{1}
       \field{sortinit}{2}
       \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{labelnamesource}{author}
@@ -695,6 +694,7 @@
       \strng{authorbibnamehash}{82313ad9333820ec8cb1594afacc8757}
       \strng{authornamehash}{44b33374aa9d354c29cf893d8ce7ea55}
       \strng{authorfullhash}{82313ad9333820ec8cb1594afacc8757}
+      \field{extraname}{1}
       \field{sortinit}{2}
       \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{labelnamesource}{author}
@@ -848,9 +848,6 @@
            given={Kevin},
            giveni={K\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {Addison-Wesley Professional}%
-      }
       \strng{namehash}{edfb19f5da0b049e901748a2f782f877}
       \strng{fullhash}{edfb19f5da0b049e901748a2f782f877}
       \strng{bibnamehash}{edfb19f5da0b049e901748a2f782f877}
@@ -861,9 +858,14 @@
       \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{howpublished}{$\backslash$url{\{}https://algs4.cs.princeton.edu/42digraph/{\}}}
       \field{title}{{Algorithms, 4th Edition - Graphs}}
-      \field{year}{2011}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://algs4.cs.princeton.edu/42digraph/
+      \endverb
+      \verb{url}
+      \verb https://algs4.cs.princeton.edu/42digraph/
+      \endverb
     \endentry
     \entry{Brillinger2006}{book}{}
       \name{author}{1}{}{%
@@ -1329,6 +1331,104 @@
       \verb https://www.arangodb.com/documentation/
       \endverb
     \endentry
+    \entry{Amenya2018}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=8fa14bf6245bc74d53007726089599a9}{%
+           family={Amenya},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{8fa14bf6245bc74d53007726089599a9}
+      \strng{fullhash}{8fa14bf6245bc74d53007726089599a9}
+      \strng{bibnamehash}{8fa14bf6245bc74d53007726089599a9}
+      \strng{authorbibnamehash}{8fa14bf6245bc74d53007726089599a9}
+      \strng{authornamehash}{8fa14bf6245bc74d53007726089599a9}
+      \strng{authorfullhash}{8fa14bf6245bc74d53007726089599a9}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{TAO — Facebook's Distributed database for Social Graph}}
+      \field{urlday}{7}
+      \field{urlmonth}{6}
+      \field{urlyear}{2019}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://medium.com/coinmonks/tao-facebooks-distributed-database-for-social-graph-c2b45f5346ea
+      \endverb
+      \verb{url}
+      \verb https://medium.com/coinmonks/tao-facebooks-distributed-database-for-social-graph-c2b45f5346ea
+      \endverb
+    \endentry
+    \entry{neo4j_documentation}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=9025132451e32fdc1886e48c5e18dd2b}{%
+           family={{Neo4J Inc.}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{9025132451e32fdc1886e48c5e18dd2b}
+      \strng{fullhash}{9025132451e32fdc1886e48c5e18dd2b}
+      \strng{bibnamehash}{9025132451e32fdc1886e48c5e18dd2b}
+      \strng{authorbibnamehash}{9025132451e32fdc1886e48c5e18dd2b}
+      \strng{authornamehash}{9025132451e32fdc1886e48c5e18dd2b}
+      \strng{authorfullhash}{9025132451e32fdc1886e48c5e18dd2b}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{No Title}}
+      \field{urlday}{16}
+      \field{urlmonth}{10}
+      \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://neo4j.com/docs/
+      \endverb
+      \verb{url}
+      \verb https://neo4j.com/docs/
+      \endverb
+    \endentry
+    \entry{Sasaki2018}{book}{}
+      \name{author}{3}{}{%
+        {{hash=98208a503a1a2575ae4a4df7032b6c04}{%
+           family={Sasaki},
+           familyi={S\bibinitperiod},
+           given={Bryce\bibnamedelima Merkl},
+           giveni={B\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=b354c001a79db1a6e74221a8b49373bc}{%
+           family={Chao},
+           familyi={C\bibinitperiod},
+           given={Joy},
+           giveni={J\bibinitperiod}}}%
+        {{hash=f7aedd67e55737923fd76a4f819079f6}{%
+           family={Howard},
+           familyi={H\bibinitperiod},
+           given={Rachel},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{f23dbe970b59a1370d5c95d0afa210a2}
+      \strng{fullhash}{f23dbe970b59a1370d5c95d0afa210a2}
+      \strng{bibnamehash}{f23dbe970b59a1370d5c95d0afa210a2}
+      \strng{authorbibnamehash}{f23dbe970b59a1370d5c95d0afa210a2}
+      \strng{authornamehash}{f23dbe970b59a1370d5c95d0afa210a2}
+      \strng{authorfullhash}{f23dbe970b59a1370d5c95d0afa210a2}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The {\#}1 Platform for Connected Data}
+      \field{title}{{Graph Databases for Beginners}}
+      \field{year}{2018}
+      \field{pages}{45}
+      \range{pages}{1}
+      \verb{urlraw}
+      \verb https://neo4j.com/blog/acid-vs-base-consistency-models-explained/ https://go.neo4j.com/rs/710-RRC-335/images/Graph{\_}Databases{\_}for{\_}Beginners.pdf?{\_}ga=2.124112970.1994598198.1521285291-1141717847.1521285291{\&}{\_}gac=1.180373973.1521290471.CjwKCAjw-bLVBRBMEiwAmKSB
+      \endverb
+      \verb{url}
+      \verb https://neo4j.com/blog/acid-vs-base-consistency-models-explained/%20https://go.neo4j.com/rs/710-RRC-335/images/Graph%7B%5C_%7DDatabases%7B%5C_%7Dfor%7B%5C_%7DBeginners.pdf?%7B%5C_%7Dga=2.124112970.1994598198.1521285291-1141717847.1521285291%7B%5C&%7D%7B%5C_%7Dgac=1.180373973.1521290471.CjwKCAjw-bLVBRBMEiwAmKSB
+      \endverb
+      \keyw{BT-graph databases}
+    \endentry
     \entry{facebook_tao_article}{unpublished}{}
       \name{author}{15}{}{%
         {{hash=3e63cc3e4fe6a98bb7f3ac113a7320d4}{%
@@ -1431,102 +1531,65 @@
       \verb https://cs.uwaterloo.ca/%7B~%7Dbrecht/courses/854-Emerging-2014/readings/data-store/tao-facebook-distributed-datastore-atc-2013.pdf
       \endverb
     \endentry
-    \entry{neo4j_documentation}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=9025132451e32fdc1886e48c5e18dd2b}{%
-           family={{Neo4J Inc.}},
-           familyi={N\bibinitperiod}}}%
-      }
-      \strng{namehash}{9025132451e32fdc1886e48c5e18dd2b}
-      \strng{fullhash}{9025132451e32fdc1886e48c5e18dd2b}
-      \strng{bibnamehash}{9025132451e32fdc1886e48c5e18dd2b}
-      \strng{authorbibnamehash}{9025132451e32fdc1886e48c5e18dd2b}
-      \strng{authornamehash}{9025132451e32fdc1886e48c5e18dd2b}
-      \strng{authorfullhash}{9025132451e32fdc1886e48c5e18dd2b}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{{No Title}}
-      \field{urlday}{16}
-      \field{urlmonth}{10}
-      \field{urlyear}{2018}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://neo4j.com/docs/
-      \endverb
-      \verb{url}
-      \verb https://neo4j.com/docs/
-      \endverb
-    \endentry
-    \entry{Sasaki2018}{book}{}
-      \name{author}{3}{}{%
-        {{hash=98208a503a1a2575ae4a4df7032b6c04}{%
-           family={Sasaki},
-           familyi={S\bibinitperiod},
-           given={Bryce\bibnamedelima Merkl},
-           giveni={B\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-        {{hash=b354c001a79db1a6e74221a8b49373bc}{%
-           family={Chao},
+    \entry{Facebook2150}{article}{}
+      \name{author}{5}{}{%
+        {{hash=c86ee9186757f73ef04bf7c494797a44}{%
+           family={Ching},
            familyi={C\bibinitperiod},
-           given={Joy},
-           giveni={J\bibinitperiod}}}%
-        {{hash=f7aedd67e55737923fd76a4f819079f6}{%
-           family={Howard},
-           familyi={H\bibinitperiod},
-           given={Rachel},
-           giveni={R\bibinitperiod}}}%
+           given={Avery},
+           giveni={A\bibinitperiod}}}%
+        {{hash=79caf76234e835df3dc38a785e0913e0}{%
+           family={Edunov},
+           familyi={E\bibinitperiod},
+           given={Sergey},
+           giveni={S\bibinitperiod}}}%
+        {{hash=aec5af4585ed00a311a0a3339db51a4e}{%
+           family={Kabiljo},
+           familyi={K\bibinitperiod},
+           given={Maja},
+           giveni={M\bibinitperiod}}}%
+        {{hash=cb49992ffeb885d4ab87d27ecb18a830}{%
+           family={Logothetis},
+           familyi={L\bibinitperiod},
+           given={Dionysios},
+           giveni={D\bibinitperiod}}}%
+        {{hash=aec5e7bd0abc0e10455bba82cb98242c}{%
+           family={Muthukrishnan},
+           familyi={M\bibinitperiod},
+           given={Sambavi},
+           giveni={S\bibinitperiod}}}%
       }
-      \strng{namehash}{f23dbe970b59a1370d5c95d0afa210a2}
-      \strng{fullhash}{f23dbe970b59a1370d5c95d0afa210a2}
-      \strng{bibnamehash}{f23dbe970b59a1370d5c95d0afa210a2}
-      \strng{authorbibnamehash}{f23dbe970b59a1370d5c95d0afa210a2}
-      \strng{authornamehash}{f23dbe970b59a1370d5c95d0afa210a2}
-      \strng{authorfullhash}{f23dbe970b59a1370d5c95d0afa210a2}
+      \strng{namehash}{a7c9def4e81345971a9c8a65d43b48c9}
+      \strng{fullhash}{9bfd55c14fb0166ca0e19b7ef3376c31}
+      \strng{bibnamehash}{9bfd55c14fb0166ca0e19b7ef3376c31}
+      \strng{authorbibnamehash}{9bfd55c14fb0166ca0e19b7ef3376c31}
+      \strng{authornamehash}{a7c9def4e81345971a9c8a65d43b48c9}
+      \strng{authorfullhash}{9bfd55c14fb0166ca0e19b7ef3376c31}
       \field{sortinit}{8}
       \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{The {\#}1 Platform for Connected Data}
-      \field{title}{{Graph Databases for Beginners}}
-      \field{year}{2018}
-      \field{pages}{45}
-      \range{pages}{1}
+      \field{abstract}{Analyzing large graphs provides valuable insights for social networking and web companies in content ranking and recommendations. While numerous graph processing systems have been developed and evaluated on available benchmark graphs of up to 6.6B edges, they often face signi cant dif- culties in scaling to much larger graphs. Industry graphs can be two orders of magnitude larger - hundreds of billions or up to one trillion edges. In addition to scalability challenges, real world applications often require much more complex graph processing work ows than previously evaluated. In this paper, we describe the usability, performance, and scalability improvements we made to Apache Giraph, an open-source graph processing system, in order to use it on Facebook-scale graphs of up to one trillion edges. We also describe several key extensions to the original Pregel model that make it possible to develop a broader range of production graph applications and work ows as well as improve code reuse. Finally, we report on real-world operations as well as performance characteristics of several large-scale production applications.}
+      \field{isbn}{2150-8097}
+      \field{issn}{15782190}
+      \field{journaltitle}{Proceedings of the VLDB Endowment}
+      \field{number}{12}
+      \field{title}{{One Trillion Edges: Graph Processing at Facebook-Scale Avery}}
+      \field{volume}{8}
+      \field{year}{2015}
+      \field{pages}{1804\bibrangedash 1815}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1016/S0001-7310(16)30012-6
+      \endverb
+      \verb{file}
+      \verb ::
+      \endverb
       \verb{urlraw}
-      \verb https://neo4j.com/blog/acid-vs-base-consistency-models-explained/ https://go.neo4j.com/rs/710-RRC-335/images/Graph{\_}Databases{\_}for{\_}Beginners.pdf?{\_}ga=2.124112970.1994598198.1521285291-1141717847.1521285291{\&}{\_}gac=1.180373973.1521290471.CjwKCAjw-bLVBRBMEiwAmKSB
+      \verb http://www.vldb.org/pvldb/vol8/p1804-ching.pdf http://dl.acm.org/citation.cfm?doid=2824032.2824077
       \endverb
       \verb{url}
-      \verb https://neo4j.com/blog/acid-vs-base-consistency-models-explained/%20https://go.neo4j.com/rs/710-RRC-335/images/Graph%7B%5C_%7DDatabases%7B%5C_%7Dfor%7B%5C_%7DBeginners.pdf?%7B%5C_%7Dga=2.124112970.1994598198.1521285291-1141717847.1521285291%7B%5C&%7D%7B%5C_%7Dgac=1.180373973.1521290471.CjwKCAjw-bLVBRBMEiwAmKSB
-      \endverb
-      \keyw{BT-graph databases}
-    \endentry
-    \entry{Amenya2018}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=8fa14bf6245bc74d53007726089599a9}{%
-           family={Amenya},
-           familyi={A\bibinitperiod}}}%
-      }
-      \strng{namehash}{8fa14bf6245bc74d53007726089599a9}
-      \strng{fullhash}{8fa14bf6245bc74d53007726089599a9}
-      \strng{bibnamehash}{8fa14bf6245bc74d53007726089599a9}
-      \strng{authorbibnamehash}{8fa14bf6245bc74d53007726089599a9}
-      \strng{authornamehash}{8fa14bf6245bc74d53007726089599a9}
-      \strng{authorfullhash}{8fa14bf6245bc74d53007726089599a9}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{{TAO — Facebook's Distributed database for Social Graph}}
-      \field{urlday}{7}
-      \field{urlmonth}{6}
-      \field{urlyear}{2019}
-      \field{year}{2018}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://medium.com/coinmonks/tao-facebooks-distributed-database-for-social-graph-c2b45f5346ea
-      \endverb
-      \verb{url}
-      \verb https://medium.com/coinmonks/tao-facebooks-distributed-database-for-social-graph-c2b45f5346ea
+      \verb http://www.vldb.org/pvldb/vol8/p1804-ching.pdf%20http://dl.acm.org/citation.cfm?doid=2824032.2824077
       \endverb
     \endentry
     \entry{arangodb_smart_graphs}{misc}{}
@@ -1873,47 +1936,27 @@
       \field{howpublished}{$\backslash$url{\{}https://blogs.gartner.com/andrew-lerner/2017/08/09/aiops-platforms/{\}}}
       \field{title}{{AIOps Platforms}}
     \endentry
-    \entry{mastering_aiops}{unpublished}{}
-      \name{author}{3}{}{%
-        {{hash=9b0e02ca1b9793e1c1e11f1a85d4d177}{%
-           family={Nedelkoski},
-           familyi={N\bibinitperiod},
-           given={Sahso},
-           giveni={S\bibinitperiod}}}%
+    \entry{mastering_aiops}{misc}{}
+      \name{author}{1}{}{%
         {{hash=79cb56728143ec2d4b06b789b3d7e3ab}{%
            family={Cardoso},
            familyi={C\bibinitperiod},
            given={Jorge},
            giveni={J\bibinitperiod}}}%
-        {{hash=8ef7694bfbbf1ae7761bd3c14390818c}{%
-           family={Kao},
-           familyi={K\bibinitperiod},
-           given={Odej},
-           giveni={O\bibinitperiod}}}%
       }
-      \strng{namehash}{543b9b015ac8599983ed70336aef0950}
-      \strng{fullhash}{543b9b015ac8599983ed70336aef0950}
-      \strng{bibnamehash}{543b9b015ac8599983ed70336aef0950}
-      \strng{authorbibnamehash}{543b9b015ac8599983ed70336aef0950}
-      \strng{authornamehash}{543b9b015ac8599983ed70336aef0950}
-      \strng{authorfullhash}{543b9b015ac8599983ed70336aef0950}
+      \strng{namehash}{79cb56728143ec2d4b06b789b3d7e3ab}
+      \strng{fullhash}{79cb56728143ec2d4b06b789b3d7e3ab}
+      \strng{bibnamehash}{79cb56728143ec2d4b06b789b3d7e3ab}
+      \strng{authorbibnamehash}{79cb56728143ec2d4b06b789b3d7e3ab}
+      \strng{authornamehash}{79cb56728143ec2d4b06b789b3d7e3ab}
+      \strng{authorfullhash}{79cb56728143ec2d4b06b789b3d7e3ab}
       \field{sortinit}{1}
       \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{{Anomaly Detection and Classification using Distributed Tracing and Deep Learning}}
-      \field{year}{2018}
-      \field{pages}{10}
-      \range{pages}{1}
-      \verb{file}
-      \verb :home/andrepbento/Downloads/PID5812437.pdf:pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://pt.slideshare.net/JorgeCardoso4/mastering-aiops-with-deep-learning
-      \endverb
-      \verb{url}
-      \verb https://pt.slideshare.net/JorgeCardoso4/mastering-aiops-with-deep-learning
-      \endverb
+      \field{annotation}{Retrieved Fev, 2019}
+      \field{howpublished}{$\backslash$url{\{}https://pt.slideshare.net/JorgeCardoso4/mastering-aiops-with-deep-learning{\}}}
+      \field{title}{{Mastering AIOps with Deep Learning}}
     \endentry
     \entry{anomaly_detection_zipkin_tracing_data}{misc}{}
       \name{author}{1}{}{%
@@ -1976,34 +2019,115 @@
       \verb https://medium.com/@Pinterest%7B%5C_%7DEngineering/analyzing-distributed-trace-data-6aae58919949
       \endverb
     \endentry
-    \entry{kanban_board}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=9c677286866aad38f8e9b660f5411814}{%
-           family={Wikipedia},
-           familyi={W\bibinitperiod}}}%
+    \entry{Sambasivan2014}{article}{}
+      \name{author}{4}{}{%
+        {{hash=b79cf563f20cf10902f3e13d717b1ccf}{%
+           family={Sambasivan},
+           familyi={S\bibinitperiod},
+           given={Raja\bibnamedelima R},
+           giveni={R\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=7ac67101266fa4441ee76cf3a31eb8bc}{%
+           family={Fonseca},
+           familyi={F\bibinitperiod},
+           given={Rodrigo},
+           giveni={R\bibinitperiod}}}%
+        {{hash=dca6f1201971ae7372dd7a86c7052a38}{%
+           family={Shafer},
+           familyi={S\bibinitperiod},
+           given={Ilari},
+           giveni={I\bibinitperiod}}}%
+        {{hash=c088fc39c55370692d55699c15dd1ffb}{%
+           family={Ganger},
+           familyi={G\bibinitperiod},
+           given={Gregory\bibnamedelima R},
+           giveni={G\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
       }
-      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
-      \strng{bibnamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authorbibnamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authornamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authorfullhash}{9c677286866aad38f8e9b660f5411814}
+      \strng{namehash}{44b33374aa9d354c29cf893d8ce7ea55}
+      \strng{fullhash}{82313ad9333820ec8cb1594afacc8757}
+      \strng{bibnamehash}{82313ad9333820ec8cb1594afacc8757}
+      \strng{authorbibnamehash}{82313ad9333820ec8cb1594afacc8757}
+      \strng{authornamehash}{44b33374aa9d354c29cf893d8ce7ea55}
+      \strng{authorfullhash}{82313ad9333820ec8cb1594afacc8757}
       \field{extraname}{2}
       \field{sortinit}{1}
       \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{{Kanban Board}}
-      \field{urlday}{9}
-      \field{urlmonth}{12}
-      \field{urlyear}{2018}
-      \field{urldateera}{ce}
+      \field{abstract}{End-to-end tracing captures the work ow of causally-related activity (e.g., work done to process a request) within and among the components of a distributed system. As distributed systems grow in scale and complexity, such tracing is becoming a critical tool for management tasks like diagnosis and resource accounting. Drawing upon our experiences building and using end-to-end tracing infrastructures, this paper distills the key design axes that dictate trace utility for important use cases. Developing tracing infrastructures without explicitly understanding these axes and choices for them will likely result in infrastructures that are not useful for their intended purposes. In addition to identifying the design axes, this paper identi es good design choices for various tracing use cases, contrasts them to choices made by previous tracing implementations, and shows where prior implementations fall short. It also identi es remaining challenges on the path to making tracing an integral part of distributed system design.}
+      \field{title}{{So, you want to trace your distributed system? Key design insights from years of practical experience}}
+      \field{year}{2014}
+      \field{pages}{25}
+      \range{pages}{1}
+      \verb{file}
+      \verb :home/andrepbento/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Sambasivan et al. - 2014 - So, you want to trace your distributed system Key design insights from years of practical experience.pdf:pdf
+      \endverb
       \verb{urlraw}
-      \verb https://en.wikipedia.org/wiki/Kanban{\_}board
+      \verb http://www.pdl.cmu.edu/PDL-FTP/SelfStar/CMU-PDL-14-102.pdf
       \endverb
       \verb{url}
-      \verb https://en.wikipedia.org/wiki/Kanban%7B%5C_%7Dboard
+      \verb http://www.pdl.cmu.edu/PDL-FTP/SelfStar/CMU-PDL-14-102.pdf
       \endverb
+      \keyw{Design,Distributed systems,End-to-end tracing}
+    \endentry
+    \entry{Ikonen2011}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=217f39e53ac236c95b2ecdbf692c63b0}{%
+           family={Ikonen},
+           familyi={I\bibinitperiod},
+           given={Marko},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a20f7c43a0c3b46f2840cb45fdb4b49e}{%
+           family={Pirinen},
+           familyi={P\bibinitperiod},
+           given={Elena},
+           giveni={E\bibinitperiod}}}%
+        {{hash=5a1fa2a46da59556c5ad0057e3bd3d62}{%
+           family={Fagerholm},
+           familyi={F\bibinitperiod},
+           given={Fabian},
+           giveni={F\bibinitperiod}}}%
+        {{hash=71cc8bd85872f7c2494c6d97387c9498}{%
+           family={Kettunen},
+           familyi={K\bibinitperiod},
+           given={Petri},
+           giveni={P\bibinitperiod}}}%
+        {{hash=f000e44112e23fdafed23380b5583b19}{%
+           family={Abrahamsson},
+           familyi={A\bibinitperiod},
+           given={Pekka},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{33cdf86c0de0a9651882665109038c8f}
+      \strng{fullhash}{4e3e59f3a540375c213884ebd074ad07}
+      \strng{bibnamehash}{4e3e59f3a540375c213884ebd074ad07}
+      \strng{authorbibnamehash}{4e3e59f3a540375c213884ebd074ad07}
+      \strng{authornamehash}{33cdf86c0de0a9651882665109038c8f}
+      \strng{authorfullhash}{4e3e59f3a540375c213884ebd074ad07}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The pertinent mission of software project management is to continuously achieve more and more successful projects. In the field of software development, the Kanban method has gained momentum recently, mostly due to its linkages to Lean thinking. However, only a few empirical studies investigate the dynamics and impacts of Kanban on projects. The aim of this study is to improve the understanding on how Kanban impacts on software project work. For the purpose of the study, a framework is developed and empirically investigated in an experimental software R {\&} D setting called Software Factory. The impact of Kanban is evaluated from nine theoretically derived perspectives. The results highlight new findings regarding the application of Kanban in the software context. This bears managerial implications, which is addressed. The key implications of the findings suggest that Kanban and its inherent simplicity motivate the workers and control the project activities. {©} 2011 IEEE.}
+      \field{booktitle}{Proceedings - 2011 16th IEEE International Conference on Engineering of Complex Computer Systems, ICECCS 2011}
+      \field{isbn}{9780769543819}
+      \field{month}{4}
+      \field{title}{{On the impact of Kanban on software project work: An empirical case study investigation}}
+      \field{year}{2011}
+      \field{pages}{305\bibrangedash 314}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/ICECCS.2011.37
+      \endverb
+      \verb{urlraw}
+      \verb http://ieeexplore.ieee.org/document/5773404/
+      \endverb
+      \verb{url}
+      \verb http://ieeexplore.ieee.org/document/5773404/
+      \endverb
+      \keyw{Kanban,Process model,Project management,Software development}
     \endentry
     \entry{spans_analysis}{misc}{}
       \name{author}{1}{}{%
@@ -2036,6 +2160,175 @@
       \endverb
       \verb{url}
       \verb https://engineering.salesforce.com/anomaly-detection-in-zipkin-trace-data-87c8a2ded8a1
+      \endverb
+    \endentry
+    \entry{simon_browns_c4_model}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=0653a11aad687a389587e0000e0f4a13}{%
+           family={Brown},
+           familyi={B\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{0653a11aad687a389587e0000e0f4a13}
+      \strng{fullhash}{0653a11aad687a389587e0000e0f4a13}
+      \strng{bibnamehash}{0653a11aad687a389587e0000e0f4a13}
+      \strng{authorbibnamehash}{0653a11aad687a389587e0000e0f4a13}
+      \strng{authornamehash}{0653a11aad687a389587e0000e0f4a13}
+      \strng{authorfullhash}{0653a11aad687a389587e0000e0f4a13}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{The C4 model for software architecture}}
+      \field{urlday}{12}
+      \field{urlmonth}{12}
+      \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://c4model.com/
+      \endverb
+      \verb{url}
+      \verb https://c4model.com/
+      \endverb
+    \endentry
+    \entry{networkx_speed}{unpublished}{}
+      \name{author}{5}{}{%
+        {{hash=2652f875cecda57ef117ecc2ca8b7258}{%
+           family={Hladish},
+           familyi={H\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=f1695814a696dcadd20d83b20cd6b3da}{%
+           family={Melamud},
+           familyi={M\bibinitperiod},
+           given={Eugene},
+           giveni={E\bibinitperiod}}}%
+        {{hash=397379a2447483ea5ca95f10e5668331}{%
+           family={Barrera},
+           familyi={B\bibinitperiod},
+           given={Luis\bibnamedelima Alberto},
+           giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=dde1999aef9d1a421d96d1193e64cf92}{%
+           family={Galvani},
+           familyi={G\bibinitperiod},
+           given={Alison},
+           giveni={A\bibinitperiod}}}%
+        {{hash=fb0bcbb603755ecd60e1006fdf9be845}{%
+           family={Meyers},
+           familyi={M\bibinitperiod},
+           given={Lauren\bibnamedelima Ancel},
+           giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {BMC Bioinformatics}%
+      }
+      \strng{namehash}{07c9a1f15094f0f46686aa1443b34cfb}
+      \strng{fullhash}{1e7fc60241969414343c6a09190dfe59}
+      \strng{bibnamehash}{1e7fc60241969414343c6a09190dfe59}
+      \strng{authorbibnamehash}{1e7fc60241969414343c6a09190dfe59}
+      \strng{authornamehash}{07c9a1f15094f0f46686aa1443b34cfb}
+      \strng{authorfullhash}{1e7fc60241969414343c6a09190dfe59}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Background: Contact network models have become increasingly common in epidemiology, but we lack a flexible programming framework for the generation and analysis of epidemiological contact networks and for the simulation of disease transmission through such networks. Results: Here we present EpiFire, an applications programming interface and graphical user interface implemented in C++, which includes a fast and efficient library for generating, analyzing and manipulating networks. Networkbased percolation and chain-binomial simulations of susceptible-infected-recovered disease transmission, as well as traditional non-network mass-action simulations, can be performed using EpiFire. Conclusions: EpiFire provides an open-source programming interface for the rapid development of network models with a focus in contact network epidemiology. EpiFire also provides a point-and-click interface for generating networks, conducting epidemic simulations, and creating figures. This interface is particularly useful as a pedagogical tool.}
+      \field{title}{{EpiFire: An open source C++ library and application for contact network epidemiology}}
+      \verb{file}
+      \verb :home/andrepbento/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Hladish et al. - Unknown - EpiFire An open source C library and application for contact network epidemiology.pdf:pdf
+      \endverb
+    \endentry
+    \entry{click_log_doc}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=e23448795db7eb424a91f3be1baf8443}{%
+           family={Unterwaditzer},
+           familyi={U\bibinitperiod},
+           given={Markus},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{e23448795db7eb424a91f3be1baf8443}
+      \strng{fullhash}{e23448795db7eb424a91f3be1baf8443}
+      \strng{bibnamehash}{e23448795db7eb424a91f3be1baf8443}
+      \strng{authorbibnamehash}{e23448795db7eb424a91f3be1baf8443}
+      \strng{authornamehash}{e23448795db7eb424a91f3be1baf8443}
+      \strng{authorfullhash}{e23448795db7eb424a91f3be1baf8443}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Click-log: Simple and beautiful logging}}
+      \field{urlday}{22}
+      \field{urlmonth}{12}
+      \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://click-log.readthedocs.io/en/stable/
+      \endverb
+      \verb{url}
+      \verb https://click-log.readthedocs.io/en/stable/
+      \endverb
+    \endentry
+    \entry{jsonl}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=00cc1bd44f53d80af471c2a95c0f8bcd}{%
+           family={Ward},
+           familyi={W\bibinitperiod},
+           given={Ian},
+           giveni={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{00cc1bd44f53d80af471c2a95c0f8bcd}
+      \strng{fullhash}{00cc1bd44f53d80af471c2a95c0f8bcd}
+      \strng{bibnamehash}{00cc1bd44f53d80af471c2a95c0f8bcd}
+      \strng{authorbibnamehash}{00cc1bd44f53d80af471c2a95c0f8bcd}
+      \strng{authornamehash}{00cc1bd44f53d80af471c2a95c0f8bcd}
+      \strng{authorfullhash}{00cc1bd44f53d80af471c2a95c0f8bcd}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{JSON Lines}}
+      \field{urlday}{18}
+      \field{urlmonth}{4}
+      \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://jsonlines.org/
+      \endverb
+      \verb{url}
+      \verb http://jsonlines.org/
+      \endverb
+    \endentry
+    \entry{arango_issues}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=ea29066cc800097ade981494fd5a4ef1}{%
+           family={Bento},
+           familyi={B\bibinitperiod},
+           given={Andr{é};},
+           giveni={A\bibinitperiod}}}%
+        {{hash=ea901c73c6b714a985c2f9386e54ba14}{%
+           family={Daouda},
+           familyi={D\bibinitperiod},
+           given={Tariq;},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{1338f22e7aa77c2cae045dd49530d749}
+      \strng{fullhash}{1338f22e7aa77c2cae045dd49530d749}
+      \strng{bibnamehash}{1338f22e7aa77c2cae045dd49530d749}
+      \strng{authorbibnamehash}{1338f22e7aa77c2cae045dd49530d749}
+      \strng{authornamehash}{1338f22e7aa77c2cae045dd49530d749}
+      \strng{authorfullhash}{1338f22e7aa77c2cae045dd49530d749}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{pyArango Issues}}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://github.com/ArangoDB-Community/pyArango/issues/137
+      \endverb
+      \verb{url}
+      \verb https://github.com/ArangoDB-Community/pyArango/issues/137
       \endverb
     \endentry
   \enddatalist

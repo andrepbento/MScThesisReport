@@ -23,3 +23,21 @@
 \BOOKMARK [2][-]{subsection.3.3.3}{Analysing distributed trace data}{section.3.3}% 23
 \BOOKMARK [2][-]{subsection.3.3.4}{Research possible directions}{section.3.3}% 24
 \BOOKMARK [0][-]{chapter.4}{Research Objectives and Approach}{}% 25
+\BOOKMARK [1][-]{section.4.1}{Problem Definition \(\205rename?\)}{chapter.4}% 26
+\BOOKMARK [1][-]{section.4.2}{Research Questions}{chapter.4}% 27
+\BOOKMARK [0][-]{chapter.5}{Possible Solution}{}% 28
+\BOOKMARK [1][-]{section.5.1}{Functional Requirements}{chapter.5}% 29
+\BOOKMARK [1][-]{section.5.2}{Quality Attributes}{chapter.5}% 30
+\BOOKMARK [1][-]{section.5.3}{Technical Restrictions}{chapter.5}% 31
+\BOOKMARK [1][-]{section.5.4}{Architecture}{chapter.5}% 32
+\BOOKMARK [2][-]{subsection.5.4.1}{Context Diagram}{section.5.4}% 33
+\BOOKMARK [2][-]{subsection.5.4.2}{Container Diagram}{section.5.4}% 34
+\BOOKMARK [2][-]{subsection.5.4.3}{Component Diagram}{section.5.4}% 35
+\BOOKMARK [0][-]{chapter.6}{Implementation Process}{}% 36
+\BOOKMARK [1][-]{section.6.1}{Huawei Tracing Data Set}{chapter.6}% 37
+\BOOKMARK [1][-]{section.6.2}{Open Tracing Processor Component}{chapter.6}% 38
+\BOOKMARK [1][-]{section.6.3}{Data Analysis Component}{chapter.6}% 39
+\BOOKMARK [0][-]{chapter.7}{Conclusions}{}% 40
+\BOOKMARK [1][-]{section.7.1}{Brief Reflections}{chapter.7}% 41
+\BOOKMARK [1][-]{section.7.2}{Future Work}{chapter.7}% 42
+\BOOKMARK [1][-]{section.7.3}{Concluding Research Questions}{chapter.7}% 43

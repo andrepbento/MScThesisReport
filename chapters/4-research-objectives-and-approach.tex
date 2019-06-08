@@ -2,102 +2,209 @@
 \chapter{Research Objectives and Approach}
 \label{chap:research_objectives_and_approach}
 
-\todo{REVIEW THIS CHAPTER; Think about spliting it in two; Refer that the origin of the work comes from Huawei and professor JC is the client;}
+In this Chapter, the problem is approached in detail and the objectives for this research are presented. The problem definition, how we tackled it and our main difficulties and the objectives involved to provide a possible solution are presented in Section~\ref{sec:problem_definition}~-~\nameref{sec:problem_definition}. Also, a compilation of research questions are presented and evaluated with some reasoning about possible ways to answer them, later in Section~\ref{sec:research_questions}~-~\nameref{sec:research_questions}.
 
-This chapter presents the research objectives and approach used in this thesis. We will start to discuss how we faced the problem, and what were the main difficulties that we found when handling this kind of problem as well as the ways we have taken to deal with it.
+\section{\todo{Problem Definition (--rename?)}}
+\label{sec:problem_definition}
 
-The debugging process in distributed systems and microservice based systems is not an easy task to perform, because of the way the system is designed using this kind of architecture style, as explained in the subsection \ref{subsec:microservices} - \nameref{subsec:microservices}. Reasoning about concurrent activities of system nodes and even understanding the system's communication topology can be very difficult. A standard approach to gaining insight into system activity is to analyse system logs, but this task can be very tedious and complex process. The main existing tools are the ones presented in \ref{subsec:distributed_tracing_tools}, but they only do the job of gather and present the information to the user in a more gracefully way, however they rely on the user perception to do the search to find issues that exist in their platform by performing queries to the spans and trace data. So, with this problem ahead, we started looking for the needs of Sysadmins and/or \gls{devops} when they wanted to scan and analyse their system searching for issues.
+Modern distributed services are large, complex, and increasingly built upon other similarly complex distributed services. Debugging microservice based systems is not an easy task to perform. It involves the collection, interpretation, and display of information concerning the interactions among concurrently executing processes operating in distributed machines. \nameref{subsec:distributed_tracing} data helps keeping an history of work performed by these systems.
 
-To do this and narrow the problem we were facing, we decided to talk with some \gls{devops} personal and expose them the situation, with the objective to gather their main needs and ideas in mind, we putted ourselves in their perspective when talking to them to try and find what are the main difficulties when they perform their search for issues in the system in a \textit{``As a \gls{devops} i want to...''} situation. The kind of questions that were placed were like: \textit{``What are the most common issues?''}, \textit{``What are the variables involved in this kind of issues?''} and \textit{``What are the correlations between this variables and the most common issues?''}. From this discussions and conversations emerged the following eight core questions:
+End-to-end tracing captures the work-fow of causally-related activity (e.g., work done to process a request) within and among the components of a distributed system. As distributed systems grow in scale and complexity, such tracing is becoming a critical tool for management tasks like diagnosis and resource accounting. However, as systems grow, resulting tracing data from system execution is growing as well~\cite{Sambasivan2014}.
+
+Tracing data growth raises some problems. This data is used by system operators to gain insight and observability of the distributed system, however, with this tendency to increase in quantity and complexity, it is becoming an overwhelming task for operators.
+
+There are some tools that help handling tracing data, such as the ones presented in Subsection~\ref{subsec:distributed_tracing_tools}~-~\nameref{subsec:distributed_tracing_tools}, however, they only perform the job of collecting tracing data, present this information to the user in more human-readable formats and provide mere forms of querying this type of data. For this reason, manually managing these growing microservice architectures are becoming an outdated approach due to their incomportability.
+
+To address this issue, there is a great need of improving tracing data processing and automate the task of tracing analysis. However, at that point, we did not have any tracing data at our disposal to start working, thus acquire tracing data from a distributed system was an urgency. Obtain tracing data for study is hard because it represents working from these systems and contain confidential information about them, however,\todo{through a NDA (Non-Disclosure Agreement) and the help of professor Jorge Cardoso,} representing Huawei, we were able to gain access to tracing data generated by the company.
+
+This tracing data set was the starting point for this research. It is in \texttt{OpenTracing} format and was provided by Huawei. This data had been gathered from an experimental \texttt{OpenStack} cluster used by the company for testing purposes, and covered two days of operation. This data is addressed in detail in Section~\ref{sec:data_set}~-~\nameref{sec:data_set}.
+
+After having access to tracing data, we have developed some prototype tools for data ingestion and setted up a distributed tracing tool. Zipkin was used as a distributed tracing tool to ingest tracing data provided by Huawei. The decision to use Zipkin instead of Jaeger, fell in the fact that it were much simpler due to lesser feature configuration. This was done with the purpose of gain a clear visualization about the data that were given. From this we decided to perform several meetings with the objective of defining a research direction and be able to propose a solution.
+
+In these meetings, the elements of this research project gathered to debate ideas and define a set of questions to answer, taking into consideration the defined problem. Professor Jorge Cardoso, representing Huawei, was the client of the designed solution. The approach taken was to create a shared Kanban Board~\cite{Ikonen2011}, containing multiple lanes, to perform the of generation and refinement of prototype questions. This process involved having prototype question in the first lane, and move them through every lane reaching the last one, transforming a prototype question into a final research question. These research questions were built taking into consideration:
+
+\begin{enumerate}
+    \item Main needs felted by operators in normal day-to-day tasks, troubleshooting distributed systems;
+    \item Most common issues presented in these systems;
+    \item Variables involved when these issues appear;
+    \item Relationship between these variables and the most common issues.
+\end{enumerate}
+
+In the next Section~\ref{sec:research_questions}~-~\nameref{sec:research_questions}, the process to generate the research questions is explained and the research questions, in their final state, are presented.
+
+\section{Research Questions}
+\label{sec:research_questions}
+
+In this Section, we start by explaining the process to generate the research questions. In the end, these questions are defined and a possible approach for each one of them is discussed.
+
+As mentioned in previous section, a Kanban Board was created with five lanes: ``Initial Prototype'', ``To Refine (1)'', ``Interesting'', ``To Refine (2)'' and ``Final Research Questions''. Throughout these lanes, questions were improved and filtered before reaching their final state. Prototype questions where:
 
 \begin{enumerate}
     \item What is the neighbourhood of one service?
     \item Is there any problem (Which are the associated heuristics)?
     \item Is there any faults related to the system design/architecture?
     \item What is the root problem, when A, B, C services are slow?
-    \item How are the requests coming from the client?
+    \item How are requests coming from the client?
     \item How endpoints orders distributions are done?
     \item What is the behaviour of the instances?
     \item What is the length of each queue in a service?
 \end{enumerate}
 
-The next step was to work on the questions presented above. We decided to split them in more concise questions, refine and filter the most relevant to define our objective, and after that, check with someone involved in the \gls{devops} field if the final questions represent some of their needs. First, to handle the information presented in this eight initial questions, we decided to create what we called a ``Project Questions Board''. This board consists on a Kanban \cite{kanban_board} style board present in the project git repository, were everyone involved in the project could access and modify it. The board was defined with four lanes: ``To refine'', ``Interesting'', ``Refined'' and ``Final Questions'', and the process were to cycle the questions through every lane, generating new ones and filtering others. After this, and to check if the final questions were really some that represented the needs of a \gls{devops}, some colleagues that work directly in the field were contacted and the questions were exposed to them. In the end, the ten questions that were produced in the final lane represented right what are some of their needs. The final questions, their corresponding description\textbf{(D)} and explanation of the expected work\textbf{(W)} that must be performed to each one are exposed bellow:
+These initial questions were to general, therefore they were passed through every lane defined before. This refinement leaded to the generation of final state questions. Final questions, with their corresponding description~\textbf{(D)} and a starting point for the expected work~\textbf{(W)} involved, are defined bellow:
+
+\begin{enumerate}
+    \item Does any service present a significant change in the number of incoming requests?
+    \item Does any service present a significant change in the number of outgoing requests?
+          \begin{itemize}
+              \item[D.] The number of requests are the number of calls performed to a service. These metrics represent a very important measurement for service monitoring, because it measures the service usage in time.
+              \item[W.] To obtain these metrics, one must generate the service dependency graph throughout defined time-frames and retrieve the number of connections between every node presented in the graph.
+          \end{itemize}
+
+    \item Does any service present a significant change in response time?
+          \begin{itemize}
+              \item[D.] Response time represents the amount of time needed to respond to a call. It is considered one of the most important measurements in systems because represents their performance.
+              \item[W.] Get the response time for every span (difference between end and start time present in the structure).
+          \end{itemize}
+
+    \item Is there a problem related to the work-flow of one (or more) requests?
+          \begin{itemize}
+              \item[D.] Work-flow of one request represents the interaction path triggered throughout the system.
+              \item[W.] Generate service dependency graph, retrieve work-flow paths presented in the graph and gather information about the number of unique paths and type variation.
+          \end{itemize}
+
+    \item How do requests are being handled by a specific service? (Identify services that are experiencing unreliability periods)
+          \begin{itemize}
+              \item[D.] In the end, requests have success or not. This is represented by a status code in \gls{http} or an exception in \gls{rpc}. Measure the ratio of these values can help identify unreliability periods in services.
+              \item[W.] Gather status codes or exceptions from spans and generate a ratio of success and error.
+          \end{itemize}
+
+    \item Which services are the most popular in the system? (Number of established connections)
+          \begin{itemize}
+              \item[D.] Popularity of a service stands for the number of established connections. This measurement is important because a failure in a very popular service can compromise the entire system.
+              \item[W.] Generate service dependency graph, and calculate the degree of each node. Services with higher degree are the most popular in the system.
+          \end{itemize}
+
+    \item Does any service present a significant change in the services it uses to fulfil requests?
+          \begin{itemize}
+              \item[D.] Services tend to communicate with a set of other services. These services do not change often, therefore, patterns in service communication can be observed. If these patterns are violated without service redeployment and networking changes, one might be facing a possible traffic redirection.
+              \item[W.] Generate service dependency graph, and retrieve the set of services that each service communicates. Gathering these values in time, lead to a history of communication between services and, therefore, pattern recognition can be applied to detect strange variations.
+          \end{itemize}
+
+    \item Is there a problem related to the constitution of the system?
+          \begin{itemize}
+              \item[D.] Constitution in microservices architecture represent which services are presented in the system. The study of entries and exits of services in the overall system network can help identifying problems in system constitution.
+              \item[W.] Generate service dependency graph in consecutive time-frames and retrieve the entry / exit of services. Variation analysis of this data can lead to detect constitution problems presented in distributed systems.
+          \end{itemize}
+
+    \item Do traces follow OpenTracing specification? (Structural quality testing)
+          \begin{itemize}
+              \item[D.] Structure quality is always an important factor when using some dataset to analyse a system. This question aims to perform a structural test of spans presented in tracing against the defined specification.
+              \item[W.] Produce a structural schema based on the proposed open source tracing specification -- OpenTracing --, and check every span.
+          \end{itemize}
+
+    \item How is time coverage of tracing? (Coverability quality testing)
+          \begin{itemize}
+              \item[D.] Time coverage is an important aspect in tracing, because this measurement can pinpoint possible failures in system instrumentation.
+              \item[W.] In tracing, child spans should cover almost the total duration of their parent span. To perform this test, a span tree for each trace must be assembled and times ratios of the durations must be extracted.
+          \end{itemize}
+\end{enumerate}
+
+%colleagues that work directly in the field were contacted and the questions were exposed to them. In the end, the ten questions that were produced in the final lane represented right what are some of their needs.
+
+After having generated these final state questions, an analysis report was performed in order to group them in similar fields of end-to-end tracing use cases~\cite{Sambasivan2014}. Table~\ref{table:final_state_question_groups} present the defined groups and the associated questions.
+
+\begin{table}[H]
+    \caption{Final state questions groups.}
+    \label{table:final_state_question_groups}
+    \centering
+    \begin{tabularx}{\linewidth} {
+        |>{\hsize=0.8\hsize}X|
+        >{\hsize=1.2\hsize}X|}
+        \cline{1-2}
+        \textbf{Group}
+         & \textbf{Question numbers}                                                                                                  \\ \hline \hline
+        1. Anomaly detection
+         & 1.  Does any service present a significant change in the number of incoming requests? \newline
+        2.  Does any service present a significant change in the number of outgoing requests? \newline
+        3.  Does any service present a significant change in response time?                                                           \\ \hline
+        2. Steady state problems
+         & 4.  Is there a problem related to the work-flow of one (or more) requests? \newline
+        5.  How do requests are being handled by a specific service? (Identify services that are experiencing unreliability periods) \\ \hline
+        3. Distributed resource profiling
+         & 6. Which services are the most popular in the system? (Number of established connections) \newline
+        7. Does any service present a significant change in the services it uses to fulfil requests? \newline
+        8. Is there a problem related to the constitution of the system?                                                                \\ \hline
+        4. Quality of tracing
+         & 9. Do traces follow OpenTracing specification? (Structural quality testing); \newline
+        10. How is time coverage of tracing? (Coverability quality testing).                                                         \\ \hline
+    \end{tabularx}
+\end{table}
+
+\todo{Explain the assignments...}
+
+\todo{CONTINUE FROM HERE!}
+
+For each group the following general questions were composed:
 
 \begin{itemize}
-    \item[\textbf{1.}] What is the neighbourhood of one service, based on incoming requests? \begin{itemize}
-        \item[D.] The neighbourhood of one service is a very important information to know due to the simple fact that it represents the interaction between the microservices. The incoming requests can map the interactions between the microservices and with this kind of information, we can check and analyse the service dependencies.
-        \item[W.] Implies generate a graph, based on the spans and traces, using the outgoing connections, from a certain node, that are correlated with the incoming connection(s).
-    \end{itemize}
-
-    \item[\textbf{2.}] What is the neighbourhood of one service, based on outgoing requests?
-    \begin{itemize}
-        \item[D.] Similar to the previous question, but this time, instead of incoming requests we focus on the outgoing requests of one service. 
-        \item[W.] Implies generate a graph, based on the spans and traces, using the incoming connections, from a certain node, that are correlated with the outgoing connection(s).
-    \end{itemize}
-
-    \item[\textbf{3.}] How endpoints orders distributions are done, when using a specific endpoint?
-    \begin{itemize}
-        \item[D.] The distributions of microservices in a system allows us to understand if a certain endpoint groups with others or if it is an isolated service, which stands for its relevance to the whole system.
-        \item[W.] Implies generate a graph, based on the spans and traces, then calculate the degree of a certain node that represents the endpoint, to finally check if it is an isolated, a leaf or a dominating (high or low depending on the degree of the other degrees) endpoint.
-    \end{itemize}
-    
-    \item[\textbf{4.}] How requests are being handled by a specific endpoint?
-    \begin{itemize}
-        \item[D.] This question has the objective of analyse the status of the requests that arrive or depart from a specific endpoint. This status represents if the requests was well succeed or not.
-        \item[W.] Implies to analyse the data from the requests that pass through a specific endpoint. Based on the annotations presented in the spans and traces, we are able to check if the requests are resulting in success or in error. 
-    \end{itemize}
-
-    \item[\textbf{5.}] Which endpoints are the most popular?
-    \begin{itemize}
-        \item[D.] The popularity of a certain endpoint is very important because it represents the importance of this endpoint to the system.
-        \item[W.] Implies to retrieve the most popular service, based on the spans and traces, and get the services with more incoming connections sorted by the number of incoming connections.
-    \end{itemize}
-
-    \item[\textbf{6.}] Is there any problem related to the response time?
-    \begin{itemize}
-        \item[D.] Response time is must watch variable because, for example, strange high values may represent a problem in the system performance.
-        \item[W.] Implies to get the response time of every trace (difference between end and start time of every span in the trace) and then calculate and store some measurements like the average time, the maximum time, the minimum time and variance. After having some stored values, the system must perform calculations and check if there is too much disparity between them to determine if there is a problem in the response time.
-    \end{itemize}
-
-    \item[\textbf{7.}] Is there any problem related to the morphology?
-    \begin{itemize}
-        \item[D.] The morphology of the system allows us to understand if some endpoints are common in the system (they usually exist), or if they only are instantiated in specific situations.
-        \item[W.] Implies generate multiple graphs, based on a certain group of spans and traces that are contained in a certain time interval. Then we need to store the graphs gradually using some graph storing mechanism to perform the difference of subsequent stored graphs. This result of the difference between graphs must be stored in a time-series storing mechanism, to be accessed later and determine if there were hard changes that could lead to morphology problems in the system thought time.
-    \end{itemize}
-    
-    \item[\textbf{8.}] Is there any problem related to the entire work-flow of (one or more) requests?
-    \begin{itemize}
-        \item[D.] Analyse the request work-flow through the system is a good practice, as it represents the interaction triggered by the request in the system and its resulting behaviour. This can lead to find out if the system has cycles and if they are normal or represent a problem to solve.  
-        \item[W.] Implies to generate the graph of the system, identify the path of some request(s) in the system and then perform the calculation to verify and identify if there were cycles presented in the graph involved in the path of the request(s). The results of this calculations must be stored in a time-series storing mechanism, to be accessed later and determine if this cycles are normal, or if they represent a problem related to the request(s) work-flow, based on the kind of request.
-    \end{itemize}
-
-    \item[\textbf{9.}] Is there any problem related to the occupation/load of a specific endpoint?
-    \begin{itemize}
-        \item[D.] The occupation/load of a specific endpoint in this case is represented by the number of requests in queue of a specific endpoint. This value is very important because it represents if the endpoint is in overflow or not.
-        \item[W.] Implies to get the number of requests in queue of a specific endpoint and then calculate and store some measurements like the average, maximum, minimum and variance of the number of requests in queue. After having some stored values, the system must perform calculations and check if there is too much disparity between them to determine if there is a problem in the occupation/load.
-    \end{itemize}
-
-    \item[\textbf{10.}] Is there any problem, related to the number/profile of the client requests?
-    \begin{itemize}
-        \item[D.] The number of client requests and their corresponding profile represents the behaviour of clients when using the system. This can be used to identify problems of bad system usage from the clients, like for example a DDoS (Denial Of Service).
-        \item[W.] Implies calculate the number of accesses to the system, based on the spans and traces annotated with client requests of a certain time interval, and store the calculations for every node. After having some stored values, the system must determine the level regions of access based in the available data (profile of requests, ex.: high, moderate and low), and check if there were to much requests outside of the defined level regions.
-    \end{itemize}
+    \item Group 1 - Is there any anomalous service?
+    \item Group 2 - What is the overall reliability of the service?
+    \item Group 3 - Which service consumes more time when considering the entire set of requests?
+    \item Group 4 - How can we measure the quality of tracing?
 \end{itemize}
 
- These final questions, with a slight reformulation, could be exported to high level of abstraction functional requirements of the monitoring tool that we want to develop. After having this questions, we decided to study the current state of art to check how things are done nowadays regarding this subject and we found that some tools perform the process of convert spans and traces to a graph, that represents the system at that current time interval, however they do not perform any kind of analysis and study over the span tree and the graph after that\cite{spans_analysis}.
- 
- Considering this, what we decided to do was to develop a simple prototype tool to test some state of the art tools. What we were able to achieve was to do the reconstruction of the graph, using our own data (this data was provided by Prof. Jorge Cardoso, representing an approximate two hour collection of spans and traces, about 400.000 spans, generated by one of their clusters). At this point, and since we have already held the hands-on of some tools at the moment, we were ready to start and think about the solution we need to build. Therefore, we decided to specify the solution, and considered to build a monitoring tool named by ourselves, \textit{Graphy}.
- 
- In a very briefly explanation, we want that \textit{Graphy} be able to calculate relevant metrics from the span trees and the generated graphs, and to work with this kind of metrics to perform the system analysis and answer the questions exposed above. To perform some of this work, it will be resourcing to machine learning algorithms that we will need to study in parallel with the implementation, as we cannot predict what we might encounter when retrieving the metrics at the time. The machine learning algorithms are to process the metrics and perform some deductions regarding the system behaviour over the time.
-%-------------------------------------------------------------------------------------------------
+From this we decided to tackle two groups: 1. Anomaly detection and 4. Quality of tracing and therefore, the selected general questions were: 1. Is there any anomalous service? and 4. How can we measure the quality of tracing?
+
+The first question can be reduced to finding anomalies in observations of service or system behaviour, namely metrics and morphology.
+%The first question -- in practice --, relates with the assumption that there exists an anomalous service with off-the-trend observations in the measured data.
+In particular, we considered three metrics: number of incoming service calls, outgoing service calls and average response time. Our proposed solution in Section~\ref{sec:proposed_solution} must have this into consideration -- extract these metrics from tracing data.
+
+For the second question, there are multiple ways to analyse quality in tracing. We explored two directions, first performing a trace structure testing against the defined OpenTracing specification --structural testing --, to determine if the tracing data complies with all the predefined requirements. Secondly, coverage testing for tracing data to determine how much of the duration of Span is covered by its children -- time coverability testing. The first kind would be more valuable if the specification was stricter, however, changing the standard was not an option at the time as the data had external providence -- discussed in Section~\ref{sec:conclusions_and_future_work}.
+
+Questions presented in the remaining groups were not studied further in this research project.
+%there were difficulties analysing them with traces.
 
 
-%-------------------------------------------------------------------------------------------------
+\todo{Loose frase from ?data set?}
+The main goal was improving the reliability of the cluster by automating analysis and gain insight extracting data from traces.
+
+
+
+
+
+
+These final questions
+
+
+
+
+
+
+
+
+
+
+These final questions, with a slight reformulation, could be exported to high level of abstraction functional requirements of the monitoring tool that we want to develop. After having this questions, we decided to study the current state of art to check how things are done nowadays regarding this subject and we found that some tools perform the process of convert spans and traces to a graph, that represents the system at that current time interval, however they do not perform any kind of analysis and study over the span tree and the graph after that\cite{spans_analysis}.
+
+Considering this, what we decided to do was to develop a simple prototype tool to test some state of the art tools. What we were able to achieve was to do the reconstruction of the graph, using our own data (this data was provided by Prof. Jorge Cardoso, representing an approximate two hour collection of spans and traces, about 400.000 spans, generated by one of their clusters). At this point, and since we have already held the hands-on of some tools at the moment, we were ready to start and think about the solution we need to build. Therefore, we decided to specify the solution, and considered to build a monitoring tool named by ourselves, \textit{Graphy}.
+
+In a very briefly explanation, we want that \textit{Graphy} be able to calculate relevant metrics from the span trees and the generated graphs, and to work with this kind of metrics to perform the system analysis and answer the questions exposed above. To perform some of this work, it will be resourcing to machine learning algorithms that we will need to study in parallel with the implementation, as we cannot predict what we might encounter when retrieving the metrics at the time. The machine learning algorithms are to process the metrics and perform some deductions regarding the system behaviour over the time.
+
+
+
+
+
+
+
+
+
+
+
+
 \checkoddpage
 \ifthenelse{\boolean{oddpage}}
 { % Odd page
-\newpage
-\blankpage}
+    \newpage
+    \blankpage}
 { % Even page
 }
-%-------------------------------------------------------------------------------------------------

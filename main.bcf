@@ -2044,12 +2044,12 @@
     <bcf:citekey order="66">Celko2013</bcf:citekey>
     <bcf:citekey order="67">FavioVazquez2019</bcf:citekey>
     <bcf:citekey order="83">arangodb_documentation</bcf:citekey>
-    <bcf:citekey order="84">facebook_tao_article</bcf:citekey>
+    <bcf:citekey order="84">Amenya2018</bcf:citekey>
     <bcf:citekey order="85">neo4j_documentation</bcf:citekey>
     <bcf:citekey order="86">Morin2012</bcf:citekey>
     <bcf:citekey order="87">Sasaki2018</bcf:citekey>
     <bcf:citekey order="88">facebook_tao_article</bcf:citekey>
-    <bcf:citekey order="88">Amenya2018</bcf:citekey>
+    <bcf:citekey order="88">Facebook2150</bcf:citekey>
     <bcf:citekey order="89">arangodb_smart_graphs</bcf:citekey>
     <bcf:citekey order="90">Turu2017</bcf:citekey>
     <bcf:citekey order="91">neo4j_scalable</bcf:citekey>
@@ -2066,8 +2066,15 @@
     <bcf:citekey order="108">anomaly_detection_zipkin_tracing_data</bcf:citekey>
     <bcf:citekey order="109">anomaly_detection_zipkin_tracing_data</bcf:citekey>
     <bcf:citekey order="110">analysing_distributed_trace_data</bcf:citekey>
-    <bcf:citekey order="111">kanban_board</bcf:citekey>
-    <bcf:citekey order="112">spans_analysis</bcf:citekey>
+    <bcf:citekey order="111">Sambasivan2014</bcf:citekey>
+    <bcf:citekey order="112">Ikonen2011</bcf:citekey>
+    <bcf:citekey order="113">Sambasivan2014</bcf:citekey>
+    <bcf:citekey order="114">spans_analysis</bcf:citekey>
+    <bcf:citekey order="115">simon_browns_c4_model</bcf:citekey>
+    <bcf:citekey order="116">networkx_speed</bcf:citekey>
+    <bcf:citekey order="117">click_log_doc</bcf:citekey>
+    <bcf:citekey order="118">jsonl</bcf:citekey>
+    <bcf:citekey order="119">arango_issues</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

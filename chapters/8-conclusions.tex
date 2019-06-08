@@ -7,26 +7,75 @@ This chapter presents the conclusions to this whole work. Therefore in this chap
 \section{Brief Reflections}
 \label{sec:brief_reflections}
 
-This thesis presents an attempt to further the field of distributed system based tracing analysis.
+\todo{This thesis presents an attempt to further the field of distributed system based tracing analysis.}
 
-// TODO: Talk a bit about everything
+\todo{...}
 
 \todo{A reflection about the tools and methods produced and the open paths from this whole research are exposed. Also a reflection of the main difficulties felted with this research are presented}
 
 \section{Future Work}
 \label{sec:future_work}
 
-// TODO: Talk a bit about the possible work in this field and what can be achieved using this work.
+\todo{Talk a bit about the possible work in this field and what can be achieved using this work.}
 
 \todo{the future work that can be addressed considering this work is properly explained taking into consideration what is said in the previous section}
 
 \section{Concluding Research Questions}
 \label{sec:concluding_research_questions}
 
-// TODO: Talk a bit about everything
+\todo{...}
 
+\todo{EXTRACTED FROM PAPER!}
 
-%-------------------------------------------------------------------------------------------------
+This Section covers three main topics. It contains a summary about what was done and what were the main conclusions extracted from this research, followed by brief reflections regarding this whole research topic and ending with the future work and research path that we hope to be taken in the future.
+
+%\subsection{Summary}
+%\label{subsec:summary}
+
+After this whole research, we are able to state that tracing data is useful and required to find anomalies related to service morphology. However, this type of data is hard to handle and one must use it if some issue was detected in metrics easier to analyse, e.g. monitoring. For this type of data to be easier to analyse, a discussion is provided about this difficulty bellow. So, in the end our perception is that, there are issues that we can only perceive using tracing data, but it is very expensive to analyse this data directly.
+
+Regarding the remaining topic, the analysis of tracing, both tests are very interesting but, due to lack of required and strict specification, the tests and results of the ``structural quality analysis'' using spans are not very useful however, one can state that this is all we can do taking into consideration the OpenTracing specification.
+
+%\subsection{Brief reflections}
+%\label{subsec:brief_reflections}
+
+To provide a brief reflection about this work, the following main topics will be covered:
+
+\begin{enumerate}
+    \item Lack of tools for OpenTracing processing and visualisation.
+    \item Ambiguity presented in the OpenTracing specification.
+\end{enumerate}
+
+One point to consider is that it was difficult to find tools for tracing data visualisation and processing. Only Zipkin and Jaegger, presented in the Subsection~\ref{subsec:technologies_distributed_tracing_tools}, represent some usefulness has they allow distributed tracing visualisation in a more human readable way. However, they do not present any kind of tracing analysis. So, because of this, there are real needs for tools that can handle this kind of data.
+
+The second point is the big problem with the OpenTracing specification. The main difficulties in implementing the tools mentioned in this paper were felt because of the ambiguity in tracing data. The specification allows many fields that are not strictly defined. As mentioned in Subsection~\ref{subsec:second_question}, one of the detected problems are in the measurement units. Other problem resides in some fields that contain very important information about the path of the request, these fields are defined as maps of key - values, where the keys can be anything that the programmer wants. This brings a big problem, because tools must perceive this kind of values and some of them may not be considered for analysis. A simple solution could be to redefine the specification and reduce these kind of fields, transforming the specification into a more strict schema. This would allow the implementation of more general trace processing tools.
+
+%\subsection{Future work}
+%\label{subsec:future_work}
+
+From this work there are some paths to consider for future work:
+
+\begin{enumerate}
+    \item Improve and develop new tools for OpenTracing processing.
+    \item Perform a research to redefine the OpenTracing specification. 
+    \item Explore and analyse the remaining extracted tracing metrics.
+    \item Use tracing data from other systems.
+    \item Develop a simulated system with the capability of fault-injection to prove the analysis observations.
+    \item Conciliate the results from tracing data with other kinds of data like monitoring and logging.
+\end{enumerate}
+
+First, today there are not many tools for processing and handling OpenTracing data. This increased difficulty because when we needed to process this kind of data in a different way, we always ended up developing everything from scratch.
+
+Second, there must be a way to eliminate or reduce the ambiguity and uncertainty of data presented in tracing generated by non-strict fields. If the specification can not be changed, a new way to transform tracing data to ease the analysis is very welcome.
+
+Third, these developed tools extract many more metrics. The majority of them were not explored due to lack of time, and therefore, here resides the opportunity to do it. The path starts by defining new research questions that use these metrics and develop ways to analyse them.
+
+Fourth, just one data set of tracing data was used in this research. Test the tools and methods with other tracing data could be interesting.
+
+Fifth, the system were the data was gathered was a company testing system. One good future approach was to have a microservice based simulated system, were the developers could inject faults like request flow redirection, latency issues, and others, point them out and test the developed tools and methods.
+
+Sixth, only tracing data was used in this research, one interesting path to follow is to have more kinds of data like monitoring and logging from the target system. This could help the analysis of the system, due to more knowing about it.
+
 \checkoddpage
 \ifthenelse{\boolean{oddpage}}
 { % Odd page
@@ -34,4 +83,3 @@ This thesis presents an attempt to further the field of distributed system based
 \blankpage}
 { % Even page
 }
-%-------------------------------------------------------------------------------------------------

@@ -335,7 +335,7 @@ Furthermore, in this research service dependency graphs are highly used, thus th
         \cline{2-4}
 
          & ArangoDB \cite{arangodb_documentation}
-         & Facebook TAO \cite{facebook_tao_article}
+         & Facebook TAO \cite{Amenya2018}
          & Neo4J \cite{neo4j_documentation}                                                                                               \\ \hline \hline
         \multicolumn{1}{|l|}{\textbf{Description}}
          & A NoSQL database that uses a proper query language to access the database.
@@ -366,10 +366,10 @@ Furthermore, in this research service dependency graphs are highly used, thus th
     \end{tabularx}
 \end{table}
 
-From Table~\ref{table:graph_databases_comparison} we can notice that the state of the art for \gls{gdb} is not very pleasant, because the interest for this type of databases has began in the later years due to artificial intelligence and machine learning trends. Therefore, the offer presented in the field are limited.
+From Table~\ref{table:graph_databases_comparison} we can notice that the state of the art for \gls{gdb} is not very pleasant. Interest for this type of databases has began in the later years due to artificial intelligence and machine learning trends, therefore, the offer presented in the field are limited.
 
-Back in time, when social network tendency emerged, the development of this type of databases raised, and the most powerful technologies for graph storage where developed in closed source. One example is Facebook TAO database presented in Table~\ref{table:graph_databases_comparison}, a database developed by the company to support the entire social network, storing users in nodes and their relationships in edges. This database is described by having very low latency, which stands for high response time however, just a few scientific papers were found~\cite{facebook_tao_article,Amenya2018}.
-%very few information regarding this tool can be found -- just some scientific papers
+Back in time, when social network tendency emerged, the development of this type of databases raised, and the most powerful technologies for graph storage where developed in closed source. One example is Facebook TAO database presented in Table~\ref{table:graph_databases_comparison}, a database developed by the company to support the entire social network, storing users in nodes and their relationships in edges. This database is described by having very low latency, which stands for high response time, however, very few information regarding this tool can be found -- just some scientific papers~\cite{facebook_tao_article,Facebook2150}.
+% only few scientific papers were found
 
 The remaining tools presented are available for usage. ArangoDB has multi data-type support, which means that a wider type of data structures are supported for storing in nodes and edges metadata. Also, it supports scalability through cluster deployment, however, this feature is only available in paid versions -- Arango SmartGraphs storage improves the writing of graph in distributed systems environment~\cite{arangodb_smart_graphs}. The biggest disadvantage of this database is the high learning curve associated with the usage of AQL (Arango Query Language), however, this disadvantage can be surpassed by using provided \gls{api} clients with the trade-off of loosing some control.
 
