@@ -848,9 +848,6 @@
            given={Kevin},
            giveni={K\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {Addison-Wesley Professional}%
-      }
       \strng{namehash}{edfb19f5da0b049e901748a2f782f877}
       \strng{fullhash}{edfb19f5da0b049e901748a2f782f877}
       \strng{bibnamehash}{edfb19f5da0b049e901748a2f782f877}
@@ -861,9 +858,14 @@
       \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{howpublished}{$\backslash$url{\{}https://algs4.cs.princeton.edu/42digraph/{\}}}
       \field{title}{{Algorithms, 4th Edition - Graphs}}
-      \field{year}{2011}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://algs4.cs.princeton.edu/42digraph/
+      \endverb
+      \verb{url}
+      \verb https://algs4.cs.princeton.edu/42digraph/
+      \endverb
     \endentry
     \entry{Brillinger2006}{book}{}
       \name{author}{1}{}{%
@@ -1142,14 +1144,24 @@
       \keyw{Graph Algorithms,Parallel Programming,Shared Memory}
     \endentry
     \entry{networkx}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=494490f12fead68bf224409a185a1531}{%
+           family={Developers},
+           familyi={D\bibinitperiod},
+           given={NetworkX},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{494490f12fead68bf224409a185a1531}
+      \strng{fullhash}{494490f12fead68bf224409a185a1531}
+      \strng{bibnamehash}{494490f12fead68bf224409a185a1531}
+      \strng{authorbibnamehash}{494490f12fead68bf224409a185a1531}
+      \strng{authornamehash}{494490f12fead68bf224409a185a1531}
+      \strng{authorfullhash}{494490f12fead68bf224409a185a1531}
       \field{sortinit}{6}
       \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{{NetworkX}}
-      \field{urlday}{3}
-      \field{urlmonth}{12}
-      \field{urlyear}{2018}
-      \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://networkx.github.io/
       \endverb
@@ -1942,47 +1954,27 @@
       \field{howpublished}{$\backslash$url{\{}https://blogs.gartner.com/andrew-lerner/2017/08/09/aiops-platforms/{\}}}
       \field{title}{{AIOps Platforms}}
     \endentry
-    \entry{mastering_aiops}{unpublished}{}
-      \name{author}{3}{}{%
-        {{hash=9b0e02ca1b9793e1c1e11f1a85d4d177}{%
-           family={Nedelkoski},
-           familyi={N\bibinitperiod},
-           given={Sahso},
-           giveni={S\bibinitperiod}}}%
+    \entry{mastering_aiops}{misc}{}
+      \name{author}{1}{}{%
         {{hash=79cb56728143ec2d4b06b789b3d7e3ab}{%
            family={Cardoso},
            familyi={C\bibinitperiod},
            given={Jorge},
            giveni={J\bibinitperiod}}}%
-        {{hash=8ef7694bfbbf1ae7761bd3c14390818c}{%
-           family={Kao},
-           familyi={K\bibinitperiod},
-           given={Odej},
-           giveni={O\bibinitperiod}}}%
       }
-      \strng{namehash}{543b9b015ac8599983ed70336aef0950}
-      \strng{fullhash}{543b9b015ac8599983ed70336aef0950}
-      \strng{bibnamehash}{543b9b015ac8599983ed70336aef0950}
-      \strng{authorbibnamehash}{543b9b015ac8599983ed70336aef0950}
-      \strng{authornamehash}{543b9b015ac8599983ed70336aef0950}
-      \strng{authorfullhash}{543b9b015ac8599983ed70336aef0950}
+      \strng{namehash}{79cb56728143ec2d4b06b789b3d7e3ab}
+      \strng{fullhash}{79cb56728143ec2d4b06b789b3d7e3ab}
+      \strng{bibnamehash}{79cb56728143ec2d4b06b789b3d7e3ab}
+      \strng{authorbibnamehash}{79cb56728143ec2d4b06b789b3d7e3ab}
+      \strng{authornamehash}{79cb56728143ec2d4b06b789b3d7e3ab}
+      \strng{authorfullhash}{79cb56728143ec2d4b06b789b3d7e3ab}
       \field{sortinit}{1}
       \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{{Anomaly Detection and Classification using Distributed Tracing and Deep Learning}}
-      \field{year}{2018}
-      \field{pages}{10}
-      \range{pages}{1}
-      \verb{file}
-      \verb :home/andrepbento/Downloads/PID5812437.pdf:pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://pt.slideshare.net/JorgeCardoso4/mastering-aiops-with-deep-learning
-      \endverb
-      \verb{url}
-      \verb https://pt.slideshare.net/JorgeCardoso4/mastering-aiops-with-deep-learning
-      \endverb
+      \field{annotation}{Retrieved Fev, 2019}
+      \field{howpublished}{$\backslash$url{\{}https://pt.slideshare.net/JorgeCardoso4/mastering-aiops-with-deep-learning{\}}}
+      \field{title}{{Mastering AIOps with Deep Learning}}
     \endentry
     \entry{anomaly_detection_zipkin_tracing_data}{misc}{}
       \name{author}{1}{}{%
