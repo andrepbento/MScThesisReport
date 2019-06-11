@@ -394,6 +394,7 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.cfg
 INPUT /usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 OUTPUT /mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/main.glo
+OUTPUT /mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/main.acn
 INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 INPUT /mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/main.aux
@@ -515,8 +516,8 @@ INPUT /mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/grap
 INPUT /mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/chapters/4-research-objectives-and-approach.tex
 INPUT /mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/chapters/4-research-objectives-and-approach.tex
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
-INPUT /mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/chapters/5-possible-solution.tex
-INPUT /mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/chapters/5-possible-solution.tex
+INPUT /mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/chapters/5-proposed-solution.tex
+INPUT /mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/chapters/5-proposed-solution.tex
 INPUT /mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/proposed_solution.pdf
 INPUT /mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/proposed_solution.pdf
 INPUT /mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/proposed_solution.pdf
@@ -546,6 +547,17 @@ INPUT /mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/trac
 INPUT /mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/trace_file_count_2018_06_29_chart.png
 INPUT /mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/trace_file_count_2018_06_29_chart.png
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm
+INPUT /mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/chapters/7-results.tex
+INPUT /mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/chapters/7-results.tex
+INPUT /mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/result_samples_for_service_a.pdf
+INPUT /mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/result_samples_for_service_a.pdf
+INPUT /mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/result_samples_for_service_a.pdf
+INPUT /mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/workflow_type_count.pdf
+INPUT /mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/workflow_type_count.pdf
+INPUT /mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/workflow_type_count.pdf
+INPUT /mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/service_trace_coverability_analysis.pdf
+INPUT /mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/service_trace_coverability_analysis.pdf
+INPUT /mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/service_trace_coverability_analysis.pdf
 INPUT /mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/chapters/8-conclusions.tex
 INPUT /mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/chapters/8-conclusions.tex
 INPUT /mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/main.aux

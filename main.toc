@@ -55,34 +55,40 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.2}Research Questions}{30}{section.4.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Possible Solution}{35}{chapter.5}% 
+\contentsline {chapter}{\numberline {5}Proposed Solution}{35}{chapter.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Functional Requirements}{35}{section.5.1}% 
+\contentsline {section}{\numberline {5.1}Functional Requirements}{36}{section.5.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Quality Attributes}{36}{section.5.2}% 
+\contentsline {section}{\numberline {5.2}Quality Attributes}{37}{section.5.2}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.3}Technical Restrictions}{38}{section.5.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}Architecture}{39}{section.5.4}% 
+\contentsline {section}{\numberline {5.4}Architecture}{38}{section.5.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.1}Context Diagram}{39}{subsection.5.4.1}% 
+\contentsline {subsection}{\numberline {5.4.1}Context Diagram}{38}{subsection.5.4.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.2}Container Diagram}{40}{subsection.5.4.2}% 
+\contentsline {subsection}{\numberline {5.4.2}Container Diagram}{39}{subsection.5.4.2}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.4.3}Component Diagram}{41}{subsection.5.4.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Implementation Process}{45}{chapter.6}% 
+\contentsline {chapter}{\numberline {6}Implementation Process}{44}{chapter.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Huawei Tracing Data Set}{45}{section.6.1}% 
+\contentsline {section}{\numberline {6.1}Huawei Tracing Data Set}{44}{section.6.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Open Tracing Processor Component}{49}{section.6.2}% 
+\contentsline {section}{\numberline {6.2}Open Tracing Processor Component}{48}{section.6.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}Data Analysis Component}{50}{section.6.3}% 
+\contentsline {section}{\numberline {6.3}Data Analysis Component}{49}{section.6.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Conclusions}{51}{chapter.7}% 
+\contentsline {chapter}{\numberline {7}Results, Analysis and Limitations}{51}{chapter.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Brief Reflections}{51}{section.7.1}% 
+\contentsline {section}{\numberline {7.1}Anomaly Detection}{51}{section.7.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Future Work}{51}{section.7.2}% 
+\contentsline {section}{\numberline {7.2}Trace Quality Analysis}{51}{section.7.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}Concluding Research Questions}{51}{section.7.3}% 
+\contentsline {section}{\numberline {7.3}Limitations of OpenTracing Data}{51}{section.7.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.3.1}Anomaly detection}{51}{subsection.7.3.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.3.2}Trace quality analysis}{55}{subsection.7.3.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {8}Conclusion and Future Work}{59}{chapter.8}% 

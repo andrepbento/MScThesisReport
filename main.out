@@ -25,7 +25,7 @@
 \BOOKMARK [0][-]{chapter.4}{Research Objectives and Approach}{}% 25
 \BOOKMARK [1][-]{section.4.1}{Problem Definition \(\205rename?\)}{chapter.4}% 26
 \BOOKMARK [1][-]{section.4.2}{Research Questions}{chapter.4}% 27
-\BOOKMARK [0][-]{chapter.5}{Possible Solution}{}% 28
+\BOOKMARK [0][-]{chapter.5}{Proposed Solution}{}% 28
 \BOOKMARK [1][-]{section.5.1}{Functional Requirements}{chapter.5}% 29
 \BOOKMARK [1][-]{section.5.2}{Quality Attributes}{chapter.5}% 30
 \BOOKMARK [1][-]{section.5.3}{Technical Restrictions}{chapter.5}% 31
@@ -37,7 +37,10 @@
 \BOOKMARK [1][-]{section.6.1}{Huawei Tracing Data Set}{chapter.6}% 37
 \BOOKMARK [1][-]{section.6.2}{Open Tracing Processor Component}{chapter.6}% 38
 \BOOKMARK [1][-]{section.6.3}{Data Analysis Component}{chapter.6}% 39
-\BOOKMARK [0][-]{chapter.7}{Conclusions}{}% 40
-\BOOKMARK [1][-]{section.7.1}{Brief Reflections}{chapter.7}% 41
-\BOOKMARK [1][-]{section.7.2}{Future Work}{chapter.7}% 42
-\BOOKMARK [1][-]{section.7.3}{Concluding Research Questions}{chapter.7}% 43
+\BOOKMARK [0][-]{chapter.7}{Results, Analysis and Limitations}{}% 40
+\BOOKMARK [1][-]{section.7.1}{Anomaly Detection}{chapter.7}% 41
+\BOOKMARK [1][-]{section.7.2}{Trace Quality Analysis}{chapter.7}% 42
+\BOOKMARK [1][-]{section.7.3}{Limitations of OpenTracing Data}{chapter.7}% 43
+\BOOKMARK [2][-]{subsection.7.3.1}{Anomaly detection}{section.7.3}% 44
+\BOOKMARK [2][-]{subsection.7.3.2}{Trace quality analysis}{section.7.3}% 45
+\BOOKMARK [0][-]{chapter.8}{Conclusion and Future Work}{}% 46

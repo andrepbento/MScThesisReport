@@ -33,9 +33,9 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Proposed approach for tracing analysis.\relax }}{35}{figure.caption.24}% 
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Proposed approach.\relax }}{35}{figure.caption.24}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Utility tree.\relax }}{37}{figure.caption.26}% 
+\contentsline {figure}{\numberline {5.2}{\ignorespaces \gls {qa} utility tree.\relax }}{37}{figure.caption.26}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.3}{\ignorespaces Context diagram.\relax }}{39}{figure.caption.28}% 
 \defcounter {refsection}{0}\relax 
@@ -45,8 +45,16 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Trace file count for 2018-06-28.\relax }}{48}{figure.caption.32}% 
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Trace file count for 2018-06-28.\relax }}{47}{figure.caption.32}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Trace file count for 2018-06-29.\relax }}{48}{figure.caption.33}% 
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Trace file count for 2018-06-29.\relax }}{47}{figure.caption.33}% 
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Comparison between ``Anomalous'' and ``Non-Anomalous'' service time-frame regions.\relax }}{53}{figure.caption.35}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Comparison between ``Anomalous'' and ``Non-Anomalous'' service workflow types.\relax }}{54}{figure.caption.37}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Services coverability analysis.\relax }}{56}{figure.caption.40}% 
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }

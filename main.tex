@@ -10,7 +10,9 @@
 \usepackage[hidelinks,bookmarks=true]{hyperref}
 \usepackage{graphicx}
 \graphicspath{{images/}}
-\usepackage{glossaries}
+\usepackage[acronym]{glossaries}
+%\usepackage[acronym,toc]{glossaries}
+%\usepackage{glossaries}
 \usepackage{float}
 \usepackage{pgfplotstable}
 \usepackage{tabularx}
@@ -183,7 +185,7 @@
 %Gobble Cover, TOC and acknowledgement section pages
 \pagenumbering{gobble}
 
-\input{chapters/0-acronyms}
+\input{chapters/0-acronyms.tex}
 
 
 %\blankpage
@@ -225,8 +227,9 @@
 
 
 % List of acronyms
-\glsnogroupskiptrue
-\printglossary[type=\acronymtype,style=list,title={Acronyms}]
+%\glsnogroupskiptrue
+%\printglossary[type=\acronymtype,style=list,title={Acronyms}]
+\printglossary[type=\acronymtype]
 \newpage
 
 \blankpage
@@ -250,9 +253,9 @@
 \input{chapters/2-methodology.tex}
 \input{chapters/3-state-of-the-art.tex}
 \input{chapters/4-research-objectives-and-approach.tex}
-\input{chapters/5-possible-solution.tex}
+\input{chapters/5-proposed-solution.tex}
 \input{chapters/6-implementation_process.tex}
-%\input{chapters/7-results.tex}
+\input{chapters/7-results.tex}
 \input{chapters/8-conclusions.tex}
 
 
