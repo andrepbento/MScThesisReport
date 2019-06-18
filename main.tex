@@ -3,15 +3,16 @@
 \usepackage[table,xcdraw]{xcolor}
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
+\usepackage[super]{nth}
 \usepackage{vhistory}
 \usepackage{url}
 \usepackage{rotating}
 \usepackage{pdflscape}
-\usepackage[hidelinks,bookmarks=true]{hyperref}
+\usepackage[hidelinks, bookmarks=true]{hyperref}
 \usepackage{graphicx}
 \graphicspath{{images/}}
-\usepackage[acronym]{glossaries}
-%\usepackage[acronym,toc]{glossaries}
+\usepackage[acronym, toc]{glossaries}
+%\usepackage[acronym,]{glossaries}
 %\usepackage{glossaries}
 \usepackage{float}
 \usepackage{pgfplotstable}
@@ -28,13 +29,42 @@
     pdfsubject={Master Thesis Report},
     pdfauthor={andrepbento}
 }
-%%%
+
+% Code listing
+\usepackage{listings}
+\usepackage{color}
+ 
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+ 
+\lstset{style=mystyle}
 
 % Algorithm
-\usepackage[ruled,vlined,linesnumbered,noresetcount]{algorithm2e}
+\usepackage[ruled,vlined,linesnumbered,resetcount]{algorithm2e}
 \usepackage{enumitem}
 
-% Colors
+% Colours
 %\usepackage[disable]{todonotes}
 \definecolor{dkgreen}{rgb}{0,0.6,0}
 \definecolor{gray}{rgb}{0.5,0.5,0.5}
@@ -42,7 +72,6 @@
 \definecolor{gray}{rgb}{0.7,0.7,0.7}
 \definecolor{lightgray}{rgb}{0.95,0.95,0.95}
 \definecolor{lightcyan}{rgb}{0.6784,0.8741,0.902}
-
 
 % Table definitions
 \usepackage{longtable}
@@ -52,8 +81,6 @@
 \usepackage{makecell}
 %\rowcolors{1}{white}{lightgray}
 %\renewcommand\theadfont{\bfseries}
-
-
 \newcolumntype{s}{>{\hsize=.25\hsize}X}
 
 %Don't show appendices
@@ -74,33 +101,15 @@
 %\setlength\parindent{0pt}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{silence}
+\WarningFilter{biblatex}{File 'english-ieee.lbx'}
 \usepackage{csquotes}
-\usepackage[citestyle=ieee, bibstyle=ieee, block=none, indexing=false, citereset=none, isbn=true, url=true, doi=true, natbib=true, sorting=none]{biblatex}
+\usepackage[citestyle=ieee, bibstyle=ieee, block=none, indexing=false, citereset=none, isbn=true, url=true, doi=true, natbib=true, sorting=none, backend=biber]{biblatex}
 \addbibresource{library.bib}
-%\usepackage[square,sort,comma,numbers]{natbib}
-% BIBLIOGRAPHY STYLE (Choose below)
-%\bibliographystyle{abbrvnat}
-%\bibliographystyle{ksfh_nat}
-%\bibliographystyle{ieeetr}
-%\bibliographystyle{apalike}
-%
-% Plain style:
-% [1] D. Adams.The Hitchhiker's Guide to the Galaxy. San Val, 1995. 1
-%
-% Apalike style:
-% Adams, D. (1995).The Hitchhiker's Guide to the Galaxy. San Val. 1
-%
-% Comment to insert title: 
-%\renewcommand{\bibsection}{}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-%------------------------------------------------------------------------------------
 %used for cover page
 \usepackage{color}
 \definecolor{blueFCTUC}{RGB}{0, 150, 215}
-
-%------------------------------------------------------------------------------------
 
 %Right align section titles and add a dot to the section number
 %\usepackage{sectsty}
@@ -109,8 +118,6 @@
 %\titlelabel{\thetitle.\quad}
 %\titlespacing\section{0pt}{0.5cm}{1.5cm}
 
-
-%------------------------------------------------------------------------------------
 % Useful commands
 % ToDo configuration
 \newcommand\todo[1]{\textcolor{red}{#1}}
@@ -121,7 +128,6 @@
   \noindent\rule{\linewidth}{0.2mm}\par
   \vspace*{\dimexpr-\parskip-.5\baselineskip+#1+5pt}}
 %%%
-
 
 %\setitemize command will set the spacing between items in itemizes to the given parameter.  
 %\let\OLDitemize\itemize
@@ -149,8 +155,6 @@
 \newpage}
 %%%
 
-
-
 % --------------- headers and footers control ----------------------
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -164,15 +168,9 @@
 %\fancyhead[RE,LO]{\rightmark}
 \renewcommand{\headrulewidth}{0.4pt}
 
-
-
-
-%---------------------------------------------------------------------
-
-\makeglossaries
-
-
-
+% Glossaries and Acronyms
+\input{chapters/0-acronyms.tex}
+\makenoidxglossaries
 
 % Document begin
 \begin{document}
@@ -185,9 +183,6 @@
 %Gobble Cover, TOC and acknowledgement section pages
 \pagenumbering{gobble}
 
-\input{chapters/0-acronyms.tex}
-
-
 %\blankpage
 
 \pagenumbering{roman}
@@ -195,23 +190,15 @@
 %Set paragraph spacing
 \setlength{\parskip}{0.7em}
 
-%------------------------------------------------------------------------------------------------------
-
 %Abstract
 \input{chapters/0-abstract-EN.tex}
 \blankpage
 \input{chapters/0-abstract-PT.tex}
 \blankpage
 
-%------------------------------------------------------------------------------------------------------
-
-%------------------------------------------------------------------------------------------------------
-
 %Acknowledgements
 \input{chapters/0-acknowledgments.tex}
 \blankpage
-
-%------------------------------------------------------------------------------------------------------
 
 % Set paragraph spacing to use in ToC and other lists
 \setlength{\parskip}{0em}
@@ -222,14 +209,11 @@
 \glsresetall
 
 \newpage
-
 \blankpage
 
-
 % List of acronyms
-%\glsnogroupskiptrue
-%\printglossary[type=\acronymtype,style=list,title={Acronyms}]
-\printglossary[type=\acronymtype]
+\glsnogroupskiptrue
+\printnoidxglossaries
 \newpage
 
 \blankpage
@@ -247,8 +231,6 @@
 % Set paragraph spacing
 \setlength{\parskip}{0.7em}
 
-
-%------------------------------
 \input{chapters/1-introduction}
 \input{chapters/2-methodology.tex}
 \input{chapters/3-state-of-the-art.tex}
@@ -257,7 +239,6 @@
 \input{chapters/6-implementation_process.tex}
 \input{chapters/7-results.tex}
 \input{chapters/8-conclusions.tex}
-
 
 \printbibliography[title={References}]
 \newpage
@@ -268,6 +249,4 @@
 %\end{appendices}
 %------------------------------
 
-
 \end{document}
-%Document end

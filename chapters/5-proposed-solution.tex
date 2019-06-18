@@ -58,24 +58,21 @@ In software engineering, functional requirements defines the intended function o
          & The system must be able to generate request work-flow paths from tracing data.
          & Medium \\ \hline
          FR-8
-         & The system must be able to generate request work-flow paths from tracing data.
-         & Medium \\ \hline
-         FR-9
          & The system must be able to calculate request ratio of success and error, for specific services, from tracing data.
          & Medium \\ \hline
-         FR-10
-         & The system must be able to calculate the degree of services from service dependency graphs.
+         FR-9
+         & The system must be able to calculate the degree (total, in and out) of services from service dependency graphs.
          & Medium \\ \hline
-         FR-11
+         FR-10
          & The system must be able to retrieve the difference between two service dependency graphs.
          & Medium \\ \hline
-         FR-12
+         FR-11
          & The system must be able to produce a report about spans structure using a defined OpenTracing structural schema.
          & Low \\ \hline
-         FR-13
+         FR-12
          & The system must be able to calculate the time coverage of traces in a given time-frame.
          & Low \\ \hline
-         FR-14
+         FR-13
          & The system must be able to identify regions of outliers presented in multiple time-series.
          & Low \\ \hline
     \end{tabularx}
@@ -145,22 +142,22 @@ To define the technical restrictions, we used an id and its corresponding descri
         \textbf{ID}
          & \textbf{Description}                    \\ \hline
         TR-1
-         & Use OpenTSDB as a Time-Series database. \\ \hline
+         & Use \emph{OpenTSDB} as a Time-Series database. \\ \hline
     \end{tabularx}
 \end{table}
 
-Table~\ref{sec:technical_restrictions} shows that we have raised only one technical restriction. This technical restriction was considered because Professor Jorge Cardoso, acting as a client for this solution demanded it. OpenTSDB is the database that they are currently using in their projects at Huawei Research Center. This restriction will ease their work to introduce changes if needed.
+Table~\ref{table:technical_restrictions_specification} shows that we have raised only one technical restriction. This technical restriction was considered because Professor Jorge Cardoso, acting as a client for this solution demanded it. \emph{OpenTSDB} is the database that they are currently using in their projects at Huawei Research Center. This restriction will ease their work to introduce changes if needed.
 %However, this project does not have a concrete and formally defined client, it is good to use a technology used by the people that will use the tool to ease their work and possibly introduce changes.
 
 \section{Architecture}
 \label{sec:architecture}
 
-In this Section, the architecture is presented based on all previous topics with resource to the defined Simon Brown’s C4 Model~\cite{simon_browns_c4_model}. This approach of defining an architecture uses four diagrams: \emph{1 - Context Diagram}, \emph{2 - Container Diagram}, \emph{3 - Component Diagram} and \emph{4 - Code Diagram}. To define the architecture for our solution, only the first three representations were considered. Every representation will be exposed with a briefly explanation of the decisions taken to draw the diagram. After presenting the representations and the corresponding explanations, we will cycle thought all \gls{qa}, in order to explain where it is reflected and the considerations taken to produce the current architecture.
+In this Section, the architecture is presented based on all previous topics with resource to the defined Simon Brown’s C4 Model~\cite{simon_browns_c4_model}. This approach of defining an architecture uses four diagrams: \emph{1 - Context Diagram}, \emph{2 - Container Diagram}, \emph{3 - Component Diagram} and \emph{4 - Code Diagram}. To define the architecture for our solution, only the first three representations were considered. Every representation will be exposed with a explanation of the decisions taken to draw each diagram. After presenting the representations and the corresponding explanations, we will cycle thought all architectural drivers: \gls{qa}, bussines and technical restrictions, in order to explain where they are reflected and the considerations taken to produce this architecture.
 
 \subsection{Context Diagram}
 \label{subsec:context_diagram}
 
-In this Subsection the context diagram is presented. This diagram allows us to see ``the big picture'' of the system as it represents the system as a ``big box'' and its interactions with users and other systems. Figure~\ref{fig:context_diagram} presents the context diagram for this solution.
+In this Subsection the context diagram is presented. This diagram allows us to see ``the big picture'' of the overall system as it represents the system as a ``big box'' and the corresponding interactions with users and external software systems. Figure~\ref{fig:context_diagram} presents the context diagram for this solution.
 
 \begin{figure}[H]
     \centering
@@ -169,12 +166,12 @@ In this Subsection the context diagram is presented. This diagram allows us to s
     \label{fig:context_diagram}
 \end{figure}
 
-From Figure~\ref{fig:context_diagram}, we can see that our solution, named \emph{Graphy \gls{otp}}, receives interactions from users, as it need someone to control its operations, analyses data from an external target system that holds the tracing information and consequently, provides extracted metrics to an external metrics visualizer component. Users can view extracted metrics from this last component.
+From Figure~\ref{fig:context_diagram}, we can see that our solution, named \emph{Graphy \gls{otp}}, receives interactions from users, as it need someone to start the whole process. This piece of software analyses data from an external target system that holds the tracing information and consequently, provides extracted metrics to an external metrics visualizer component. Users can view extracted metrics from this last component. Also, reports are produced and stored within our solution, when it performs tracing analysis. 
 
 \subsection{Container Diagram}
 \label{subsec:container_diagram}
 
-The container diagram is presented in this Subsection. This type of diagram allows us to ``zoom-in'' in the context diagram, and get a new overview of our solution. Therefore, in this diagram we are able to see a high-level shape of the software architecture and how responsibilities are distributed across it. Figure~\ref{fig:container_diagram} presents the container diagram for this solution.
+The container diagram is presented in this Subsection. This type of diagram allows us to ``zoom-in'' in the context diagram, and get a new overview of our solution. Therefore, in this diagram we are able to see a high-level shape of the software architecture and how responsibilities are distributed across containers. Figure~\ref{fig:container_diagram} presents the container diagram for our proposed solution.
 
 \begin{figure}[H]
     \centering
@@ -183,12 +180,14 @@ The container diagram is presented in this Subsection. This type of diagram allo
     \label{fig:container_diagram}
 \end{figure}
 
+\newpage
+
 Figure~\ref{fig:container_diagram} contains the main containers involved in our solution. The first one, from top to bottom, is the \emph{Access Console} and this container was considered as it is needed for the user to be able interact with the \emph{Graphy \gls{api}}. This last one controls the entire OpenTracing system, uses a communication protocol to retrieve tracing information from external target system, and two databases to store the information resulted from processing tracing data -- a \gls{gdb} and a \gls{tsdb}. The second database provides metrics to be visualized in an external metrics visualizer system.
 
 \subsection{Component Diagram}
 \label{subsec:component_diagram}
 
-This Subsection contains the last diagram, the component diagram. This type of diagram gives a more deeper vision about the system, and therefore, it reveals the main components presented in the solution. Figure~\ref{fig:component_diagram} presents the component diagram for this solution.
+This Subsection contains the last diagram, the component diagram. This type of diagram gives a more deeper vision about the system, and therefore, it reveals the main components. Figure~\ref{fig:component_diagram} presents the component diagram for this solution.
 
 \begin{figure}[]
     \centering
@@ -197,7 +196,7 @@ This Subsection contains the last diagram, the component diagram. This type of d
     \label{fig:component_diagram}
 \end{figure}
 
-Figure~\ref{fig:component_diagram} provides us with a lower level visualization of \emph{Graphy API} container. This container is composed by a total of eight components. At its core we have \emph{Graphy Controller}, that has the responsibility of receiving requests from the user through \emph{Access Console} to control \emph{OpenTracing Processor}, \emph{Tracing Collector} and \emph{Data Analyser} components. These three components retain greater relevance for this solution. The first one has the objective of mapping tracing data, instantiating span trees and service dependency graphs into memory. The second one, collects tracing, the information that feeds this application, from local files or from external systems, e.g., Zipkin. The third one, \emph{Data Analyser} has the job of identify outliers presented in time-series metrics extracted from tracing, allowing our solution to detect anomalous services presented in distributed systems. \emph{Graph Processor} is the component for graphs handling, thus it has the capability of performing operations over graphs, e.g., subtract one graph from another graph, extract the node degrees and count connections between nodes. The remaining components, \emph{Graphs Repository} and \emph{Metrics Repository}, are used to map graphs and time-series metrics, respectively, into their corresponding databases.
+Figure~\ref{fig:component_diagram} provides us with a lower level visualization of \emph{Graphy API} container composed by eight components. At its core we have \emph{Graphy Controller}, a component with the responsibility of receiving requests from the user through \emph{Access Console} and control \emph{OpenTracing Processor}, \emph{Tracing Collector} and \emph{Data Analyser} components. The first one has the objective of mapping tracing data, span trees and service dependency graphs instantiation into memory. The second one collects tracing, the information that feeds this entire application, from local files or from external systems, e.g., \emph{Zipkin}. The last one, \emph{Data Analyser}, identifies outliers presented in time-series metrics extracted from tracing, allowing our solution to detect anomalous services presented in distributed systems. \emph{Graph Processor} is the component for graphs handling, thus it has the capability of performing operations over graphs, e.g., subtract one graph from another, extract node degrees and count connections between nodes. The remaining components, \emph{Graphs Repository} and \emph{Metrics Repository}, are used to map graphs and time-series metrics, respectively, into and from their corresponding databases.
 
 To check the architecture produced, we will now cycle between both \gls{qa} and check were they are reflected in the architecture presented for this solution, explaining the trade-off involved and what were our considerations about each one.
 
@@ -205,17 +204,17 @@ To check the architecture produced, we will now cycle between both \gls{qa} and 
 
 %\gls{qa}3 is satisfied when we decide to use NetworkX as the technology to process our graphs. This technology does not scale horizontally, however it has a very decent performance and it's able to retrieve a certain measure of a graph with about 100.000 nodes, in near 15 seconds\cite{networkx_speed}. From 1.000.000 spans, in normal conditions, we will never be able to get a graph of this kind of size, as with our experiments, with 100.000 spans we were able to get a graph of almost 20 nodes, and with 200.000 spans we were able to get a graph of almost 30 nodes. In the end, we are considering this time and span quantity to be sure that our tool will give us good times and ease our work of performing the research and implementation of this kind of tool.
 
-%\gls{qa}4 is satisfied because we decided to use two databases that are scalable horizontally by design, the ArangoDb for a \gls{gdb} and the OpenTSDB for a \gls{tsdb}, both presented in the \ref{subsec:graph_database_tools} and \ref{subsec:time_series_database_tools} subsections respectively. In the end, this \gls{qa} can not be fully satisfied because we can not scale our system entirely, due to the fact of the technology that we chose to perform the graph processing. However, we have chosen this technology because it can perform much more graph algorithms, as we can see in the figure \ref{fig:graph_manipulation_and_performance_tools_diagram_comparison}, and this is much more relevant for our main purpose.
+%\gls{qa}4 is satisfied because we decided to use two databases that are scalable horizontally by design, the ArangoDb for a \gls{gdb} and the \emph{OpenTSDB} for a \gls{tsdb}, both presented in the \ref{subsec:graph_database_tools} and \ref{subsec:time_series_database_tools} subsections respectively. In the end, this \gls{qa} can not be fully satisfied because we can not scale our system entirely, due to the fact of the technology that we chose to perform the graph processing. However, we have chosen this technology because it can perform much more graph algorithms, as we can see in the figure \ref{fig:graph_manipulation_and_performance_tools_diagram_comparison}, and this is much more relevant for our main purpose.
 
 %\gls{qa}5 is satisfied by the existence of the component \textit{Logging Component}, that allows the system to perform logging of relevant information. For the technology here, we decided to use click-log\cite{click_log_doc}, a python library used for logging purposes as it has all the main capabilities needed here to perform the logging.
 
 %\gls{qa}6, like the previous one is satisfied by the existence of a certain component, the \textit{Testing Component}, which implements all the capabilities and functionalities to perform tests and check if the systems is working correctly.
 
-Finally, for the only technical restriction raised, we can see that it is satisfied by the usage of OpenTSDB as the main \gls{tsdb} for our solution.
+Finally, for the only technical restriction raised, we can see that it is satisfied by the usage of \emph{OpenTSDB} as the main \gls{tsdb} for our solution.
 
-With the presentation of these four sections, we conclude that our solution satisfies all the architectural drivers: quality attributes, business constraints and technical restrictions, and therefore, we may claim that the proposed architecture fits our needs as a solution.
+This solution does not have many architectural drivers: quality attributes, business constraints and technical restrictions, due to being a prototype. The main objective is to produce a solution capable of explore tracing data allowing us to conduct a research about what we can do with tracing, therefore it does not have many architectural constraints. Nevertheless, with the presentation of these four sections, we conclude that our solution satisfies all the architectural drivers, and therefore, we may claim that the proposed architecture fits our needs as a solution.
 
-Next Chapter,~\ref{chap:implementation_process}~-~\nameref{chap:implementation_process}, covers the implementation of the solution presented in the current chapter. All implemented algorithms and technical decisions are discussed and explained with detail.
+Next Chapter,~\ref{chap:implementation_process}~-~\nameref{chap:implementation_process}, covers the implementation of the solution presented in the current chapter. All implemented algorithms and technical decisions are discussed and explained in detail.
 
 \checkoddpage
 \ifthenelse{\boolean{oddpage}}

@@ -184,7 +184,7 @@ parent={},%
 {%
 name={OTP},%
 sort={OTP},%
-type={main},%
+type={acronym},%
 first={OpenTracing processor\glsspace (OTP)},%
 firstplural={OpenTracing processors\glsspace (OTPs)},%
 text={OTP},%
@@ -214,7 +214,7 @@ parent={},%
 {%
 name={QA},%
 sort={QA},%
-type={main},%
+type={acronym},%
 first={Quality Attribute\glsspace (QA)},%
 firstplural={Quality Attributes\glsspace (QAs)},%
 text={QA},%
@@ -244,7 +244,7 @@ parent={},%
 {%
 name={RPC},%
 sort={RPC},%
-type={main},%
+type={acronym},%
 first={Remote Procedure Call\glsspace (RPC)},%
 firstplural={Remote Procedure Calls\glsspace (RPCs)},%
 text={RPC},%
@@ -274,7 +274,7 @@ parent={},%
 {%
 name={TSDB},%
 sort={TSDB},%
-type={main},%
+type={acronym},%
 first={Time Series Database\glsspace (TSDB)},%
 firstplural={Time Series Databases\glsspace (TSDBs)},%
 text={TSDB},%

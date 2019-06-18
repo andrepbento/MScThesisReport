@@ -5,56 +5,72 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Proposed work plan for first and second semesters.\relax }}{7}{figure.caption.9}% 
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Proposed work plan for first and second semesters.\relax }}{7}{figure.caption.11}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Real work plan for first semester.\relax }}{7}{figure.caption.9}% 
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Real work plan for first semester.\relax }}{7}{figure.caption.11}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Real and expected work plans for second semester.\relax }}{8}{figure.caption.10}% 
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Monolithic and Microservices architectural styles~\cite {microservices}.\relax }}{11}{figure.caption.11}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Sample trace over time.\relax }}{13}{figure.caption.12}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Span Tree example.\relax }}{14}{figure.caption.13}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Graphs types.\relax }}{15}{figure.caption.14}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Service dependency graph.\relax }}{16}{figure.caption.15}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Time series: Annual mean sunspot numbers for 1760-1965~\cite {Brillinger2006}.\relax }}{17}{figure.caption.16}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Anomaly detection in Time Series~\cite {NikolajBomannMertz}.\relax }}{17}{figure.caption.17}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Graph tools: Scalability vs. Algorithm implementation~\cite {graph_data_management_systems}.\relax }}{21}{figure.caption.20}% 
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Real and expected work plans for second semester.\relax }}{8}{figure.caption.12}% 
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Monolithic and Microservices architectural styles~\cite {microservices}.\relax }}{11}{figure.caption.13}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Proposed approach.\relax }}{35}{figure.caption.24}% 
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Sample trace over time.\relax }}{13}{figure.caption.14}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces \gls {qa} utility tree.\relax }}{37}{figure.caption.26}% 
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Span Tree example.\relax }}{14}{figure.caption.15}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Context diagram.\relax }}{39}{figure.caption.28}% 
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Graphs types.\relax }}{15}{figure.caption.16}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Container diagram.\relax }}{40}{figure.caption.29}% 
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Service dependency graph.\relax }}{16}{figure.caption.17}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Component diagram.\relax }}{42}{figure.caption.30}% 
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Time series: Annual mean sunspot numbers for 1760-1965~\cite {Brillinger2006}.\relax }}{17}{figure.caption.18}% 
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Anomaly detection in Time Series~\cite {NikolajBomannMertz}.\relax }}{17}{figure.caption.19}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Trace file count for 2018-06-28.\relax }}{47}{figure.caption.32}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Trace file count for 2018-06-29.\relax }}{47}{figure.caption.33}% 
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Graph tools: Scalability vs. Algorithm implementation~\cite {graph_data_management_systems}.\relax }}{21}{figure.caption.22}% 
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Comparison between ``Anomalous'' and ``Non-Anomalous'' service time-frame regions.\relax }}{53}{figure.caption.35}% 
+\addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Comparison between ``Anomalous'' and ``Non-Anomalous'' service workflow types.\relax }}{54}{figure.caption.37}% 
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Proposed approach.\relax }}{35}{figure.caption.26}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Services coverability analysis.\relax }}{56}{figure.caption.40}% 
+\contentsline {figure}{\numberline {5.2}{\ignorespaces \gls {qa} utility tree.\relax }}{37}{figure.caption.28}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Context diagram.\relax }}{39}{figure.caption.30}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Container diagram.\relax }}{40}{figure.caption.31}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Component diagram.\relax }}{42}{figure.caption.32}% 
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Trace file count for 2018-06-28.\relax }}{46}{figure.caption.35}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Trace file count for 2018-06-29.\relax }}{47}{figure.caption.36}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Service calls samples.\relax }}{52}{figure.caption.41}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Service dependency variation samples.\relax }}{53}{figure.caption.42}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Service average response time samples.\relax }}{53}{figure.caption.43}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Service status code ratio samples.\relax }}{53}{figure.caption.44}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Methods to handle missing data~\cite {Swalin2019}.\relax }}{56}{figure.caption.45}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Trend and seasonality results.\relax }}{56}{figure.caption.46}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Isolation Forests and OneClassSVM methods comparison~\cite {isolation_forests_and_oneclasssvm_comparison}.\relax }}{57}{figure.caption.47}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Trace time coverage example.\relax }}{58}{figure.caption.50}% 
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Comparison between ``Anomalous'' and ``Non-Anomalous'' service time-frame regions.\relax }}{62}{figure.caption.52}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Comparison between ``Anomalous'' and ``Non-Anomalous'' service work-flow types.\relax }}{63}{figure.caption.54}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Services coverability analysis.\relax }}{65}{figure.caption.57}% 
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }

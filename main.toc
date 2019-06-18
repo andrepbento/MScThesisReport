@@ -1,6 +1,8 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {english}{}
 \defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Acronyms}{x}{section*.7}% 
+\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.1}Context}{1}{section.1.1}% 
@@ -51,7 +53,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Research Objectives and Approach}{29}{chapter.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}\leavevmode {\color {red}Problem Definition (--rename?)}}{29}{section.4.1}% 
+\contentsline {section}{\numberline {4.1}Research Objectives}{29}{section.4.1}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.2}Research Questions}{30}{section.4.2}% 
 \defcounter {refsection}{0}\relax 
@@ -75,20 +77,16 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6.1}Huawei Tracing Data Set}{44}{section.6.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Open Tracing Processor Component}{48}{section.6.2}% 
+\contentsline {section}{\numberline {6.2}OpenTracing Processor Component}{48}{section.6.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}Data Analysis Component}{49}{section.6.3}% 
+\contentsline {section}{\numberline {6.3}Data Analysis Component}{54}{section.6.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Results, Analysis and Limitations}{51}{chapter.7}% 
+\contentsline {chapter}{\numberline {7}Results, Analysis and Limitations}{61}{chapter.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Anomaly Detection}{51}{section.7.1}% 
+\contentsline {section}{\numberline {7.1}Anomaly Detection}{61}{section.7.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Trace Quality Analysis}{51}{section.7.2}% 
+\contentsline {section}{\numberline {7.2}Trace Quality Analysis}{64}{section.7.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}Limitations of OpenTracing Data}{51}{section.7.3}% 
+\contentsline {section}{\numberline {7.3}Limitations of OpenTracing Data}{66}{section.7.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.3.1}Anomaly detection}{51}{subsection.7.3.1}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.3.2}Trace quality analysis}{55}{subsection.7.3.2}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Conclusion and Future Work}{59}{chapter.8}% 
+\contentsline {chapter}{\numberline {8}Conclusion and Future Work}{67}{chapter.8}% 

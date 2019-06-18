@@ -57,13 +57,11 @@ In the next Subsection~\ref{subsec:distributed_tracing}~-~\nameref{subsec:distri
 
 %\todo{How to introduce Google Dapper~\cite{Sigelman2010}}
 
-Distributed tracing~\cite{Sambasivan2016a} is a method that comes from traditional tracing, but in this case acts in a distributed system at the work-flow level. It is used to profile and monitor applications, especially those built using microservice architectures and, in the end, it can be used to help DevOps teams pinpoint where failures occur and what causes system problems.
+Distributed tracing~\cite{Sambasivan2016} is a method that comes from traditional tracing, but applied to a distributed system at the work-flow level. It profiles and monitor applications, especially those built using microservice architectures and, in the end, it can be used to help DevOps teams pinpoint where failures occur and why.
 
-From this concept, standards emerged, like the best-known OpenTracing~\cite{open_tracing_data_model_specification}. The OpenTracing standard, follows the model proposed by Fonseca~\textit{et al.}~\cite{fonseca2007x}, which defines traces as a tree of spans, which represent scopes or units of work (i.e., thread, function, service) and follows their executing through the system.
+A number of tools and standards emerged from this concept. For example, the OpenTracing standard~\cite{open_tracing_data_model_specification} follows the model proposed by Fonseca~\textit{et al.}~\cite{fonseca2007x}, which defines traces as a tree of spans representing scopes or units of work (i.e., thread, function, service). These traces enable following such units of work through the system.
 
-OpenTracing uses dynamic, fixed-width metadata to propagate causality between spans, meaning that each span has a \emph{TraceID} common to all spans of that trace, as well as a \emph{SpanID} and \emph{ParentID} that are used to represent parent/child relationships between them~\cite{sambasivan2014so}.
-
-The standard defines the format for spans and the semantic~\cite{open_tracing_semantic_specification, open_tracing_semantic_conventions} conventions for their content / annotations.
+OpenTracing uses dynamic, fixed-width metadata to propagate causality between spans, meaning that each span has a \emph{trace identifier} common to all spans of the same trace, as well as a \emph{span identifier} and \emph{parent identifier} representing parent/child relationships between spans~\cite{Sambasivan2014}. The standard defines the format for spans and the semantic~\cite{open_tracing_semantic_specification, open_tracing_semantic_conventions} conventions for their content/annotations.
 
 %Usually, the span has an operation name, the start time of the operation, its duration and some annotations regarding the operation itself. An example of a span can be an HTTP call or a Remote Procedure Call (RPC). 
 
@@ -83,7 +81,7 @@ Disposition of spans over time is another clear fact that can be observed from t
 
 An example of a span can be an \gls{http} call or a \gls{rpc} call. We may think of the following cases to define each operation inherent to each box presented in Figure~\ref{fig:sample_trace_over_time}: A - ``Get user info'', B - ``Fetch user data from database'', C - ``Connect to MySQL server'', D - ``Can't connect to MySQL server'' and E - ``Send error result to client''.
 
-In the data model specification, the creators of OpenTracing say that: ``with a couple of spans, we might be able to generate a span tree and model a directed graph of a portion of the system''~\cite{open_tracing_data_model_specification}. This is due to the causal relationships they represent. Figure~\ref{fig:span_tree_example} provides an example of a span tree.
+In the data model specification, the creators of OpenTracing say that: ``with a couple of spans, we might be able to generate a span tree and model a directed graph of a portion of the system''~\cite{open_tracing_data_model_specification}. This is due to the causal relationships they represent. Apart from the root span every other span must have a parent. Figure~\ref{fig:span_tree_example} provides an example of a span tree.
 
 \begin{figure}[H]
     \centering
@@ -143,7 +141,7 @@ Figure~\ref{fig:service_dependency_graph} provides a clear insight about service
     \label{fig:service_dependency_graph}
 \end{figure}
 
-In Figure~\ref{fig:service_dependency_graph}, a representation of a service dependency graph is provided. Service dependency graphs are graphs of type Multi-Directed-Graph, because they have multiple edges with more than one direction between a pair of services(Nodes). In this representation, there are multiple services involved, each inside a box. The edges between boxes (Nodes), indicate the number of calls that each pair of services invoked, e.g., ``Users API'' called ``Ùsers Database'' 240 times. These dependency graphs gives the state of the system in a given time interval. This can be useful to study the changes in the morphology of the system, e.g., a service disappeared and a set of new ones appeared. Other interesting study could be the variation in the amount of call between services.
+In Figure~\ref{fig:service_dependency_graph}, a representation of a service dependency graph is provided. Service dependency graphs are graphs of type Multi-Directed-Graph, because they have multiple edges with more than one direction between a pair of services(Nodes). In this representation, there are multiple services involved, each inside a box. The edges between boxes (Nodes), indicate the number of calls that each pair of services invoked, e.g., ``Users API'' called ``Users Database'' 240 times. These dependency graphs gives the state of the system in a given time interval. This can be useful to study the changes in the morphology of the system, e.g., a service disappeared and a set of new ones appeared. Other interesting study could be the variation in the amount of call between services.
 
 Graphs are a way to model and extract information from tracing data. Another interesting approach could be to extract metrics in time from tracing because traces and spans are spread in time, and they have information about the state of the system at a given instant. The next Subsection~\ref{subsec:time_series}~-~\nameref{subsec:time_series} provides an introduction to a data representation model.
 
@@ -198,21 +196,21 @@ This Subsection presents the most used and known distributed tracing tools. Thes
             >{\hsize=0,383\hsize}X|}
         \cline{2-3}
 
-         & Jaeger~\cite{jaeger_github}
-         & Zipkin~\cite{zipkin_github}                                                                                                                                                                                  \\ \hline \hline
+         & Jaeger~\cite{Jaeger}
+         & Zipkin~\cite{Zipkin}                                                                                                                                                                                  \\ \hline \hline
         \multicolumn{1}{|l|}{\textbf{Brief description}}
-         & Released as open source by Uber Technologies and is used for monitoring and troubleshooting microservices-based distributed systems. Was inspired by Zipkin.
-         & Helps gather timing data needed to troubleshoot latency problems in microservice architectures and manages both the collection and lookup of this data. Zipkin's design is based on the Google Dapper paper. \\ \hline
+         & Released as open source by Uber Technologies. Used for monitoring and troubleshooting microservices-based distributed systems. Was inspired by Zipkin.
+         & Helps gathering timing data needed to troubleshoot latency problems in microservice applications. It manages both the collection and lookup of this data. Zipkin's design is based on the Google Dapper paper. \\ \hline
         \multicolumn{1}{|l|}{\textbf{Pros}}
-         & OpenSource; \newline
+         & Open source; \newline
         Docker-ready; \newline
         Collector interface is compatible with Zipkin protocol; \newline
         Dynamic sampling rate; \newline
-        Browser UI.
-         & OpenSource; \newline
+        Browser user interface.
+         & Open source; \newline
         Docker-ready; \newline
-        Allows lots of span transport ways (HTTP, Kafka, Scribe, AMQP); \newline
-        Browser UI.                                                                                                                                                                                                     \\ \hline
+        Allows multiple span transport technologies (HTTP, Kafka, Scribe, AMQP); \newline
+        Browser user interface.                                                                                                                                                                                                     \\ \hline
         \multicolumn{1}{|l|}{\textbf{Cons}}
          & Only supports two span transport ways (Thrift and HTTP).
          & Fixed sampling rate.                                                                                                                                                                                         \\ \hline
@@ -269,7 +267,7 @@ Taking into consideration this data structure, the particularities involved and 
          & Free Apache 2.
          & MIT.
          & BSD - New License.                                                                                                                                                             \\ \hline
-        \multicolumn{1}{|p{2cm}|}{\textbf{Supported languages}}
+        \multicolumn{1}{|p{2.2cm}|}{\textbf{Supported languages}}
          & Java and Scala.
          & C and C++.
          & Python.                                                                                                                                                                        \\ \hline
@@ -317,7 +315,7 @@ After discussing tools capable of manipulate and process graphs, their storage i
 
 Graph databases represent a way of persisting graph information. After having instantiated a Graph, processed it in volatile memory, they can be stored in persistent memory for later use. To do this one can use a \gls{gdb}. A \gls{gdb} is ``a database that allows graph data storing and uses graph structures for semantic queries with nodes, edges and properties to represent them''~\cite{Celko2013}.
 
-\,
+\newpage
 
 Based upon the concept of a mathematical graph, a graph database contains a collection of nodes and edges. A node represents an object, and an edge represents the connection or relationship between two objects. Each node in a graph database is identified by a unique identifier that expresses key value pairs. Additionally, each edge is defined by a unique identifier that details a starting or ending node, along with a set of properties. Graph databases are becoming popular due to Machine Learning and Artificial Intelligence grows, since a number of Machine Learning algorithms are inherently graph algorithms~\cite{FavioVazquez2019}.
 
@@ -345,7 +343,7 @@ Furthermore, in this research service dependency graphs are highly used, thus th
          & Free Apache 2.
          & Proprietary.
          & GPLv3 CE.                                                                                                                      \\ \hline
-        \multicolumn{1}{|p{2cm}|}{\textbf{Supported languages}}
+        \multicolumn{1}{|p{2.2cm}|}{\textbf{Supported} \newline \textbf{languages}}
          & C++; Go; Java; JavaScript; Python and Scala.
          & Go; Java; JavaScript; Python and Scala.
          & Java; JavaScript; Python and Scala.                                                                                            \\ \hline
@@ -368,15 +366,14 @@ Furthermore, in this research service dependency graphs are highly used, thus th
 
 From Table~\ref{table:graph_databases_comparison} we can notice that the state of the art for \gls{gdb} is not very pleasant. Interest for this type of databases has began in the later years due to artificial intelligence and machine learning trends, therefore, the offer presented in the field are limited.
 
-Back in time, when social network tendency emerged, the development of this type of databases raised, and the most powerful technologies for graph storage where developed in closed source. One example is Facebook TAO database presented in Table~\ref{table:graph_databases_comparison}, a database developed by the company to support the entire social network, storing users in nodes and their relationships in edges. This database is described by having very low latency, which stands for high response time, however, very few information regarding this tool can be found -- just some scientific papers~\cite{facebook_tao_article,Facebook2150}.
+Back in time, when social network tendency emerged, the development of this type of databases raised, and the most powerful technologies for graph storage where developed in closed source. One example is \emph{Facebook TAO} database presented in Table~\ref{table:graph_databases_comparison}, a database developed by the company to support the entire social network, storing users in nodes and their relationships in edges. This database is described by having very low latency, which stands for high response time, however, very few information regarding this tool can be found -- just some scientific papers~\cite{facebook_tao_article,Facebook2150}.
 % only few scientific papers were found
 
-The remaining tools presented are available for usage. ArangoDB has multi data-type support, which means that a wider type of data structures are supported for storing in nodes and edges metadata. Also, it supports scalability through cluster deployment, however, this feature is only available in paid versions -- Arango SmartGraphs storage improves the writing of graph in distributed systems environment~\cite{arangodb_smart_graphs}. The biggest disadvantage of this database is the high learning curve associated with the usage of AQL (Arango Query Language), however, this disadvantage can be surpassed by using provided \gls{api} clients with the trade-off of loosing some control.
+The remaining tools presented are available for usage. ArangoDB has multi data-type support, which means that a wider type of data structures are supported for storing in nodes and edges metadata. Also, it supports scalability through cluster deployment, however, this feature is only available in paid versions -- Arango SmartGraphs storage improves the writing of graph in distributed systems environment~\cite{arangodb_smart_graphs}. The biggest disadvantage of this database is the high learning curve associated with the usage of \emph{AQL (Arango Query Language)}, however, this disadvantage can be surpassed by using provided \gls{api} clients with the trade-off of loosing some control.
 
-Neo4J is the most accepted \gls{gdb} by the open source community. This \gls{gdb}
-has increased in popularity in the past years due to simplicity and easy support~\cite{Turu2017}. Trade-offs from this database consists in lack of support for scalability, which means that this database can only run on a single-machine environment, however, there are some users reporting that they were able to perform implementations and surpass the lack of support for horizontal scaling, but this is not tested~\cite{neo4j_scalable}.
+\emph{Neo4J} is the most accepted \gls{gdb} by the open source community. This \gls{gdb} has increased in popularity in the past years due to simplicity and easy support~\cite{Turu2017}. Trade-offs from this database consists in lack of support for scalability, which means that this database can only run on a single-machine environment, however, there are some users reporting that they were able to perform implementations and surpass the lack of support for horizontal scaling, but this is not tested~\cite{neo4j_scalable}.
 
-Choosing a graph database can be hard because these tools are growing and the tendency for changes in features and tooling support is very high, however,  the decision falls on the question of easy of usage and horizontal scalability. This means that ArangoDB is a database more advised for big projects, where the size of graphs to store may surpass the limit of a single-machine, and Neo4J for simpler projects, where the focus are functionality testing and prototyping, and graph storage represents a side concern.
+Choosing a graph database can be hard because these tools are growing and the tendency for changes in features and tooling support is very high, however,  the decision falls on the question of easy of usage and horizontal scalability. This means that \emph{ArangoDB} is a database more advised for big projects, where the size of graphs to store may surpass the limit of a single-machine, and Neo4J for simpler projects, where the focus are functionality testing and prototyping, and graph storage represents a side concern.
 
 Next Subsection~\ref{subsec:time_series_database_tools}~-~\nameref{subsec:time_series_database_tools} covers the state of the art for tooling capable of storage values based in time.
 
@@ -389,6 +386,8 @@ A \gls{tsdb} is ``A database optimised for time-stamped or time series data like
 
 This type of database is growing in usage and popularity because of Internet of Things (IoT) trend. Discussions in this area have increased over the past few years, and is expected that it keeps increasing, due to Ubiquitous Computing -- Raise of omnipresent and universal technologies. At the same time, \gls{tsdb} grows with this IoT tendency, because data mining from sensor spread geographically and sensors gather information through measurements in specific points in time. This information are usually stored in \gls{tsdb}~\cite{TanayPant2019}.
 
+\newpage
+
 Table~\ref{table:time_series_databases_comparison} presents a comparison between two \gls{tsdb}: \textit{InfluxDb} and \textit{OpenTSDB}.
 
 \begin{table}[H]
@@ -396,9 +395,9 @@ Table~\ref{table:time_series_databases_comparison} presents a comparison between
     \label{table:time_series_databases_comparison}
     \centering
     \begin{tabularx}{\linewidth} {
-            >{\hsize=0.70\hsize}X|
-            >{\hsize=1.15\hsize}X|
-            >{\hsize=1.15\hsize}X|}
+            >{\hsize=0.60\hsize}X|
+            >{\hsize=1.20\hsize}X|
+            >{\hsize=1.20\hsize}X|}
         \cline{2-3}
 
          & InfluxDB \cite{influxdb}
@@ -410,7 +409,7 @@ Table~\ref{table:time_series_databases_comparison} presents a comparison between
         \multicolumn{1}{|l|}{\textbf{Licence}~\cite{Morin2012}}
          & MIT.
          & GPL.                                                                                                                                                                                                                                                           \\ \hline
-        \multicolumn{1}{|p{2cm}|}{\textbf{Supported languages}}
+        \multicolumn{1}{|p{2.2cm}|}{\textbf{Supported languages}}
          & Erlang, Go, Java, JavaScript, Lisp, Python, R and Scala.
          & Erlang, Go, Java, Python, R and Ruby.                                                                                                                                                                                                                          \\ \hline
         \multicolumn{1}{|l|}{\textbf{Pros}}

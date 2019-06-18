@@ -10,6 +10,8 @@
         "Filipe",
         "Fonseca",
         "Giraph",
+        "Grafana",
+        "JSONL",
         "Kanban",
         "Kubernetes",
         "Lightstep",
@@ -17,9 +19,11 @@
         "Netflix",
         "Pinterest",
         "Pintrace",
+        "Scikit",
         "TSDB",
         "Zipkin",
         "Zipkin's",
-        "Zipkin’s"
+        "Zipkin’s",
+        "dataframes"
     ]
 }
