@@ -2085,6 +2085,9 @@
     <bcf:citekey order="135">isolation_forests_and_oneclasssvm_comparison</bcf:citekey>
     <bcf:citekey order="136">isolation_forests_and_oneclasssvm_comparison</bcf:citekey>
     <bcf:citekey order="137">json_schema_library</bcf:citekey>
+    <bcf:citekey order="138">opentelemetry</bcf:citekey>
+    <bcf:citekey order="139">what_is_opencensus</bcf:citekey>
+    <bcf:citekey order="140">opentelemetry_trace_specification</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

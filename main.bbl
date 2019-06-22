@@ -2451,6 +2451,8 @@
       \endverb
     \endentry
   \enddatalist
+  \missing{opentelemetry}
+  \missing{opentelemetry_trace_specification}
 \endrefsection
 \endinput
 

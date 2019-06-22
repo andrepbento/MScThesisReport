@@ -1,15 +1,18 @@
 [0] Config.pm:304> INFO - This is Biber 2.12
 [0] Config.pm:307> INFO - Logfile is 'main.blg'
-[20] biber:315> INFO - === ter jun 18, 2019, 02:52:07
-[38] Biber.pm:371> INFO - Reading 'main.bcf'
-[93] Biber.pm:889> INFO - Found 72 citekeys in bib section 0
+[20] biber:315> INFO - === sáb jun 22, 2019, 16:43:33
+[40] Biber.pm:371> INFO - Reading 'main.bcf'
+[94] Biber.pm:889> INFO - Found 74 citekeys in bib section 0
 [104] Biber.pm:4093> INFO - Processing section 0
 [113] Biber.pm:4254> INFO - Looking for bibtex format file 'library.bib' for section 0
 [119] bibtex.pm:1512> INFO - LaTeX decoding ...
-[213] bibtex.pm:1329> INFO - Found BibTeX data source 'library.bib'
-[522] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[522] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[522] Biber.pm:3921> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[522] Biber.pm:3927> INFO - No sort tailoring available for locale 'en-US'
-[558] bbl.pm:636> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[585] bbl.pm:739> INFO - Output to main.bbl
+[212] bibtex.pm:1329> INFO - Found BibTeX data source 'library.bib'
+[475] Utils.pm:193> WARN - I didn't find a database entry for 'opentelemetry' (section 0)
+[475] Utils.pm:193> WARN - I didn't find a database entry for 'opentelemetry_trace_specification' (section 0)
+[513] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[514] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[514] Biber.pm:3921> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[514] Biber.pm:3927> INFO - No sort tailoring available for locale 'en-US'
+[551] bbl.pm:636> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[576] bbl.pm:739> INFO - Output to main.bbl
+[576] Biber.pm:110> INFO - WARNINGS: 2
