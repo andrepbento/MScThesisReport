@@ -4,7 +4,7 @@
 
 This Chapter presents the implementation process of the proposed solution explained in previous Chapter.
 %Every steps are explained considering the most important points for each implemented method. 
-Three main sections are covered in this Chapter: Firstly, in Section~\ref{sec:huawei_tracing_data_set}~-~\nameref{sec:huawei_tracing_data_set}, the data provided to perform this research is presented and analysed. Secondly, in Section~\ref{sec:open_tracing_processor_component}~-~\nameref{sec:open_tracing_processor_component}, the implementation of (\gls{otp}), our proposed solution to collect and store metrics from tracing data is explained in detail. Finally, in Section~\ref{sec:data_analysis_component}~-~\nameref{sec:data_analysis_component}, the approach and methods for analysis of the stored observations are presented.
+Three main sections are covered in this Chapter: Firstly, in Section~\ref{sec:huawei_tracing_data_set}~-~\nameref{sec:huawei_tracing_data_set}, the data provided to perform this research is presented and analysed. Secondly, in Section~\ref{sec:open_tracing_processor_component}~-~\nameref{sec:open_tracing_processor_component}, the implementation of (\gls{otp}), our proposed solution to collect and store metrics from tracing data is explained in detail with intermediate results. Finally, in Section~\ref{sec:data_analysis_component}~-~\nameref{sec:data_analysis_component}, the approach and methods for analysis of the stored observations are presented.
 
 \section{Huawei Tracing Data Set}
 \label{sec:huawei_tracing_data_set}
@@ -51,28 +51,28 @@ Span data format is defined in an open source specification called OpenTracing~\
         >{\hsize=1.40\hsize}X|}
         \hline
         \textbf{Field}
-         & \textbf{Description}                                                                                                                                                                                                     \\ \hline \hline
+         & \textbf{Description}                                                                                                                                                                                                             \\ \hline \hline
         traceId
-         & Unique id of a trace (128-bit string).                                                                                                                                                                                   \\ \hline
+         & Unique id of a trace (128-bit string).                                                                                                                                                                                           \\ \hline
         name
-         & Human-readable title of the instrumented function.                                                                                                                                                                       \\ \hline
+         & Human-readable title of the instrumented function.                                                                                                                                                                               \\ \hline
         timestamp
-         & UNIX epoch in milliseconds.                                                                                                                                                                                              \\ \hline
+         & UNIX epoch in milliseconds.                                                                                                                                                                                                      \\ \hline
         id
-         & Unique id of the span (64-bit string).                                                                                                                                                                                   \\ \hline
+         & Unique id of the span (64-bit string).                                                                                                                                                                                           \\ \hline
         parentId
-         & Reference to id of parent span.                                                                                                                                                                                          \\ \hline
+         & Reference to id of parent span.                                                                                                                                                                                                  \\ \hline
         duration
-         & Span duration in microseconds.                                                                                                                                                                                           \\ \hline
+         & Span duration in microseconds.                                                                                                                                                                                                   \\ \hline
         binaryAnnotations
          &
-        protocol - '\gls{http}' or 'function' for \gls{rpc} calls; \newline
+        protocol - ``\gls{http}'' or ``function'' for \gls{rpc} calls; \newline
         http.url - \gls{http} endpoint; \newline
-        http.status\textunderscore code - Result of the \gls{http} operation.                                                                                                                                                       \\ \hline
+        http.status\textunderscore code - Result of the \gls{http} operation.                                                                                                                                                               \\ \hline
         annotations
-         & value - Describes the position in trace (based on \emph{Zipkin} format). Could be one of the following values or other: 'cs' (client send), 'cr' (client receive), 'ss' (server send) or 'sr' (server receive); \newline
+         & value - Describes the position in trace (based on \emph{Zipkin} format). Could be one of the following values or other: ``cs'' (client send), ``cr'' (client receive), ``ss'' (server send) or ``sr'' (server receive); \newline
         timestamp - UNIX epoch in microseconds; \newline
-        endpoint - Which endpoint generated a trace event.                                                                                                                                                                          \\ \hline
+        endpoint - Which endpoint generated a trace event.                                                                                                                                                                                  \\ \hline
     \end{tabularx}
 \end{table}
 
@@ -87,9 +87,9 @@ From Table~\ref{table:data_set_span_structure_definition}, we get a notion about
 
 In this data set, spans are composed by: ``traceId'', ``name'', ``timestamp'', ``id'', ``parentId'' and ``duration''. These are the main required fields, because they represent the foundations for tracing data, containing the identification, relation and temporal track of the span. Also, these fields are fixed, meaning that they are always represented by the defined field name. The same can not be said from the remaining fields: ``binaryAnnotations'' and ``annotations''. These tow fields are always identified by these field names, however, their values are maps and therefore, have values stored in key - value pairs. This brings some consistency problems and we might not know clearly what is available in a span, when working with it. As said in the second point presented in the list above: ``Trace spans may contain more or less fields, except those mentioned here'', and for this reason, there is a tremendous explosion in possibilities, because there might be keys with corresponding values for some particular spans and it gets hard to generalise this in a uniform span structure.
 
-Nowadays, the notion of span data only depends on the quality of communication and documentation of the ones that produce tracing. To be certain that one crafts good tracing data, there must be an implement standard for everyone to follow. The formalization and unification of one tracing specification should be a thing to consider in near future, for the reason that it is an endeavour to analyse inconstant fields. For example, in the data provided spans can be of two types: \gls{http} span or \gls{rpc} span, and the only field that distinguishes them is a field named ``exec'', which stands for the execution process id, and is not presented in the \gls{http} span type. Another example, fields having the same key should have one and only one measurement unit, because distributed tracing tools (like the ones presented in Subsection~\ref{subsec:distributed_tracing_tools}) are not expecting different measurement units for the same field and therefore, assume wrong values when spans have timestamps declared in milliseconds and others in microseconds, like in this case. To fix this, we decided to convert all time measurements to milliseconds.
+The notion of span data only depends on the quality of communication and documentation of the ones that produce tracing. To be certain that one crafts good tracing data, there must be an implemented standard for everyone to follow. The formalization and unification of one tracing specification should be a thing to consider, for the reason that it is an endeavour to analyse inconstant fields. For example, in the data provided spans can be of two types: \gls{http} span or \gls{rpc} span, and the only field that distinguishes them is a field named ``exec'', which stands for the execution process id, and is not presented in the \gls{http} span type. Another example, fields having the same key should have one and only one measurement unit, because distributed tracing tools (like the ones presented in Subsection~\ref{subsec:distributed_tracing_tools}) are not expecting different measurement units for the same field and therefore, assume wrong values when spans have timestamps declared in milliseconds and others in microseconds, like in this case. To fix this, we decided to convert all time measurements to milliseconds.
 
-To provide notion of how traces and spans are spread throughout time, we have used our tool, Graphy \gls{otp}, to generate two charts that represents the counting of traces and spans for each hour in each day. We decided to generate two split charts due to the simple fact that we have one file for each day. To count the number of spans in time, in this case by hour, the tool only needed to group every span by hour and count them, however for traces, the tool has more work has it needs to merge all spans in their corresponding span tree (explained in Section~\ref{sec:open_tracing_processor_component}). After having all span trees it just needs to count them, and the result is the number of traces. Note that if a span or trace starts at a given time $t1$ contained in a time-frame $tf1$, and with its duration $d1$ surpassing the next time-frame $tf2$, ($t1 + d1 > tf2$), it is considered to be in $tf1$, or by other words, only the starting time of the trace or span is considered for the counting. Figures~\ref{fig:trace_file_count_2018_06_28} and~\ref{fig:trace_file_count_2018_06_29} presents the data set traces and spans counting throughout time.
+To provide notion of how traces and spans are spread throughout time, we have used our tool, Graphy \gls{otp}, to generate two charts that represents the counting of traces and spans for each hour in each day. We decided to generate two split charts due to the simple fact that we have one file for each day. To count the number of spans in time, in this case by hour, the tool only needed to group every span by hour and count them, however for traces, the tool has more work because it needs to merge all spans in their corresponding span tree (explained in Section~\ref{sec:open_tracing_processor_component}). After having all span trees it just needs to count them, and the result is the number of traces. Note that if a span or trace starts at a given time $t1$ contained in a time-frame, and with its duration $d1$ surpassing the next time-frame $tf1$, ($t1 + d1 > tf1$), it is considered to be in the first time-frame, or by other words, only the starting time of the trace or span is considered for the counting. Figures~\ref{fig:trace_file_count_2018_06_28} and~\ref{fig:trace_file_count_2018_06_29} presents the data set traces and spans counting throughout time.
 
 \begin{figure}[H]
     \centering
@@ -105,7 +105,7 @@ To provide notion of how traces and spans are spread throughout time, we have us
     \label{fig:trace_file_count_2018_06_29}
 \end{figure}
 
-Figure~\ref{fig:trace_file_count_2018_06_28} presents the counting of traces and spans for the \nth{28} of June, 2018. In this Figure we can spot a ``pit'' in quantity from 2AM to 10AM. No explanation for this was given, however, at this point we assumed that extracting metrics from data in this time interval would produce less points, thus less resolution. This is visible in metrics presented in Figure~\ref{fig:service_calls_samples}, reproduced using \emph{Grafana}. The quantity of data for the rest of the day is somehow inconstant, however, there is no lack of data.
+Figure~\ref{fig:trace_file_count_2018_06_28} presents the counting of traces and spans for the \nth{28} of June, 2018. In this Figure we can spot a ``pit'' in quantity from 2AM to 10AM. No explanation for this was given, however, at this point we assumed that extracting metrics from data in this time interval would produce less points, thus less resolution. This is visible in metrics presented in Figure~\ref{fig:service_calls_samples}, reproduced using \emph{Grafana}. The quantity of data for the rest of the day is somehow inconstant, however, there is no lack of data like in the previous day.
 
 Figure~\ref{fig:trace_file_count_2018_06_29} presents the counting of traces and spans for the \nth{28} of June, 2018. In this Figure there are no ``pits'', and consequently, the quantity of information is more constant throughout time.
 
@@ -267,11 +267,12 @@ Service dependency graphs are a representation of dependencies of services at a 
 
 At this point, our solution is able to retrieve and store time-series metrics from tracing data. For the \gls{tsdb}, we have decided to use \emph{OpenTSDB}, due to technical restrictions imposed in Section~\ref{sec:technical_restrictions}. There was a client implementation for usage in \emph{Python}, however, the support was not good due to lack of updates and clear documentation. For this reason, we decided to implement our own \emph{OpenTSDB} client in \emph{Python} using their \gls{api} specification, -- \emph{Metrics Repository} component. Later, when all implementation from tracing collection through trace metrics storage in the \gls{tsdb}, we used a browser metrics visualizer. To do this, a \emph{Docker} container with \emph{Grafana}, a data visualization tool capable of rendering time-series metrics in charts and present them in dashboards. The decision to use this tool, was due to easy to setup and integrated compatibility with our \gls{tsdb}. We just needed to create a container and, through a url configuration in \emph{Grafana}, we established a link to the \gls{tsdb}.
 
-Figures~\ref{fig:service_dependency_variation}, ~\ref{fig:service_calls_samples},~\ref{fig:service_avg_response_time_samples}, and~\ref{fig:service_status_code_ratio_samples}, contain sample representations of extracted time-series metrics stored in our \gls{tsdb}.
+Figures~\ref{fig:service_calls_samples},~\ref{fig:service_dependency_variation},~\ref{fig:service_avg_response_time_samples}, and~\ref{fig:service_status_code_ratio_samples}, contain sample representations of extracted time-series metrics stored in our \gls{tsdb}.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1.00\textwidth]{images/service_calls.pdf}
+    %\includegraphics[width=1.00\textwidth]{images/service_calls.pdf}
+    \includegraphics[width=15cm, height=9cm]{images/service_calls.pdf}
     \caption{Service calls samples.}
     \label{fig:service_calls_samples}
 \end{figure}
@@ -304,13 +305,13 @@ Figures~\ref{fig:service_dependency_variation}, ~\ref{fig:service_calls_samples}
     \label{fig:service_status_code_ratio_samples}
 \end{figure}
 
-Figure~\ref{fig:service_calls_samples} represent samples about the number of service request calls metric. In this Figure, we have 9 plots, three in each row. Each row represents three variations (incoming, outgoing and total) of this metric for one service. In this metric we can clearly see the lack of information presented in tracing for the beginning of the first day.
+Figure~\ref{fig:service_calls_samples} represent samples about the number of service request calls metric. In this Figure, we have 9 plots, three in each row, representing three variations (incoming, outgoing and total) of this metric for one service. In this metric we can clearly see the lack of information presented in tracing for the beginning of the first day.
 
 Figure~\ref{fig:service_dependency_variation} contain samples about service dependency variation, one for each metric (gain, loss and total). Total are the result of $gain - loss$. Gain stands for the number of new service entries in system, and loss, represent the number of service exits in system.
 
 Last Figure,~\ref{fig:service_status_code_ratio_samples}, shows the gathering of status code ratio samples for three distinct services. The ratio varies from 0.0 to 1.0, and represent the proportion of status code groups (2xx -- Success, 4xx -- Client error and 5xx -- Other errors).
 
-Also, service dependency graphs are stored for further access after being processed by \emph{Graph Processor} component. We have decided to use \emph{ArangoDB} as our \gls{gdb}. This decision was based in the ``Multi data-type support'' provided by this database, allowing us to extend our graph structures to whatever we wanted, enhancing our graph storage possibilities and relieving the implementation from parsing data-types. This database has a \emph{Python} client, \emph{pyArango}~\cite{pyarango}, which revealed lack of features, leading to propositions for functionality creation and issue declarations in GitHub. However, the answers were not pleasant due to lack of support and people to maintain the project~\cite{arango_issues}. This have lead to some difficulties when implementing \emph{Graphs Repository} component in \gls{otp}. Difficulties from storing graphs with custom names to custom graph retrieval were felted. The solution was to fork the project, perform changes and use our custom \emph{pyArango} client. This changes were committed for review to the original project. Mitigating this kind of problems in advance, was impossible because they were only perceived when using the client.
+Also, service dependency graphs are stored for further access after being processed by \emph{Graph Processor} component. We have decided to use \emph{ArangoDB} as our \gls{gdb}. This decision was based in the ``Multi data-type support'' provided by this database, allowing us to extend our graph structures to whatever we wanted, enhancing our graph storage possibilities and relieving the implementation from parsing data-types. This database has a \emph{Python} client, \emph{pyArango}~\cite{pyarango}, which revealed lack of features, leading to propositions for functionality creation and issue declarations in GitHub. However, the answers were not pleasant due to lack of support and people to maintain the project~\cite{arango_issues}. This have lead to some difficulties when implementing \emph{Graphs Repository} component in \gls{otp}. Difficulties from storing graphs with custom names to custom graph retrieval were felted. The solution was to fork the project, perform changes and use our custom \emph{pyArango} client. This changes were committed for review to the original project. We could not mitigate these problems in advance because they were only perceived when using the client.
 
 %Also, service dependency graphs are processed and stored in a \gls{gdb}, however, they do not have further use for this research. The decision to keep them and store them, eases their retrieval and further usage on upcoming projects.
 
@@ -364,6 +365,8 @@ So, before applying the method, our component tests the data to chose the correc
 Figure~\ref{fig:trend_seasonality_results} shows that there are clearly trends in our data, however, no seasonality was detected. For this reason, the selected method to fulfil data presented in \emph{dataframes} is Linear Interpolation -- Figure~\ref{fig:methods_to_fulfil_time_series_data}.
 
 These \emph{dataframes} are then processed by an unsupervised learning algorithm to detect if there are outliers. For the unsupervised learning algorithm there were: Isolation Forests and OneClassSVM~\cite{Zhou2017}. The first one uses binary decision trees to isolate data points and identify outliers presented in the data set, the second one, generates density areas using max-margin methods, i.e. they do not model a probability distribution, hence the idea is to find a function that is positive for regions with high density of points, and negative for small densities, identifying outliers presented in data. Figure~\ref{fig:isolation_forests_and_oneclasssvm_comparison} displays the error comparison of these two methods.
+
+\newpage
 
 \begin{figure}[H]
     \centering\includegraphics[width=0.8\linewidth]{images/isolation_forests_and_oneclasssvm_comparison.pdf}
@@ -433,7 +436,7 @@ Figure~\ref{fig:trace_time_coverage} gives us an example in which we have a trac
 
 Algorithm~\ref{alg:trace_coverability_analysis} uses \emph{SpanTrees} to calculate \emph{trace\_coverability}, this is due to causal relationships presented in these trees. As explained above, through Figure~\ref{fig:trace_time_coverage}, one must have a trace mounted in span relationships (span trees), to know when a span is child of another, and be able to calculate the coverability presented in a trace. This method performs this calculation for every service and, in the end, stores information about trace coverability into a \gls{csv} file. This file is later used to produce plots about the service trace coverability. What is expected from this method is that we achieve a plotting, where every service has a counting of traces that cover a certain amount of time.
 
-\todo{TALK A LITTLE BIT MORE???}
+%\todo{TALK A LITTLE BIT MORE???}
 
 To summarise, this tools gathers processed data and time-series data from our \gls{tsdb}, extracted using \gls{otp} from original trace information. Then it perform data imputation to solve missing values problems, analyses resulting data using Isolation Forests, an unsupervised multiple feature machine learning algorithm, to identify outliers presented in our extracted metrics, and therefore, detect anomalies presented in services, identifying their occurrences in time. Also, this tools uses tracing to perform an analysis about the structure of spans presented in tracing, and uses processed data from \gls{otp}, to perform an analysis of time coverage provided by tracing data.
 
@@ -441,8 +444,10 @@ Next Chapter~\ref{chap:results_analysis_and_limitations}, we will cover results 
 
 \checkoddpage
 \ifthenelse{\boolean{oddpage}}
-{ % Odd page
+{
     \newpage
-    \blankpage}
-{ % Even page
+    \blankpage
+}
+{
+    % Even page
 }

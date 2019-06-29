@@ -85,12 +85,12 @@ In the data model specification, the creators of \emph{OpenTracing} say that: ``
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1.0\linewidth]{span_tree_example.pdf}
+    \includegraphics[width=10cm, height=10cm, keepaspectratio]{span_tree_example_paper.pdf}
     \caption{Span Tree example.}
     \label{fig:span_tree_example}
 \end{figure}
 
-Figure~\ref{fig:span_tree_example} contains a span tree representation with a trace containing eight spans. As said before,every span must be a child of some other span, unless it is the root span, this is very clear in a span tree visualization with the usage of the root node. With this causal relationship, a path through the system can be retrieved. For example, if for example every span processes in a different endpoint represented by letters presented in the span tree, one may generate the request path: A ---$>$ B ---$>$ D. This means that our hypothetical request passed through machine A, B and D, or if it were services, the request passed from service A, to B and finally to D. From this, we can generate the dependency graph of the system (explained in the Subsection~\ref{subsec:graphs}~-~\nameref{subsec:graphs}).
+Figure~\ref{fig:span_tree_example} contains a span tree representation with a trace containing five spans. Apart from the root span every other span must have a parent. With this causal relationship, a path through the system can be retrieved. For example, if every span processes in a different endpoint represented by letters presented in the span tree, one may generate the request path: A $\rightarrow$ B $\rightarrow$ D. This means that our hypothetical request passed through machine A, B and D, or if it were services, the request passed from service A, to B and finally to D. From this, we can generate the dependency graph of the system (explained in the Subsection~\ref{subsec:graphs}~-~\nameref{subsec:graphs}).
 
 This type of data is extracted as trace files or streamed over transfer protocols like e.g., \gls{http}, from technologies like Kubernetes~\cite{what_is_kubernetes}, OpenStack~\cite{what_is_opensatck}, and other cloud or distributed management system technologies that implements some kind of system or code instrumentation using, for example, \emph{OpenTracing}~\cite{what_is_opentracing} or OpenCensus~\cite{what_is_opencensus}. Tracing contains some vital system details as they are the result of system instrumentation and therefore, this data can be used as a resource to provide observability over the distributed system.
 
@@ -145,7 +145,7 @@ In Figure~\ref{fig:service_dependency_graph}, a representation of a service depe
 
 Graphs are a way to model and extract information from tracing data. Another interesting approach could be to extract metrics in time from tracing because traces and spans are spread in time, and they have information about the state of the system at a given instant. The next Subsection~\ref{subsec:time_series}~-~\nameref{subsec:time_series} provides an introduction to a data representation model.
 
-\subsection{Time Series}
+\subsection{Time-Series}
 \label{subsec:time_series}
 
 Time-Series are a way of representing data as a time-indexed series of values. This kind of data is often arise when monitoring systems, industrial processes, tracking corporate business metrics or sensor measurements. Figure~\ref{fig:time_series_example} provides a visual example of this way of data representation.
@@ -153,24 +153,24 @@ Time-Series are a way of representing data as a time-indexed series of values. T
 \begin{figure}[H]
     \centering
     \includegraphics[width=1.00\textwidth]{images/time_series_example.pdf}
-    \caption{Time series: Annual mean sunspot numbers for 1760-1965~\cite{Brillinger2006}.}
+    \caption{time-series: Annual mean sunspot numbers for 1760-1965~\cite{Brillinger2006}.}
     \label{fig:time_series_example}
 \end{figure}
 
 In Figure~\ref{fig:time_series_example}, Brillinger \textit{D.}~\cite{Brillinger2006} presents a visual representation of a time-series as a collection of values in time. These values are measurements of sunspot means gathered from 1960-1965. In this case, measurements come from natural origin, however, one can perform observations of e.g., \gls{cpu} load, system uptime / downtime and network latency.
 
-As these processes are not random, autocorrelation can be exploited to extract insight from the data, such as predict patterns or detect anomalies. Therefore, time-series data can be analysed to detect anomalies present in the system. One way to do this is to look for outliers~\cite{Liu2004} in the multidimensional feature set. Anomaly detection in time series data is a data mining process used to determine types of anomalies found in a data set and to determine details about their occurrences. Anomaly detection methods are particularly interesting for our data set since it would be impossible to manually tag the set of interesting anomalous points. Figure~\ref{fig:time_series_anomaly_detection_example} provides a simple visual representation of anomaly detection in time series data.
+As these processes are not random, autocorrelation can be exploited to extract insight from the data, such as predict patterns or detect anomalies. Therefore, time-series data can be analysed to detect anomalies present in the system. One way to do this is to look for outliers~\cite{Liu2004} in the multidimensional feature set. Anomaly detection in time-series data is a data mining process used to determine types of anomalies found in a data set and to determine details about their occurrences. Anomaly detection methods are particularly interesting for our data set since it would be impossible to manually tag the set of interesting anomalous points. Figure~\ref{fig:time_series_anomaly_detection_example} provides a simple visual representation of anomaly detection in time-series data.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.50\textwidth]{images/time_series_anomaly_detection_example.pdf}
-    \caption{Anomaly detection in Time Series~\cite{NikolajBomannMertz}.}
+    \caption{Anomaly detection in Time-Series~\cite{NikolajBomannMertz}.}
     \label{fig:time_series_anomaly_detection_example}
 \end{figure}
 
-In Figure~\ref{fig:time_series_anomaly_detection_example}, there is a clear spike in values from this time series measurements. This can be declared an outlier because it is a strange value considering the range of remaining measurements and therefore, it is considered an anomaly. In this example, anomaly detection is easy to perform by a Human, however, in mostly cases nowadays, due to great variation of values and plethora of information that can be gathered, perform this detection manually is impracticable, thus automatic anomaly detection using Machine Learning techniques are used nowadays.
+In Figure~\ref{fig:time_series_anomaly_detection_example}, there is a clear spike in values from this time-series measurements. This can be declared an outlier because it is a strange value considering the range of remaining measurements and therefore, it is considered an anomaly. In this example, anomaly detection is easy to perform by a Human, however, in mostly cases nowadays, due to great variation of values and plethora of information that can be gathered, perform this detection manually is impracticable, thus automatic anomaly detection using Machine Learning techniques are used nowadays.
 
-Anomaly detection in time series data is a data mining process used to determine types of anomalies found in a data set and to determine details about their occurrences. This auto anomaly detection method has lots of usage due to the impossible work of tag manually the interesting set of anomalous points. Auto anomaly detection has a wide range of applications such as fraud detection, system health monitoring, fault detection, event detection systems in sensor networks, and so on.
+Anomaly detection in time-series data is a data mining process used to determine types of anomalies found in a data set and to determine details about their occurrences. This auto anomaly detection method has lots of usage due to the impossible work of tag manually the interesting set of anomalous points. Auto anomaly detection has a wide range of applications such as fraud detection, system health monitoring, fault detection, event detection systems in sensor networks, and so on.
 
 After explaining the core concepts, foundations for the work presented in this thesis, to the reader, technologies capable of handling this types of information are presented and discussed in next Section~\ref{sec:technologies}~-~\nameref{sec:technologies}.
 
@@ -179,7 +179,7 @@ After explaining the core concepts, foundations for the work presented in this t
 
 In this section are presented technologies and tools capable of handling the types of information discussed in the previous Section~\ref{sec:concepts}~-~\nameref{sec:concepts}.
 
-The main tools covered are:~\ref{subsec:distributed_tracing_tools}~-~\nameref{subsec:distributed_tracing_tools}, for distributed tracing data handling, \ref{subsec:graph_manipulation_and_processing_tools}~-~\nameref{subsec:graph_manipulation_and_processing_tools} and~\ref{subsec:graph_database_tools}~-~\nameref{subsec:graph_database_tools}, for graph processing and storage, and~\ref{subsec:time_series_database_tools}~-~\nameref{subsec:time_series_database_tools}, for time series value storage.
+The main tools covered are:~\ref{subsec:distributed_tracing_tools}~-~\nameref{subsec:distributed_tracing_tools}, for distributed tracing data handling, \ref{subsec:graph_manipulation_and_processing_tools}~-~\nameref{subsec:graph_manipulation_and_processing_tools} and~\ref{subsec:graph_database_tools}~-~\nameref{subsec:graph_database_tools}, for graph processing and storage, and~\ref{subsec:time_series_database_tools}~-~\nameref{subsec:time_series_database_tools}, for time-series value storage.
 
 \subsection{Distributed Tracing Tools}
 \label{subsec:distributed_tracing_tools}
@@ -382,7 +382,7 @@ Next Subsection~\ref{subsec:time_series_database_tools}~-~\nameref{subsec:time_s
 
 In this Subsection, tools for storing time-indexed series of values are presented. This type of data is a need for this research due to the tight relation between distributed tracing and time, as explained in Subsections~\ref{subsec:distributed_tracing} and~\ref{subsec:time_series}. Also, service dependency graphs, as a representation of the system at a given time, can contain valuable information for monitoring Microservice systems. For this purpose, \gls{tsdb} are databases capable of storing time-series based values.
 
-A \gls{tsdb} is ``A database optimised for time-stamped or time series data like arrays of numbers indexed by time (a date time or a date time range)''~\cite{Dunning2015}. These databases are natively implemented using specialised time-series theory algorithms to enhance their performance and efficiency, due to widely variance of access possible. The way this databases use to work on efficiency is to treat time as a discrete quantity rather than as a continuous mathematical dimension. Usually a \gls{tsdb} allows operations like create, enumerate, update, organise and destroy various time series entries in short access times.
+A \gls{tsdb} is ``A database optimised for time-stamped or time-series data like arrays of numbers indexed by time (a date time or a date time range)''~\cite{Dunning2015}. These databases are natively implemented using specialised time-series theory algorithms to enhance their performance and efficiency, due to widely variance of access possible. The way this databases use to work on efficiency is to treat time as a discrete quantity rather than as a continuous mathematical dimension. Usually a \gls{tsdb} allows operations like create, enumerate, update, organise and destroy various time-series entries in short access times.
 
 This type of database is growing in usage and popularity because of Internet of Things (IoT) trend. Discussions in this area have increased over the past few years, and is expected that it keeps increasing, due to Ubiquitous Computing -- Raise of omnipresent and universal technologies. At the same time, \gls{tsdb} grows with this IoT tendency, because data mining from sensor spread geographically and sensors gather information through measurements in specific points in time. This information are usually stored in \gls{tsdb}~\cite{TanayPant2019}.
 
@@ -403,7 +403,7 @@ Table~\ref{table:time_series_databases_comparison} presents a comparison between
          & InfluxDB \cite{influxdb}
          & OpenTSDB \cite{opentsdb}                                                                                                                                                                                                                                       \\ \hline \hline
         \multicolumn{1}{|l|}{\textbf{Description}}
-         & An open-source time series database written in Go and optimised for fast, high-availability storage and retrieval of time series data in fields such as operations monitoring, application metrics, Internet of Things sensor data, and real-time analytics's.
+         & An open-source time-series database written in Go and optimised for fast, high-availability storage and retrieval of time-series data in fields such as operations monitoring, application metrics, Internet of Things sensor data, and real-time analytics's.
          & A distributed and scalable \gls{tsdb} written on top of HBase; \newline
         OpenTSDB was written to address a common need: store, index and serve metrics collected from computer systems (network gear, operating systems and applications) at a large scale, therefore, making this data easily accessible and displayed.                   \\ \hline
         \multicolumn{1}{|l|}{\textbf{Licence}~\cite{Morin2012}}
@@ -474,9 +474,9 @@ The conclusions from Salesforce research identified that, with Zipkin tracing da
 \subsection{Analysing distributed trace data}
 \label{subsec:analysing_distributed_trace_data}
 
-At Pinterest, the focus were to research for latency problems in their Microservices solution. Pinterest claims to have tens of services and hundreds of network calls per-trace. One big problem identified at start is the huge difficulty of looking to trace data due to overwhelming quantity of information -- ``thousands of traces logged each minute (let alone the millions of requests per minute these traces are sampled from)''.
+At Pinterest, the focus was to research for latency problems in their Microservices solution. Pinterest claims to have tens of services and hundreds of network calls per-trace. One big problem identified at start is the huge difficulty of looking to trace data due to the overwhelming quantity of information -- ``thousands of traces logged each minute (let alone the millions of requests per minute these traces are sampled from)''.
 
-Pinterest felted the problem of monitoring Microservices early due to their service popularity in the past years. With this popularity, systems usage have increased significantly. This lead them to take action and create their closed source distributed tracing analysis tool called ``Pintrace Trace Analyser''~\cite{analysing_distributed_trace_data}.
+Pinterest felt the problem of monitoring Microservices early due to their service popularity in the past years. With this popularity, systems usage increased significantly. This lead them to take action and create their closed source distributed tracing analysis tool called ``Pintrace Trace Analyser''~\cite{analysing_distributed_trace_data}.
 
 This tool gathers tracing data from \nameref{subsec:distributed_tracing_tools}, more precisely from Zipkin, and processes a sample of these tracing to detect mainly latency problems in the service dependency network. Looking at stats from thousands of traces over a longer period of time not only weeds out the outliers/buggy traces, but provides a holistic view of performance.
 
@@ -490,15 +490,15 @@ The conclusions from Pinterest, where that there is a great need to develop tool
 \subsection{Research possible directions}
 \label{subsec:research_possible_directions}
 
-In this Subsection, the related work previously presented will be analysed, and from this, some possible directions of research will be considered. These considerations will be further discussed in Chapter~\ref{chap:research_objectives_and_approach}~-~\nameref{chap:research_objectives_and_approach}.
+%In this Subsection, the related work previously presented will be analysed, and from this, some possible directions of research will be considered. These considerations will be further discussed in Chapter~\ref{chap:research_objectives_and_approach}~-~\nameref{chap:research_objectives_and_approach}.
 
 One thing to notice from the related work presented is that there is few research accomplished in the area and trace tooling development, however, these works are from the past year and the tendency is to increase in the following years. Enlargement and usage of distributed systems are fuel to feed the need of research in this field and develop new methodologies and tools to monitor and control operations.
 
-From the first work presented, \nameref{subsec:mastering_aiops}, some final results and conclusions were provided. They point out that the benefits of this approach were: first, very high accuracy in detection $99,7\%$, and secondly, extremely fast detection in $O(n)$ time. However, some limitations involving requiring very long training times for long traces (with decent machines) were noted. Also, improvements were pointed: truncate traces, to lower the quantity of tracing and therefore, summarizing traces.
+From the first work presented, ``\nameref{subsec:mastering_aiops}'', some final results and conclusions were provided. They point out that the benefits of this approach were: first, very high accuracy in detection $99,7\%$, and secondly, extremely fast detection in $O(n)$ time. However, some limitations involving requiring very long training times for long traces (with decent machines) were noted. Also, improvements were pointed: truncate traces, to lower the quantity of tracing and therefore, summarizing traces.
 
-The second work presented, \nameref{subsec:anomaly_detection_using_zipkin_tracing_data}, point down the lack of features in the existing tools. These features include automatic anomaly detection using distributed tracing data. The main idea consists in extending functionality presented in this tools, to provide autonomous anomaly detection and alerting based on information presented in tracing from services.
+The second work presented, ``\nameref{subsec:anomaly_detection_using_zipkin_tracing_data}'', point down the lack of features in the existing tools. These features include automatic anomaly detection using distributed tracing data. The main idea consists in extending functionality presented in this tools, to provide autonomous anomaly detection and alerting based on information presented in tracing from services.
 
-In third work presented, \nameref{subsec:analysing_distributed_trace_data}, crucial points considered were to represent autonomous generation of reports, allowing operators to check the status of deployments, and therefore, providing more control over the system regarding detection of anomalous values in service latency.
+The third work presented, ``\nameref{subsec:analysing_distributed_trace_data}'', crucial points considered were to represent autonomous generation of reports, allowing operators to check the status of deployments, and therefore, providing more control over the system regarding detection of anomalous values in service latency.
 
 Finally, from the multiple related work presented the final assumptions for possible research directions in this field are:
 
@@ -512,8 +512,10 @@ After providing the state of the art for this research to the reader, next Chapt
 
 \checkoddpage
 \ifthenelse{\boolean{oddpage}}
-{ % Odd page
+{
     \newpage
-    \blankpage}
-{ % Even page
+    \blankpage
+}
+{
+    % Even page
 }

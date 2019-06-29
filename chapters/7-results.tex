@@ -2,7 +2,7 @@
 \chapter{Results, Analysis and Limitations}
 \label{chap:results_analysis_and_limitations}
 
-In this Chapter we present the results gathered from the ``Data Analysis'' component presented in Chapter~\ref{chap:proposed_solution}~-~\nameref{chap:proposed_solution}, to answer the questions defined in Section~\ref{sec:research_questions}. Results for both questions, ``1. Is there any anomalous service?'' and ``2. How can we measure the quality of tracing?'', are presented as well as a brief discussion regarding both results in Sections~\ref{sec:anomaly_detection} and~\ref{sec:trace_quality_analysis} respectively. Later, in the end of this Chapter, in Section~\ref{sec:limitations_of_opentracing_data}, we explore some limitations regarding the \emph{OpenTracing} data. 
+In this Chapter we present the final results gathered from the ``Data Analysis'' component presented in Chapter~\ref{chap:proposed_solution}~-~\nameref{chap:proposed_solution}, to answer the questions defined in Section~\ref{sec:research_questions}. Results for both questions, ``1. Is there any anomalous service?'' and ``2. How can we measure the quality of tracing?'', are presented as well as a brief discussion regarding both results in Sections~\ref{sec:anomaly_detection} and~\ref{sec:trace_quality_analysis} respectively. Later, in the end of this Chapter, in Section~\ref{sec:limitations_of_opentracing_data}, we explore some limitations regarding the \emph{OpenTracing} data.
 
 \section{Anomaly Detection}
 \label{sec:anomaly_detection}
@@ -11,7 +11,7 @@ For the first question, the approach was to use the \gls{otp} tool to extract me
 
 After extract metrics, a tool for metrics visualisation (e.g., Grafana) was used to visualise metrics from \emph{OpenTSDB} database. Samples from these visualizations were presented in Figures~\ref{fig:service_calls_samples},~\ref{fig:service_dependency_variation},~\ref{fig:service_avg_response_time_samples} and~\ref{fig:service_status_code_ratio_samples}. Therefore, the method explained in Algorithm~\ref{alg:anomaly_detection} was applied to metrics extracted from tracing data. From this algorithm, a \gls{csv} file is generated containing candidates to ``possible anomalous regions'' for each service presented in the system. Figure~\ref{fig:service_isolation_forest_detections} shows a sample of the result of outliers identified in time-series data for a given hypothetical service.
 
-\todo{ADD MORE INFO???}
+%\todo{ADD MORE INFO???}
 
 %\vspace{1.0cm}
 
@@ -36,7 +36,7 @@ Figure~\ref{fig:comparison_anomalous_non_anomalous_regions} provides a represent
   \label{fig:comparison_anomalous_non_anomalous_regions}
 \end{figure}
 
-As we can see in Figure~\ref{fig:comparison_anomalous_non_anomalous_regions}, there is a clear difference between anomalous and non-anomalous regions. There is a drastic change in the range of values between the anomalous and non-anomalous regions, where the maximum for each feature changes greatly and therefore, outliers are visible and evident in the observations. In the anomalous samples, it is possible to notice a clear crowding of points near the origin point of the chart and some outliers in the upper-left and down-right regions of the chart. On the other side, in the non-anomalous samples, all that is possible to notice is the crowding of points near the origin point of the chart. The crowding of points is what is expected to be the normal behaviour for services, which means that is expected that the service can handle the load with good response times. Furthermore, after this observations, what is expected is to investigate what these points represent and what is causing this unexpected increment in the number of incoming/outgoing requests and the average response time. 
+As we can see in Figure~\ref{fig:comparison_anomalous_non_anomalous_regions}, there is a clear difference between anomalous and non-anomalous regions. There is a drastic change in the range of values between the anomalous and non-anomalous regions, where the maximum for each feature changes greatly and therefore, outliers are visible and evident in the observations. In the anomalous samples, it is possible to notice a clear crowding of points near the origin point of the chart and some outliers in the upper-left and down-right regions of the chart. On the other side, in the non-anomalous samples, all that is possible to notice is the crowding of points near the origin point of the chart. The crowding of points is what is expected to be the normal behaviour for services, which means that is expected that the service can handle the load with good response times. Furthermore, after this observations, what is expected is to investigate what these points represent and what is causing this unexpected increment in the number of incoming/outgoing requests and the average response time.
 
 There are two anomalous situations observed:
 
@@ -87,7 +87,7 @@ The second procedure aims to check if tracing covers the entire time of the root
   \label{fig:services_coverability_analysis}
 \end{figure}
 
-Figure~\ref{fig:services_coverability_analysis} allows the user to visualise the tracing coverability, in terms of how many the overall tracing covers their entire execution duration. The most important thing to notice for this tracing data is the presence of higher bar values in $60\%-100\%$ regions. This means that coverability for this tracing could be better, but in overall is good. What is expected by the result of this kind of analysis is that the coverability of tracing remains closer to the last interval $(90\%-100\%)$, which means that our service is fully/almost fully covered by this kind of data and therefore, the analysis of this data is worthy and the results provided by the usage of this it are trusty. From this data set, the results for the remaining services where close to the ones presented and shown by Figure~\ref{fig:services_coverability_analysis}. 
+Figure~\ref{fig:services_coverability_analysis} allows the user to visualise the tracing coverability, in terms of how many the overall tracing covers their entire execution duration. The most important thing to notice for this tracing data is the presence of higher bar values in $60\%-100\%$ regions. This means that coverability for this tracing could be better, but in overall is good. What is expected by the result of this kind of analysis is that the coverability of tracing remains closer to the last interval $(90\%-100\%)$, which means that our service is fully/almost fully covered by this kind of data and therefore, the analysis of this data is worthy and the results provided by the usage of this it are trusty. From this data set, the results for the remaining services where close to the ones presented and shown by Figure~\ref{fig:services_coverability_analysis}.
 
 After checking these results, one can use them to see which services developers can analyse in order to improve the coverage of tracing. To improve this coverage, changes in code instrumentation must be performed. Later on, after performing changes in code instrumentation and gather new trace information, the method for coverability test must be executed over the new tracing data to see if results have changed. What is expected is that trace coverability raises, which means that, for example, for service B presented in this figure, after developers changed the implementation, the trace counting for coverage must shift into higher intervals, and for this reason, one must observe lower values for $1\%-70\%$ and higher values for $71\%-100\%$. From this analysis, one thing to improve is to develop a method to analyse the gathered results in order to detect traces that do not cover their duration with respect to a predefined threshold. For example, the method could be applied to newer services after some time (to gather sufficient trace information), and then report or notify the developer if the service does not comply with the predefined coverage threshold. This would allow developers to improve their tracing coverage.
 
@@ -108,48 +108,30 @@ Limitations of \emph{OpenTracing} were exposed in previous topics, Sections~\ref
 
 The first limitation brings problems regarding the definition of time units in spans. Without the clear indication of units used in these metrics, one may confuse the measurement and make the mistake of inferring misleading values, resulting in wrong spread of spans throughout time. This scenario occurred when posting our tracing data to distributed tracing tools, and to solve this, we needed to check the measurement unit defined by the tool. For this reason, this is a big problem, and therefore, this should be defined in the specification.
 
-Second limitation causes the inability of knowing which spans are related with other ones when they are agregatted in different traces. This unacknowledgement 
+Second limitation causes the inability of knowing which spans are related with other ones when they are presented in different traces. Not having this information leads to lack of understanding of causally relationships between operations performed by distributed components. Therefore, to solve this issue, an additional field of causally-related spans or traces should be added to the span structure.
 
-3.
+Third limitation consists in having fields of key $\rightarrow$ value pairs, when there is no definition of which keys can appear. This can be solved by creating a predefined schema where all possible key values must be indicated. It looks easy to fix this issue, however, to change the specification, there must be consensus in a unified structure and create new tools to process this new tracing data.
 
-4.
+Fourth limitation, tracing contains relevant information about system work and can be used to map the flow of execution throughout the system, however, it could be much more complete if it contained a correlation between spans and logs. This could be solved if the span structure contained a field to declare related logs. Furthermore, the explicit declarations of logs would ease \gls{devops} work because they retrieve logs manually by time intervals after searching in tracing for e.g., longer spans.
 
-5.
+Last limitation says that tracing specification does not have a defined way to record raw measurements or metrics. This can be solved if specification and \emph{OpenTracing} provided an \gls{api} with defined metrics that could be exploited from tracing to be further analysed. This limitation was surpassed by creating a metrics extractor from tracing data in our proposed solution.
 
-These limitations are generated by some issues presented in the specification of \emph{OpenTracing}. Provide changes to the specification was not the focus of this research, however, these limitations carried out barriers for our own research. For this reason, revise and perform adjustments to the whole specification is a job that must be done to ease tracing handling and analysis.
+These limitations are generated by some issues presented in the specification of \emph{OpenTracing}. Provide changes was not the focus of this research, however, these limitations carried out barriers for our own research because they bring difficulty when processing this type of data. For this reason, revise and perform adjustments to the whole specification is a job that must be done to ease tracing handling and analysis.
 
-Near the end of this research, a project started with the support of big companies such as Google, Lightstep and Uber. This project, named as \emph{OpenTelemetry}~\cite{opentelemetry}, is backed by CNCF: Cloud Native Computing Foundation and for this reason is open source. Started in April 2019 and has a defined roadmap to November 2019 with the main objective of merging \emph{OpenCensus} and \emph{OpenTracing}. The last one was the main focus of the research presented in this thesis because we only had access to tracing data. \emph{OpenCensus} is a set of libraries for various languages that allows to collect application metrics, furthermore, this data can be analysed by developers and administrators to understand the health of the applications and debug problems~\cite{what_is_opencensus}. 
+Near the end of this research, a project started with the support of big companies such as Google, Lightstep and Uber. This project, named as \emph{OpenTelemetry}~\cite{opentelemetry}, is backed by CNCF: Cloud Native Computing Foundation and for this reason is open source. Started in April 2019 and has a defined roadmap to November 2019 with the main objective of merging \emph{OpenCensus} and \emph{OpenTracing}. The last one was the main focus of the research presented in this thesis because we only had access to tracing data. \emph{OpenCensus} is a set of libraries for various languages that allows to collect application metrics, furthermore, this data can be analysed by developers and administrators to understand the health of the applications and debug problems~\cite{what_is_opencensus}.
 
-The raise of this project, \emph{OpenTelemetry}, and interest from all these companies proves and emphasizes the whole work carried out during this research. All starting points for the creation of \emph{OpenTelemetry} solution, stands in the problems and limitations of \emph{OpenTracing} felted during this work. Furthermore, in June 2019, a revision of tracing specification was planned and worked out with the objective of introduce new standard tags, log fields, and change span context reference types~\cite{opentelemetry_trace_specification}.
-Also, in this project, creators are planning to develop a metrics \gls{api}, however, at time of writing, the only the decision that was made is to use time-series to handle this kind of data but there is no specification created so far.
+The creation of \emph{OpenTelemetry} and the interest from all these companies proves and emphasizes the whole work carried out during this research. All starting points for the creation of \emph{OpenTelemetry} solution, stands in the problems and limitations of \emph{OpenTracing} felted during this work and presented above. Furthermore, in June 2019, a revision of tracing specification was planned and worked out with the objective of introducing new standard tags, log fields, and change span context reference types~\cite{opentelemetry_trace_specification}. Also, in this project, creators are planning to develop a metrics \gls{api}, however, at time of writing, the only decision that was made is to use time-series to handle this kind of data but there is no specification created so far.
 
-The usage of metrics, logs and other information come from the core 
-Another pointed problem is that, only use tracing is not enough to perform analysis of a distributed system, and therefore, if more types of data are produced, why not use them? \emph{OpenTelemetry} core , the  Effective observability requires high-quality telemetry
+The usage of metrics, logs and other information come from the main objective of this project, merge \emph{OpenCensus} and \emph{OpenTracing}. Though the various components will be loosely coupled and consumed separately, the scope of the merged project includes data sources beyond distributed transaction traces. After all, instrumentation and observability involve other data sources, too. So the surface area of merged project \gls{api} will incorporate a variety of signals, like metrics, traces and logs providing higher observability.
 
-Though the various components will be loosely coupled and consumed separately, the scope of the merged project includes data sources beyond distributed transaction traces. After all, instrumentation and observability involve other data sources, too. So the surface area of merged project \gls{api} will incorporate a variety of signals, like metrics, traces and logs.
-
-The benefits of merging this two specifications 
-
-\todo{Maybe talk about the merge of OpenTracing with OpenCensus - OpenTelemetry}
-
-
-
-What is OpenTelemetry
-
-When it was created
-
-Why it was created
-
-Benefits of merging OpenTracing with OpenCensus
-
-Culminate everything with conclusions.
-
-This is a test. AAAAAAAAAA
+Observability stems from the discipline of control theory and refers to how well a system can be understood on the basis of the telemetry that it produces. From distributed systems, three major vertical data types are generated: Tracing, Metrics and Logging, and therefore, because they are tightly interconnected, one should use all of them to fully achieve observability of these systems. For this reason, Metrics can be used to pinpoint, for example, a subset of misbehaving traces. Logs associated with those traces could help to find the root cause of this behaviour. And then new metrics can be configured, based on this discovery, to catch this issue earlier next time. Furthermore, \emph{OpenTelemetry} is an effort to combine all three verticals into a single set of system components and language-specific telemetry libraries and, in the end, replace both the \emph{OpenTracing} project, which focused exclusively on tracing, and the \emph{OpenCensus} project, which focused on tracing and metrics.
 
 \checkoddpage
 \ifthenelse{\boolean{oddpage}}
-{ % Odd page
-\newpage
-\blankpage}
-{ % Even page
+{
+    \newpage
+    \blankpage
+}
+{
+    % Even page
 }

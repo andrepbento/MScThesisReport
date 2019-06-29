@@ -93,13 +93,43 @@
       \verb https://hal.inria.fr/hal-01631455
       \endverb
     \endentry
-    \entry{DiFrancesco2017}{inproceedings}{}
+    \entry{microservices_definition}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=d0740bcf48754b8fa2cd3549a1d73461}{%
+           family={Richardson},
+           familyi={R\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{d0740bcf48754b8fa2cd3549a1d73461}
+      \strng{fullhash}{d0740bcf48754b8fa2cd3549a1d73461}
+      \strng{bibnamehash}{d0740bcf48754b8fa2cd3549a1d73461}
+      \strng{authorbibnamehash}{d0740bcf48754b8fa2cd3549a1d73461}
+      \strng{authornamehash}{d0740bcf48754b8fa2cd3549a1d73461}
+      \strng{authorfullhash}{d0740bcf48754b8fa2cd3549a1d73461}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Microservices Definition}}
+      \field{urlday}{17}
+      \field{urlmonth}{10}
+      \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://microservices.io/
+      \endverb
+      \verb{url}
+      \verb https://microservices.io/
+      \endverb
+    \endentry
+    \entry{Francesco2017}{inproceedings}{}
       \name{author}{3}{}{%
-        {{hash=7a19d99b31f8e0480bc08850ea535e72}{%
-           family={{Di Francesco}},
-           familyi={D\bibinitperiod},
-           given={Paolo},
-           giveni={P\bibinitperiod}}}%
+        {{hash=b6370d5523dbd7f432e8fa2b648050e7}{%
+           family={Francesco},
+           familyi={F\bibinitperiod},
+           given={Paolo\bibnamedelima Di},
+           giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
         {{hash=3ff6e286502b85077eabb7e86849d893}{%
            family={Malavolta},
            familyi={M\bibinitperiod},
@@ -111,19 +141,21 @@
            given={Patricia},
            giveni={P\bibinitperiod}}}%
       }
-      \strng{namehash}{c8d97be6e0b2483e0be3e8855b17fdc5}
-      \strng{fullhash}{c8d97be6e0b2483e0be3e8855b17fdc5}
-      \strng{bibnamehash}{c8d97be6e0b2483e0be3e8855b17fdc5}
-      \strng{authorbibnamehash}{c8d97be6e0b2483e0be3e8855b17fdc5}
-      \strng{authornamehash}{c8d97be6e0b2483e0be3e8855b17fdc5}
-      \strng{authorfullhash}{c8d97be6e0b2483e0be3e8855b17fdc5}
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{c9158d2613cbaedc5cbb570fe06cb81e}
+      \strng{fullhash}{c9158d2613cbaedc5cbb570fe06cb81e}
+      \strng{bibnamehash}{c9158d2613cbaedc5cbb570fe06cb81e}
+      \strng{authorbibnamehash}{c9158d2613cbaedc5cbb570fe06cb81e}
+      \strng{authornamehash}{c9158d2613cbaedc5cbb570fe06cb81e}
+      \strng{authorfullhash}{c9158d2613cbaedc5cbb570fe06cb81e}
       \field{sortinit}{8}
       \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{{©} 2017 IEEE. Microservices are a new trend rising fast from the enterprise world. Even though the design principles around microservices have been identified, it is difficult to have a clear view of existing research solutions for architecting microservices. In this paper we apply the systematic mapping study methodology to identify, classify, and evaluate the current state of the art on architecting microservices from the following three perspectives: publication trends, focus of research, and potential for industrial adoption. More specifically, we systematically define a classification framework for categorizing the research on architecting microservices and we rigorously apply it to the 71 selected studies. We synthesize the obtained data and produce a clear overview of the state of the art. This gives a solid basis to plan for future research and applications of architecting microservices.}
-      \field{booktitle}{Proceedings - 2017 IEEE International Conference on Software Architecture, ICSA 2017}
-      \field{isbn}{9781509057290}
+      \field{booktitle}{2017 IEEE International Conference on Software Architecture (ICSA)}
+      \field{isbn}{978-1-5090-5729-0}
       \field{title}{{Research on Architecting Microservices: Trends, Focus, and Potential for Industrial Adoption}}
       \field{year}{2017}
       \field{pages}{21\bibrangedash 30}
@@ -131,67 +163,33 @@
       \verb{doi}
       \verb 10.1109/ICSA.2017.24
       \endverb
-      \verb{file}
-      \verb ::
-      \endverb
-      \verb{urlraw}
-      \verb http://cs.gssi.infn.it/ICSA2017ReplicationPackage
-      \endverb
-      \verb{url}
-      \verb http://cs.gssi.infn.it/ICSA2017ReplicationPackage
-      \endverb
-      \keyw{Microservices,Software Architecture,Systematic Mapping Study}
+      \keyw{Index Terms—Microservices,Software Architecture,System-atic Mapping Study}
     \endentry
-    \entry{Joyce1987}{article}{}
-      \name{author}{4}{}{%
-        {{hash=1ed09ee37bc3a20c6259ad1eae069b0a}{%
-           family={Joyce},
-           familyi={J\bibinitperiod},
-           given={Jeffrey},
-           giveni={J\bibinitperiod}}}%
-        {{hash=437e126c040efa42806260f37c6d237f}{%
-           family={Lomow},
-           familyi={L\bibinitperiod},
-           given={Greg},
-           giveni={G\bibinitperiod}}}%
-        {{hash=0f16fc669f7910448dc7ca7163cef6ca}{%
-           family={Slind},
-           familyi={S\bibinitperiod},
-           given={Konrad},
-           giveni={K\bibinitperiod}}}%
-        {{hash=fb2986efab9316f760fd34f29b9a32fa}{%
-           family={Unger},
-           familyi={U\bibinitperiod},
-           given={Brian},
-           giveni={B\bibinitperiod}}}%
+    \entry{monitoring}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=f04135bc09b27b43787a420d9ae35b41}{%
+           family={{O'Reilly Media}},
+           familyi={O\bibinitperiod},
+           given={Inc.},
+           giveni={I\bibinitperiod}}}%
       }
-      \strng{namehash}{d3921baf9ccc2ce76c222e05b31092d5}
-      \strng{fullhash}{1d86ac9638e4061e76e8ade9949666d4}
-      \strng{bibnamehash}{1d86ac9638e4061e76e8ade9949666d4}
-      \strng{authorbibnamehash}{1d86ac9638e4061e76e8ade9949666d4}
-      \strng{authornamehash}{d3921baf9ccc2ce76c222e05b31092d5}
-      \strng{authorfullhash}{1d86ac9638e4061e76e8ade9949666d4}
+      \strng{namehash}{f04135bc09b27b43787a420d9ae35b41}
+      \strng{fullhash}{f04135bc09b27b43787a420d9ae35b41}
+      \strng{bibnamehash}{f04135bc09b27b43787a420d9ae35b41}
+      \strng{authorbibnamehash}{f04135bc09b27b43787a420d9ae35b41}
+      \strng{authornamehash}{f04135bc09b27b43787a420d9ae35b41}
+      \strng{authorfullhash}{f04135bc09b27b43787a420d9ae35b41}
       \field{sortinit}{9}
       \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{The monitoring of distributed systems involves the collection, interpretation, and display of information concerning the interactions among concurrently executing processes. This information and its display can support the debugging, testing, performance evaluation, and dynamic documentation of distributed systems. General problems associated with monitoring are outlined in this paper, and the architecture of a general purpose, extensible, distributed monitoring system is presented. Three approaches to the display of process interactions are described: textual traces, animated graphical traces, and a combination of aspects of the textual and graphical approaches. The roles that each of these approaches fulfill in monitoring and debugging distributed systems are identified and compared. Monitoring tools for collecting communication statistics, detecting deadlock, controlling the non-deterministic execution of distributed systems, and for using protocol specifications in monitoring are also described.$\backslash$nOur discussion is based on experience in the development and use of a monitoring system within a distributed programming environment called Jade. Jade was developed within the Computer Science Department of the University of Calgary and is now being used to support teaching and research at a number of university and research organizations.}
-      \field{issn}{07342071}
-      \field{journaltitle}{ACM Transactions on Computer Systems}
-      \field{number}{2}
-      \field{title}{{Monitoring distributed systems}}
-      \field{volume}{5}
-      \field{year}{1987}
-      \field{pages}{121\bibrangedash 150}
-      \range{pages}{30}
-      \verb{doi}
-      \verb 10.1145/13677.22723
-      \endverb
+      \field{title}{{Monitoring Distributed Systems}}
+      \field{year}{2017}
       \verb{urlraw}
-      \verb http://portal.acm.org/citation.cfm?doid=13677.22723
+      \verb https://landing.google.com/sre/sre-book/chapters/monitoring-distributed-systems/
       \endverb
       \verb{url}
-      \verb http://portal.acm.org/citation.cfm?doid=13677.22723
+      \verb https://landing.google.com/sre/sre-book/chapters/monitoring-distributed-systems/
       \endverb
     \endentry
     \entry{logging}{misc}{}
@@ -240,38 +238,10 @@
       \field{labeltitlesource}{title}
       \field{title}{{What is Distributed Tracing?}}
       \verb{urlraw}
-      \verb https://opentracing.io/docs/overview/what-is-tracing/
+      \verb {https://opentracing.io/docs/overview/what-is-tracing}
       \endverb
       \verb{url}
-      \verb https://opentracing.io/docs/overview/what-is-tracing/
-      \endverb
-    \endentry
-    \entry{huawei_cloud_platform}{misc}{}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
-      \field{labeltitlesource}{title}
-      \field{title}{{Huawei Cloud Platform}}
-      \verb{urlraw}
-      \verb https://www.huaweicloud.com/
-      \endverb
-      \verb{url}
-      \verb https://www.huaweicloud.com/
-      \endverb
-    \endentry
-    \entry{gantt_project_tool}{misc}{}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
-      \field{labeltitlesource}{title}
-      \field{title}{{GanttProject}}
-      \field{urlday}{29}
-      \field{urlmonth}{11}
-      \field{urlyear}{2018}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://www.ganttproject.biz/
-      \endverb
-      \verb{url}
-      \verb https://www.ganttproject.biz/
+      \verb %7Bhttps://opentracing.io/docs/overview/what-is-tracing%7D
       \endverb
     \endentry
     \entry{MauersbergerMicroservices}{misc}{}
@@ -300,36 +270,6 @@
       \endverb
       \verb{url}
       \verb https://blog.leanix.net/en/a-brief-history-of-microservices
-      \endverb
-    \endentry
-    \entry{microservices_definition}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=d0740bcf48754b8fa2cd3549a1d73461}{%
-           family={Richardson},
-           familyi={R\bibinitperiod},
-           given={Chris},
-           giveni={C\bibinitperiod}}}%
-      }
-      \strng{namehash}{d0740bcf48754b8fa2cd3549a1d73461}
-      \strng{fullhash}{d0740bcf48754b8fa2cd3549a1d73461}
-      \strng{bibnamehash}{d0740bcf48754b8fa2cd3549a1d73461}
-      \strng{authorbibnamehash}{d0740bcf48754b8fa2cd3549a1d73461}
-      \strng{authornamehash}{d0740bcf48754b8fa2cd3549a1d73461}
-      \strng{authorfullhash}{d0740bcf48754b8fa2cd3549a1d73461}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{{Microservices Definition}}
-      \field{urlday}{17}
-      \field{urlmonth}{10}
-      \field{urlyear}{2018}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://microservices.io/
-      \endverb
-      \verb{url}
-      \verb https://microservices.io/
       \endverb
     \endentry
     \entry{Pahl2017}{misc}{}
@@ -451,8 +391,8 @@
       \endverb
     \endentry
     \entry{observing_definition}{misc}{}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labeltitlesource}{title}
       \field{title}{{Observing definition}}
       \field{urlday}{13}
@@ -478,8 +418,8 @@
       \strng{authorbibnamehash}{c3418cebea144cb4dae1ca16183e9e36}
       \strng{authornamehash}{c3418cebea144cb4dae1ca16183e9e36}
       \strng{authorfullhash}{c3418cebea144cb4dae1ca16183e9e36}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{{Monitoring and Observability — What's the Difference and Why Does It Matter? - The New Stack}}
@@ -494,32 +434,37 @@
       \verb https://thenewstack.io/monitoring-and-observability-whats-the-difference-and-why-does-it-matter/
       \endverb
     \endentry
-    \entry{control_systems}{misc}{}
+    \entry{control_systems}{book}{}
       \name{author}{1}{}{%
-        {{hash=9c677286866aad38f8e9b660f5411814}{%
-           family={Wikipedia},
-           familyi={W\bibinitperiod}}}%
+        {{hash=4e21b2368ac890bf0264f60d4b0f0f3c}{%
+           family={Brooker},
+           familyi={B\bibinitperiod},
+           given={Graham\bibnamedelima M.},
+           giveni={G\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
       }
-      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
-      \strng{bibnamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authorbibnamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authornamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authorfullhash}{9c677286866aad38f8e9b660f5411814}
+      \strng{namehash}{4e21b2368ac890bf0264f60d4b0f0f3c}
+      \strng{fullhash}{4e21b2368ac890bf0264f60d4b0f0f3c}
+      \strng{bibnamehash}{4e21b2368ac890bf0264f60d4b0f0f3c}
+      \strng{authorbibnamehash}{4e21b2368ac890bf0264f60d4b0f0f3c}
+      \strng{authornamehash}{4e21b2368ac890bf0264f60d4b0f0f3c}
+      \strng{authorfullhash}{4e21b2368ac890bf0264f60d4b0f0f3c}
       \field{sortinit}{2}
       \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{{Control system}}
-      \field{urlday}{2}
-      \field{urlmonth}{1}
-      \field{urlyear}{2018}
-      \field{urldateera}{ce}
+      \field{booktitle}{Introduction to Biomechatronics}
+      \field{title}{{Feedback and Control Systems}}
+      \field{year}{2013}
+      \field{pages}{159\bibrangedash 205}
+      \range{pages}{47}
+      \verb{doi}
+      \verb 10.1049/sbcs003e_ch4
+      \endverb
       \verb{urlraw}
-      \verb https://en.wikipedia.org/wiki/Control{\_}system
+      \verb http://people.disim.univaq.it/~costanzo.manes/EDU_stuff/Feedback and Control System_DiStefano_Schaum_Ch01-09.pdf
       \endverb
       \verb{url}
-      \verb https://en.wikipedia.org/wiki/Control%7B%5C_%7Dsystem
+      \verb http://people.disim.univaq.it/~costanzo.manes/EDU_stuff/Feedback%20and%20Control%20System_DiStefano_Schaum_Ch01-09.pdf
       \endverb
     \endentry
     \entry{Sambasivan2016}{inproceedings}{}
@@ -565,7 +510,6 @@
       \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Workflow-centric tracing captures the workflow of causallyrelated events (e.g., work done to process a request) within and among the components of a distributed system. As distributed systems grow in scale and complexity, such tracing is becoming a critical tool for understanding distributed system behavior. Yet, there is a fundamental lack of clarity about how such infrastructures should be designed to provide maximum benet for important management tasks, such as resource accounting and diagnosis.Without research into this important issue, there is a danger that workflow-centric tracing will not reach its full potential. To help, this paper distills the design space of workflow-centric tracing and describes key design choices that can help or hinder a tracing infrastructure's utility for important tasks. Our design space and the design choices we suggest are based on our experiences developing several previous workflow-centric tracing infrastructures.}
       \field{title}{{Principled workflow-centric tracing of distributed systems}}
       \field{year}{2016}
       \field{pages}{401\bibrangedash 414}
@@ -573,14 +517,11 @@
       \verb{doi}
       \verb 10.1145/2987550.2987568
       \endverb
-      \verb{file}
-      \verb :home/andrepbento/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Sambasivan et al. - Unknown - Principled workow-centric tracing of distributed systems.pdf:pdf
-      \endverb
       \verb{urlraw}
-      \verb http://dx.doi.org///.....////////........
+      \verb https://www.rajasambasivan.com/wp-content/uploads/2017/07/sambasivan-socc16.pdf
       \endverb
       \verb{url}
-      \verb http://dx.doi.org///.....////////........
+      \verb https://www.rajasambasivan.com/wp-content/uploads/2017/07/sambasivan-socc16.pdf
       \endverb
       \keyw{Measurement techniques}
     \endentry
@@ -741,8 +682,8 @@
       \strng{authorbibnamehash}{0cb2a59444ef04aeca44654441071c35}
       \strng{authornamehash}{0cb2a59444ef04aeca44654441071c35}
       \strng{authorfullhash}{0cb2a59444ef04aeca44654441071c35}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{{What is Kubernetes?}}
@@ -769,8 +710,8 @@
       \strng{authorbibnamehash}{7ff6cc997b141399bcdf2c338fb4031c}
       \strng{authornamehash}{7ff6cc997b141399bcdf2c338fb4031c}
       \strng{authorfullhash}{7ff6cc997b141399bcdf2c338fb4031c}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{{What is OpenStack?}}
@@ -899,7 +840,6 @@
       \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{"This SIAM edition is an unabridged republication of the work first published by Holden Day, Inc., San Francisco, 1981"--Title page verso. 1. The nature of time series and their frequency analysis -- 2. Foundations -- 3. Analytic properties of Fourier transforms and complex matrices -- 4. Stochastic properties of finite Fourier transforms -- 5. The estimation of power spectra -- 6. Analysis of a linear time invariant relation between a stochastic series and several deterministic series -- 7. Estimating the second-order spectra of vector-valued series -- 8. Analysis of a linear time invariant relation between two vector-valued stochastic series -- 9. Principal components in the frequency domain -- 10. The canonical analysis of time series.}
       \field{booktitle}{Biometrics}
       \field{isbn}{0898715016}
       \field{issn}{0006341X}
@@ -912,14 +852,11 @@
       \verb{doi}
       \verb 10.2307/2530198
       \endverb
-      \verb{file}
-      \verb :home/andrepbento/Downloads/kupdf.net{\_}david-r-brillinger-time-series-data-analysis-and-theory-2001.pdf:pdf
-      \endverb
       \verb{urlraw}
-      \verb https://books.google.pt/books/about/Time{\_}Series.html?id=PX5HExMKER0C{\&}redir{\_}esc=y
+      \verb https://books.google.pt/books/about/Time_Series.html?id=PX5HExMKER0C&redir_esc=y
       \endverb
       \verb{url}
-      \verb https://books.google.pt/books/about/Time%7B%5C_%7DSeries.html?id=PX5HExMKER0C%7B%5C&%7Dredir%7B%5C_%7Desc=y
+      \verb https://books.google.pt/books/about/Time_Series.html?id=PX5HExMKER0C&redir_esc=y
       \endverb
     \endentry
     \entry{Liu2004}{article}{}
@@ -1049,17 +986,16 @@
       \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{A stimulating excursion into pure mathematics aimed at the mathematically traumatized, but great fun for mathematical hobbyists and serious mathematicians as well. This book leads the reader from simple graphs through planar graphs, Euler's formula, Platonic graphs, coloring, the genus of a graph, Euler walks, Hamilton walks, more. Includes exercises. 1976 edition. Pure mathematics -- Graphs -- Planar graphs -- Euler's formula -- Platonic graphs -- Coloring -- The genius of a graph -- Euler walks and Hamilton walks.}
       \field{isbn}{0486318664}
       \field{title}{{Introduction to graph theory}}
       \field{year}{1993}
       \field{pages}{209}
       \range{pages}{1}
       \verb{urlraw}
-      \verb https://books.google.pt/books/about/Introduction{\_}to{\_}Graph{\_}Theory.html?id=eRLEAgAAQBAJ{\&}redir{\_}esc=y
+      \verb https://books.google.pt/books/about/Introduction_to_Graph_Theory.html?id=eRLEAgAAQBAJ&redir_esc=y
       \endverb
       \verb{url}
-      \verb https://books.google.pt/books/about/Introduction%7B%5C_%7Dto%7B%5C_%7DGraph%7B%5C_%7DTheory.html?id=eRLEAgAAQBAJ%7B%5C&%7Dredir%7B%5C_%7Desc=y
+      \verb https://books.google.pt/books/about/Introduction_to_Graph_Theory.html?id=eRLEAgAAQBAJ&redir_esc=y
       \endverb
     \endentry
     \entry{apache_giraph}{misc}{}
@@ -1130,8 +1066,8 @@
       \keyw{Graph Algorithms,Parallel Programming,Shared Memory}
     \endentry
     \entry{networkx}{misc}{}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
       \field{labeltitlesource}{title}
       \field{title}{{NetworkX}}
       \field{urlday}{3}
@@ -1182,8 +1118,8 @@
       \strng{editorbibnamehash}{6752638e409ddf3d5f947d0c9155cc96}
       \strng{editornamehash}{6752638e409ddf3d5f947d0c9155cc96}
       \strng{editorfullhash}{6752638e409ddf3d5f947d0c9155cc96}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Computing is ubiquitous in every domain of scientific research. Software is the means by which scientists harness the power of computers, and much scientific computing relies on software conceived and developed by other practicing researchers. The task of creating scientific software, however, does not end with the publication of computed results. Making the developed software available for inspection and use by other scientists is essential to reproducibility, peer-review, and the ability to build upon others' work. In fulfilling expectations to distribute and disseminate their software, scientist-programmers are required to be not only proficient scientists and coders, but also knowledgeable in legal strategies for licensing their software. Navigating the often complex legal landscape of software licensing can be overwhelming, even for sophisticated programmers. Institutional technology transfer offices (TTOs) exist to help address this need, but due to mismatches in expectations or specific domain knowledge, interactions between scientists and TTO staff can result in suboptimal outcomes. As practitioners in the scientific computing and technology law fields, we have witnessed firsthand the confusion and difficulties associated with licensing scientifically generated software. SBGrid.org is a consortium of scientific software developers and users in hundreds of biomedical research laboratories worldwide. As facilitator and middleman between developers and end-users, we commonly assist in the dissemination and use of scientifically generated software. Through research and advocacy, the Samuelson Law, Technology and Public Policy Clinic works with software developers and other creators on licensing issues, particularly issues related to facilitating 'open access' to scientific, technical, or creative materials. Together, we offer a primer on software licensing with a focus on the particular needs of the scientist software developer. The aim of this guide is to help scientists better engage with their institutional TTO when choosing software licenses.}
@@ -1309,8 +1245,8 @@
       \strng{authornamehash}{055896cf3c1b837e4771f49aa2660e17}
       \strng{authorfullhash}{055896cf3c1b837e4771f49aa2660e17}
       \field{extraname}{1}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{{ArangoDB Documentation}}
@@ -1416,10 +1352,10 @@
       \field{pages}{45}
       \range{pages}{1}
       \verb{urlraw}
-      \verb https://neo4j.com/blog/acid-vs-base-consistency-models-explained/ https://go.neo4j.com/rs/710-RRC-335/images/Graph{\_}Databases{\_}for{\_}Beginners.pdf?{\_}ga=2.124112970.1994598198.1521285291-1141717847.1521285291{\&}{\_}gac=1.180373973.1521290471.CjwKCAjw-bLVBRBMEiwAmKSB
+      \verb https://go.neo4j.com/rs/710-RRC-335/images/Graph_Databases_for_Beginners.pdf?_ga=2.124112970.1994598198.1521285291-1141717847.1521285291&_gac=1.180373973.1521290471.CjwKCAjw-bLVBRBMEiwAmKSB
       \endverb
       \verb{url}
-      \verb https://neo4j.com/blog/acid-vs-base-consistency-models-explained/%20https://go.neo4j.com/rs/710-RRC-335/images/Graph%7B%5C_%7DDatabases%7B%5C_%7Dfor%7B%5C_%7DBeginners.pdf?%7B%5C_%7Dga=2.124112970.1994598198.1521285291-1141717847.1521285291%7B%5C&%7D%7B%5C_%7Dgac=1.180373973.1521290471.CjwKCAjw-bLVBRBMEiwAmKSB
+      \verb https://go.neo4j.com/rs/710-RRC-335/images/Graph_Databases_for_Beginners.pdf?_ga=2.124112970.1994598198.1521285291-1141717847.1521285291&_gac=1.180373973.1521290471.CjwKCAjw-bLVBRBMEiwAmKSB
       \endverb
       \keyw{BT-graph databases}
     \endentry
@@ -1519,10 +1455,10 @@
       \field{pages}{12}
       \range{pages}{1}
       \verb{urlraw}
-      \verb https://cs.uwaterloo.ca/{~}brecht/courses/854-Emerging-2014/readings/data-store/tao-facebook-distributed-datastore-atc-2013.pdf
+      \verb https://cs.uwaterloo.ca/~brecht/courses/854-Emerging-2014/readings/data-store/tao-facebook-distributed-datastore-atc-2013.pdf
       \endverb
       \verb{url}
-      \verb https://cs.uwaterloo.ca/%7B~%7Dbrecht/courses/854-Emerging-2014/readings/data-store/tao-facebook-distributed-datastore-atc-2013.pdf
+      \verb https://cs.uwaterloo.ca/~brecht/courses/854-Emerging-2014/readings/data-store/tao-facebook-distributed-datastore-atc-2013.pdf
       \endverb
     \endentry
     \entry{Facebook2150}{article}{}
@@ -1650,14 +1586,11 @@
       \field{title}{{Universit{é} libre de Bruxelles Graph Databases and Neo4J}}
       \field{type}{techreport}
       \field{year}{2017}
-      \verb{file}
-      \verb ::
-      \endverb
       \verb{urlraw}
-      \verb https://cs.ulb.ac.be/public/{\_}media/teaching/neo4jj{\_}2017.pdf
+      \verb https://cs.ulb.ac.be/public/_media/teaching/neo4jj_2017.pdf
       \endverb
       \verb{url}
-      \verb https://cs.ulb.ac.be/public/%7B%5C_%7Dmedia/teaching/neo4jj%7B%5C_%7D2017.pdf
+      \verb https://cs.ulb.ac.be/public/_media/teaching/neo4jj_2017.pdf
       \endverb
     \endentry
     \entry{neo4j_scalable}{misc}{}
@@ -1709,11 +1642,10 @@
       \strng{authorbibnamehash}{50dd12281e8492ecfc9c4dc7ce18a956}
       \strng{authornamehash}{50dd12281e8492ecfc9c4dc7ce18a956}
       \strng{authorfullhash}{50dd12281e8492ecfc9c4dc7ce18a956}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Time series data is of growing importance, especially with the rapid expansion of the Internet of Things. This concise guide shows you effective ways to collect, persist, and access large-scale time series data for analysis. You'll explore...}
       \field{isbn}{9781491917022}
       \field{issn}{9781491917022}
       \field{title}{{Time Series Databases New Ways to Store and Access Data}}
@@ -1721,10 +1653,10 @@
       \field{pages}{71}
       \range{pages}{1}
       \verb{urlraw}
-      \verb http://info.mapr.com/rs/mapr/images/Time{\_}Series{\_}Databases.pdf{\%}0Ahttp://oreilly.com/catalog/errata.csp
+      \verb https://www.academia.edu/29891282/Time_Series_Databases_New_Ways_to_Store_and_Access_Data
       \endverb
       \verb{url}
-      \verb http://info.mapr.com/rs/mapr/images/Time%7B%5C_%7DSeries%7B%5C_%7DDatabases.pdf%7B%5C%%7D0Ahttp://oreilly.com/catalog/errata.csp
+      \verb https://www.academia.edu/29891282/Time_Series_Databases_New_Ways_to_Store_and_Access_Data
       \endverb
       \keyw{Ted Dunning and Ellen Friedman.}
     \endentry
@@ -1740,8 +1672,8 @@
       \strng{authorbibnamehash}{2f97e8c1a74d402d92e3a7cee2113a18}
       \strng{authornamehash}{2f97e8c1a74d402d92e3a7cee2113a18}
       \strng{authorfullhash}{2f97e8c1a74d402d92e3a7cee2113a18}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{{Ingesting IoT and Sensor Data at Scale – Hacker Noon}}
@@ -1884,14 +1816,11 @@
       \field{title}{{Time Series Databases and InfluxDB}}
       \field{type}{techreport}
       \field{year}{2017}
-      \verb{file}
-      \verb ::
-      \endverb
       \verb{urlraw}
-      \verb https://cs.ulb.ac.be/public/{\_}media/teaching/influxdb{\_}2017.pdf
+      \verb {https://cs.ulb.ac.be/public/_media/teaching/influxdb_2017.pdf}
       \endverb
       \verb{url}
-      \verb https://cs.ulb.ac.be/public/%7B%5C_%7Dmedia/teaching/influxdb%7B%5C_%7D2017.pdf
+      \verb %7Bhttps://cs.ulb.ac.be/public/_media/teaching/influxdb_2017.pdf%7D
       \endverb
     \endentry
     \entry{rising_aiops}{misc}{}
@@ -2034,10 +1963,10 @@
       \field{title}{{Analyzing distributed trace data}}
       \field{year}{2017}
       \verb{urlraw}
-      \verb https://medium.com/@Pinterest{\_}Engineering/analyzing-distributed-trace-data-6aae58919949
+      \verb https://medium.com/@Pinterest_Engineering/analyzing-distributed-trace-data-6aae58919949
       \endverb
       \verb{url}
-      \verb https://medium.com/@Pinterest%7B%5C_%7DEngineering/analyzing-distributed-trace-data-6aae58919949
+      \verb https://medium.com/@Pinterest_Engineering/analyzing-distributed-trace-data-6aae58919949
       \endverb
     \endentry
     \entry{Ikonen2011}{inproceedings}{}
@@ -2450,9 +2379,39 @@
       \verb https://json-schema.org/
       \endverb
     \endentry
+    \entry{opentelemetry}{misc}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labeltitlesource}{title}
+      \field{title}{{OpenTelemetry}}
+      \field{urlday}{21}
+      \field{urlmonth}{6}
+      \field{urlyear}{2019}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://opentelemetry.io/
+      \endverb
+      \verb{url}
+      \verb https://opentelemetry.io/
+      \endverb
+    \endentry
+    \entry{opentelemetry_trace_specification}{misc}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labeltitlesource}{title}
+      \field{title}{{OpenTelemetry Semantic Conventions}}
+      \field{urlday}{22}
+      \field{urlmonth}{6}
+      \field{urlyear}{2019}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/open-telemetry/opentelemetry-specification/blob/master/semantic-conventions.md
+      \endverb
+      \verb{url}
+      \verb https://github.com/open-telemetry/opentelemetry-specification/blob/master/semantic-conventions.md
+      \endverb
+    \endentry
   \enddatalist
-  \missing{opentelemetry}
-  \missing{opentelemetry_trace_specification}
 \endrefsection
 \endinput
 

@@ -447,9 +447,9 @@ INPUT /home/andrepbento/.texlive2018/texmf-var/luatex-cache/generic/fonts/otl/lm
 INPUT /home/andrepbento/.texlive2018/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-bold.luc
 INPUT /home/andrepbento/.texlive2018/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-regular.luc
 INPUT /home/andrepbento/.texlive2018/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-italic.luc
-INPUT /mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/fctuc-logo.pdf
-INPUT /mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/fctuc-logo.pdf
-INPUT /mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/fctuc-logo.pdf
+INPUT /mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/uc_logotipo.png
+INPUT /mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/uc_logotipo.png
+INPUT /mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/uc_logotipo.png
 INPUT /mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/chapters/0-abstract-EN.tex
 INPUT /mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/chapters/0-abstract-EN.tex
 INPUT /home/andrepbento/.texlive2018/texmf-var/luatex-cache/generic/fonts/otl/lmromanslant10-regular.luc
@@ -482,8 +482,6 @@ OUTPUT /mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/main.lot
 INPUT /mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/chapters/1-introduction.tex
 INPUT /mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/chapters/1-introduction.tex
 INPUT /home/andrepbento/.texlive2018/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-italic.luc
-INPUT /mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/chapters/2-methodology.tex
-INPUT /mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/chapters/2-methodology.tex
 INPUT /mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/proposed_work_plan_semester_1_and_2.pdf
 INPUT /mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/proposed_work_plan_semester_1_and_2.pdf
 INPUT /mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/proposed_work_plan_semester_1_and_2.pdf
@@ -501,9 +499,9 @@ INPUT /mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/mono
 INPUT /mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/trace.pdf
 INPUT /mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/trace.pdf
 INPUT /mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/trace.pdf
-INPUT /mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/span_tree_example.pdf
-INPUT /mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/span_tree_example.pdf
-INPUT /mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/span_tree_example.pdf
+INPUT /mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/span_tree_example_paper.pdf
+INPUT /mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/span_tree_example_paper.pdf
+INPUT /mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/span_tree_example_paper.pdf
 INPUT /mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/graph_representations.pdf
 INPUT /mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/graph_representations.pdf
 INPUT /mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/graph_representations.pdf

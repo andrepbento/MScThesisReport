@@ -2,7 +2,7 @@
 \chapter{Proposed Solution}
 \label{chap:proposed_solution}
 
-In this Chapter, we present and discuss a possible solution to be implemented regarding the main problem to solve in this research, the data to process and the research questions to be answered. To present the solution and explain it, we will cover some aspects considered when defining a software based solution. This topics are: functional requirements~\ref{sec:functional_requirements}, quality attributes (non-functional requirements)~\ref{sec:quality_attributes} and finally, the architecture~\ref{sec:architecture} produced based on all previous topics.
+In this Chapter, we present and discuss a possible solution to be implemented regarding the main problem to solve in this research, the data to process and the research questions to be answered. To present the solution and explain it, we will cover some aspects considered when defining a software based solution: functional requirements~\ref{sec:functional_requirements}, quality attributes (non-functional requirements)~\ref{sec:quality_attributes}, technical restrictions~\ref{sec:technical_restrictions} and finally, the architecture~\ref{sec:architecture} produced based on all previous topics.
 
 The starting point for our proposed solution is the tracing data provided by Huawei. Tracing must be ingested by an entry component, capable of extracting metrics from tracing data. The outcome of this module are metrics and metadata in files to be further processed by a second component. This second component has the duty of analysing the output data from the first module, and point out service anomalies.
 
@@ -22,63 +22,65 @@ Next Section~\ref{sec:functional_requirements}~-~\nameref{sec:functional_require
 \section{Functional Requirements}
 \label{sec:functional_requirements}
 
-In software engineering, functional requirements defines the intended function of a system and its components. To present the functional requirements for our solution proposition, an id, the corresponding name and its priority are provided. The notation used in priority was based on the urgency that we expected from feature implementation. Three priority levels were used: High, Medium and Low. Therefore, the functional requirements for the proposed solution, sorted by priority levels, are presented in Table~\ref{table:functional_requirements_specification}.
+In software engineering, functional requirements define the intended function of a system and its components. To present the functional requirements for our solution proposition, an id, the corresponding name and its priority are provided. The notation used in priority was based on the urgency that we expected from feature implementation. Three priority levels were used: High, Medium and Low. Therefore, the functional requirements for the proposed solution, sorted by priority levels, are presented in Table~\ref{table:functional_requirements_specification}.
 
 \begin{table}[H]
     \caption{Functional requirements specification.}
     \label{table:functional_requirements_specification}
     \centering
     \begin{tabularx}{\linewidth} {
-            |>{\hsize=0.10\hsize}X|
-            >{\hsize=0.75\hsize}X|
-            >{\hsize=0.15\hsize}X|}
+        |>{\hsize=0.10\hsize}X|
+        >{\hsize=0.75\hsize}X|
+        >{\hsize=0.15\hsize}X|}
         \cline{1-3}
-         \textbf{ID}
+        \textbf{ID}
          & \textbf{Name}
-         & \textbf{Priority}                                                                                                                                                                                  \\ \hline \hline
-         FR-1
+         & \textbf{Priority}                                                                                                    \\ \hline \hline
+        FR-1
          & The system must be able to ingest tracing data from a files or external distributed tracing tools.
-         & High \\ \hline
-         FR-2
+         & High                                                                                                                 \\ \hline
+        FR-2
          & The system must be able to retrieve service dependency graphs from distributed tracing tools.
-         & High \\ \hline
-         FR-3
+         & High                                                                                                                 \\ \hline
+        FR-3
          & The system must be able to store service dependency graphs in a graph database.
-         & High \\ \hline
-         FR-4
+         & High                                                                                                                 \\ \hline
+        FR-4
          & The system must be able to store time-series metrics extracted from tracing data in a time-series database.
-         & High \\ \hline
-         FR-5
+         & High                                                                                                                 \\ \hline
+        FR-5
          & The system must be able to extract the number of calls per service (total, incoming and outgoing) from tracing data.
-         & Medium \\ \hline
-         FR-6
+         & Medium                                                                                                               \\ \hline
+        FR-6
          & The system must be able to extract the response time per service from tracing data.
-         & Medium \\ \hline
-         FR-7
+         & Medium                                                                                                               \\ \hline
+        FR-7
          & The system must be able to generate request work-flow paths from tracing data.
-         & Medium \\ \hline
-         FR-8
+         & Medium                                                                                                               \\ \hline
+        FR-8
          & The system must be able to calculate request ratio of success and error, for specific services, from tracing data.
-         & Medium \\ \hline
-         FR-9
+         & Medium                                                                                                               \\ \hline
+        FR-9
          & The system must be able to calculate the degree (total, in and out) of services from service dependency graphs.
-         & Medium \\ \hline
-         FR-10
+         & Medium                                                                                                               \\ \hline
+        FR-10
          & The system must be able to retrieve the difference between two service dependency graphs.
-         & Medium \\ \hline
-         FR-11
+         & Medium                                                                                                               \\ \hline
+        FR-11
          & The system must be able to produce a report about spans structure using a defined OpenTracing structural schema.
-         & Low \\ \hline
-         FR-12
+         & Low                                                                                                                  \\ \hline
+        FR-12
          & The system must be able to calculate the time coverage of traces in a given time-frame.
-         & Low \\ \hline
-         FR-13
+         & Low                                                                                                                  \\ \hline
+        FR-13
          & The system must be able to identify regions of outliers presented in multiple time-series.
-         & Low \\ \hline
+         & Low                                                                                                                  \\ \hline
     \end{tabularx}
 \end{table}
 
 Functional requirements defined in Table~\ref{sec:functional_requirements} were written based on defined research questions presented in Section~\ref{sec:research_questions}. These functional requirements can be grouped in three groups due to their priority levels. The first four (FR-1 to FR-4) are presented with high level of priority, because they represent the base functionality needed to implement the remaining requirements. The next eight functional requirements (FR-5 to FR-11), are time based metric extraction from tracing. The remaining three (FR-12 to FR-14) are related with trace testing and anomaly detection based in time-series thus the low priority.
+
+The relationship between these functional requirements and questions presented in previous chapter, Section~\ref{sec:research_questions}, as well has the verification that these requirements are fulfilled by the solution, is covered in next chapter, Sections~\ref{sec:open_tracing_processor_component} and~\ref{sec:data_analysis_component}.
 
 Next Section~\ref{sec:quality_attributes}~-~\nameref{sec:quality_attributes} covers the proposed approach non-functional requirements.
 
@@ -112,13 +114,13 @@ Figure~\ref{fig:utility_tree} shows us that only two Interoperability \gls{qa} w
 
     \item[\textbf{QA2}] (Interoperability): Since the proposed solution will be accessing an external distributed tracing system or outputs generated by it, all interactions with these systems must not cause conflicts. This is very important in the business perspective, because if our solution is not co-habitable with already used systems, it may be completely rejected. For the architectural perspective it does not represent a big impact, and therefore a Low level was assigned.
 
-    %\item[\textbf{QA3}] (Performance): We defined this \gls{qa} taking into account the number of spans produced in an hour, by the system were we gathered our data. As it produces approximately 200.000 spans in an hour, and to ease our research work when using the tool, we decided to set the target for our solution as 1.000.000 spans in about a minute. This \gls{qa} will have an high architectural impact, as it can define a certain technology for graph processing. For the business perspective, we considered a Medium level, as it presents some interest.
+          %\item[\textbf{QA3}] (Performance): We defined this \gls{qa} taking into account the number of spans produced in an hour, by the system were we gathered our data. As it produces approximately 200.000 spans in an hour, and to ease our research work when using the tool, we decided to set the target for our solution as 1.000.000 spans in about a minute. This \gls{qa} will have an high architectural impact, as it can define a certain technology for graph processing. For the business perspective, we considered a Medium level, as it presents some interest.
 
-    %\item[\textbf{QA4}] (Scalability): Due to the amount of data needed to process and store over time, our system has to be able to store the data into multiple machines because it may start running out of space. We decided to give a medium level of architectural impact as it can change the solution in terms of storage components. For the business this has an high impact, as it need more machines to run the solution if this \gls{qa} is fully considered against the remaining.
+          %\item[\textbf{QA4}] (Scalability): Due to the amount of data needed to process and store over time, our system has to be able to store the data into multiple machines because it may start running out of space. We decided to give a medium level of architectural impact as it can change the solution in terms of storage components. For the business this has an high impact, as it need more machines to run the solution if this \gls{qa} is fully considered against the remaining.
 
-    %\item[\textbf{QA5}] (Traceability): This \gls{qa} was considered due to the simple fact that we need to bee able to see what's the system is doing, when it's processing the data. For this \gls{qa} we decided to give low levels for both architecture and business, as it does not represent relevance to any of them.
+          %\item[\textbf{QA5}] (Traceability): This \gls{qa} was considered due to the simple fact that we need to bee able to see what's the system is doing, when it's processing the data. For this \gls{qa} we decided to give low levels for both architecture and business, as it does not represent relevance to any of them.
 
-    %\item[\textbf{QA6}] (Testability): As the system will be analysing external systems, we need to be sure that it analyses it in a correct way, and to be sure of this we need to test our solution. We considered a medium level for the architectural impact for this \gls{qa}, because its implementation needs to analyse some components from within the system. For the business we considered a low level, because the main interest to test the system is ours in order check if it is working correctly.
+          %\item[\textbf{QA6}] (Testability): As the system will be analysing external systems, we need to be sure that it analyses it in a correct way, and to be sure of this we need to test our solution. We considered a medium level for the architectural impact for this \gls{qa}, because its implementation needs to analyse some components from within the system. For the business we considered a low level, because the main interest to test the system is ours in order check if it is working correctly.
 \end{itemize}
 
 \section{Technical Restrictions}
@@ -140,7 +142,7 @@ To define the technical restrictions, we used an id and its corresponding descri
         >{\hsize=0.75\hsize}X| }
         \cline{1-2}
         \textbf{ID}
-         & \textbf{Description}                    \\ \hline
+         & \textbf{Description}                           \\ \hline
         TR-1
          & Use \emph{OpenTSDB} as a Time-Series database. \\ \hline
     \end{tabularx}
@@ -152,7 +154,7 @@ Table~\ref{table:technical_restrictions_specification} shows that we have raised
 \section{Architecture}
 \label{sec:architecture}
 
-In this Section, the architecture is presented based on all previous topics with resource to the defined Simon Brown’s C4 Model~\cite{simon_browns_c4_model}. This approach of defining an architecture uses four diagrams: \emph{1 - Context Diagram}, \emph{2 - Container Diagram}, \emph{3 - Component Diagram} and \emph{4 - Code Diagram}. To define the architecture for our solution, only the first three representations were considered. Every representation will be exposed with a explanation of the decisions taken to draw each diagram. After presenting the representations and the corresponding explanations, we will cycle thought all architectural drivers: \gls{qa}, bussines and technical restrictions, in order to explain where they are reflected and the considerations taken to produce this architecture.
+In this Section, the architecture is presented based on all previous topics with resource to the defined Simon Brown’s C4 Model~\cite{simon_browns_c4_model}. This approach of defining an architecture uses four diagrams: \emph{1 - Context Diagram}, \emph{2 - Container Diagram}, \emph{3 - Component Diagram} and \emph{4 - Code Diagram}. To define the architecture for our solution, only the first three representations were considered. Every representation will be exposed with a explanation of the decisions taken to draw each diagram. After presenting the representations and the corresponding explanations, we will cycle thought all architectural drivers: \gls{qa}, business and technical restrictions, in order to explain where they are reflected and the considerations taken to produce this architecture.
 
 \subsection{Context Diagram}
 \label{subsec:context_diagram}
@@ -166,7 +168,7 @@ In this Subsection the context diagram is presented. This diagram allows us to s
     \label{fig:context_diagram}
 \end{figure}
 
-From Figure~\ref{fig:context_diagram}, we can see that our solution, named \emph{Graphy \gls{otp}}, receives interactions from users, as it need someone to start the whole process. This piece of software analyses data from an external target system that holds the tracing information and consequently, provides extracted metrics to an external metrics visualizer component. Users can view extracted metrics from this last component. Also, reports are produced and stored within our solution, when it performs tracing analysis. 
+From Figure~\ref{fig:context_diagram}, we can see that our solution, named \emph{Graphy \gls{otp}}, receives interactions from users, as it need someone to start the whole process. This piece of software analyses data from an external target system that holds the tracing information and consequently, provides extracted metrics to an external metrics visualizer component. Users can view extracted metrics from this last component. Also, reports are produced and stored within our solution, when it performs tracing analysis.
 
 \subsection{Container Diagram}
 \label{subsec:container_diagram}
@@ -216,10 +218,13 @@ This solution does not have many architectural drivers: quality attributes, busi
 
 Next Chapter,~\ref{chap:implementation_process}~-~\nameref{chap:implementation_process}, covers the implementation of the solution presented in the current chapter. All implemented algorithms and technical decisions are discussed and explained in detail.
 
-\checkoddpage
-\ifthenelse{\boolean{oddpage}}
-{ % Odd page
-    \newpage
-    \blankpage}
-{ % Even page
-}
+% This is commented because of Figure transposition
+%\checkoddpage
+%\ifthenelse{\boolean{oddpage}}
+%{
+%    \newpage
+%    \blankpage
+%}
+%{
+%    % Even page
+%}

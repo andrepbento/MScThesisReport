@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2019.6.4)  22 JUN 2019 16:59
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2019.6.4)  28 JUN 2019 13:32
  system commands enabled.
  file:line:error style messages enabled.
 **/mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/main.tex
@@ -34,7 +34,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.198 seconds
+luaotfload | main : initialization completed in 0.066 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -1351,33 +1351,18 @@ Package biblatex Info: Automatic encoding selection.
 \openout5 = main.bcf
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
-(/mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/main.bbl
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                opentelemetry
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                opentelemetry_trace_specification
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-)
+(/mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/main.bbl)
 Package biblatex Info: Reference section=0 on input line 176.
 Package biblatex Info: Reference segment=0 on input line 176.
  (/mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/chapters/0-cover.tex
-<images/fctuc-logo.pdf, id=187, 596.04886pt x 791.39261pt>
-File: images/fctuc-logo.pdf Graphic file (type pdf)
-<use images/fctuc-logo.pdf>
-Package luatex.def Info: images/fctuc-logo.pdf  used on input line 22.
-(luatex.def)             Requested size: 213.39568pt x 283.33128pt.
+<images/uc_logotipo.png, id=183, 1672.2475pt x 1676.2625pt>
+File: images/uc_logotipo.png Graphic file (type png)
+<use images/uc_logotipo.png>
+Package luatex.def Info: images/uc_logotipo.png  used on input line 22.
+(luatex.def)             Requested size: 213.39568pt x 213.90608pt.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}</mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/fctuc-logo.pdf>])
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}</mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/uc_logotipo.png>])
 warning  (pdf backend): ignoring duplicate destination with the name 'page.'
 [2] (/mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/chapters/0-abstract-EN.tex
 *geometry* verbose mode - [ newgeometry ] result:
@@ -1474,13 +1459,13 @@ This may cause the page layout to be inconsistent, however.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: twoside 
-* h-part:(L,W,R)=(142.26378pt, 383.54243pt, 71.70166pt)
+* h-part:(L,W,R)=(227.62204pt, 298.18417pt, 71.70166pt)
 * v-part:(T,H,B)=(101.40665pt, 591.5302pt, 152.11pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=383.54243pt
+* \textwidth=298.18417pt
 * \textheight=591.5302pt
-* \oddsidemargin=69.99379pt
+* \oddsidemargin=155.35205pt
 * \evensidemargin=-0.56833pt
 * \topmargin=5.13666pt
 * \headheight=12.0pt
@@ -1519,21 +1504,20 @@ This may cause the page layout to be inconsistent, however.
 \openout7 = main.toc
 
 
+Package glossaries Warning: Empty glossary for \printnoidxglossary[type={main}]. Rerun may be required (or you may have forgotten to use commands like \gls) on input line 216.
+
+Using TeX to sort glossary entries---this may take a while
+
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
 Make it at least 13.59999pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-[8] [9]
-
-Package glossaries Warning: Empty glossary for \printnoidxglossary[type={main}]. Rerun may be required (or you may have forgotten to use commands like \gls) on input line 216.
-
-Using TeX to sort glossary entries---this may take a while
-[10
+[8] [9
 
 
-] [11] (/mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/main.lof
-Overfull \hbox (5.61319pt too wide) in paragraph at lines 72--72
+] [10] (/mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/main.lof
+Overfull \hbox (5.61319pt too wide) in paragraph at lines 70--70
  [][] [][]\TU/lmr/m/n/10.95 Com-par-i-son be-tween ``Anoma-lous'' and ``Non-Anomalous'' ser-vice time-frame 
  []
 
@@ -1541,57 +1525,50 @@ Overfull \hbox (5.61319pt too wide) in paragraph at lines 72--72
 \tf@lof=\write8
 
 \openout8 = main.lof
- [12
+ [11
 
-] [13] (/mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/main.lot)
+] [12] (/mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/main.lot)
 \tf@lot=\write9
 
 \openout9 = main.lot
- [14
+ [13
 
-] [15] (/mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/chapters/1-introduction.tex
+] [14] (/mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/chapters/1-introduction.tex
 Chapter 1.
 [1
 
-] [2] [3]) (/mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/chapters/2-methodology.tex [4]
-Chapter 2.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [5
-
-] [6]
-<images/proposed_work_plan_semester_1_and_2.pdf, id=704, 557.084pt x 81.33188pt>
+] [2] [3] [4]
+<images/proposed_work_plan_semester_1_and_2.pdf, id=629, 557.084pt x 81.33188pt>
 File: images/proposed_work_plan_semester_1_and_2.pdf Graphic file (type pdf)
 <use images/proposed_work_plan_semester_1_and_2.pdf>
-Package luatex.def Info: images/proposed_work_plan_semester_1_and_2.pdf  used on input line 30.
+Package luatex.def Info: images/proposed_work_plan_semester_1_and_2.pdf  used on input line 67.
 (luatex.def)             Requested size: 684.0617pt x 99.86641pt.
-<images/real_work_plan_semester_1.pdf, id=705, 557.07542pt x 104.29265pt>
+<images/real_work_plan_semester_1.pdf, id=630, 557.07542pt x 104.29265pt>
 File: images/real_work_plan_semester_1.pdf Graphic file (type pdf)
 <use images/real_work_plan_semester_1.pdf>
-Package luatex.def Info: images/real_work_plan_semester_1.pdf  used on input line 33.
+Package luatex.def Info: images/real_work_plan_semester_1.pdf  used on input line 70.
 (luatex.def)             Requested size: 683.98317pt x 128.0387pt.
- [7</mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/proposed_work_plan_semester_1_and_2.pdf></mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/real_work_plan_semester_1.pdf>]
-<images/complete_work_plan_semester_2.pdf, id=6292, 557.07935pt x 349.30809pt>
+ [5</mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/proposed_work_plan_semester_1_and_2.pdf></mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/real_work_plan_semester_1.pdf>]
+<images/complete_work_plan_semester_2.pdf, id=6217, 557.07935pt x 349.30809pt>
 File: images/complete_work_plan_semester_2.pdf Graphic file (type pdf)
 <use images/complete_work_plan_semester_2.pdf>
-Package luatex.def Info: images/complete_work_plan_semester_2.pdf  used on input line 42.
+Package luatex.def Info: images/complete_work_plan_semester_2.pdf  used on input line 79.
 (luatex.def)             Requested size: 680.69836pt x 426.79135pt.
 
 
-LaTeX Warning: Float too large for page by 23.59999pt on input line 45.
+LaTeX Warning: Float too large for page by 23.59999pt on input line 82.
 
-[8</mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/complete_work_plan_semester_2.pdf>] [9
-
-
+[6</mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/complete_work_plan_semester_2.pdf>] [7
 
 
-]) (/mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/chapters/3-state-of-the-art.tex
-Chapter 3.
-[10
+
+
+]) (/mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/chapters/3-state-of-the-art.tex [8]
+Chapter 2.
+[9
 
 ]
-<images/monolithic_and_microservices.pdf, id=13518, 639.89063pt x 391.4625pt>
+<images/monolithic_and_microservices.pdf, id=13502, 639.89063pt x 391.4625pt>
 File: images/monolithic_and_microservices.pdf Graphic file (type pdf)
 <use images/monolithic_and_microservices.pdf>
 Package luatex.def Info: images/monolithic_and_microservices.pdf  used on input line 33.
@@ -1599,39 +1576,39 @@ Package luatex.def Info: images/monolithic_and_microservices.pdf  used on input 
 
 Underfull \vbox (badness 1199) has occurred while \output is active []
 
- [11</mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/monolithic_and_microservices.pdf>]
+ [10</mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/monolithic_and_microservices.pdf>]
 Overfull \hbox (2.8725pt too wide) in paragraph at lines 64--65
 []\TU/lmr/m/it/10.95 Open-Trac-ing \TU/lmr/m/n/10.95 uses dy-namic, fixed-width meta-data to prop-a-gate causal-ity be-tween spans,
  []
 
-[12]
-<images/trace.pdf, id=13562, 250.0542pt x 124.54529pt>
+[11]
+<images/trace.pdf, id=13545, 250.0542pt x 124.54529pt>
 File: images/trace.pdf Graphic file (type pdf)
 <use images/trace.pdf>
 Package luatex.def Info: images/trace.pdf  used on input line 71.
 (luatex.def)             Requested size: 426.79135pt x 212.59074pt.
- [13</mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/trace.pdf>]
-<images/span_tree_example.pdf, id=13588, 312.20638pt x 153.6942pt>
-File: images/span_tree_example.pdf Graphic file (type pdf)
-<use images/span_tree_example.pdf>
-Package luatex.def Info: images/span_tree_example.pdf  used on input line 88.
-(luatex.def)             Requested size: 426.79135pt x 210.11417pt.
+ [12</mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/trace.pdf>]
+<images/span_tree_example_paper.pdf, id=13572, 386.44376pt x 323.2075pt>
+File: images/span_tree_example_paper.pdf Graphic file (type pdf)
+<use images/span_tree_example_paper.pdf>
+Package luatex.def Info: images/span_tree_example_paper.pdf  used on input line 88.
+(luatex.def)             Requested size: 284.531pt x 237.97139pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [14</mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/span_tree_example.pdf>]
-<images/graph_representations.pdf, id=13629, 420.61137pt x 131.53139pt>
+ [13</mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/span_tree_example_paper.pdf>]
+<images/graph_representations.pdf, id=13613, 420.61137pt x 131.53139pt>
 File: images/graph_representations.pdf Graphic file (type pdf)
 <use images/graph_representations.pdf>
 Package luatex.def Info: images/graph_representations.pdf  used on input line 126.
 (luatex.def)             Requested size: 426.79135pt x 133.4678pt.
- [15</mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/graph_representations.pdf>]
-<images/graph_service_representation.pdf, id=13650, 376.52669pt x 159.71669pt>
+ [14</mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/graph_representations.pdf>]
+<images/graph_service_representation.pdf, id=13634, 376.52669pt x 159.71669pt>
 File: images/graph_service_representation.pdf Graphic file (type pdf)
 <use images/graph_service_representation.pdf>
 Package luatex.def Info: images/graph_service_representation.pdf  used on input line 139.
 (luatex.def)             Requested size: 426.79135pt x 181.05046pt.
-<images/time_series_example.pdf, id=13655, 342.2343pt x 107.18298pt>
+<images/time_series_example.pdf, id=13639, 342.2343pt x 107.18298pt>
 File: images/time_series_example.pdf Graphic file (type pdf)
 <use images/time_series_example.pdf>
 Package luatex.def Info: images/time_series_example.pdf  used on input line 155.
@@ -1639,13 +1616,13 @@ Package luatex.def Info: images/time_series_example.pdf  used on input line 155.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [16</mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/graph_service_representation.pdf>]
-<images/time_series_anomaly_detection_example.pdf, id=13678, 602.25pt x 383.18156pt>
+ [15</mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/graph_service_representation.pdf>]
+<images/time_series_anomaly_detection_example.pdf, id=13662, 602.25pt x 383.18156pt>
 File: images/time_series_anomaly_detection_example.pdf Graphic file (type pdf)
 <use images/time_series_anomaly_detection_example.pdf>
 Package luatex.def Info: images/time_series_anomaly_detection_example.pdf  used on input line 166.
 (luatex.def)             Requested size: 213.39568pt x 135.77606pt.
- [17</mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/time_series_example.pdf></mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/time_series_anomaly_detection_example.pdf>]
+ [16</mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/time_series_example.pdf></mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/time_series_anomaly_detection_example.pdf>]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 189.
@@ -1670,7 +1647,7 @@ Underfull \hbox (badness 5908) in paragraph at lines 228--228
 \TU/lmr/m/n/10.95 tech-nolo-gies (HTTP, Kafka,
  []
 
-[18]
+[17]
 Underfull \hbox (badness 10000) in paragraph at lines 289--289
 []|\TU/lmr/m/n/10.95 An it-er-a-tive graph
  []
@@ -1788,13 +1765,13 @@ Underfull \hbox (badness 6268) in paragraph at lines 289--289
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [19] [20]
-<images/graph_manipulation_tools_diagram_comparison.pdf, id=13775, 535.2497pt x 255.95625pt>
+ [18] [19]
+<images/graph_manipulation_tools_diagram_comparison.pdf, id=13760, 535.2497pt x 255.95625pt>
 File: images/graph_manipulation_tools_diagram_comparison.pdf Graphic file (type pdf)
 <use images/graph_manipulation_tools_diagram_comparison.pdf>
 Package luatex.def Info: images/graph_manipulation_tools_diagram_comparison.pdf  used on input line 304.
 (luatex.def)             Requested size: 426.79135pt x 204.10132pt.
- [21</mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/graph_manipulation_tools_diagram_comparison.pdf>]
+ [20</mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/graph_manipulation_tools_diagram_comparison.pdf>]
 Underfull \hbox (badness 3386) in paragraph at lines 364--364
 []|\TU/lmr/m/n/10.95 A NoSQL database
  []
@@ -1884,19 +1861,19 @@ Underfull \hbox (badness 2326) in paragraph at lines 364--364
 []|\TU/lmr/m/n/10.95 High learn-ing curve
  []
 
-[22] [23]
+[21] [22]
 Underfull \hbox (badness 10000) in paragraph at lines 431--431
-[]|\TU/lmr/m/n/10.95 An open-source time se-ries
+[]|\TU/lmr/m/n/10.95 An open-source time-series
  []
 
 
-Underfull \hbox (badness 2065) in paragraph at lines 431--431
-\TU/lmr/m/n/10.95 stor-age and re-trieval of time
+Underfull \hbox (badness 1132) in paragraph at lines 431--431
+\TU/lmr/m/n/10.95 stor-age and re-trieval of time-
  []
 
 
 Underfull \hbox (badness 2384) in paragraph at lines 431--431
-\TU/lmr/m/n/10.95 se-ries data in fields such as
+\TU/lmr/m/n/10.95 series data in fields such as
  []
 
 
@@ -1917,16 +1894,21 @@ Underfull \hbox (badness 1117) in paragraph at lines 431--431
 
 Underfull \vbox (badness 4995) has occurred while \output is active []
 
- [24] [25]
+ [23] [24]
 Underfull \vbox (badness 2653) has occurred while \output is active []
 
- [26] [27] [28]) (/mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/chapters/4-research-objectives-and-approach.tex
-Chapter 4.
-[29
+ [25]) (/mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/chapters/4-research-objectives-and-approach.tex [26]
+Chapter 3.
+[27
 
-] [30] [31] [32] [33]) (/mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/chapters/5-proposed-solution.tex [34]
-Chapter 5.
-<images/proposed_solution.pdf, id=14033, 557.20169pt x 135.6267pt>
+] [28]
+Overfull \hbox (0.2423pt too wide) in paragraph at lines 58--59
+[]\TU/lmr/m/n/10.95 All these ques-tions rep-re-sent needs felt by op-er-a-tors when mon-i-tor-ing and trou-bleshoot-
+ []
+
+[29] [30] [31]) (/mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/chapters/5-proposed-solution.tex [32]
+Chapter 4.
+<images/proposed_solution.pdf, id=14014, 557.20169pt x 135.6267pt>
 File: images/proposed_solution.pdf Graphic file (type pdf)
 <use images/proposed_solution.pdf>
 Package luatex.def Info: images/proposed_solution.pdf  used on input line 13.
@@ -1934,56 +1916,56 @@ Package luatex.def Info: images/proposed_solution.pdf  used on input line 13.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [35
+ [33
 
 </mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/proposed_solution.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 2409) has occurred while \output is active []
 
- [36]
-<images/utility_tree.pdf, id=14092, 323.28778pt x 96.36pt>
+ [34]
+<images/utility_tree.pdf, id=14076, 323.28778pt x 95.39641pt>
 File: images/utility_tree.pdf Graphic file (type pdf)
 <use images/utility_tree.pdf>
-Package luatex.def Info: images/utility_tree.pdf  used on input line 103.
-(luatex.def)             Requested size: 426.79135pt x 127.21173pt.
- [37</mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/utility_tree.pdf>]
-<images/context_diagram.pdf, id=14121, 322.32419pt x 329.31029pt>
+Package luatex.def Info: images/utility_tree.pdf  used on input line 105.
+(luatex.def)             Requested size: 426.79135pt x 125.93962pt.
+ [35</mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/utility_tree.pdf>]
+<images/context_diagram.pdf, id=14106, 322.32419pt x 329.31029pt>
 File: images/context_diagram.pdf Graphic file (type pdf)
 <use images/context_diagram.pdf>
-Package luatex.def Info: images/context_diagram.pdf  used on input line 164.
+Package luatex.def Info: images/context_diagram.pdf  used on input line 166.
 (luatex.def)             Requested size: 426.79135pt x 436.05263pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 2735) has occurred while \output is active []
 
- [38]
-<images/container_diagram.pdf, id=14130, 501.79468pt x 737.8767pt>
+ [36]
+<images/container_diagram.pdf, id=14115, 501.79468pt x 737.8767pt>
 File: images/container_diagram.pdf Graphic file (type pdf)
 <use images/container_diagram.pdf>
-Package luatex.def Info: images/container_diagram.pdf  used on input line 178.
+Package luatex.def Info: images/container_diagram.pdf  used on input line 180.
 (luatex.def)             Requested size: 426.79135pt x 627.59222pt.
 
 Underfull \vbox (badness 2401) has occurred while \output is active []
 
- [39</mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/context_diagram.pdf>] [40</mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/container_diagram.pdf>]
+ [37</mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/context_diagram.pdf>] [38</mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/container_diagram.pdf>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 192.
+               Default added (so using `tbp') on input line 194.
 
-<images/component_diagram.pdf, id=14231, 580.08719pt x 801.95605pt>
+<images/component_diagram.pdf, id=14216, 580.08719pt x 801.95605pt>
 File: images/component_diagram.pdf Graphic file (type pdf)
 <use images/component_diagram.pdf>
-Package luatex.def Info: images/component_diagram.pdf  used on input line 194.
+Package luatex.def Info: images/component_diagram.pdf  used on input line 196.
 (luatex.def)             Requested size: 426.79135pt x 590.04858pt.
-[41] [42</mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/component_diagram.pdf>] [43]) (/mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/chapters/6-implementation_process.tex
-Chapter 6.
-[44
+) (/mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/chapters/6-implementation_process.tex [39] [40</mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/component_diagram.pdf>]
+Chapter 5.
+[41
 
-] [45]
-<images/trace_file_count_2018_06_28_chart.png, id=14344, 405.4347pt x 336.7782pt>
+] [42]
+<images/trace_file_count_2018_06_28_chart.png, id=14322, 405.4347pt x 336.7782pt>
 File: images/trace_file_count_2018_06_28_chart.png Graphic file (type png)
 <use images/trace_file_count_2018_06_28_chart.png>
 Package luatex.def Info: images/trace_file_count_2018_06_28_chart.png  used on input line 96.
 (luatex.def)             Requested size: 375.57846pt x 311.998pt.
-<images/trace_file_count_2018_06_29_chart.png, id=14345, 405.4347pt x 336.7782pt>
+<images/trace_file_count_2018_06_29_chart.png, id=14323, 405.4347pt x 336.7782pt>
 File: images/trace_file_count_2018_06_29_chart.png Graphic file (type png)
 <use images/trace_file_count_2018_06_29_chart.png>
 Package luatex.def Info: images/trace_file_count_2018_06_29_chart.png  used on input line 103.
@@ -1991,9 +1973,9 @@ Package luatex.def Info: images/trace_file_count_2018_06_29_chart.png  used on i
 
 Underfull \vbox (badness 4036) has occurred while \output is active []
 
- [46</mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/trace_file_count_2018_06_28_chart.png>] [47</mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/trace_file_count_2018_06_29_chart.png>] [48]
+ [43</mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/trace_file_count_2018_06_28_chart.png>] [44</mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/trace_file_count_2018_06_29_chart.png>] [45]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 158.
- [49]
+ [46]
 Underfull \hbox (badness 2582) in paragraph at lines 259--259
 []|\TU/lmr/m/n/10.95 1. Is there any
  []
@@ -2013,81 +1995,82 @@ Underfull \hbox (badness 6316) in paragraph at lines 259--259
 \TU/lmr/m/n/10.95 the en-tire set of
  []
 
-[50] [51]
-<images/service_calls.pdf, id=14485, 1084.05pt x 722.7pt>
+[47] [48]
+<images/service_calls.pdf, id=14465, 1084.05pt x 722.7pt>
 File: images/service_calls.pdf Graphic file (type pdf)
 <use images/service_calls.pdf>
-Package luatex.def Info: images/service_calls.pdf  used on input line 274.
-(luatex.def)             Requested size: 426.79135pt x 284.53154pt.
-<images/service_dependency_variation.pdf, id=14486, 1084.05pt x 289.08pt>
+Package luatex.def Info: images/service_calls.pdf  used on input line 275.
+(luatex.def)             Requested size: 426.79733pt x 256.06956pt.
+<images/service_dependency_variation.pdf, id=14466, 1084.05pt x 289.08pt>
 File: images/service_dependency_variation.pdf Graphic file (type pdf)
 <use images/service_dependency_variation.pdf>
-Package luatex.def Info: images/service_dependency_variation.pdf  used on input line 281.
+Package luatex.def Info: images/service_dependency_variation.pdf  used on input line 282.
 (luatex.def)             Requested size: 426.79135pt x 113.8126pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [52</mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/service_calls.pdf>]
-<images/service_avg_response_time.pdf, id=14547, 1084.05pt x 289.08pt>
+<images/service_avg_response_time.pdf, id=14467, 1084.05pt x 289.08pt>
 File: images/service_avg_response_time.pdf Graphic file (type pdf)
 <use images/service_avg_response_time.pdf>
-Package luatex.def Info: images/service_avg_response_time.pdf  used on input line 288.
-(luatex.def)             Requested size: 426.79135pt x 113.8126pt.
-<images/service_status_code_ratio.pdf, id=14548, 1084.05pt x 289.08pt>
-File: images/service_status_code_ratio.pdf Graphic file (type pdf)
-<use images/service_status_code_ratio.pdf>
-Package luatex.def Info: images/service_status_code_ratio.pdf  used on input line 302.
+Package luatex.def Info: images/service_avg_response_time.pdf  used on input line 289.
 (luatex.def)             Requested size: 426.79135pt x 113.8126pt.
 
-Overfull \hbox (4.20055pt too wide) in paragraph at lines 313--314
+Underfull \vbox (badness 2318) has occurred while \output is active []
+
+ [49</mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/service_calls.pdf></mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/service_dependency_variation.pdf>]
+<images/service_status_code_ratio.pdf, id=14580, 1084.05pt x 289.08pt>
+File: images/service_status_code_ratio.pdf Graphic file (type pdf)
+<use images/service_status_code_ratio.pdf>
+Package luatex.def Info: images/service_status_code_ratio.pdf  used on input line 303.
+(luatex.def)             Requested size: 426.79135pt x 113.8126pt.
+
+Overfull \hbox (4.20055pt too wide) in paragraph at lines 314--315
 \TU/lmr/m/n/10.95 (GDB)[]. This de-ci-sion was based in the ``Multi data-type sup-port'' pro-vided by this database,
  []
 
-[53</mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/service_dependency_variation.pdf></mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/service_avg_response_time.pdf></mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/service_status_code_ratio.pdf>] [54]
-<images/methods_to_fulfil_time_series_data.pdf, id=14705, 674.1526pt x 595.81396pt>
+[50</mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/service_avg_response_time.pdf></mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/service_status_code_ratio.pdf>] [51]
+<images/methods_to_fulfil_time_series_data.pdf, id=14685, 674.1526pt x 595.81396pt>
 File: images/methods_to_fulfil_time_series_data.pdf Graphic file (type pdf)
 <use images/methods_to_fulfil_time_series_data.pdf>
-Package luatex.def Info: images/methods_to_fulfil_time_series_data.pdf  used on input line 351.
+Package luatex.def Info: images/methods_to_fulfil_time_series_data.pdf  used on input line 352.
 (luatex.def)             Requested size: 341.43437pt x 301.77008pt.
-<images/trend_seasonality_results.pdf, id=14709, 400.1112pt x 305.96297pt>
+<images/trend_seasonality_results.pdf, id=14689, 400.1112pt x 305.96297pt>
 File: images/trend_seasonality_results.pdf Graphic file (type pdf)
 <use images/trend_seasonality_results.pdf>
-Package luatex.def Info: images/trend_seasonality_results.pdf  used on input line 359.
+Package luatex.def Info: images/trend_seasonality_results.pdf  used on input line 360.
 (luatex.def)             Requested size: 341.43437pt x 261.10152pt.
-<images/isolation_forests_and_oneclasssvm_comparison.pdf, id=14714, 538.26094pt x 198.7425pt>
+ [52] [53</mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/methods_to_fulfil_time_series_data.pdf></mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/trend_seasonality_results.pdf>]
+<images/isolation_forests_and_oneclasssvm_comparison.pdf, id=14745, 538.26094pt x 198.7425pt>
 File: images/isolation_forests_and_oneclasssvm_comparison.pdf Graphic file (type pdf)
 <use images/isolation_forests_and_oneclasssvm_comparison.pdf>
-Package luatex.def Info: images/isolation_forests_and_oneclasssvm_comparison.pdf  used on input line 369.
+Package luatex.def Info: images/isolation_forests_and_oneclasssvm_comparison.pdf  used on input line 372.
 (luatex.def)             Requested size: 341.43437pt x 126.06967pt.
- [55] [56</mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/methods_to_fulfil_time_series_data.pdf></mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/trend_seasonality_results.pdf>] [57</mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/isolation_forests_and_oneclasssvm_comparison.pdf>]
-<images/trace_time_coverage_example.pdf, id=14807, 271.97609pt x 79.2561pt>
+ [54</mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/isolation_forests_and_oneclasssvm_comparison.pdf>]
+<images/trace_time_coverage_example.pdf, id=14785, 271.97609pt x 79.2561pt>
 File: images/trace_time_coverage_example.pdf Graphic file (type pdf)
 <use images/trace_time_coverage_example.pdf>
-Package luatex.def Info: images/trace_time_coverage_example.pdf  used on input line 412.
+Package luatex.def Info: images/trace_time_coverage_example.pdf  used on input line 415.
 (luatex.def)             Requested size: 341.43437pt x 99.49919pt.
- [58</mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/trace_time_coverage_example.pdf>] [59] [60]) (/mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/chapters/7-results.tex
-Chapter 7.
-<images/multi_feature_anomaly_detection.pdf, id=14873, 403.02069pt x 359.3947pt>
+ [55</mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/trace_time_coverage_example.pdf>]) (/mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/chapters/7-results.tex [56]
+Chapter 6.
+<images/multi_feature_anomaly_detection.pdf, id=14849, 403.02069pt x 359.3947pt>
 File: images/multi_feature_anomaly_detection.pdf Graphic file (type pdf)
 <use images/multi_feature_anomaly_detection.pdf>
 Package luatex.def Info: images/multi_feature_anomaly_detection.pdf  used on input line 20.
 (luatex.def)             Requested size: 426.79135pt x 380.60559pt.
-[61
+[57
 
-] [62</mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/multi_feature_anomaly_detection.pdf>]
-<images/result_samples_for_service_a_cc.pdf, id=14936, 782.925pt x 536.0025pt>
+] [58</mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/multi_feature_anomaly_detection.pdf>]
+<images/result_samples_for_service_a_cc.pdf, id=14912, 782.925pt x 536.0025pt>
 File: images/result_samples_for_service_a_cc.pdf Graphic file (type pdf)
 <use images/result_samples_for_service_a_cc.pdf>
 Package luatex.def Info: images/result_samples_for_service_a_cc.pdf  used on input line 33.
 (luatex.def)             Requested size: 426.79135pt x 292.19327pt.
- [63</mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/result_samples_for_service_a_cc.pdf>]
-<images/workflow_type_count.pdf, id=14950, 817.0525pt x 313.17pt>
+ [59</mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/result_samples_for_service_a_cc.pdf>]
+<images/workflow_type_count.pdf, id=14926, 817.0525pt x 313.17pt>
 File: images/workflow_type_count.pdf Graphic file (type pdf)
 <use images/workflow_type_count.pdf>
 Package luatex.def Info: images/workflow_type_count.pdf  used on input line 57.
 (luatex.def)             Requested size: 426.79135pt x 163.58522pt.
- [64</mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/workflow_type_count.pdf>]
-<images/service_trace_coverability_analysis.pdf, id=14968, 745.78625pt x 670.505pt>
+ [60</mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/workflow_type_count.pdf>]
+<images/service_trace_coverability_analysis.pdf, id=14943, 745.78625pt x 670.505pt>
 File: images/service_trace_coverability_analysis.pdf Graphic file (type pdf)
 <use images/service_trace_coverability_analysis.pdf>
 Package luatex.def Info: images/service_trace_coverability_analysis.pdf  used on input line 85.
@@ -2095,44 +2078,41 @@ Package luatex.def Info: images/service_trace_coverability_analysis.pdf  used on
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [65]
+ [61]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [66</mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/service_trace_coverability_analysis.pdf>] [67]) (/mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/chapters/8-conclusions.tex [68]
-Chapter 8.
+ [62</mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/images/service_trace_coverability_analysis.pdf>] [63]) (/mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/chapters/8-conclusions.tex [64]
+Chapter 7.
+[65
 
-LaTeX Warning: Reference `sec:second_question' on page 69 undefined on input line 33.
-
-[69
-
-]) [70]
-Overfull \hbox (25.93614pt too wide) in paragraph at lines 243--243
-[]\TU/lmr/m/n/10.95 Open-Trac-ing.io, \TU/lmr/m/it/10.95 What is Dis-tributed Trac-ing? \TU/lmr/m/n/10.95 [On-line]. Avail-able: []$\TU/lmtt/m/n/10.95 https : / / opentracing .
- []
-
-
+] [66] [67] [68])
 Overfull \hbox (12.11975pt too wide) in paragraph at lines 243--243
 []\TU/lmr/m/n/10.95 C. Richard-son, \TU/lmr/m/it/10.95 Mi-croser-vices Def-i-ni-tion\TU/lmr/m/n/10.95 . [On-line]. Avail-able: []$\TU/lmtt/m/n/10.95 https : / / microservices .
  []
 
-[71
+[69
 
 ]
 Overfull \hbox (7.89421pt too wide) in paragraph at lines 243--243
 []\TU/lmr/m/n/10.95 Cloud Na-tive Com-put-ing Foun-da-tion, \TU/lmr/m/it/10.95 What is Ku-ber-netes? \TU/lmr/m/n/10.95 [On-line]. Avail-able: []$\TU/lmtt/m/n/10.95 https :
  []
 
-[72]
+[70]
 Overfull \hbox (17.8114pt too wide) in paragraph at lines 243--243
 []\TU/lmr/m/it/10.95 Net-workX\TU/lmr/m/n/10.95 . [On-line]. Avail-able: []$\TU/lmtt/m/n/10.95 https : / / networkx . github . io/$[] \TU/lmr/m/n/10.95 (vis-ited on 12/03/2018). 
  []
 
-[73]
+
+Overfull \hbox (29.64835pt too wide) in paragraph at lines 243--243
+\TU/lmtt/m/n/10.95 1141717847 . 1521285291 & _gac = 1 . 180373973 . 1521290471 . CjwKCAjw - bLVBRBMEiwAmKSB$[]\TU/lmr/m/n/10.95 . 
+ []
+
+
 Overfull \hbox (3.60925pt too wide) in paragraph at lines 243--243
 \TU/lmtt/m/n/10.95 www . arangodb . com / why - arangodb / arangodb - enterprise / arangodb - enterprise -
  []
 
-
+[71]
 Overfull \hbox (8.97467pt too wide) in paragraph at lines 243--243
 []\TU/lmr/m/n/10.95 In-flux-Data, \TU/lmr/m/it/10.95 In-fluxDB GitHub\TU/lmr/m/n/10.95 . [On-line]. Avail-able: []$\TU/lmtt/m/n/10.95 https : / / github . com / influxdata /
  []
@@ -2147,12 +2127,7 @@ Overfull \hbox (25.40598pt too wide) in paragraph at lines 243--243
 []\TU/lmr/m/n/10.95 A. Lerner, \TU/lmr/m/it/10.95 AIOps Plat-forms\TU/lmr/m/n/10.95 , https://blogs.gart-ner.com/andrew-lerner/2017/08/09/aiops-
  []
 
-[74]
-Overfull \hbox (20.8555pt too wide) in paragraph at lines 243--243
-[]$\TU/lmtt/m/n/10.95 https : / / medium . com / @Pinterest % 7B % 5C _ %7DEngineering / analyzing - distributed -
- []
-
-
+[72]
 Overfull \hbox (5.1677pt too wide) in paragraph at lines 243--243
 []\TU/lmr/m/n/10.95 Open-Trac-ing.io, \TU/lmr/m/it/10.95 The Open-Trac-ing Spec-i-fi-ca-tion repos-i-tory\TU/lmr/m/n/10.95 . [On-line]. Avail-able: []$\TU/lmtt/m/n/10.95 https :
  []
@@ -2172,14 +2147,24 @@ Overfull \hbox (20.52335pt too wide) in paragraph at lines 243--243
 []\TU/lmr/m/it/10.95 JSON Schema\TU/lmr/m/n/10.95 . [On-line]. Avail-able: []$\TU/lmtt/m/n/10.95 https : / / json - schema . org/$[] \TU/lmr/m/n/10.95 (vis-ited on 06/16/2019). 
  []
 
-[75]
+
+Overfull \hbox (30.91853pt too wide) in paragraph at lines 243--243
+[]\TU/lmr/m/it/10.95 Open-Teleme-try\TU/lmr/m/n/10.95 . [On-line]. Avail-able: []$\TU/lmtt/m/n/10.95 https : / / opentelemetry . io/$[] \TU/lmr/m/n/10.95 (vis-ited on 06/21/2019). 
+ []
+
+
+Overfull \hbox (38.10175pt too wide) in paragraph at lines 243--243
+\TU/lmtt/m/n/10.95 open - telemetry / opentelemetry - specification / blob / master / semantic - conventions .
+ []
+
+[73]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 252.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 252.
  (/mnt/B6C8BAECC8BAAA4F/André/UC/Tese/MScThesis/MScThesisReport/main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 252.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 252.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 8A57EEDFD7548732F3D20D0C560CCCAB;3017.
+(rerunfilecheck)             Checksum: 45D41C7CE6FC22C0E58D38925AB192D4;2981.
 
 
 LaTeX Warning: There were undefined references.
@@ -2196,19 +2181,19 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 252.
 )
 
 Here is how much of LuaTeX's memory you used:
- 47718 strings out of 494383
+ 47700 strings out of 494383
  125200,1977958 words of node,token memory allocated
  1508 words of node memory still in use:
    5 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 91 attribute, 89 glue_spec, 91 attribute_list, 1 write, 85 pdf_action nodes
-   avail lists: 1:5,2:1760,3:560,4:820,5:1071,6:126,7:6548,8:728,9:1887,10:25,11:468,12:3
- 49607 multiletter control sequences out of 65536+600000
+   avail lists: 1:5,2:1755,3:419,4:820,5:1071,6:126,7:6548,8:728,9:1887,10:27,11:495,12:3
+ 49603 multiletter control sequences out of 65536+600000
  46 fonts using 3962895 bytes
- 69i,15n,98p,2217b,2727s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 69i,15n,98p,2217b,2714s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmroman9-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman6-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman8-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman8-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmromanslant10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (92 pages, 3414439 bytes).
+Output written on main.pdf (89 pages, 3327932 bytes).
 
-PDF statistics: 15300 PDF objects out of 15390 (max. 8388607)
- 10183 compressed objects within 102 object streams
- 410 named destinations out of 1000 (max. 131072)
- 376 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 15292 PDF objects out of 15390 (max. 8388607)
+ 10181 compressed objects within 102 object streams
+ 405 named destinations out of 1000 (max. 131072)
+ 368 words of extra memory for PDF output out of 10000 (max. 100000000)
 
