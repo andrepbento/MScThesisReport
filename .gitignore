@@ -314,6 +314,5 @@ vignettes/*.pdf
 *.fls
 *.lof
 *.log
-*.pdf
 *.synctex.gz
 *.toc
